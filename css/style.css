@@ -225,8 +225,49 @@ img { max-width: 100%; height: auto; display: block; }
   cursor: default;
 }
 
+/* ── Section head / eyebrow ─────────────────────────── */
+.section-head { text-align: center; margin-bottom: 64px; }
+.section-head .section__title { margin-bottom: 0; }
+
+.eyebrow {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ── Language button ────────────────────────────────── */
+.site-nav .lang-btn {
+  border: 1px solid rgba(27, 36, 48, 0.18);
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 0.8rem;
+  color: var(--ink);
+}
+.site-nav .lang-btn:hover { border-color: var(--primary); color: var(--primary); }
+
 /* ── Showcase ───────────────────────────────────────── */
 .showcase { display: flex; flex-direction: column; gap: 80px; }
+
+.showcase__shot {
+  flex-shrink: 0;
+  background: linear-gradient(160deg, #dceafe 0%, #eef4fd 60%, #e3edfc 100%);
+  border-radius: 28px;
+  padding: 36px 44px;
+}
+
+.showcase__num {
+  display: block;
+  font-size: 2.6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: rgba(47, 124, 246, 0.25);
+  letter-spacing: -0.02em;
+  margin-bottom: 14px;
+}
 
 .showcase__row {
   display: flex;
@@ -237,10 +278,9 @@ img { max-width: 100%; height: auto; display: block; }
 .showcase__row--reverse { flex-direction: row-reverse; }
 
 .showcase__row img {
-  width: 320px;
-  flex-shrink: 0;
+  width: 280px;
   border-radius: var(--radius);
-  box-shadow: 0 16px 48px rgba(27, 36, 48, 0.14);
+  box-shadow: 0 16px 48px rgba(27, 36, 48, 0.18);
 }
 
 .showcase__text h3 {
@@ -357,7 +397,10 @@ details a { color: var(--primary); }
     text-align: center;
   }
 
-  .showcase__row img { width: min(280px, 80vw); }
+  .showcase__shot { padding: 24px 28px; }
+  .showcase__row img { width: min(240px, 70vw); }
+  .showcase__num { margin-left: auto; margin-right: auto; }
+  .section-head { margin-bottom: 44px; }
 
   .store-buttons { flex-direction: column; }
   .store-btn { width: 100%; }
