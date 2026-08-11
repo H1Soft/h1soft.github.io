@@ -11,62 +11,51 @@
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
   <link rel="stylesheet" href="../../css/style.css" />
-  <style>
-    .policy { padding: 64px 0 96px; }
-    .policy h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
-    .policy .date { color: var(--ink-soft); font-size: 0.9rem; margin-bottom: 40px; }
-    .policy h2 { font-size: 1.25rem; font-weight: 700; margin: 36px 0 12px; }
-    .policy p, .policy li { color: var(--ink-soft); }
-    .policy ul { padding-left: 20px; margin-top: 8px; }
-  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="../" class="logo">H1Soft</a>
+  <header class="policy-header">
+    <div class="policy-header__inner">
+      <a href="../" class="logo">H1Soft<span class="logo-dot">.</span></a>
+      <a href="../" class="policy-back">← Back to main</a>
+      <div class="lang-toggle">
+        <a href="../../privacy/" lang="ko" hreflang="ko">KO</a>
+        <span class="is-active">EN</span>
+      </div>
     </div>
   </header>
 
   <main class="policy">
-    <div class="container container--narrow">
+    <div class="policy__head">
       <h1>Privacy Policy</h1>
-      <p class="date">Effective date: August 11, 2026</p>
-
-      <p>H1Soft ("the team") values the privacy of users of the QR Scanner app ("the app") and complies with applicable laws. This policy applies to the app and the website (h1soft.github.io).</p>
-
-      <h2>1. Personal data we collect</h2>
-      <p><strong>The team does not collect any personal data.</strong></p>
-      <ul>
-        <li>The app has no sign-up or login and never asks for your name, email address, phone number, or any other personal information.</li>
-        <li>QR scan and creation history is <strong>stored locally on your device only</strong> and is never sent to or collected by any server.</li>
-      </ul>
-
-      <h2>2. App permissions</h2>
-      <ul>
-        <li><strong>Camera</strong>: used only for scanning QR codes.</li>
-        <li><strong>Photos (gallery)</strong>: used only for recognizing QR codes from images and saving QR codes you create.</li>
-      </ul>
-      <p>Data accessed through these permissions never leaves your device.</p>
-
-      <h2>3. Third-party sharing and processing</h2>
-      <p>Since no personal data is collected, no third-party sharing or outsourced processing takes place.</p>
-
-      <h2>4. Data retention and deletion</h2>
-      <p>You can delete scan and creation records directly from the app's history. Uninstalling the app removes all data from your device.</p>
-
-      <h2>5. Changes to this policy</h2>
-      <p>Any changes to this policy will be announced on this page.</p>
-
-      <h2>6. Contact</h2>
-      <p>Privacy inquiries: <a href="mailto:contact@h1soft.app">contact@h1soft.app</a></p>
+      <span class="policy__date">Effective date: August 11, 2026</span>
     </div>
+
+    <section>
+      <h2>1. General</h2>
+      <p>H1Soft ("the team") values the privacy of QR Scanner and website users and complies with applicable laws. This policy applies to the QR Scanner app and the h1soft website.</p>
+    </section>
+
+    <section>
+      <h2>2. Personal data we collect</h2>
+      <p>The QR Scanner app does not transmit or collect personal data on any server. All data, including scan and creation history, is stored only on your device — the team cannot access it.</p>
+    </section>
+
+    <section>
+      <h2>3. Camera permission</h2>
+      <p>The camera is used only to recognize QR codes. Camera footage is never stored or sent anywhere.</p>
+    </section>
+
+    <section>
+      <h2>4. Website analytics</h2>
+      <p>This website may use anonymized analytics tools (e.g. Google Analytics) to improve the service.</p>
+    </section>
+
+    <section>
+      <h2>5. Contact</h2>
+      <p>For privacy questions, email <a href="mailto:h1.soft.x001@gmail.com">h1.soft.x001@gmail.com</a>.</p>
+    </section>
+
+    <span class="policy__copy">© 2026 H1Soft. All rights reserved.</span>
   </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p><a href="../">Home</a> · <a href="../terms/">Terms of Service</a> · <a href="../../privacy/" lang="ko" hreflang="ko">한국어</a></p>
-      <p class="site-footer__copy">© 2026 H1Soft. All rights reserved.</p>
-    </div>
-  </footer>
 </body>
 </html>

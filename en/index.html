@@ -45,7 +45,7 @@
     "url": "https://h1soft.github.io/",
     "logo": "https://h1soft.github.io/assets/app_icon.png",
     "description": "A mobile app team building everyday tools that are fast and simple, using Kotlin Multiplatform for iOS and Android.",
-    "email": "contact@h1soft.app"
+    "email": "h1.soft.x001@gmail.com"
   }
   </script>
   <script type="application/ld+json">
@@ -67,109 +67,122 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What is H1Soft?",
-        "acceptedAnswer": { "@type": "Answer", "text": "H1Soft is a mobile app team building iOS and Android apps from a single codebase with Kotlin Multiplatform and Compose Multiplatform. Our goal is to make everyday tools as fast and simple as possible." }
+        "name": "What kind of team is H1Soft?",
+        "acceptedAnswer": { "@type": "Answer", "text": "A mobile development team building cross-platform apps for iOS and Android with Kotlin Multiplatform and Compose Multiplatform — one codebase, native performance on both." }
       },
       {
         "@type": "Question",
         "name": "Is QR Scanner free?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes, QR Scanner is free. Scanning, creating, and history are all available at no cost." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. QR Scanner is free, with every feature included." }
       },
       {
         "@type": "Question",
         "name": "Is my scan history stored on a server?",
-        "acceptedAnswer": { "@type": "Answer", "text": "No. All scan and creation history is stored locally on your device only, and is never sent to or collected by any server." }
+        "acceptedAnswer": { "@type": "Answer", "text": "No. Everything is stored only on your device and is never sent to a server." }
       },
       {
         "@type": "Question",
         "name": "What kinds of QR codes can I create?",
-        "acceptedAnswer": { "@type": "Answer", "text": "16 types in total: link, text, phone, location, email, SMS, Wi-Fi and calendar QR codes, plus social QR codes for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more." }
+        "acceptedAnswer": { "@type": "Answer", "text": "General codes — link, text, phone, location, email, SMS, Wi-Fi, calendar — plus social codes for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more." }
       },
       {
         "@type": "Question",
         "name": "Does it work offline?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scanning, creating, and history all work perfectly without a network connection." }
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Scanning, creating and history all work without a network connection." }
       },
       {
         "@type": "Question",
-        "name": "How can I contact you?",
-        "acceptedAnswer": { "@type": "Answer", "text": "Please email us at contact@h1soft.app." }
+        "name": "Where do I send questions?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Email us at h1.soft.x001@gmail.com." }
       }
     ]
   }
   </script>
 </head>
-<body>
+<body id="top">
 
   <!-- ── Header ──────────────────────────────────────── -->
   <header class="site-header">
     <div class="container site-header__inner">
-      <a href="./" class="logo" aria-label="H1Soft home">H1Soft</a>
-      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-      <nav class="site-nav" id="site-nav" aria-label="Main menu">
+      <a href="#top" class="logo" aria-label="H1Soft home">H1Soft<span class="logo-dot">.</span></a>
+      <nav class="site-nav" aria-label="Main menu">
         <a href="#products">Products</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-        <a href="../" lang="ko" hreflang="ko" class="lang-btn">KO</a>
       </nav>
+      <span class="header-divider" aria-hidden="true"></span>
+      <div class="lang-toggle">
+        <a href="../" lang="ko" hreflang="ko">KO</a>
+        <span class="is-active">EN</span>
+      </div>
     </div>
   </header>
 
   <main>
     <!-- ── 1. Hero ───────────────────────────────────── -->
     <section class="hero">
-      <div class="container hero__inner">
-        <span class="badge">Mobile App Team</span>
-        <h1>H1Soft</h1>
-        <p class="hero__sub">Everyday tools, made fast and simple —<br />
-          a mobile app team building for iOS and Android at once with Kotlin Multiplatform</p>
-        <a href="#products" class="btn btn--primary">See QR Scanner</a>
+      <div class="hero__inner">
+        <span class="eyebrow">Mobile App Team</span>
+        <h1>H1Soft<span class="logo-dot">.</span></h1>
+        <p class="hero__sub">Everyday tools, fast and simple — a mobile app team building for iOS and Android at once with Kotlin Multiplatform</p>
+        <div class="hero__cta">
+          <a href="#products" class="btn">See QR Scanner</a>
+        </div>
       </div>
     </section>
 
     <!-- ── 2. Products ───────────────────────────────── -->
     <section id="products" class="section">
       <div class="container">
-        <h2 class="section__title">Products</h2>
+        <div class="section-head">
+          <span class="eyebrow">Products</span>
+          <h2 class="section__title">Our first product</h2>
+        </div>
+
         <article class="product-card">
           <div class="product-card__head">
-            <img src="../assets/app_icon.png" alt="QR Scanner app icon" class="product-card__icon" width="96" height="96" />
-            <div>
-              <h3 class="product-card__name">QR Scanner <span class="badge badge--new">NEW</span></h3>
-              <p class="product-card__tagline">Scan & create QR codes in one second</p>
+            <img src="../assets/app_icon.png" alt="QR Scanner app icon" class="product-card__icon" width="88" height="88" />
+            <div class="product-card__title">
+              <div class="product-card__name-row">
+                <span class="product-card__name">QR Scanner</span>
+                <span class="badge--new">NEW</span>
+              </div>
+              <span class="product-card__tagline">QR scanning and creation, done in a second</span>
             </div>
           </div>
 
-          <ul class="feature-list">
-            <li>Real-time, ultra-fast QR scanning (flashlight & gallery image scan)</li>
-            <li>Create QR codes for links, text, phone, location, email, SMS, Wi-Fi and calendar</li>
-            <li>Social QR codes: Facebook, X, YouTube, Instagram, KakaoTalk, Line and more</li>
-            <li>High-quality PNG export and system share</li>
-            <li>History stored on-device only — full privacy, no server upload</li>
-            <li>18 languages · works offline · free</li>
-          </ul>
+          <div class="product-card__grid">
+            <div class="feature-col">
+              <span class="col-label">Key features</span>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Real-time, ultra-fast QR scanning — flash and gallery image scan</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Create QR codes for links, text, phone, location, email, SMS, Wi-Fi and calendar</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Social QR for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>High-resolution PNG export and system share</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>History stored locally — complete privacy, nothing sent to servers</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>18 languages · works offline · free</span></div>
+            </div>
 
-          <div class="recommend">
-            <h4>Great for you if…</h4>
-            <ul>
-              <li>Your camera app is too slow at recognizing QR codes</li>
-              <li>You want to share Wi-Fi, contacts or links as QR codes</li>
-              <li>You don't want your scan history stored on a server</li>
-            </ul>
+            <div class="recommend">
+              <span class="col-label">Recommended for</span>
+              <div class="recommend-item"><span>Anyone tired of the camera app taking forever to catch a QR</span></div>
+              <div class="recommend-item"><span>People who want to share Wi-Fi, contacts or links as QR codes</span></div>
+              <div class="recommend-item"><span>Anyone uncomfortable with scan history living on a server</span></div>
+            </div>
           </div>
 
-          <div class="store-buttons">
-            <a class="store-btn is-disabled" data-store="appstore" href="#" aria-disabled="true" rel="noopener">
-              <span class="store-btn__label">App Store</span>
-              <span class="store-btn__soon">Coming Soon</span>
-            </a>
-            <a class="store-btn is-disabled" data-store="playstore" href="#" aria-disabled="true" rel="noopener">
-              <span class="store-btn__label">Google Play</span>
-              <span class="store-btn__soon">Coming Soon</span>
-            </a>
+          <div class="store-block">
+            <div class="store-buttons">
+              <a class="store-btn is-disabled" data-store="appstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
+                <span class="store-btn__sub">Coming soon</span>
+                <span class="store-btn__label">App Store</span>
+              </a>
+              <a class="store-btn is-disabled" data-store="playstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
+                <span class="store-btn__sub">Coming soon</span>
+                <span class="store-btn__label">Google Play</span>
+              </a>
+            </div>
+            <span class="store-note" data-store-note>Download links go live at launch.</span>
           </div>
         </article>
       </div>
@@ -180,62 +193,53 @@
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Showcase</span>
-          <h2 class="section__title">See every screen first</h2>
+          <h2 class="section__title">See it in action</h2>
         </div>
+
         <div class="showcase">
 
           <div class="showcase__row">
-            <div class="showcase__shot">
-              <img src="../assets/screenshots/en/01-hero.webp" alt="QR Scanner scan screen — scanning starts the moment the app opens" width="640" height="1137" loading="lazy" />
-            </div>
+            <div class="showcase__shot"><img src="../assets/screenshots/en/01-hero.webp" alt="QR Scanner scan screen — real-time ultra-fast scanning" width="1000" height="1777" /></div>
             <div class="showcase__text">
               <span class="showcase__num" aria-hidden="true">01</span>
               <h3>Why take 5 seconds for a 1-second job?</h3>
-              <p>Scanning starts the moment the app opens, and jumps straight to the details. Flashlight and gallery image scan included.</p>
+              <p>Scanning starts the moment the app opens. Recognized codes jump straight to their detail page. Flash and gallery scans included.</p>
             </div>
           </div>
 
           <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot">
-              <img src="../assets/screenshots/en/02-create.webp" alt="QR create screen — choosing from link, Wi-Fi, contact and more QR types" width="640" height="1137" loading="lazy" />
-            </div>
+            <div class="showcase__shot"><img src="../assets/screenshots/en/02-create.webp" alt="QR create screen — choosing general and social QR types" width="1000" height="1777" loading="lazy" /></div>
             <div class="showcase__text">
               <span class="showcase__num" aria-hidden="true">02</span>
-              <h3>Turn anything into a QR code</h3>
-              <p>Links, Wi-Fi, contacts and more — 7 standard types plus 9 social types.</p>
+              <h3>Turn anything into a QR.</h3>
+              <p>Links, Wi-Fi, contacts — one tap. General and social QR types in one place.</p>
             </div>
           </div>
 
           <div class="showcase__row">
-            <div class="showcase__shot">
-              <img src="../assets/screenshots/en/03-share.webp" alt="Save and share screen — exporting a created QR code in high quality" width="640" height="1137" loading="lazy" />
-            </div>
+            <div class="showcase__shot"><img src="../assets/screenshots/en/03-share.webp" alt="Created QR detail screen — high-resolution PNG export and share" width="1000" height="1777" loading="lazy" /></div>
             <div class="showcase__text">
               <span class="showcase__num" aria-hidden="true">03</span>
-              <h3>Save and share instantly</h3>
-              <p>Export as a 1024×1024 high-quality PNG and send it right away via the system share sheet.</p>
+              <h3>Save it. Share it.</h3>
+              <p>1024×1024 high-resolution PNG export, delivered instantly through the system share sheet.</p>
             </div>
           </div>
 
           <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot">
-              <img src="../assets/screenshots/en/04-history.webp" alt="History screen — scan and creation history stored on device only" width="640" height="1137" loading="lazy" />
-            </div>
+            <div class="showcase__shot"><img src="../assets/screenshots/en/04-history.webp" alt="History screen — records stored on device only" width="1000" height="1777" loading="lazy" /></div>
             <div class="showcase__text">
               <span class="showcase__num" aria-hidden="true">04</span>
-              <h3>Your history stays on your device</h3>
-              <p>No server upload. Every scan and creation record is stored locally. Full privacy.</p>
+              <h3>History stays on your device.</h3>
+              <p>Nothing leaves your phone. Every scan and creation is stored locally. Complete privacy.</p>
             </div>
           </div>
 
           <div class="showcase__row">
-            <div class="showcase__shot">
-              <img src="../assets/screenshots/en/05-more.webp" alt="Settings screen — 18 languages and offline support" width="640" height="1137" loading="lazy" />
-            </div>
+            <div class="showcase__shot"><img src="../assets/screenshots/en/05-more.webp" alt="Settings screen — languages, terms, app version" width="1000" height="1777" loading="lazy" /></div>
             <div class="showcase__text">
               <span class="showcase__num" aria-hidden="true">05</span>
               <h3>18 languages · offline · free</h3>
-              <p>Scanning, creating and history all work perfectly without a network.</p>
+              <p>Scan, create and browse history — no network needed.</p>
             </div>
           </div>
 
@@ -245,64 +249,81 @@
 
     <!-- ── 4. About ──────────────────────────────────── -->
     <section id="about" class="section">
-      <div class="container container--narrow">
-        <h2 class="section__title">About</h2>
-        <p>H1Soft is a mobile app team that makes <strong>the small tools you use every day as fast and simple as possible</strong>.</p>
-        <p>With Kotlin Multiplatform and Compose Multiplatform, we deliver native performance on both iOS and Android from a single codebase.</p>
-        <p>Starting with QR Scanner, we're building a lineup of utilities you can trust — no ads, no server-side data collection.</p>
+      <div class="about__inner">
+        <span class="eyebrow">About</span>
+        <h2 class="section__title">About H1Soft</h2>
+        <div class="about__body">
+          <p>H1Soft is a mobile app team that makes <strong>the small tools you use every day as fast and simple as possible</strong>.</p>
+          <p>With Kotlin Multiplatform and Compose Multiplatform, one codebase delivers native performance on both iOS and Android.</p>
+          <p>Starting with QR Scanner, we are growing a lineup of utilities you can trust — no ads, no server-side collection.</p>
+        </div>
+        <div class="chips">
+          <span class="chip">Kotlin Multiplatform</span>
+          <span class="chip">Compose Multiplatform</span>
+          <span class="chip">iOS · Android</span>
+        </div>
+        <span class="caption">App Store · Google Play developer pages open at launch.</span>
       </div>
     </section>
 
     <!-- ── 5. FAQ ────────────────────────────────────── -->
     <section id="faq" class="section section--alt">
-      <div class="container container--narrow">
-        <h2 class="section__title">FAQ</h2>
-        <details>
-          <summary>What is H1Soft?</summary>
-          <p>H1Soft is a mobile app team building iOS and Android apps from a single codebase with Kotlin Multiplatform and Compose Multiplatform. Our goal is to make everyday tools as fast and simple as possible.</p>
-        </details>
-        <details>
-          <summary>Is QR Scanner free?</summary>
-          <p>Yes, QR Scanner is free. Scanning, creating, and history are all available at no cost.</p>
-        </details>
-        <details>
-          <summary>Is my scan history stored on a server?</summary>
-          <p>No. All scan and creation history is stored locally on your device only, and is never sent to or collected by any server.</p>
-        </details>
-        <details>
-          <summary>What kinds of QR codes can I create?</summary>
-          <p>16 types in total: link, text, phone, location, email, SMS, Wi-Fi and calendar QR codes, plus social QR codes for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more.</p>
-        </details>
-        <details>
-          <summary>Does it work offline?</summary>
-          <p>Yes. Scanning, creating, and history all work perfectly without a network connection.</p>
-        </details>
-        <details>
-          <summary>How can I contact you?</summary>
-          <p>Please email us at <a data-email="text" href="#">contact@h1soft.app</a>.</p>
-        </details>
+      <div class="faq__inner">
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section__title">Frequently asked questions</h2>
+        <div class="faq-list">
+          <details>
+            <summary><span>What kind of team is H1Soft?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>A mobile development team building cross-platform apps for iOS and Android with Kotlin Multiplatform and Compose Multiplatform — one codebase, native performance on both.</p>
+          </details>
+          <details>
+            <summary><span>Is QR Scanner free?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>Yes. QR Scanner is free, with every feature included.</p>
+          </details>
+          <details>
+            <summary><span>Is my scan history stored on a server?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>No. Everything is stored only on your device and is never sent to a server.</p>
+          </details>
+          <details>
+            <summary><span>What kinds of QR codes can I create?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>General codes — link, text, phone, location, email, SMS, Wi-Fi, calendar — plus social codes for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more.</p>
+          </details>
+          <details>
+            <summary><span>Does it work offline?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>Yes. Scanning, creating and history all work without a network connection.</p>
+          </details>
+          <details>
+            <summary><span>Where do I send questions?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>Email us at <a data-email="text" href="#">h1.soft.x001@gmail.com</a>.</p>
+          </details>
+        </div>
       </div>
     </section>
 
     <!-- ── 6. Contact ────────────────────────────────── -->
     <section id="contact" class="section">
-      <div class="container container--narrow contact">
-        <h2 class="section__title">Contact</h2>
-        <p>For partnership and general inquiries, drop us an email.</p>
-        <a class="btn btn--primary" data-email href="#">Send Email</a>
+      <div class="contact__inner">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section__title">Get in touch</h2>
+        <p>Product questions and partnership proposals are welcome.</p>
+        <a class="contact-email" data-email="text" href="#">h1.soft.x001@gmail.com</a>
       </div>
     </section>
   </main>
 
   <!-- ── Footer ──────────────────────────────────────── -->
   <footer class="site-footer">
-    <div class="container">
-      <p class="site-footer__slogan">Everyday tools, made simple — H1Soft</p>
-      <p><a data-email="text" href="#">contact@h1soft.app</a></p>
-      <p>
-        <a href="privacy/">Privacy Policy</a> · <a href="terms/">Terms of Service</a>
-      </p>
-      <p class="site-footer__copy">© 2026 H1Soft. All rights reserved.</p>
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
+        <span class="site-footer__slogan">The simplest take on everyday tools — H1Soft</span>
+        <span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
+      </div>
+      <div class="site-footer__links">
+        <a href="privacy/">Privacy Policy</a>
+        <a href="terms/">Terms of Service</a>
+        <a data-email="text" href="#">h1.soft.x001@gmail.com</a>
+      </div>
     </div>
   </footer>
 </body>
