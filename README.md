@@ -14,22 +14,23 @@ assets/             이미지 (아래 참고 — 직접 추가 필요)
 robots.txt, sitemap.xml
 ```
 
-## assets/ 에 넣어야 할 파일
+## assets/ 구성
 
-| 파일 | 용도 |
-| --- | --- |
-| `app_icon.png` | 제품 카드 아이콘 |
-| `favicon-32.png` | 파비콘 (app_icon 32×32 리사이즈) |
-| `apple-touch-icon.png` | iOS 아이콘 (180×180 리사이즈) |
-| `og-image.png` | OG 공유 이미지 (1200×630 권장) |
-| `01-hero-1080x1920.png` ~ `05-more-1080x1920.png` | 쇼케이스 스크린샷 5종 |
+| 파일 | 용도 | 원본 |
+| --- | --- | --- |
+| `app_icon.png` (512), `favicon-32.png`, `apple-touch-icon.png` (180) | 아이콘 | `QR_icon.png` sips 리사이즈 |
+| `og-image-ko.jpg` / `og-image-en.jpg` | OG 공유 이미지 | feature-graphic 1024×500 jpg 변환 |
+| `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
+| `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
 
-리사이즈(macOS 내장 sips):
+재생성:
 
 ```sh
-sips -z 32 32 app_icon.png --out assets/favicon-32.png
-sips -z 180 180 app_icon.png --out assets/apple-touch-icon.png
+sips --resampleWidth 640 원본.png --out /tmp/rs.png && cwebp -q 82 /tmp/rs.png -o assets/screenshots/ko/01-hero.webp
+sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out assets/og-image-ko.jpg
 ```
+
+영문 페이지: `/en/` (en 스크린샷·en OG 사용, hreflang 상호 연결).
 
 ## 출시 후 할 일
 
