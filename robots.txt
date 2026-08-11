@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://h1soft.page/sitemap.xml
+Sitemap: https://h1soft.github.io/sitemap.xml

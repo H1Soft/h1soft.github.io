@@ -35,17 +35,16 @@ sips -z 180 180 app_icon.png --out assets/apple-touch-icon.png
 
 1. `js/config.js` 에 App Store / Google Play URL 입력 → 버튼 자동 활성화.
 2. 문의 이메일 확정 시 `js/config.js` + `privacy/`·`terms/` 본문 + `index.html` JSON-LD 내 이메일 교체.
-3. 도메인 확정 시 `index.html`·`privacy/`·`terms/`·`robots.txt`·`sitemap.xml` 의 `https://h1soft.page/` 일괄 치환.
+3. 커스텀 도메인 전환 시 `index.html`·`privacy/`·`terms/`·`robots.txt`·`sitemap.xml` 의 `https://h1soft.github.io/` 일괄 치환.
 
-## 배포 (GitHub Pages)
+## 배포 (GitHub Pages — h1soft.github.io)
+
+전제: GitHub 계정(또는 organization) 이름이 `h1soft`, 저장소 이름이 `h1soft.github.io`.
 
 ```sh
 git init && git add -A && git commit -m "feat: H1Soft 팀 웹사이트 v1.0"
-gh repo create h1soft.page --public --source=. --push
+gh repo create h1soft/h1soft.github.io --public --source=. --push
 ```
 
-GitHub 저장소 → Settings → Pages → Source: `Deploy from a branch`, Branch: `main` / `(root)` 저장.
-1~2분 후 `https://<계정>.github.io/h1soft.page/` 에서 확인.
-
-커스텀 도메인: Settings → Pages → Custom domain 에 도메인 입력(CNAME 파일 자동 생성),
-DNS에 `CNAME <계정>.github.io` 레코드 추가, Enforce HTTPS 체크.
+user/org 이름과 같은 `<이름>.github.io` 저장소는 main 푸시만으로 자동 배포.
+1~2분 후 `https://h1soft.github.io/` 에서 확인. (Settings → Pages에서 상태 확인 가능)
