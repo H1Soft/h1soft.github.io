@@ -27,7 +27,11 @@ body {
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: var(--ink);
   background: #fff;
+  overflow-x: clip;
 }
+
+/* keep-all로 안 쪼개지는 긴 토큰(중점 연결어 등)이 화면을 넘칠 때만 강제 줄바꿈 */
+p, li, span, summary, h1, h2, h3 { overflow-wrap: anywhere; }
 
 img { max-width: 100%; display: block; }
 
@@ -35,6 +39,9 @@ a { color: var(--primary-strong); }
 
 .container { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 .container--narrow { max-width: 768px; }
+
+/* 섹션이 자체 좌우 패딩을 가지므로 내부 컨테이너는 중복 패딩 제거 */
+.section .container { padding-left: 0; padding-right: 0; }
 
 /* ── 코너 브래킷 배지 (QR 프레임 모티프) ─────────────── */
 .eyebrow {
@@ -393,7 +400,8 @@ a { color: var(--primary-strong); }
 
 .showcase__shot {
   flex: 1 1 380px;
-  max-width: 500px;
+  min-width: 0;
+  max-width: min(500px, 100%);
   border-radius: 24px;
   border: 1px solid var(--line-neutral);
   overflow: hidden;
@@ -410,7 +418,8 @@ a { color: var(--primary-strong); }
 
 .showcase__text {
   flex: 1 1 340px;
-  max-width: 440px;
+  min-width: 0;
+  max-width: min(440px, 100%);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -717,12 +726,17 @@ details p {
   .header-divider { display: none; }
   .lang-toggle { margin-left: auto; }
 
-  .hero { padding: 72px 24px 88px; }
-  .section { padding: 72px 24px; scroll-margin-top: 104px; }
+  .container { padding: 0 16px; }
+  .hero { padding: 72px 16px 88px; }
+  .section { padding: 72px 16px; scroll-margin-top: 104px; }
+  .site-footer { padding: 48px 16px 56px; }
+  .policy { padding: 56px 16px 96px; }
+  .policy-header__inner { padding: 0 16px; }
 
   .contact-email { font-size: 22px; }
 
-  .product-card { padding: 28px 24px; }
+  .product-card { padding: 28px 18px; }
+  .recommend { padding: 22px 20px; }
 
   .showcase { margin-top: 48px; gap: 64px; }
   .showcase__row, .showcase__row--reverse { gap: 32px; }
