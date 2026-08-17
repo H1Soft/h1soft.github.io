@@ -3,7 +3,10 @@
 // 앱 출시 후 여기에 실제 URL만 넣으면 자동 활성화됩니다.
 const CONFIG = {
   APP_STORE_URL: "", // 예: "https://apps.apple.com/app/id0000000000"
-  PLAY_STORE_URL: "", // 예: "https://play.google.com/store/apps/details?id=com.h1soft.qrscanner"
+  // 비공개 테스트 중 — 정식 출시(프로덕션 트랙 공개) 시 아래 URL을 PLAY_STORE_URL에 넣기.
+  // 테스트 중에 걸면 테스터 외 방문자는 스토어에서 "찾을 수 없음"이 뜸.
+  // https://play.google.com/store/apps/details?id=com.h1soft.codescanner
+  PLAY_STORE_URL: "",
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
 };
 
