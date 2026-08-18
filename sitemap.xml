@@ -13,6 +13,12 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://h1soft.github.io/lol.dating/</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://h1soft.github.io/privacy/</loc>
     <lastmod>2026-08-11</lastmod>
     <changefreq>yearly</changefreq>
