@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ─────────────────────────────────────────── -->
+  <title>QR Scanner — 1초면 끝나는 QR 스캔·생성 앱 | H1Soft</title>
+  <meta name="description" content="1초면 끝나는 QR 스캔·생성 앱 QR Scanner. 와이파이·링크·연락처 등 16종 QR 생성, 기록은 기기에만 저장되는 완전한 프라이버시, 오프라인 동작, 무료. Kotlin Multiplatform 팀 H1Soft가 만듭니다." />
+  <meta name="keywords" content="QR 스캐너, QR 코드 생성, QR 코드 만들기, 와이파이 QR, QR 스캔 앱, QR 코드 스캔, H1Soft" />
+  <meta name="author" content="H1Soft" />
+  <link rel="canonical" href="https://h1soft.github.io/qr-scanner/" />
+  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
+  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
+  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="H1Soft" />
+  <meta property="og:title" content="QR Scanner — 1초면 끝나는 QR 스캔·생성 | H1Soft" />
+  <meta property="og:description" content="1초면 끝나는 QR 스캔·생성. 16종 QR 생성, 완전한 프라이버시, 오프라인 동작, 무료." />
+  <meta property="og:image" content="https://h1soft.github.io/assets/og-image-ko.jpg" />
+  <meta property="og:url" content="https://h1soft.github.io/qr-scanner/" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="QR Scanner — 1초면 끝나는 QR 스캔·생성 | H1Soft" />
+  <meta name="twitter:description" content="1초면 끝나는 QR 스캔·생성. 16종 QR 생성, 완전한 프라이버시, 오프라인 동작, 무료." />
+  <meta name="twitter:image" content="https://h1soft.github.io/assets/og-image-ko.jpg" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/config.js" defer></script>
+  <script src="../js/site.js" defer></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "QR Scanner",
+    "operatingSystem": "iOS, Android",
+    "applicationCategory": "UtilitiesApplication",
+    "description": "1초면 끝나는 QR 스캔·생성 앱. 16종 QR 생성, 기록은 기기에만 저장, 오프라인 동작, 18개 언어 지원, 무료.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+    "author": { "@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "H1Soft", "item": "https://h1soft.github.io/" },
+      { "@type": "ListItem", "position": 2, "name": "QR Scanner", "item": "https://h1soft.github.io/qr-scanner/" }
+    ]
+  }
+  </script>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../#top" class="logo" aria-label="H1Soft 홈">H1Soft<span class="logo-dot">.</span></a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <button type="button" class="nav-products" id="nav-products" aria-expanded="false" aria-controls="nav-dropdown">Products<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <a href="../#about">About</a>
+        <a href="../#faq">FAQ</a>
+        <a href="../#contact">Contact</a>
+      </nav>
+      <div class="nav-dropdown" id="nav-dropdown" hidden>
+        <div class="nav-col">
+          <span class="nav-col__label">유틸리티</span>
+          <a class="nav-item" href="./"><img src="../assets/app_icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR 스캔·생성</span></span></a>
+          <a class="nav-item" href="../#tools"><img src="../assets/seukscan-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">슥캔</span><span class="nav-item__type">문서 스캐너·OCR</span></span></a>
+          <a class="nav-item" href="../#tools"><img src="../assets/ongle-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">온글</span><span class="nav-item__type">HWP·HWPX 뷰어</span></span></a>
+        </div>
+        <div class="nav-col">
+          <span class="nav-col__label">라이프스타일</span>
+          <a class="nav-item" href="/skinping/"><span class="app-mark app-mark--skinping" aria-hidden="true"><span class="drop"></span></span><span><span class="nav-item__name">피부핑</span><span class="nav-item__type">AI 피부 루틴</span></span></a>
+          <a class="nav-item" href="/lol.dating/"><span class="app-mark app-mark--lol" aria-hidden="true">롤</span><span><span class="nav-item__name">롤개팅</span><span class="nav-item__type">게이머 소개팅</span></span></a>
+        </div>
+      </div>
+      <span class="header-divider" aria-hidden="true"></span>
+      <div class="lang-toggle">
+        <span class="is-active">KO</span>
+        <a href="../en/qr-scanner/" lang="en" hreflang="en">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── 1. Page lead ──────────────────────────────── -->
+    <section class="hero hero--page">
+      <div class="hero__inner">
+        <span class="eyebrow">EVERYDAY TOOLS</span>
+        <h1>QR Scanner</h1>
+        <p class="hero__sub">1초면 끝나는 QR 스캔·생성. 기록은 기기에만 남고, 오프라인에서도 동작하며, 완전 무료입니다.</p>
+        <div class="hero__cta"><a href="../#tools" class="btn btn--ghost">← 전체 제품 보기</a></div>
+      </div>
+    </section>
+
+<!-- ── 2. Products ───────────────────────────────── -->
+    <section id="products" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Products</span>
+          <h2 class="section__title">H1Soft의 첫 번째 제품</h2>
+        </div>
+
+        <article class="product-card">
+          <div class="product-card__head">
+            <img src="../assets/app_icon.png" alt="QR Scanner 앱 아이콘" class="product-card__icon" width="88" height="88" />
+            <div class="product-card__title">
+              <div class="product-card__name-row">
+                <span class="product-card__name">QR Scanner</span>
+                <span class="badge--new">NEW</span>
+              </div>
+              <span class="product-card__tagline">1초면 끝나는 QR 스캔·생성</span>
+            </div>
+          </div>
+
+          <div class="product-card__grid">
+            <div class="feature-col">
+              <span class="col-label">핵심 기능</span>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>실시간 초고속 QR 스캔 — 플래시·갤러리 이미지 스캔 지원</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>링크·텍스트·전화번호·위치·이메일·SMS·와이파이·달력 QR 생성</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Facebook, X, YouTube, Instagram, KakaoTalk, Line 등 소셜 QR 생성</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>고화질 PNG 저장 및 시스템 공유</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>히스토리 로컬 저장 — 서버 전송 없는 완전한 프라이버시</span></div>
+              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(51,102,255)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(51,102,255)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>18개 언어 지원 · 오프라인 동작 · 무료</span></div>
+            </div>
+
+            <div class="recommend">
+              <span class="col-label">이런 분들에게 추천해요</span>
+              <div class="recommend-item"><span>카메라 앱의 느린 QR 인식이 답답했던 분</span></div>
+              <div class="recommend-item"><span>와이파이·연락처·링크를 QR로 만들어 공유하고 싶은 분</span></div>
+              <div class="recommend-item"><span>스캔 기록이 서버에 남는 것이 꺼려지는 분</span></div>
+            </div>
+          </div>
+
+          <div class="store-block">
+            <div class="store-buttons">
+              <a class="store-btn is-disabled" data-store="appstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
+                <span class="store-btn__sub">Coming soon</span>
+                <span class="store-btn__label">App Store</span>
+              </a>
+              <a class="store-btn is-disabled" data-store="playstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
+                <span class="store-btn__sub">Coming soon</span>
+                <span class="store-btn__label">Google Play</span>
+              </a>
+            </div>
+            <span class="store-note" data-store-note>출시 후 다운로드 링크가 활성화됩니다.</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+<!-- ── 3. Showcase ───────────────────────────────── -->
+    <section class="section section--alt" aria-label="QR Scanner 기능 소개">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Showcase</span>
+          <h2 class="section__title">화면으로 미리 만나보세요</h2>
+        </div>
+
+        <div class="showcase">
+
+          <div class="showcase__row">
+            <div class="showcase__shot"><img src="../assets/screenshots/ko/01-hero.webp" alt="QR Scanner 스캔 화면 — 실시간 초고속 스캔" width="1000" height="1777" /></div>
+            <div class="showcase__text">
+              <span class="showcase__num" aria-hidden="true">01</span>
+              <h3>1초면 끝날 일을 왜 5초씩?</h3>
+              <p>앱을 열면 바로 스캔. 인식 즉시 상세 페이지로 자동 이동. 플래시·갤러리 스캔 지원.</p>
+            </div>
+          </div>
+
+          <div class="showcase__row showcase__row--reverse">
+            <div class="showcase__shot"><img src="../assets/screenshots/ko/02-create.webp" alt="QR 생성 화면 — 일반·소셜 QR 유형 선택" width="1000" height="1777" loading="lazy" /></div>
+            <div class="showcase__text">
+              <span class="showcase__num" aria-hidden="true">02</span>
+              <h3>뭐든 QR로 만들기</h3>
+              <p>링크·와이파이·연락처까지 한 번에. 일반 7종 + 소셜 9종 생성 지원.</p>
+            </div>
+          </div>
+
+          <div class="showcase__row">
+            <div class="showcase__shot"><img src="../assets/screenshots/ko/03-share.webp" alt="생성된 QR 상세 화면 — 고화질 PNG 저장과 공유" width="1000" height="1777" loading="lazy" /></div>
+            <div class="showcase__text">
+              <span class="showcase__num" aria-hidden="true">03</span>
+              <h3>만들면 바로 저장하고 공유</h3>
+              <p>1024×1024 고화질 PNG 저장, 시스템 공유 시트로 즉시 전달.</p>
+            </div>
+          </div>
+
+          <div class="showcase__row showcase__row--reverse">
+            <div class="showcase__shot"><img src="../assets/screenshots/ko/04-history.webp" alt="히스토리 화면 — 기기에만 저장되는 기록" width="1000" height="1777" loading="lazy" /></div>
+            <div class="showcase__text">
+              <span class="showcase__num" aria-hidden="true">04</span>
+              <h3>기록은 오직 내 기기에만</h3>
+              <p>서버 전송 없음. 스캔·생성 기록 전부 로컬 저장. 완전한 프라이버시.</p>
+            </div>
+          </div>
+
+          <div class="showcase__row">
+            <div class="showcase__shot"><img src="../assets/screenshots/ko/05-more.webp" alt="설정 화면 — 언어, 약관, 앱 버전" width="1000" height="1777" loading="lazy" /></div>
+            <div class="showcase__text">
+              <span class="showcase__num" aria-hidden="true">05</span>
+              <h3>18개 언어 · 오프라인 · 무료</h3>
+              <p>네트워크 없이도 스캔·생성·히스토리가 완벽 동작.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
+        <span class="site-footer__slogan">매일 쓰는 도구부터 오래 만드는 브랜드까지 — 하나의 코드로.</span>
+        <a class="site-footer__mail" data-email="text" href="#">h1.soft.x001@gmail.com</a>
+        <span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
+      </div>
+      <div class="site-footer__cols">
+        <div class="site-footer__col">
+          <span class="site-footer__label">유틸리티</span>
+          <a href="./">QR Scanner</a>
+          <a href="../#tools">슥캔</a>
+          <a href="../#tools">온글</a>
+        </div>
+        <div class="site-footer__col">
+          <span class="site-footer__label">라이프스타일</span>
+          <a href="/skinping/">피부핑</a>
+          <a href="/lol.dating/">롤개팅</a>
+        </div>
+        <div class="site-footer__col">
+          <span class="site-footer__label">LEGAL</span>
+          <a href="../privacy/">개인정보처리방침</a>
+          <a href="../terms/">이용약관</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
