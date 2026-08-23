@@ -675,6 +675,24 @@ details p {
   text-wrap: pretty;
 }
 
+.policy-list {
+  margin: 2px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.policy-list li {
+  font-size: 15px;
+  line-height: 1.7;
+  font-weight: 500;
+  color: var(--ink-neutral);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+.policy-list li::marker { color: var(--ink-assistive); }
+
 .policy__copy { font-size: 13px; font-weight: 500; color: var(--ink-assistive); }
 
 /* ── Mobile ─────────────────────────────────────────── */
