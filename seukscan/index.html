@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ── SEO ─────────────────────────────────────────── -->
+  <title>슥캔 — 문서를 찍으면, 바로 텍스트로 | H1Soft</title>
+  <meta name="description" content="슥캔은 모서리 자동 인식 스캔과 OCR 텍스트 인식, PDF·이미지·텍스트 내보내기를 제공하는 문서 스캐너입니다. 스캔부터 내보내기까지 100% 온디바이스 처리." />
+  <meta name="keywords" content="문서 스캐너, 슥캔, OCR 앱, 문서 스캔 앱, PDF 변환, 신분증 스캔, 온디바이스 OCR, H1Soft" />
+  <meta name="author" content="H1Soft" />
+  <link rel="canonical" href="https://h1soft.github.io/seukscan/" />
+  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/" />
+  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/" />
+  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="H1Soft" />
+  <meta property="og:title" content="슥캔 — 문서를 찍으면, 바로 텍스트로" />
+  <meta property="og:description" content="모서리 자동 인식 스캔, OCR 텍스트 인식, PDF 내보내기. 모든 처리는 기기 안에서." />
+  <meta property="og:image" content="https://h1soft.github.io/assets/seukscan-icon.png" />
+  <meta property="og:url" content="https://h1soft.github.io/seukscan/" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="슥캔 — 문서를 찍으면, 바로 텍스트로" />
+  <meta name="twitter:description" content="모서리 자동 인식 스캔, OCR 텍스트 인식, PDF 내보내기. 모든 처리는 기기 안에서." />
+  <meta name="twitter:image" content="https://h1soft.github.io/assets/seukscan-icon.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/config.js" defer></script>
+  <script src="../js/site.js" defer></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "슥캔",
+  "operatingSystem": "Android, iOS",
+  "applicationCategory": "UtilitiesApplication",
+  "description": "모서리 자동 인식으로 슥— 찍고, OCR로 텍스트를 뽑고, PDF로 내보내기까지. 모든 처리는 이 기기 안에서 끝나요.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "KRW"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "H1Soft",
+    "url": "https://h1soft.github.io/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "H1Soft",
+      "item": "https://h1soft.github.io/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "슥캔",
+      "item": "https://h1soft.github.io/seukscan/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "스캔한 문서가 서버로 전송되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "아니요. 스캔·OCR·저장 모두 기기 안에서 처리되며, 문서가 외부로 전송되지 않습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "어떤 형식으로 내보낼 수 있나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PDF·이미지·텍스트를 지원합니다. PDF는 용지 크기·품질 설정과 함께 열람 비밀번호, 워터마크를 추가할 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "신분증 스캔 정보는 안전한가요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "신분증·여권 스캔도 일반 문서와 동일하게 기기 내에서만 처리됩니다. 빛 반사가 없는 곳에서 촬영하면 더 잘 인식됩니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "여러 페이지 문서도 스캔되나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "네. 페이지를 계속 추가해 하나의 문서로 만들고, 페이지별로 크롭·필터·회전을 다듬을 수 있습니다."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "문의는 어디로 하나요?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "공식 이메일 h1.soft.x001@gmail.com 로 보내주시면 됩니다."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body id="top">
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a href="../" class="logo">H1Soft<span class="logo-dot">.</span></a>
+      <span class="header-divider" aria-hidden="true"></span>
+      <span class="app-id">
+        <img src="../assets/seukscan-icon.png" alt="" width="24" height="24" />
+        <span class="app-id__name">슥캔</span>
+      </span>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#faq">FAQ</a>
+        <a href="#more">다른 앱</a>
+      </nav>
+      <div class="lang-toggle">
+        <span class="is-active">KO</span>
+        <a href="../en/seukscan/" lang="en" hreflang="en">EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── 1. Hero ───────────────────────────────────── -->
+    <section class="app-hero">
+      <div class="app-hero__inner">
+        <div class="app-hero__col">
+          <div class="app-hero__id">
+            <img src="../assets/seukscan-icon.png" alt="슥캔" width="52" height="52" />
+            <span class="app-hero__meta">
+              <span class="app-hero__name">슥캔</span>
+              <span class="app-hero__type">by H1Soft · 문서 스캐너 · OCR</span>
+            </span>
+            <span class="app-hero__badge">출시 대기</span>
+          </div>
+          <h1>문서를 찍으면,<br /><span class="grad">바로 텍스트로.</span></h1>
+          <p class="app-hero__sub">모서리 자동 인식으로 슥— 찍고, OCR로 텍스트를 뽑고, PDF로 내보내기까지. 모든 처리는 이 기기 안에서 끝나요.</p>
+          <div class="store-buttons">
+            <a class="store-btn is-disabled" data-store="appstore" data-store-app="seukscan" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <span class="store-btn__sub">Coming soon</span>
+              <span class="store-btn__label">App Store</span>
+            </a>
+            <a class="store-btn is-disabled" data-store="playstore" data-store-app="seukscan" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <span class="store-btn__sub">Coming soon</span>
+              <span class="store-btn__label">Google Play</span>
+            </a>
+          </div>
+          <div class="trust-chips">
+          <span class="trust-chip">온디바이스 처리</span>
+          <span class="trust-chip">신분증·여권·책 모드</span>
+          <span class="trust-chip">PDF·이미지·텍스트 내보내기</span>
+          </div>
+        </div>
+        <div class="app-hero__shot">
+          <div class="phone">
+            <div class="phone__screen"><img src="../assets/seukscan/ko/01.webp" alt="슥캔 문서 스캔 화면" width="640" height="1387" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. Features ───────────────────────────────── -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">FEATURES</span>
+          <h2 class="section__title">스캔부터 내보내기까지, 한 흐름으로</h2>
+        </div>
+        <div class="feature-grid">
+        <div class="feature-card" data-reveal data-reveal-delay="0">
+          <span class="feature-card__glyph" aria-hidden="true">⌜⌟</span>
+          <h3 class="feature-card__title">모서리 자동 인식 스캔</h3>
+          <p class="feature-card__desc">문서 모서리를 실시간으로 잡아 반듯하게 보정합니다. 플래시·격자·갤러리 불러오기 지원.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="60">
+          <span class="feature-card__glyph" aria-hidden="true">T</span>
+          <h3 class="feature-card__title">OCR 텍스트 인식</h3>
+          <p class="feature-card__desc">페이지별 인식 결과와 평균 신뢰도를 보여주고, 복사·공유·번역까지 바로 이어집니다.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="120">
+          <span class="feature-card__glyph" aria-hidden="true">ID</span>
+          <h3 class="feature-card__title">신분증·여권·책 모드</h3>
+          <p class="feature-card__desc">ID-1 규격 가이드에 맞춰 카드류를 정확히 스캔하고, 여권·책 모드도 준비되어 있습니다.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="180">
+          <span class="feature-card__glyph" aria-hidden="true">PDF</span>
+          <h3 class="feature-card__title">똑똑한 내보내기</h3>
+          <p class="feature-card__desc">PDF·이미지·텍스트로 내보내고 용지 크기·품질을 설정합니다. 열람 비밀번호와 워터마크도 걸 수 있어요.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="240">
+          <span class="feature-card__glyph" aria-hidden="true">+</span>
+          <h3 class="feature-card__title">여러 페이지 문서</h3>
+          <p class="feature-card__desc">페이지를 이어서 추가하고 크롭·필터·회전·지우개로 페이지별로 다듬을 수 있습니다.</p>
+        </div>
+        <div class="feature-card" data-reveal data-reveal-delay="300">
+          <span class="feature-card__glyph" aria-hidden="true">🔒</span>
+          <h3 class="feature-card__title">온디바이스 처리</h3>
+          <p class="feature-card__desc">스캔·인식·저장 모두 기기 안에서 처리됩니다. 문서가 서버로 전송되지 않아요.</p>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3. Screens ────────────────────────────────── -->
+    <section id="screens" class="section section--alt section--bleed">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">SCREENS</span>
+          <h2 class="section__title">화면으로 미리 만나보세요</h2>
+          <p class="section__sub">옆으로 넘겨보세요 →</p>
+        </div>
+      </div>
+      <div class="screens">
+        <div class="screen">
+          <div class="screen__frame"><img src="../assets/seukscan/ko/01.webp" alt="스캔" width="640" height="1428" loading="lazy" /></div>
+          <div class="screen__text">
+            <span class="screen__num">01</span>
+            <span class="screen__title">스캔</span>
+            <span class="screen__desc">모서리에 맞추면 자동 인식 — 신분증·여권·책 모드 전환.</span>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="screen__frame"><img src="../assets/seukscan/ko/02.webp" alt="편집" width="640" height="1428" loading="lazy" /></div>
+          <div class="screen__text">
+            <span class="screen__num">02</span>
+            <span class="screen__title">편집</span>
+            <span class="screen__desc">크롭·필터·조정·회전·지우개, 페이지 추가까지.</span>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="screen__frame"><img src="../assets/seukscan/ko/03.webp" alt="텍스트" width="640" height="1428" loading="lazy" /></div>
+          <div class="screen__text">
+            <span class="screen__num">03</span>
+            <span class="screen__title">텍스트</span>
+            <span class="screen__desc">인식 결과와 신뢰도 확인, 복사·공유·번역.</span>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="screen__frame"><img src="../assets/seukscan/ko/04.webp" alt="내보내기" width="640" height="1428" loading="lazy" /></div>
+          <div class="screen__text">
+            <span class="screen__num">04</span>
+            <span class="screen__title">내보내기</span>
+            <span class="screen__desc">PDF·이미지·텍스트, 비밀번호·워터마크 설정.</span>
+          </div>
+        </div>
+        <div class="screen">
+          <div class="screen__frame"><img src="../assets/seukscan/ko/05.webp" alt="신분증 스캔" width="640" height="1428" loading="lazy" /></div>
+          <div class="screen__text">
+            <span class="screen__num">05</span>
+            <span class="screen__title">신분증 스캔</span>
+            <span class="screen__desc">ID-1 규격 가이드 — 처리는 전부 기기 안에서.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. FAQ ────────────────────────────────────── -->
+    <section id="faq" class="section">
+      <div class="faq__inner" data-reveal>
+        <span class="eyebrow">FAQ</span>
+        <h2 class="section__title">자주 묻는 질문</h2>
+        <div class="faq-list">
+          <details>
+            <summary><span>스캔한 문서가 서버로 전송되나요?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>아니요. 스캔·OCR·저장 모두 기기 안에서 처리되며, 문서가 외부로 전송되지 않습니다.</p>
+          </details>
+          <details>
+            <summary><span>어떤 형식으로 내보낼 수 있나요?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>PDF·이미지·텍스트를 지원합니다. PDF는 용지 크기·품질 설정과 함께 열람 비밀번호, 워터마크를 추가할 수 있습니다.</p>
+          </details>
+          <details>
+            <summary><span>신분증 스캔 정보는 안전한가요?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>신분증·여권 스캔도 일반 문서와 동일하게 기기 내에서만 처리됩니다. 빛 반사가 없는 곳에서 촬영하면 더 잘 인식됩니다.</p>
+          </details>
+          <details>
+            <summary><span>여러 페이지 문서도 스캔되나요?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>네. 페이지를 계속 추가해 하나의 문서로 만들고, 페이지별로 크롭·필터·회전을 다듬을 수 있습니다.</p>
+          </details>
+          <details>
+            <summary><span>문의는 어디로 하나요?</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 7.5l5 5 5-5" stroke="rgba(55,56,60,0.61)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+            <p>공식 이메일 h1.soft.x001@gmail.com 로 보내주시면 됩니다.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. More from H1Soft ───────────────────────── -->
+    <section id="more" class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <span class="eyebrow">MORE FROM H1SOFT</span>
+          <h2 class="section__title">H1Soft의 다른 앱</h2>
+        </div>
+        <div class="more-grid">
+        <a class="more-card" href="../qr-scanner/" data-reveal data-reveal-delay="0">
+          <img src="../assets/app_icon.png" alt="" width="38" height="38" />
+          <span class="more-card__text"><span class="more-card__name">QR Scanner</span><span class="more-card__desc">1초면 끝나는 QR 스캔·생성</span></span>
+        </a>
+        <a class="more-card" href="../#tools" data-reveal data-reveal-delay="80">
+          <img src="../assets/ongle-icon.png" alt="" width="38" height="38" />
+          <span class="more-card__text"><span class="more-card__name">온글</span><span class="more-card__desc">HWP·HWPX 뷰어 (개발 중)</span></span>
+        </a>
+        <a class="more-card more-card--skinping" href="/skinping/" data-reveal data-reveal-delay="160">
+          <span class="app-mark app-mark--md app-mark--skinping" aria-hidden="true"><span class="drop"></span></span>
+          <span class="more-card__text"><span class="more-card__name">피부핑</span><span class="more-card__desc">AI 피부 루틴</span></span>
+        </a>
+        <a class="more-card more-card--lol" href="/lol.dating/" data-reveal data-reveal-delay="240">
+          <span class="app-mark app-mark--md app-mark--lol" aria-hidden="true">롤</span>
+          <span class="more-card__text"><span class="more-card__name">롤개팅</span><span class="more-card__desc">게이머를 위한 소개팅</span></span>
+        </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <span class="site-footer__logo">
+          <img src="../assets/seukscan-icon.png" alt="" width="22" height="22" />
+          슥캔 <span class="site-footer__by">by H1Soft</span>
+        </span>
+        <a class="site-footer__mail" data-email="text" href="#">h1.soft.x001@gmail.com</a>
+        <span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
+      </div>
+      <div class="site-footer__inline">
+        <a href="../">H1Soft 홈</a>
+        <a href="./privacy/">개인정보처리방침</a>
+        <a href="./terms/">이용약관</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

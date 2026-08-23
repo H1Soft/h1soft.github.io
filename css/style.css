@@ -1178,3 +1178,247 @@ details p {
   .hl::after, .app-chip, .life-card__orb, .life-card__shimmer { animation: none; }
   .hl::after { transform: scaleX(1); }
 }
+
+/* ─────────────────────────────────────────────────────
+   앱 랜딩 (슥캔 등 제품 단독 페이지)
+   ───────────────────────────────────────────────────── */
+.app-id { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.app-id img { width: 24px; height: 24px; border-radius: 6px; border: 1px solid var(--line-alt); }
+.app-id__name { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; white-space: nowrap; }
+
+.app-hero {
+  background: linear-gradient(180deg, rgb(239, 246, 255) 0%, #fff 88%);
+  padding: clamp(56px, 9vw, 96px) clamp(16px, 5vw, 24px) clamp(56px, 8vw, 88px);
+}
+
+.app-hero__inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(40px, 6vw, 80px);
+  flex-wrap: wrap;
+}
+
+.app-hero__col {
+  flex: 1 1 340px;
+  max-width: 560px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.app-hero__id { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.app-hero__id > img { width: 52px; height: 52px; border-radius: 13px; border: 1px solid var(--line-neutral); background: #fff; }
+.app-hero__meta { display: flex; flex-direction: column; gap: 2px; }
+.app-hero__name { font-size: 16px; font-weight: 700; letter-spacing: -0.01em; }
+.app-hero__type { font-size: 12px; font-weight: 600; letter-spacing: 0.03em; color: var(--ink-alt); }
+.app-hero__badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--blue-95);
+  color: var(--primary-strong);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.app-hero h1 {
+  font-size: clamp(34px, 6.4vw, 58px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+  word-break: keep-all;
+  text-wrap: balance;
+}
+.app-hero h1 .grad {
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.app-hero__sub {
+  font-size: clamp(15px, 2.2vw, 18px);
+  line-height: 1.65;
+  font-weight: 500;
+  color: var(--ink-neutral);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+.trust-chips { display: flex; gap: 8px; flex-wrap: wrap; }
+.trust-chip {
+  padding: 6px 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 0 0 1px var(--line-alt);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-neutral);
+  white-space: nowrap;
+}
+
+/* 폰 목업 */
+.phone {
+  width: min(280px, 74vw);
+  padding: 10px;
+  border-radius: 40px;
+  background: var(--dark-btn);
+  box-shadow: 0 24px 48px -20px rgba(29, 78, 216, 0.38);
+  animation: app-float 6s ease-in-out infinite;
+}
+.phone__screen { border-radius: 31px; overflow: hidden; aspect-ratio: 9 / 19; background: #0b0d12; }
+.phone__screen img { width: 100%; height: 100%; object-fit: cover; }
+
+/* 기능 카드 */
+.feature-grid {
+  margin-top: clamp(28px, 4.5vw, 44px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: clamp(12px, 2vw, 20px);
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: clamp(22px, 3vw, 28px);
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--line);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: inset 0 0 0 1.5px rgb(59, 130, 246), 0 16px 36px -20px rgba(29, 78, 216, 0.3);
+}
+.feature-card__glyph {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: var(--blue-95);
+  color: var(--primary-strong);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 800;
+}
+.feature-card__title { font-size: 17px; line-height: 1.4; font-weight: 700; letter-spacing: -0.01em; word-break: keep-all; }
+.feature-card__desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  font-weight: 500;
+  color: var(--ink-neutral);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+/* 스크린샷 가로 스크롤 */
+.section--bleed { padding-left: 0; padding-right: 0; }
+.section--bleed > .container { padding: 0 clamp(16px, 5vw, 24px); }
+
+.screens {
+  margin-top: clamp(28px, 4.5vw, 44px);
+  display: flex;
+  gap: clamp(14px, 2vw, 24px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 4px clamp(16px, 5vw, 24px) 12px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.screens::-webkit-scrollbar { display: none; }
+.screens::after { content: ""; flex: 0 0 clamp(4px, 3vw, 12px); }
+
+.screen {
+  flex: 0 0 min(240px, 68vw);
+  min-width: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.screen__frame { padding: 8px; border-radius: 28px; background: var(--dark-btn); }
+.screen__frame > div, .screen__frame img { border-radius: 21px; }
+.screen__frame img { width: 100%; height: auto; aspect-ratio: 9 / 19; object-fit: cover; background: #0b0d12; }
+.screen__text { display: flex; flex-direction: column; gap: 4px; padding: 0 4px; }
+.screen__num { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: var(--primary-strong); }
+.screen__title { font-size: 16px; line-height: 1.4; font-weight: 700; letter-spacing: -0.01em; word-break: keep-all; }
+.screen__desc {
+  font-size: 13.5px;
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--ink-neutral);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+
+/* 다른 앱 카드 */
+.more-grid {
+  margin-top: clamp(24px, 4vw, 36px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+  gap: clamp(12px, 2vw, 16px);
+}
+
+.more-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--line);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.more-card:hover { transform: translateY(-3px); box-shadow: inset 0 0 0 1.5px var(--primary); }
+.more-card img { width: 38px; height: 38px; border-radius: 10px; border: 1px solid var(--line-alt); flex-shrink: 0; }
+.more-card__text { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.more-card__name { font-size: 14.5px; font-weight: 700; color: var(--ink); }
+.more-card__desc { font-size: 12.5px; font-weight: 500; color: var(--ink-alt); word-break: keep-all; }
+
+.app-mark--md { width: 38px; height: 38px; border-radius: 10px; font-size: 14px; }
+.app-mark--md.app-mark--skinping .drop { width: 13px; height: 17px; }
+
+.more-card--skinping {
+  background: #faf6f0;
+  box-shadow: inset 0 0 0 1px rgba(33, 25, 19, 0.1);
+}
+.more-card--skinping:hover { box-shadow: inset 0 0 0 1.5px #b5654c; }
+.more-card--skinping .app-mark--skinping { background: #fff; }
+.more-card--skinping .more-card__name { color: #211913; }
+.more-card--skinping .more-card__desc { color: rgba(33, 25, 19, 0.62); }
+
+.more-card--lol {
+  background: #0d1020;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.more-card--lol:hover { box-shadow: inset 0 0 0 1.5px #ff4d8d; }
+.more-card--lol .more-card__name { color: #fff; }
+.more-card--lol .more-card__desc { color: rgba(255, 255, 255, 0.6); }
+
+/* 앱 랜딩 푸터 */
+.site-footer__logo { display: flex; align-items: center; gap: 8px; }
+.site-footer__logo img { width: 22px; height: 22px; border-radius: 6px; border: 1px solid var(--line-alt); }
+.site-footer__by { font-size: 13px; font-weight: 600; color: var(--ink-alt); }
+
+.site-footer__inline { display: flex; align-items: center; gap: 10px 20px; flex-wrap: wrap; }
+.site-footer__inline a {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink-neutral);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.site-footer__inline a:hover { color: var(--primary); }
+
+@media (max-width: 767px) {
+  .app-hero__inner { gap: 32px; }
+  .app-id { display: none; }
+}
