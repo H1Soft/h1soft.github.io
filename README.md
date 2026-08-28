@@ -25,7 +25,7 @@ robots.txt, sitemap.xml
 | `seukscan-icon.png` (512) | 슥캔 아이콘 | Claude Design 프로젝트 `uploads/app-icon.png` |
 | `ongle-icon.png` (512) | 온글 아이콘 | 원본 1254px 리사이즈 |
 | `seukscan/{ko,en}/0X.webp` (640w) | 슥캔 스크린샷 | 원본 PNG 리사이즈+webp |
-| `ongle/0X.webp` (640w) | 온글 스크린샷 | hwp 저장소 `store-screenshots/public/screenshots` 리사이즈+webp |
+| `ongle/{ko,en}/0X.webp` (640w) | 온글 스크린샷 | hwp 저장소 `store-screenshots/public/screenshots` 리사이즈+webp |
 | `og-image-ko.jpg` / `og-image-en.jpg` | OG 공유 이미지 | feature-graphic 1024×500 jpg 변환 |
 | `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
 | `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
@@ -38,7 +38,6 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 ```
 
 영문 페이지: `/en/`, `/en/qr-scanner/`, `/en/seukscan/`, `/en/ongle/` (hreflang 상호 연결).
-온글 랜딩은 한국어 앱 화면을 영문 페이지에서도 공유합니다.
 
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 
