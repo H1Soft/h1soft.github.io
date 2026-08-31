@@ -25,8 +25,8 @@ robots.txt, sitemap.xml
 
 | 파일 | 용도 | 원본 |
 | --- | --- | --- |
-| `h1soft-logo.png` (512, 투명), `h1soft-mark.png` (128, 투명) | H1Soft 로고 — JSON-LD `logo`, 헤더·푸터 워드마크 | 원본 `h1.png` 트리밍 |
-| `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180), `h1soft-appicon.png` (512), 루트 `favicon.ico` | H1Soft 파비콘·앱 아이콘 | 짙은 남색 라운드 칩 + 로고 (`scratchpad/build_brand.py`) |
+| `h1soft-logo.png` (512, 투명) | H1Soft 로고 — JSON-LD `logo` | 원본 `h1.png` 트리밍 |
+| `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180), `h1soft-appicon.png` (512), 루트 `favicon.ico` | H1Soft 파비콘·앱 아이콘 | 흰색 계열 라운드 칩 + 헤어라인 + 로고 (`scratchpad/build_brand.py`) |
 | `app_icon.png` (512) | QR Scanner 앱 아이콘 | `QR_icon.png` sips 리사이즈 |
 | `seukscan-icon.png` (512) | 슥캔 아이콘 | Claude Design 프로젝트 `uploads/app-icon.png` |
 | `ongle-icon.png` (512) | 온글 아이콘 | 원본 1254px 리사이즈 |
@@ -57,6 +57,8 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 
 브랜딩: 루트 페이지는 특정 제품이 아니라 **IT 기술 스타트업**으로 포지셔닝합니다. 파비콘·앱 아이콘·루트 OG·JSON-LD `logo` 는 전부 H1Soft 로고를 쓰고, QR Scanner 에셋은 `/qr-scanner/` 안에서만 씁니다 (예전에는 사이트 전역이 QR 아이콘이라 구글이 H1Soft = QR 앱으로 인식했습니다).
+
+H 마크는 썸네일(파비콘·앱 아이콘)에만 씁니다. 헤더·푸터 워드마크는 `H1Soft.` 텍스트 그대로입니다.
 
 ## 출시 후 할 일
 

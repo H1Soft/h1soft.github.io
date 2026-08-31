@@ -77,21 +77,7 @@ a { color: var(--primary-strong); }
   font-size: 20px;
   font-weight: 700;
   letter-spacing: -0.02em;
-  display: inline-flex;
-  align-items: center;
 }
-
-/* 워드마크 앞의 H 마크 — 투명 PNG 라 앱 아이콘용 테두리·라운드를 쓰면 안 된다 */
-.logo__mark {
-  width: 26px;
-  height: 26px;
-  margin-right: 8px;
-  flex-shrink: 0;
-  border: none;
-  border-radius: 0;
-  object-fit: contain;
-}
-.site-footer__logo .logo__mark { width: 24px; height: 24px; }
 
 .site-nav {
   margin-left: auto;
@@ -614,8 +600,6 @@ details p {
 .site-footer__brand { display: flex; flex-direction: column; gap: 10px; min-width: 0; max-width: 320px; }
 
 .site-footer__logo {
-  display: inline-flex;
-  align-items: center;
   font-size: 18px;
   font-weight: 700;
   letter-spacing: -0.02em;
