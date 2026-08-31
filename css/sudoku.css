@@ -15,6 +15,8 @@
   --sv-max: 1080px;
   --sv-read: 660px;
   --sv-serif: Lora, "Noto Serif KR", Georgia, serif;
+  /* 한국어 표제 — 인앱 화면의 Lora 와 같은 '여행 저널' 결을 맞춘다 */
+  --sv-serif-ko: "Noto Serif KR", Lora, Georgia, serif;
   --sv-sans: Manrope, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -150,7 +152,7 @@ img, svg { display: block; }
   line-height: 1.12;
   letter-spacing: -0.01em;
 }
-.sv-ko .sv-hero h1 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.3; font-size: clamp(30px, 4.4vw, 44px); }
+.sv-ko .sv-hero h1 { font-family: var(--sv-serif-ko); font-weight: 600; line-height: 1.4; letter-spacing: -0.015em; font-size: clamp(29px, 4.2vw, 43px); }
 
 .sv-hero__sub { font-size: clamp(15px, 2vw, 18px); line-height: 1.65; color: var(--sv-ink70); max-width: 520px; }
 
@@ -279,7 +281,7 @@ img, svg { display: block; }
   font-weight: 500;
   line-height: 1.2;
 }
-.sv-ko .sv-section h2 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.35; font-size: clamp(24px, 3vw, 33px); }
+.sv-ko .sv-section h2 { font-family: var(--sv-serif-ko); font-weight: 600; line-height: 1.45; letter-spacing: -0.015em; font-size: clamp(23px, 2.9vw, 32px); }
 .sv-copy p { font-size: clamp(15px, 2vw, 17px); line-height: 1.65; color: var(--sv-ink70); }
 .sv-section h2 { text-wrap: balance; }
 
@@ -426,7 +428,7 @@ img, svg { display: block; }
   font-weight: 500;
   line-height: 1.25;
 }
-.sv-ko .sv-show__text h3 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.4; font-size: clamp(21px, 2.3vw, 27px); }
+.sv-ko .sv-show__text h3 { font-family: var(--sv-serif-ko); font-weight: 600; line-height: 1.5; letter-spacing: -0.015em; font-size: clamp(20px, 2.2vw, 26px); }
 .sv-show__text p { font-size: clamp(14.5px, 1.7vw, 16px); line-height: 1.7; color: var(--sv-ink70); }
 
 .sv-shots__note { font-size: 12px; color: rgba(31, 41, 51, 0.5); text-align: center; }
@@ -450,7 +452,7 @@ img, svg { display: block; }
   line-height: 1.2;
   color: var(--sv-cream);
 }
-.sv-ko .sv-open__copy h2 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.35; font-size: clamp(24px, 3vw, 33px); }
+.sv-ko .sv-open__copy h2 { font-family: var(--sv-serif-ko); font-weight: 600; line-height: 1.45; letter-spacing: -0.015em; font-size: clamp(23px, 2.9vw, 32px); }
 .sv-open__copy p { font-size: 16.5px; line-height: 1.65; color: rgba(250, 246, 239, 0.75); max-width: 400px; }
 
 .sv-open__list {
@@ -545,7 +547,7 @@ img, svg { display: block; }
   color: var(--sv-cream);
   position: relative;
 }
-.sv-ko .sv-final h2 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.35; font-size: clamp(25px, 3.2vw, 36px); }
+.sv-ko .sv-final h2 { font-family: var(--sv-serif-ko); font-weight: 600; line-height: 1.45; letter-spacing: -0.015em; font-size: clamp(24px, 3.1vw, 35px); }
 .sv-final p { font-size: 13.5px; color: rgba(250, 246, 239, 0.65); position: relative; }
 .sv-spark { position: absolute; background: var(--sv-sand); border-radius: 2px 7px 2px 7px; }
 .sv-spark--1 { left: 12%; top: 22%; width: 10px; height: 10px; transform: rotate(25deg); opacity: 0.7; }
