@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FAF6EF" />
+
+  <!-- ── SEO ─────────────────────────────────────────── -->
+  <title>Sudoku Voyage — a sudoku journey around the world | H1Soft</title>
+  <meta name="description" content="Sudoku Voyage turns puzzles into a journey: 12 regions with 20 stages each, difficulty that grows by real solving techniques, a three-step Smart Hint, postcards to collect and full offline play. iOS and Android." />
+  <meta name="keywords" content="sudoku, sudoku game, sudoku app, offline sudoku, Sudoku Voyage, number puzzle, brain game, sudoku techniques, H1Soft" />
+  <meta name="author" content="H1Soft" />
+  <link rel="canonical" href="https://h1soft.github.io/en/sudoku/" />
+  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/" />
+  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/" />
+  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Sudoku Voyage" />
+  <meta property="og:title" content="Sudoku Voyage — a sudoku journey around the world" />
+  <meta property="og:description" content="Solve puzzles, open new regions on your travel map and collect postcards. 12 regions, three-step Smart Hint, fully offline." />
+  <meta property="og:image" content="https://h1soft.github.io/assets/sudoku-og-en.png" />
+  <meta property="og:url" content="https://h1soft.github.io/en/sudoku/" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sudoku Voyage — a sudoku journey around the world" />
+  <meta name="twitter:description" content="Solve puzzles, open new regions on your travel map and collect postcards. 12 regions, three-step Smart Hint, fully offline." />
+  <meta name="twitter:image" content="https://h1soft.github.io/assets/sudoku-og-en.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" />
+
+  <link rel="stylesheet" href="../../css/sudoku.css" />
+  <script src="../../js/config.js" defer></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Sudoku Voyage",
+  "alternateName": [
+    "Sudoku Voyage",
+    "스도쿠 보야지",
+    "스도쿠"
+  ],
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Puzzle",
+  "operatingSystem": "Android 8.0+, iOS 16+",
+  "inLanguage": "en",
+  "description": "A sudoku game that turns puzzles into a journey — 12 regions with 20 stages each, technique-based difficulty, a three-step Smart Hint, postcards to collect and offline play.",
+  "url": "https://h1soft.github.io/en/sudoku/",
+  "author": {
+    "@type": "Organization",
+    "name": "H1Soft",
+    "url": "https://h1soft.github.io/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "H1Soft",
+      "item": "https://h1soft.github.io/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Sudoku Voyage",
+      "item": "https://h1soft.github.io/en/sudoku/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is locked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Every difficulty, theme, hint and collectible opens by playing. Nothing gates your progress."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work without internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Puzzle generation and your records are handled on device, so airplane mode changes nothing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which devices are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Android 8.0 and above, iOS 16 and above."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does progress sync between iOS and Android?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. There is no account, so nothing syncs automatically. Move a backup file across instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I move my progress to a new phone?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Export a backup in Settings and import it on the new device. There is no automatic backup, so export before you switch."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do puzzles always have one solution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every puzzle is verified for a unique solution when it is generated."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I report a problem?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Email us at h1.soft.x001@gmail.com."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body id="top" class="sv-en">
+
+  <header class="sv-nav">
+    <div class="sv-nav__inner">
+      <a class="sv-brand" href="#top"><span class="sv-mark" aria-hidden="true"><i></i><i class="dim"></i><i></i><i class="dim"></i><i class="hot"></i><i></i><i></i><i class="dim"></i><i></i></span><span>Sudoku Voyage</span></a>
+      <nav class="sv-nav__links" aria-label="Main menu">
+        <a href="#journey">Journey</a>
+        <a href="#collect">Collect</a>
+        <a href="#learn">Learn</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="sv-nav__right">
+        <div class="lang-toggle sv-lang">
+          <a href="../../sudoku/" lang="ko" hreflang="ko">KO</a>
+        <span class="is-active">EN</span>
+        </div>
+        <a class="sv-nav__cta" href="#download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── 1. Hero ───────────────────────────────────── -->
+    <section class="sv-hero" id="download">
+      <span class="sv-route sv-route--1" aria-hidden="true"></span>
+      <span class="sv-route sv-route--2" aria-hidden="true"></span>
+      <span class="sv-dot sv-dot--1" aria-hidden="true"></span>
+      <span class="sv-dot sv-dot--2" aria-hidden="true"></span>
+      <div class="sv-hero__inner">
+        <div class="sv-hero__copy">
+          <span class="sv-eyebrow">SUDOKU VOYAGE · iOS &amp; ANDROID</span>
+          <h1>A sudoku journey<br />around the world.</h1>
+          <p class="sv-hero__sub">Solve puzzles, open new regions on your travel map, and collect postcards along the way.</p>
+          <div class="sv-stores sv-stores--lg">
+            <a class="sv-store is-disabled" data-store="playstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">Google Play</span></span>
+            </a>
+            <a class="sv-store is-disabled" data-store="appstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">App Store</span></span>
+            </a>
+          </div>
+          <a class="sv-cue" href="#journey">What makes it different? ↓</a>
+        </div>
+        <div class="sv-hero__phone">
+          <div class="sv-phone">
+            <div class="sv-phone__bar">
+              <span class="sv-phone__title">Kyoto · Stage 12</span>
+              <span class="sv-phone__diff">MEDIUM</span>
+            </div>
+            <div class="sv-board sv-board--lg" style="background:#FFFFFF;border-color:rgba(31,41,51,.5)"><div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.18);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">7</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.18);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">9</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">4</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.26);box-shadow:inset 0 0 0 2px #2C6E63;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.08);box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.18);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">3</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">2</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.18);box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.18);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">5</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">8</div>
+<div class="sv-cell" style="font-size:15px;font-weight:500;color:#2C6E63;background:rgba(44,110,99,.18);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">6</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:rgba(44,110,99,.08);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">7</div>
+<div class="sv-cell" style="font-size:15px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:none">9</div></div>
+            <div class="sv-pad">
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">1</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">2</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">3</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">4</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">5</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">6</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">7</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">8</span></div>
+<div class="sv-key" style="height:34px;background:#FFFFFF;border:1px solid #E6DFCE;opacity:1"><span style="font-size:13px;color:#1F2933">9</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. Trust strip ────────────────────────────── -->
+    <div class="sv-trust">
+        <span class="sv-trust__item">Google Play · App Store</span>
+        <span class="sv-trust__item">Available in 12 languages</span>
+        <span class="sv-trust__item">Android 8.0+ · iOS 16+</span>
+        <span class="sv-trust__item">Works offline</span>
+    </div>
+
+    <!-- ── 3. Journey ────────────────────────────────── -->
+    <section id="journey" class="sv-section sv-section--split sv-section--white">
+      <div class="sv-map" aria-hidden="true">
+        <span class="sv-map__leg sv-map__leg--1"></span>
+        <span class="sv-map__leg sv-map__leg--2"></span>
+        <span class="sv-map__leg sv-map__leg--3"></span>
+        <span class="sv-city sv-city--lisbon"><i></i>Lisbon</span>
+        <span class="sv-city sv-city--marrakesh"><i></i>Marrakesh</span>
+        <span class="sv-city sv-city--kyoto"><i></i>Kyoto</span>
+      </div>
+      <div class="sv-copy">
+        <span class="sv-label">JOURNEY</span>
+        <h2>Your puzzles become a journey.</h2>
+        <p>Every puzzle you solve moves you along a route around the world — 12 regions, 20 stages each. Difficulty grows by real solving techniques, not random number counts.</p>
+      </div>
+    </section>
+
+    <!-- ── 4. Collect ────────────────────────────────── -->
+    <section id="collect" class="sv-section sv-section--cream">
+      <div class="sv-copy sv-copy--wide">
+        <span class="sv-label">COLLECT</span>
+        <h2>Solve. Collect. Color.</h2>
+        <p>Landmark stages award postcards as line art. Keep earning stars in a region and each postcard fills with color — up to a gold-foil finish.</p>
+      </div>
+      <div class="sv-postcards">
+<div class="sv-postcard sv-postcard--line">
+            <div class="sv-postcard__art" style="filter:grayscale(1) contrast(.92) brightness(1.1)">
+              <span class="sv-pc-sun"></span><span class="sv-pc-hill"></span>
+              <span class="sv-pc-peak"></span><span class="sv-pc-foil"></span>
+            </div>
+          </div>
+        <span class="sv-arrow" aria-hidden="true"></span>
+<div class="sv-postcard sv-postcard--half">
+            <div class="sv-postcard__art" style="filter:grayscale(.55) saturate(.9)">
+              <span class="sv-pc-sun"></span><span class="sv-pc-hill"></span>
+              <span class="sv-pc-peak"></span><span class="sv-pc-foil"></span>
+            </div>
+          </div>
+        <span class="sv-arrow" aria-hidden="true"></span>
+<div class="sv-postcard sv-postcard--full">
+            <div class="sv-postcard__art sv-postcard__art--gold" style="filter:none">
+              <span class="sv-pc-sun"></span><span class="sv-pc-hill"></span>
+              <span class="sv-pc-peak"></span><span class="sv-pc-foil"></span>
+            </div>
+          </div>
+        <div class="sv-postcards__note">
+          <span class="sv-postcards__cap">Line art → partial color → full color with gold foil</span>
+          <div class="sv-stamps"><span class="sv-stamp sv-stamp--1">LISBON<br />CLEARED</span>
+<span class="sv-stamp sv-stamp--2">7-DAY<br />STREAK</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 5. Learn ──────────────────────────────────── -->
+    <section id="learn" class="sv-section sv-section--white">
+      <div class="sv-copy sv-copy--wide">
+        <span class="sv-label">LEARN</span>
+        <h2>Hints that teach, not tell.</h2>
+        <p>Smart Hint reveals in three steps — where to look, which technique applies, and only then the answer. Finish lessons in the built-in Academy to master 14 techniques.</p>
+      </div>
+      <div class="sv-hints">
+        <div class="sv-hint">
+          <div class="sv-board sv-board--sm" style="background:#FFFFFF;border-color:rgba(31,41,51,.5)"><div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:none">9</div></div>
+          <div class="sv-hint__text">
+            <span class="sv-hint__title"><b>①</b> Where to look</span>
+            <span class="sv-hint__desc">It lights up the region only — "look at the center box."</span>
+          </div>
+        </div>
+        <div class="sv-hint">
+          <div class="sv-board sv-board--sm" style="background:#FFFFFF;border-color:rgba(31,41,51,.5)"><div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:inset 0 0 0 2px #D9772B;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:inset 0 0 0 2px #D9772B;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"><span class="sv-cell__ghost" style="color:#D9772B">5</span></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:inset 0 0 0 2px #D9772B;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:none">9</div></div>
+          <div class="sv-hint__text">
+            <span class="sv-hint__title"><b>②</b> Which technique <span class="sv-hint__badge">Hidden Single</span></span>
+            <span class="sv-hint__desc">The technique name, with the cells that justify it.</span>
+          </div>
+        </div>
+        <div class="sv-hint">
+          <div class="sv-board sv-board--sm" style="background:#FFFFFF;border-color:rgba(31,41,51,.5)"><div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:inset 0 0 0 2px #D9772B;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:700;color:#2C6E63;background:rgba(44,110,99,.18);box-shadow:inset 0 0 0 2px #2C6E63;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1.5px solid rgba(31,41,51,.5)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1.5px solid rgba(31,41,51,.5)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">3</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">2</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">4</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)">1</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:1px solid rgba(31,41,51,.11)">9</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:1px solid rgba(31,41,51,.11)"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:rgba(217,119,43,.15);box-shadow:inset 0 0 0 2px #D9772B;border-right:none;border-bottom:1px solid rgba(31,41,51,.11)">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">5</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">8</div>
+<div class="sv-cell" style="font-size:13px;font-weight:500;color:#2C6E63;background:transparent;box-shadow:none;border-right:1.5px solid rgba(31,41,51,.5);border-bottom:none">6</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none"></div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:1px solid rgba(31,41,51,.11);border-bottom:none">7</div>
+<div class="sv-cell" style="font-size:13px;font-weight:600;color:#1F2933;background:transparent;box-shadow:none;border-right:none;border-bottom:none">9</div></div>
+          <div class="sv-hint__text">
+            <span class="sv-hint__title"><b>③</b> Then the answer</span>
+            <span class="sv-hint__desc">The answer lands together with a card explaining why.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 6. Everything opens ───────────────────────── -->
+    <section class="sv-section sv-section--cream">
+      <div class="sv-open">
+        <div class="sv-open__copy">
+          <span class="sv-label sv-label--onDark">EVERYTHING OPENS</span>
+          <h2>Everything opens<br />by playing.</h2>
+          <p>No difficulty, theme or collectible sits behind a gate. Solve puzzles and they open in turn.</p>
+          <div class="sv-stores sv-stores--md">
+            <a class="sv-store is-disabled" data-store="playstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">Google Play</span></span>
+            </a>
+            <a class="sv-store is-disabled" data-store="appstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">App Store</span></span>
+            </a>
+          </div>
+        </div>
+        <ul class="sv-open__list">
+          <li>All 6 difficulties</li>
+          <li>Every theme</li>
+          <li>Unlimited hints</li>
+          <li>Unlimited undo</li>
+          <li>All collectibles</li>
+          <li>Offline play</li>
+          <li>12 languages</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ── 7. Comfort ────────────────────────────────── -->
+    <section class="sv-section sv-section--white">
+      <div class="sv-copy sv-copy--wide">
+        <span class="sv-label">COMFORT</span>
+        <h2>Small things, done kindly.</h2>
+      </div>
+      <div class="sv-comforts">
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5l-4 4 4 4V10h7V8H6V5zm12 6l4-4-4-4v3h-7v2h7v3z"/></svg>
+          <h3>One-hand mode</h3>
+          <p>Board and pad shift to your thumb — left or right.</p>
+        </div>
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+          <h3>Dark mode</h3>
+          <p>True dark board, tuned for night solving.</p>
+        </div>
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4.5 4.5 3l16.5 16.5-1.5 1.5-2.2-2.2H7a5 5 0 0 1-.9-9.9L3 4.5zm7.4 2.1A5.5 5.5 0 0 1 18 10.2 4 4 0 0 1 20.6 16l-1.5-1.5A2 2 0 0 0 18 12h-1.5v-.5a4.5 4.5 0 0 0-6.6-4z"/></svg>
+          <h3>Fully offline</h3>
+          <p>Planes, subways, mountains — everything works.</p>
+        </div>
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.9 6h-2.9a15 15 0 0 0-1.3-3.4A8 8 0 0 1 18.9 8zM12 4.2A13 13 0 0 1 13.8 8h-3.6A13 13 0 0 1 12 4.2zM4.3 14a8 8 0 0 1 0-4h3.3a17 17 0 0 0 0 4H4.3zm.8 2h2.9a15 15 0 0 0 1.3 3.4A8 8 0 0 1 5.1 16zm2.9-8H5.1a8 8 0 0 1 4.2-3.4A15 15 0 0 0 8 8zm4 11.8A13 13 0 0 1 10.2 16h3.6A13 13 0 0 1 12 19.8zm2.2-5.8H9.8a15 15 0 0 1 0-4h4.4a15 15 0 0 1 0 4zm.5 5.4a15 15 0 0 0 1.3-3.4h2.9a8 8 0 0 1-4.2 3.4zm1.7-5.4a17 17 0 0 0 0-4h3.3a8 8 0 0 1 0 4h-3.3z"/></svg>
+          <h3>12 languages</h3>
+          <p>Fully localized, layouts included.</p>
+        </div>
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3V3zm10 0h8v8h-8V3zM3 13h8v8H3v-8zm10 0h8v8h-8v-8z"/></svg>
+          <h3>Home widgets</h3>
+          <p>Daily puzzle, streak compass and resume — on your launcher.</p>
+        </div>
+        <div class="sv-comfort">
+          <svg class="sv-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h11l3 3v15H5V3zm2 2v5h8V5H7zm0 9v5h10v-5H7z"/></svg>
+          <h3>Auto-save, every move</h3>
+          <p>Leave anytime. Your board is exactly where you left it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 8. FAQ ────────────────────────────────────── -->
+    <section id="faq" class="sv-section sv-section--faq sv-section--white">
+      <div class="sv-copy">
+        <span class="sv-label">FAQ</span>
+        <h2>Before you ask.</h2>
+        <p>More answers — including backup and device transfer — on the support page.</p>
+      </div>
+      <div class="sv-faqs">
+          <details class="sv-faq" open>
+            <summary><span>What is locked?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Every difficulty, theme, hint and collectible opens by playing. Nothing gates your progress.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Does it work without internet?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Yes. Puzzle generation and your records are handled on device, so airplane mode changes nothing.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Which devices are supported?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Android 8.0 and above, iOS 16 and above.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Does progress sync between iOS and Android?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>No. There is no account, so nothing syncs automatically. Move a backup file across instead.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Can I move my progress to a new phone?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Export a backup in Settings and import it on the new device. There is no automatic backup, so export before you switch.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Do puzzles always have one solution?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Yes. Every puzzle is verified for a unique solution when it is generated.</p>
+          </details>
+          <details class="sv-faq">
+            <summary><span>Where do I report a problem?</span><span class="sv-faq__chev" aria-hidden="true"></span></summary>
+            <p>Email us at h1.soft.x001@gmail.com.</p>
+          </details>
+      </div>
+    </section>
+
+    <!-- ── 9. Final CTA ──────────────────────────────── -->
+    <section class="sv-final">
+      <span class="sv-spark sv-spark--1" aria-hidden="true"></span>
+      <span class="sv-spark sv-spark--2" aria-hidden="true"></span>
+      <span class="sv-spark sv-spark--3" aria-hidden="true"></span>
+      <h2>Your voyage starts<br />with one puzzle.</h2>
+      <div class="sv-stores sv-stores--lg">
+            <a class="sv-store is-disabled" data-store="playstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">Google Play</span></span>
+            </a>
+            <a class="sv-store is-disabled" data-store="appstore" data-store-app="sudoku" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg><span><span class="sv-store__sub">Coming soon</span><span class="sv-store__label">App Store</span></span>
+            </a>
+          </div>
+      <p>iOS &amp; Android · works offline · no account needed</p>
+    </section>
+  </main>
+
+  <footer class="sv-footer">
+    <div class="sv-footer__inner">
+      <div class="sv-footer__brand">
+        <span class="sv-footer__logo"><span class="sv-mark" aria-hidden="true"><i></i><i class="dim"></i><i></i><i class="dim"></i><i class="hot"></i><i></i><i></i><i class="dim"></i><i></i></span><span>Sudoku Voyage</span></span>
+        <span class="sv-footer__tag">A sudoku journey around the world, on iOS and Android.</span>
+      </div>
+      <div class="sv-footer__cols">
+        <div class="sv-footer__col">
+          <span class="sv-footer__label">Site</span>
+          <a href="#journey">Journey</a>
+          <a href="#collect">Collect</a>
+          <a href="#learn">Learn</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="sv-footer__col">
+          <span class="sv-footer__label">Legal</span>
+          <a href="./privacy/">Privacy Policy</a>
+          <a href="./terms/">Terms of Use</a>
+          <a href="../">H1Soft home</a>
+        </div>
+        <div class="sv-footer__col">
+          <span class="sv-footer__label">Contact</span>
+          <a data-email="text" href="#">h1.soft.x001@gmail.com</a>
+          <span class="sv-footer__copy">© 2026 H1Soft.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

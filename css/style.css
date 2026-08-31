@@ -760,7 +760,7 @@ details p {
   display: flex;
   gap: 24px;
   flex-wrap: wrap;
-  max-width: min(560px, calc(100vw - 32px));
+  max-width: min(800px, calc(100vw - 32px));
   padding: 18px;
   border-radius: 16px;
   background: #fff;
@@ -1510,4 +1510,114 @@ details p {
 
 @media (max-width: 767px) {
   .life-card__mongles { position: static; margin-bottom: 4px; }
+}
+
+
+/* ── 게임 라인 (스도쿠 보야지) ──────────────────────── */
+.app-mark--sudoku {
+  background: #2c6e63;
+  box-shadow: inset 0 0 0 1px rgba(23, 43, 39, 0.2);
+}
+.app-mark--sudoku .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  width: 16px;
+  height: 16px;
+}
+.app-mark--sudoku .grid i { border-radius: 1.5px; background: rgba(250, 246, 239, 0.9); }
+.app-mark--sudoku .grid i:nth-child(2n) { background: rgba(250, 246, 239, 0.35); }
+.app-mark--sudoku .grid i:nth-child(5) { background: #d9772b; }
+.app-mark--sm.app-mark--sudoku .grid { width: 14px; height: 14px; }
+.app-mark--md.app-mark--sudoku .grid { width: 21px; height: 21px; }
+
+.app-chip--sudoku {
+  background: #f6faf8;
+  box-shadow: inset 0 0 0 1px rgba(44, 110, 99, 0.16);
+}
+
+.game-card {
+  display: grid;
+  grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+  padding: clamp(24px, 3.5vw, 40px);
+  border-radius: 24px;
+  background: linear-gradient(135deg, #faf6ef 0%, #f1ece1 100%);
+  box-shadow: inset 0 0 0 1px rgba(31, 41, 51, 0.08);
+  color: var(--ink-normal);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.game-card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 0 0 1px rgba(31, 41, 51, 0.12), 0 18px 44px -12px rgba(31, 41, 51, 0.3);
+}
+
+.game-card__board {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  aspect-ratio: 1;
+  border: 1.5px solid rgba(31, 41, 51, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 30px -10px rgba(31, 41, 51, 0.35);
+}
+.game-card__board i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  font-family: Manrope, var(--font-sans, sans-serif);
+  font-size: clamp(9px, 1.2vw, 13px);
+  font-style: normal;
+  font-weight: 600;
+  color: rgba(31, 41, 51, 0.25);
+  border-right: 1px solid rgba(31, 41, 51, 0.11);
+  border-bottom: 1px solid rgba(31, 41, 51, 0.11);
+}
+.game-card__board i.is-given { color: #1f2933; }
+.game-card__board i:nth-child(9n) { border-right: none; }
+.game-card__board i:nth-child(3n):not(:nth-child(9n)) { border-right: 1.5px solid rgba(31, 41, 51, 0.5); }
+.game-card__board i:nth-child(n + 73) { border-bottom: none; }
+.game-card__board i:nth-child(n + 25):nth-child(-n + 27),
+.game-card__board i:nth-child(n + 52):nth-child(-n + 54) { border-bottom: 1.5px solid rgba(31, 41, 51, 0.5); }
+
+.game-card__body { display: flex; flex-direction: column; gap: 10px; }
+.game-card__badges { display: flex; flex-wrap: wrap; gap: 6px; }
+.game-card__brand {
+  font-family: var(--font-serif, "Noto Serif KR", serif);
+  font-size: 15px;
+  font-weight: 700;
+  color: #2c6e63;
+}
+.game-card__head {
+  font-size: clamp(20px, 2.4vw, 27px);
+  font-weight: 700;
+  line-height: 1.35;
+  word-break: keep-all;
+}
+.game-card__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--ink-alternative);
+  word-break: keep-all;
+}
+.game-card__feats { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.game-card__feat {
+  font-size: 12.5px;
+  font-weight: 600;
+  color: rgba(31, 41, 51, 0.72);
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  padding: 5px 11px;
+  box-shadow: inset 0 0 0 1px rgba(31, 41, 51, 0.08);
+}
+.game-card__cta { margin-top: 8px; font-size: 14px; font-weight: 700; color: #2c6e63; }
+
+@media (max-width: 760px) {
+  .game-card { grid-template-columns: 1fr; }
+  .game-card__board { max-width: 320px; margin: 0 auto; }
 }

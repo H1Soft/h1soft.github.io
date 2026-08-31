@@ -20,6 +20,10 @@ const CONFIG = {
   MONGLE_APP_STORE_URL: "",
   MONGLE_PLAY_STORE_URL: "",
 
+  // 스도쿠 보야지 (data-store-app="sudoku")
+  SUDOKU_APP_STORE_URL: "",
+  SUDOKU_PLAY_STORE_URL: "",
+
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
 };
 
@@ -28,6 +32,7 @@ const STORE_URLS = {
   seukscan: { appstore: CONFIG.SEUKSCAN_APP_STORE_URL, playstore: CONFIG.SEUKSCAN_PLAY_STORE_URL },
   ongle: { appstore: "", playstore: CONFIG.ONGLE_PLAY_STORE_URL },
   mongle: { appstore: CONFIG.MONGLE_APP_STORE_URL, playstore: CONFIG.MONGLE_PLAY_STORE_URL },
+  sudoku: { appstore: CONFIG.SUDOKU_APP_STORE_URL, playstore: CONFIG.SUDOKU_PLAY_STORE_URL },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -42,7 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.href = url;
     btn.classList.remove("is-disabled");
     btn.removeAttribute("aria-disabled");
-    btn.querySelector(".store-btn__sub").textContent = "Download";
+    // 제품별 스타일시트마다 클래스 접두사가 달라서(store-btn / mg-store / sv-store) 둘 다 잡는다
+    const sub = btn.querySelector('.store-btn__sub, [class*="store__sub"]');
+    if (sub) sub.textContent = "Download";
   });
 
   // 출시 안내 문구 제거
