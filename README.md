@@ -52,7 +52,7 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 몽글 캐릭터 16종은 이미지가 아니라 빌드 타임에 심어 넣은 인라인 SVG입니다 — Claude Design 의 `MongleChar.dc.html` 로직을 그대로 옮겼습니다.
 스도쿠 보드(랜딩 히어로·힌트 3종·홈 게임 카드·OG)도 같은 방식으로, 시안의 `DCLogic.board()` 를 그대로 옮겨 빌드 타임에 HTML 로 펼쳐 넣습니다.
 
-`/sudoku/` 의 인앱 화면 이미지는 스크린샷이 아니라 **디자인 시안을 실제로 렌더한 결과**입니다. Claude Design 의 `Sudoku Voyage 디자인.dc.html` 을 DC 런타임(`support.js` + `android-frame.jsx`)과 함께 로컬에서 띄우고 화면별로 캡처했습니다. 시안 본문의 `data-dc-script` 는 파일이 커서 API 응답 상한(256KiB)에 잘려 받지 못했기 때문에, 보드·입력판 데이터는 같은 프로젝트의 웹사이트 시안에 있는 `DCLogic` 을 기준으로 재구성했습니다 (스크립트: `scratchpad/make_screens.py`, `dcrender/dclogic.html` — 저장소에는 결과 이미지만 들어옵니다). 시안 주석(§ 참조 줄)과 화면 안의 한국어 주석 라벨은 캡처 전에 제거·영문화했습니다.
+`/sudoku/` 의 인앱 화면 이미지는 스크린샷이 아니라 **디자인 시안을 실제로 렌더한 결과**입니다. Claude Design 의 `Sudoku Voyage 디자인.dc.html` 을 DC 런타임(`support.js` + `android-frame.jsx`)과 함께 로컬에서 띄우고 화면별로 캡처했습니다. 시안 본문의 `data-dc-script` 는 파일이 커서 API 응답 상한(256KiB)에 잘려 받지 못했기 때문에, 보드·입력판 데이터는 같은 프로젝트의 웹사이트 시안에 있는 `DCLogic` 을 기준으로 재구성했습니다 (스크립트: `scratchpad/make_screens.py`, `dcrender/dclogic.html` — 저장소에는 결과 이미지만 들어옵니다). 시안 주석(§ 참조 줄)과 화면 안의 한국어 주석 라벨은 캡처 전에 제거·영문화했고, 표제 서체는 랜딩과 맞추기 위해 시안의 Lora 대신 **Noto Serif KR 600** 으로 렌더합니다.
 
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 
