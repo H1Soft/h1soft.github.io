@@ -16,6 +16,10 @@ const CONFIG = {
   // 온글 (data-store-app="ongle") — Android 우선
   ONGLE_PLAY_STORE_URL: "",
 
+  // 몽글 (data-store-app="mongle")
+  MONGLE_APP_STORE_URL: "",
+  MONGLE_PLAY_STORE_URL: "",
+
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
 };
 
@@ -23,6 +27,7 @@ const STORE_URLS = {
   qr: { appstore: CONFIG.APP_STORE_URL, playstore: CONFIG.PLAY_STORE_URL },
   seukscan: { appstore: CONFIG.SEUKSCAN_APP_STORE_URL, playstore: CONFIG.SEUKSCAN_PLAY_STORE_URL },
   ongle: { appstore: "", playstore: CONFIG.ONGLE_PLAY_STORE_URL },
+  mongle: { appstore: CONFIG.MONGLE_APP_STORE_URL, playstore: CONFIG.MONGLE_PLAY_STORE_URL },
 };
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -9,8 +9,10 @@ index.html               팀 홈 (Hero·Pillars·유틸리티·라이프스타�
 qr-scanner/index.html    QR Scanner 제품 상세 (/qr-scanner/ — Products·Showcase)
 seukscan/index.html      슥캔 제품 랜딩 (/seukscan/ — Hero·Features·Screens·FAQ)
 ongle/index.html         온글 제품 랜딩 (/ongle/ — 동일 구성 + 한컴 비제휴 고지)
-privacy/, terms/         약관 — 사이트 공통 + 제품별(qr-scanner/, seukscan/, ongle/ 하위)
+mongle/index.html        몽글 제품 랜딩 (/mongle/ — 자체 디자인 시스템, css/mongle.css)
+privacy/, terms/         약관 — 사이트 공통 + 제품별(qr-scanner/, seukscan/, ongle/, mongle/ 하위)
 css/style.css            전체 스타일
+css/mongle.css           몽글 전용 스타일 (크림·라운드 토큰, style.css 미사용)
 js/config.js             ★ 가변 값 관리 지점 (스토어 URL, 문의 이메일)
 js/site.js               Products 드롭다운, 스크롤 등장, 숫자 카운트업
 assets/                  이미지 (아래 참고)
@@ -37,14 +39,16 @@ sips --resampleWidth 640 원본.png --out /tmp/rs.png && cwebp -q 82 /tmp/rs.png
 sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out assets/og-image-ko.jpg
 ```
 
-영문 페이지: `/en/`, `/en/qr-scanner/`, `/en/seukscan/`, `/en/ongle/` (hreflang 상호 연결).
+영문 페이지: `/en/`, `/en/qr-scanner/`, `/en/seukscan/`, `/en/ongle/`, `/en/mongle/` (hreflang 상호 연결).
+
+몽글 캐릭터 16종은 이미지가 아니라 빌드 타임에 심어 넣은 인라인 SVG입니다 — Claude Design 의 `MongleChar.dc.html` 로직을 그대로 옮겼습니다.
 
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 
 ## 출시 후 할 일
 
 1. `js/config.js` 에 앱별 App Store / Google Play URL 입력 → 버튼 자동 활성화
-   (QR Scanner는 `APP_STORE_URL`/`PLAY_STORE_URL`, 슥캔은 `SEUKSCAN_*`, 온글은 `ONGLE_*`).
+   (QR Scanner는 `APP_STORE_URL`/`PLAY_STORE_URL`, 슥캔은 `SEUKSCAN_*`, 온글은 `ONGLE_*`, 몽글은 `MONGLE_*`).
 2. 문의 이메일 확정 시 `js/config.js` + `privacy/`·`terms/` 본문 + `index.html` JSON-LD 내 이메일 교체.
 4. 커스텀 도메인 전환 시 `index.html`·`qr-scanner/`·`privacy/`·`terms/`·`robots.txt`·`sitemap.xml` 의 `https://h1soft.github.io/` 일괄 치환.
 

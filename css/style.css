@@ -1461,3 +1461,53 @@ details p {
   color: var(--ink-assistive);
   word-break: keep-all;
 }
+
+/* ── 몽글 (라이프스타일 3번째) ──────────────────────── */
+.app-mark--mongle {
+  background: linear-gradient(160deg, #ffd8ca, #ffb199);
+  box-shadow: inset 0 0 0 1px rgba(51, 41, 43, 0.1);
+}
+.app-mark--mongle .blob {
+  width: 12px;
+  height: 12px;
+  border-radius: 50% 50% 46% 46%;
+  background: #db8365;
+}
+.app-mark--sm.app-mark--mongle .blob { width: 11px; height: 11px; }
+.app-mark--md.app-mark--mongle .blob { width: 16px; height: 16px; }
+
+.app-chip--mongle {
+  background: #fffbf5;
+  box-shadow: inset 0 0 0 1px rgba(51, 41, 43, 0.12);
+  color: #33292b;
+}
+.app-chip--mongle:hover { box-shadow: inset 0 0 0 1.5px #db8365; }
+
+.life-card--mongle {
+  background: linear-gradient(150deg, #fffbf5 0%, #ffeee6 60%, #f3e6fd 100%);
+  box-shadow: inset 0 0 0 1px rgba(51, 41, 43, 0.1);
+}
+.life-card--mongle:hover {
+  box-shadow: inset 0 0 0 1px rgba(51, 41, 43, 0.16), 0 28px 56px -28px rgba(51, 41, 43, 0.3);
+}
+.life-card--mongle .life-card__badge { background: rgba(51, 41, 43, 0.07); color: #33292b; }
+.life-card--mongle .life-card__brand { color: #b44a25; }
+.life-card--mongle .life-card__head { color: #33292b; }
+.life-card--mongle .life-card__desc { color: rgba(51, 41, 43, 0.72); }
+.life-card--mongle .life-card__cta { color: #33292b; }
+
+.life-card__mongles {
+  position: absolute;
+  right: clamp(16px, 3vw, 28px);
+  top: clamp(16px, 3vw, 24px);
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  opacity: 0.95;
+  pointer-events: none;
+}
+.life-card__mongles svg { display: block; }
+
+@media (max-width: 767px) {
+  .life-card__mongles { position: static; margin-bottom: 4px; }
+}

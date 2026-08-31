@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFBF5" />
+
+  <!-- ── SEO ─────────────────────────────────────────── -->
+  <title>Mongle (몽글) — Sixteen types, sixteen characters | Personality test app</title>
+  <meta name="description" content="Mongle turns sixteen personality types into squishy little characters. A one-minute test, a result card worth keeping, 256 written pairings and a daily fortune. No server, so results never leave your phone. No ads, no sign-up." />
+  <meta name="keywords" content="Mongle, 몽글, Mongle app, personality test, personality type test, free personality test, character personality test, compatibility test, H1Soft" />
+  <meta name="author" content="H1Soft" />
+  <link rel="canonical" href="https://h1soft.github.io/en/mongle/" />
+  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/" />
+  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/" />
+  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mongle" />
+  <meta property="og:title" content="Mongle — Sixteen types. Sixteen characters. One of them is you." />
+  <meta property="og:description" content="A one-minute personality test that hands you a character. Free forever, no ads, no sign-up." />
+  <meta property="og:image" content="https://h1soft.github.io/assets/mongle-og.png" />
+  <meta property="og:url" content="https://h1soft.github.io/en/mongle/" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mongle — Sixteen types. Sixteen characters." />
+  <meta name="twitter:description" content="A one-minute personality test that hands you a character. Free forever, no ads, no sign-up." />
+  <meta name="twitter:image" content="https://h1soft.github.io/assets/mongle-og.png" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&amp;display=swap" />
+
+  <link rel="stylesheet" href="../../css/mongle.css" />
+  <script src="../../js/config.js" defer></script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "Mongle",
+  "alternateName": [
+    "Mongle",
+    "몽글",
+    "몽글 앱",
+    "몽글이"
+  ],
+  "applicationCategory": "EntertainmentApplication",
+  "operatingSystem": "Android, iOS",
+  "inLanguage": "ko",
+  "description": "A personality test app that turns sixteen types into squishy characters — a one-minute test, a result card, 256 written pairings and a daily fortune, all on device with no server.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "isFamilyFriendly": true,
+  "url": "https://h1soft.github.io/en/mongle/",
+  "author": {
+    "@type": "Organization",
+    "name": "H1Soft",
+    "url": "https://h1soft.github.io/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "H1Soft",
+      "item": "https://h1soft.github.io/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Mongle",
+      "item": "https://h1soft.github.io/en/mongle/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I take the test on the web?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — the test lives in the app. The character reveal and the result card are made for a phone screen. Install it and you are done in a minute."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it really free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Every feature is free and there is nothing to buy inside the app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there ads?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "None. No banners, no interstitials, no rewarded ads."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need an account?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Install and start. We never ask for an email or a phone number."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is my data stored?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only on your phone. Mongle has no server, so even we have no way to see your results."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I lose my results if I change phones?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Export your data to a file in Settings, then import it on the new one. There is no server, so there is no automatic backup — export before you wipe the old phone."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is this test scientifically accurate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Mongle is entertainment, not a psychological assessment. Take it lightly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the app available in English?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app UI is Korean for now. English is on the roadmap, without a fixed date — we would rather say so than promise a month we cannot keep."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body id="top">
+
+  <header class="mg-nav">
+    <div class="mg-nav__inner">
+      <a class="mg-brand" href="#top"><svg width="30" height="30" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g></svg><span>Mongle</span></a>
+      <nav class="mg-nav__links" aria-label="Main menu">
+        <a href="#characters">Characters</a>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="mg-nav__right">
+        <div class="lang-toggle mg-lang">
+          <a href="../../mongle/" lang="ko" hreflang="ko">KO</a>
+        <span class="is-active">EN</span>
+        </div>
+        <a class="mg-ghost" href="#download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ── 1. Hero ───────────────────────────────────── -->
+    <section class="mg-hero" id="download">
+      <span class="mg-blob mg-blob--1" aria-hidden="true"></span>
+      <span class="mg-blob mg-blob--2" aria-hidden="true"></span>
+      <span class="mg-blob mg-blob--3" aria-hidden="true"></span>
+      <div class="mg-hero__inner">
+        <div class="mg-hero__copy">
+          <h1>Sixteen types.<br />Sixteen <span class="mg-accent">characters</span>.<br />One of them is you.</h1>
+          <p class="mg-hero__sub">Take the one-minute test and meet your Mongle — a squishy little character built out of your answers.</p>
+          <div class="mg-stores mg-stores--lg">
+            <a class="mg-store is-disabled" data-store="appstore" data-store-app="mongle" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg width="20" height="24" viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg><span><span class="mg-store__sub">Coming soon</span><span class="mg-store__label">App Store</span></span>
+            </a>
+            <a class="mg-store is-disabled" data-store="playstore" data-store-app="mongle" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg width="19" height="21" viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg><span><span class="mg-store__sub">Coming soon</span><span class="mg-store__label">Google Play</span></span>
+            </a>
+          </div>
+          <p class="mg-trust">Free forever · No ads · No sign-up</p>
+        </div>
+        <div class="mg-hero__art">
+          <div class="mg-phone">
+            <div class="mg-phone__screen">
+              <span class="mg-phone__notch" aria-hidden="true"></span>
+              <span class="mg-phone__char"><svg width="112" height="112" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg></span>
+              <span class="mg-phone__type">ENFP</span>
+              <span class="mg-phone__nick">The party battery</span>
+              <span class="mg-phone__quote">"Endlessly rechargeable"</span>
+              <div class="mg-gauge">
+                <div class="mg-gauge__row"><span class="mg-gauge__key" style="background:#FFB199">E</span><span class="mg-gauge__bar"><span style="width:82%;background:#FFB199"></span></span><span class="mg-gauge__val" style="color:#DB8365">82%</span></div>
+                <div class="mg-gauge__row"><span class="mg-gauge__key" style="background:#C3B1EF">N</span><span class="mg-gauge__bar"><span style="width:64%;background:#C3B1EF"></span></span><span class="mg-gauge__val" style="color:#8E7CC9">64%</span></div>
+                <div class="mg-gauge__row"><span class="mg-gauge__key" style="background:#A5DFC0">F</span><span class="mg-gauge__bar"><span style="width:71%;background:#A5DFC0"></span></span><span class="mg-gauge__val" style="color:#6FBD97">71%</span></div>
+              </div>
+              <span class="mg-phone__cta">Make my result card</span>
+            </div>
+          </div>
+        <span class="mg-float mg-float--1"><svg width="88" height="88" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#B39DE8"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7E68B8" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g stroke="#7E68B8" stroke-width="2.5" fill="rgba(255,255,255,0.25)"><circle cx="49" cy="57" r="8.5"/><circle cx="71" cy="57" r="8.5"/><path d="M57.5 57h5M40.5 56l-7-3M79.5 56l7-3" fill="none" stroke-linecap="round"/></g></svg></span>
+        <span class="mg-float mg-float--2"><svg width="76" height="76" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#B3E4CD"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7BB397" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><circle cx="36" cy="4.5" r="3.4" fill="#FFC9D6"/><circle cx="41.3" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="39.3" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="32.7" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="30.7" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="36" cy="9.8" r="2.6" fill="#FFD66E"/></g></svg></span>
+        <span class="mg-float mg-float--3"><svg width="80" height="80" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#8AC8F0"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#5B93BC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><rect x="39" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><rect x="63" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><path d="M57 55h6M39 54l-7-3M81 54l7-3" stroke="#4B4358" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg></span>
+        <span class="mg-float mg-float--4"><svg width="70" height="70" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#F2BBCE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C98BA4" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g><path d="M60 16q0-7-5-10" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="51" cy="3.5" rx="6" ry="3.5" fill="#8FD3AC" transform="rotate(-28 51 3.5)"/><path d="M60 16q1-5 6-7" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="69" cy="7" rx="5" ry="3" fill="#6FBD97" transform="rotate(24 69 7)"/></g></svg></span>
+        <span class="mg-float mg-float--5"><svg width="62" height="62" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFE6A3"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C7A050" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><path d="M44 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><path d="M66 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="68" r="3" fill="#4B4358"/><text x="86" y="36" font-family="Gaegu,cursive" font-size="15" fill="#C7A050" font-weight="700">z z</text></g><g transform="rotate(-6 46 14)"><ellipse cx="46" cy="14" rx="15" ry="7.5" fill="#F09A86"/><path d="M46 7q0-4 4-5" stroke="#D3736C" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 2. 캐릭터 갤러리 ──────────────────────────── -->
+    <section id="characters" class="mg-section">
+      <div class="mg-head">
+        <h2>All sixteen Mongles,<br />right here</h2>
+        <p>Meet them one by one. Different face, different voice.</p>
+      </div>
+      <div class="mg-groups">
+      <div class="mg-group" style="background:#F1ECFC">
+        <div class="mg-group__head"><span class="mg-group__label" style="color:#5B3FB0">Analysts</span><span class="mg-group__en" style="color:#5B3FB0">ANALYSTS</span></div>
+        <div class="mg-group__grid">
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#B39DE8"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7E68B8" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g stroke="#7E68B8" stroke-width="2.5" fill="rgba(255,255,255,0.25)"><circle cx="49" cy="57" r="8.5"/><circle cx="71" cy="57" r="8.5"/><path d="M57.5 57h5M40.5 56l-7-3M79.5 56l7-3" fill="none" stroke-linecap="round"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#B39DE8"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7E68B8" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7E68B8" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g stroke="#7E68B8" stroke-width="2.5" fill="rgba(255,255,255,0.25)"><circle cx="49" cy="57" r="8.5"/><circle cx="71" cy="57" r="8.5"/><path d="M57.5 57h5M40.5 56l-7-3M79.5 56l7-3" fill="none" stroke-linecap="round"/></g></svg></span>
+            <span class="mg-cell__type">INTJ</span>
+            <span class="mg-cell__name">INTJ</span>
+            <span class="mg-cell__desc">The strategist with a plan B for every variable.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#CDBCF4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#9480CC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><text x="86" y="32" font-family="'Cafe24Ssurround','Gaegu',sans-serif" font-size="24" fill="#9480CC" font-weight="700">?</text><path d="M102 35L104.16 38L102 41L99.84 38Z" fill="#CDBCF4"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#CDBCF4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#9480CC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><text x="86" y="32" font-family="'Cafe24Ssurround','Gaegu',sans-serif" font-size="24" fill="#9480CC" font-weight="700">?</text><path d="M102 35L104.16 38L102 41L99.84 38Z" fill="#CDBCF4"/></g></svg></span>
+            <span class="mg-cell__type">INTP</span>
+            <span class="mg-cell__name">INTP</span>
+            <span class="mg-cell__desc">A thought experiment that never quite ends.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#9C82DC"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#6E56AC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><path d="M45 21L49 8L58 16L60 5L62 16L71 8L75 21Z" fill="#FFD66E" stroke="#D9A93F" stroke-width="1.5" stroke-linejoin="round"/></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#9C82DC"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#6E56AC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><path d="M45 21L49 8L58 16L60 5L62 16L71 8L75 21Z" fill="#FFD66E" stroke="#D9A93F" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+            <span class="mg-cell__type">ENTJ</span>
+            <span class="mg-cell__name">ENTJ</span>
+            <span class="mg-cell__desc">Sees the goal, moves first.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#DCC6F6"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#A388D0" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#A388D0" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#A388D0" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><circle cx="93" cy="20" r="6.5" fill="#FFE08A" stroke="#D9A93F" stroke-width="1.5"/><rect x="90" y="26.5" width="6" height="5" rx="1.5" fill="#D9A93F"/><path d="M93 9V5M102 12l3-3M84 12l-3-3" stroke="#D9A93F" stroke-width="1.5" stroke-linecap="round"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#DCC6F6"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#A388D0" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#A388D0" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#A388D0" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><circle cx="93" cy="20" r="6.5" fill="#FFE08A" stroke="#D9A93F" stroke-width="1.5"/><rect x="90" y="26.5" width="6" height="5" rx="1.5" fill="#D9A93F"/><path d="M93 9V5M102 12l3-3M84 12l-3-3" stroke="#D9A93F" stroke-width="1.5" stroke-linecap="round"/></g></svg></span>
+            <span class="mg-cell__type">ENTP</span>
+            <span class="mg-cell__name">ENTP</span>
+            <span class="mg-cell__desc">Debate is a game, and the ideas keep coming.</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-group" style="background:#FFEEE6">
+        <div class="mg-group__head"><span class="mg-group__label" style="color:#B44A25">Diplomats</span><span class="mg-group__en" style="color:#B44A25">DIPLOMATS</span></div>
+        <div class="mg-group__grid">
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#F2BBCE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C98BA4" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g><path d="M60 16q0-7-5-10" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="51" cy="3.5" rx="6" ry="3.5" fill="#8FD3AC" transform="rotate(-28 51 3.5)"/><path d="M60 16q1-5 6-7" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="69" cy="7" rx="5" ry="3" fill="#6FBD97" transform="rotate(24 69 7)"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#F2BBCE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C98BA4" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M60 16q0-7-5-10" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="51" cy="3.5" rx="6" ry="3.5" fill="#8FD3AC" transform="rotate(-28 51 3.5)"/><path d="M60 16q1-5 6-7" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="69" cy="7" rx="5" ry="3" fill="#6FBD97" transform="rotate(24 69 7)"/></g></svg></span>
+            <span class="mg-cell__type">INFJ</span>
+            <span class="mg-cell__name">INFJ</span>
+            <span class="mg-cell__desc">Reads the room quietly, then says the right thing.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFD8CA"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#D9A08C" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><path d="M44 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><path d="M66 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="68" r="3" fill="#4B4358"/><text x="86" y="36" font-family="Gaegu,cursive" font-size="15" fill="#D9A08C" font-weight="700">z z</text></g><g><path d="M90 8L95.04 15L90 22L84.96 15Z" fill="#FFD66E"/><path d="M100 22.8L102.304 26L100 29.2L97.696 26Z" fill="#FFC9D6"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFD8CA"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#D9A08C" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M90 8L95.04 15L90 22L84.96 15Z" fill="#FFD66E"/><path d="M100 22.8L102.304 26L100 29.2L97.696 26Z" fill="#FFC9D6"/></g></svg></span>
+            <span class="mg-cell__type">INFP</span>
+            <span class="mg-cell__name">INFP</span>
+            <span class="mg-cell__desc">Busiest place is the world inside their head.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FF9E96"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#D3736C" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#D3736C" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#D3736C" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M38 12L27 6L27 19Z" fill="#FF8E7E"/><path d="M38 12L49 6L49 19Z" fill="#FF8E7E"/><circle cx="38" cy="12.5" r="3.5" fill="#E86D5C"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FF9E96"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#D3736C" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#D3736C" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#D3736C" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><path d="M38 12L27 6L27 19Z" fill="#FF8E7E"/><path d="M38 12L49 6L49 19Z" fill="#FF8E7E"/><circle cx="38" cy="12.5" r="3.5" fill="#E86D5C"/></g></svg></span>
+            <span class="mg-cell__type">ENFJ</span>
+            <span class="mg-cell__name">ENFJ</span>
+            <span class="mg-cell__desc">Checks how everyone is doing before anything else.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg></span>
+            <span class="mg-cell__type">ENFP</span>
+            <span class="mg-cell__name">ENFP</span>
+            <span class="mg-cell__desc">The party runs on this one's battery.</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-group" style="background:#E5F5EE">
+        <div class="mg-group__head"><span class="mg-group__label" style="color:#1B6B50">Sentinels</span><span class="mg-group__en" style="color:#1B6B50">SENTINELS</span></div>
+        <div class="mg-group__grid">
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#A6C9AE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#74997D" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#74997D" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#74997D" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g stroke="#74997D" stroke-width="2.5" fill="rgba(255,255,255,0.25)"><rect x="40" y="49.5" width="17" height="13" rx="4"/><rect x="63" y="49.5" width="17" height="13" rx="4"/><path d="M57 55h6M40 54l-6-2.5M80 54l6-2.5" fill="none" stroke-linecap="round"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#A6C9AE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#74997D" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#74997D" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#74997D" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g stroke="#74997D" stroke-width="2.5" fill="rgba(255,255,255,0.25)"><rect x="40" y="49.5" width="17" height="13" rx="4"/><rect x="63" y="49.5" width="17" height="13" rx="4"/><path d="M57 55h6M40 54l-6-2.5M80 54l6-2.5" fill="none" stroke-linecap="round"/></g></svg></span>
+            <span class="mg-cell__type">ISTJ</span>
+            <span class="mg-cell__name">ISTJ</span>
+            <span class="mg-cell__desc">Keeps the promise and the routine, all the way.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#B3E4CD"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7BB397" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><circle cx="36" cy="4.5" r="3.4" fill="#FFC9D6"/><circle cx="41.3" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="39.3" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="32.7" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="30.7" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="36" cy="9.8" r="2.6" fill="#FFD66E"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#B3E4CD"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7BB397" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><circle cx="36" cy="4.5" r="3.4" fill="#FFC9D6"/><circle cx="41.3" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="39.3" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="32.7" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="30.7" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="36" cy="9.8" r="2.6" fill="#FFD66E"/></g></svg></span>
+            <span class="mg-cell__type">ISFJ</span>
+            <span class="mg-cell__name">ISFJ</span>
+            <span class="mg-cell__desc">Notices first, helps without saying so.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#8CC7A4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#5E9878" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#5E9878" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#5E9878" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g><rect x="55" y="72" width="10" height="6" rx="2" fill="#5E9878"/><path d="M60 78L54 84L60 96L66 84Z" fill="#5E9878"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#8CC7A4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#5E9878" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#5E9878" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#5E9878" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><rect x="55" y="72" width="10" height="6" rx="2" fill="#5E9878"/><path d="M60 78L54 84L60 96L66 84Z" fill="#5E9878"/></g></svg></span>
+            <span class="mg-cell__type">ESTJ</span>
+            <span class="mg-cell__name">ESTJ</span>
+            <span class="mg-cell__desc">Turns a scattered mess into a plan.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#C6E9B8"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#8FB984" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#8FB984" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#8FB984" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><path d="M92 25C92 21 88 17.5 85 20.5C82 23.5 85.5 28.5 92 32.5C98.5 28.5 102 23.5 99 20.5C96 17.5 92 21 92 25Z" fill="#FF8E9E"/></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#C6E9B8"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#8FB984" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#8FB984" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#8FB984" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><path d="M92 25C92 21 88 17.5 85 20.5C82 23.5 85.5 28.5 92 32.5C98.5 28.5 102 23.5 99 20.5C96 17.5 92 21 92 25Z" fill="#FF8E9E"/></svg></span>
+            <span class="mg-cell__type">ESFJ</span>
+            <span class="mg-cell__name">ESFJ</span>
+            <span class="mg-cell__desc">Raises the temperature of any gathering.</span>
+          </div>
+        </div>
+      </div>
+      <div class="mg-group" style="background:#FFF5D9">
+        <div class="mg-group__head"><span class="mg-group__label" style="color:#7A5C00">Explorers</span><span class="mg-group__en" style="color:#7A5C00">EXPLORERS</span></div>
+        <div class="mg-group__grid">
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#A7D6F4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#6FA3C8" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#6FA3C8" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#6FA3C8" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g transform="rotate(-16 60 31)"><rect x="47" y="26" width="26" height="9.5" rx="4.75" fill="#BFE0F7" stroke="#8FBBDD" stroke-width="1.5"/><circle cx="56" cy="30.75" r="1" fill="#8FBBDD"/><circle cx="60" cy="30.75" r="1" fill="#8FBBDD"/><circle cx="64" cy="30.75" r="1" fill="#8FBBDD"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#A7D6F4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#6FA3C8" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#6FA3C8" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#6FA3C8" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g transform="rotate(-16 60 31)"><rect x="47" y="26" width="26" height="9.5" rx="4.75" fill="#BFE0F7" stroke="#8FBBDD" stroke-width="1.5"/><circle cx="56" cy="30.75" r="1" fill="#8FBBDD"/><circle cx="60" cy="30.75" r="1" fill="#8FBBDD"/><circle cx="64" cy="30.75" r="1" fill="#8FBBDD"/></g></svg></span>
+            <span class="mg-cell__type">ISTP</span>
+            <span class="mg-cell__name">ISTP</span>
+            <span class="mg-cell__desc">Few words, fast hands.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFE6A3"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C7A050" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><path d="M44 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><path d="M66 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="68" r="3" fill="#4B4358"/><text x="86" y="36" font-family="Gaegu,cursive" font-size="15" fill="#C7A050" font-weight="700">z z</text></g><g transform="rotate(-6 46 14)"><ellipse cx="46" cy="14" rx="15" ry="7.5" fill="#F09A86"/><path d="M46 7q0-4 4-5" stroke="#D3736C" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFE6A3"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C7A050" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C7A050" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g transform="rotate(-6 46 14)"><ellipse cx="46" cy="14" rx="15" ry="7.5" fill="#F09A86"/><path d="M46 7q0-4 4-5" stroke="#D3736C" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg></span>
+            <span class="mg-cell__type">ISFP</span>
+            <span class="mg-cell__name">ISFP</span>
+            <span class="mg-cell__desc">Collects whatever looked lovely today.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#8AC8F0"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#5B93BC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><rect x="39" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><rect x="63" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><path d="M57 55h6M39 54l-7-3M81 54l7-3" stroke="#4B4358" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#8AC8F0"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#5B93BC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#5B93BC" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><rect x="39" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><rect x="63" y="50.5" width="18" height="11.5" rx="5" fill="#4B4358"/><path d="M57 55h6M39 54l-7-3M81 54l7-3" stroke="#4B4358" stroke-width="2.5" fill="none" stroke-linecap="round"/></g></svg></span>
+            <span class="mg-cell__type">ESTP</span>
+            <span class="mg-cell__name">ESTP</span>
+            <span class="mg-cell__desc">The body reacts before the plan does.</span>
+          </div>
+          <div class="mg-cell" tabindex="0">
+            
+            <span class="mg-cell__art"><svg class="mg-art mg-art--rest" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFDA7E"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C99B3F" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M88 7L92.32 13L88 19L83.68 13Z" fill="#FFD66E"/><path d="M99 21.6L101.448 25L99 28.4L96.552 25Z" fill="#FF9D8A"/><path d="M79 4L81.16 7L79 10L76.84 7Z" fill="#A5D8F5"/></g></svg><svg class="mg-art mg-art--hover" width="86" height="86" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFDA7E"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C99B3F" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><path d="M88 7L92.32 13L88 19L83.68 13Z" fill="#FFD66E"/><path d="M99 21.6L101.448 25L99 28.4L96.552 25Z" fill="#FF9D8A"/><path d="M79 4L81.16 7L79 10L76.84 7Z" fill="#A5D8F5"/></g></svg></span>
+            <span class="mg-cell__type">ESFP</span>
+            <span class="mg-cell__name">ESFP</span>
+            <span class="mg-cell__desc">Comes alive the moment eyes are on them.</span>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ── 3. 테스트와 결과 카드 ─────────────────────── -->
+    <section id="features" class="mg-section mg-split">
+      <div>
+        <h2 class="mg-h2">A one-minute test,<br />a result card worth keeping</h2>
+        <p class="mg-body">Twelve questions if you are in a hurry, forty if you want the full picture. The result comes out as a card you can post straight to a story.</p>
+        <ul class="mg-list">
+            <li><span class="mg-check" aria-hidden="true">✓</span>A percentage gauge per axis</li>
+            <li><span class="mg-check" aria-hidden="true">✓</span>Love · friendship · work styles</li>
+            <li><span class="mg-check" aria-hidden="true">✓</span>Four card themes and counting</li>
+        </ul>
+      </div>
+      <div class="mg-cards">
+        <span class="mg-card mg-card--a" aria-hidden="true"></span>
+        <span class="mg-card mg-card--b" aria-hidden="true"></span>
+        <div class="mg-card mg-card--front">
+          <span class="mg-card__brand">MONGLE</span>
+          <svg width="94" height="94" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg>
+          <span class="mg-card__type">ENFP</span>
+          <span class="mg-card__nick">The party battery</span>
+          <span class="mg-card__quote">"Endlessly rechargeable"</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. 궁합 ───────────────────────────────────── -->
+    <section class="mg-section mg-split mg-split--rev">
+      <div class="mg-match">
+        <div class="mg-match__pair">
+          <svg width="104" height="104" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg>
+          <svg width="30" height="27" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 16.5C4.5 12.8 2.8 8.9 5.2 6.4C7 4.6 9.3 5.4 10 7C10.7 5.4 13 4.6 14.8 6.4C17.2 8.9 15.5 12.8 10 16.5Z" fill="#FFC9B0"/></svg>
+          <svg width="104" height="104" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#F2BBCE"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C98BA4" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C98BA4" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M54 66Q60 71 66 66" stroke="#4B4358" stroke-width="3" fill="none" stroke-linecap="round"/></g><g><path d="M60 16q0-7-5-10" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="51" cy="3.5" rx="6" ry="3.5" fill="#8FD3AC" transform="rotate(-28 51 3.5)"/><path d="M60 16q1-5 6-7" stroke="#6FBD97" stroke-width="2.5" fill="none" stroke-linecap="round"/><ellipse cx="69" cy="7" rx="5" ry="3" fill="#6FBD97" transform="rotate(24 69 7)"/></g></svg>
+        </div>
+        <span class="mg-match__pairname">ENFP × INFJ</span>
+        <span class="mg-match__score">92<span> pts</span></span>
+        <span class="mg-match__bar"><span style="width:92%"></span></span>
+        <span class="mg-match__quote">"Perfect back-and-forth"</span>
+      </div>
+      <div>
+        <h2 class="mg-h2">256 pairings.<br />We wrote every single one.</h2>
+        <p class="mg-body">Swap a six-character code with a friend — that is the whole setup. Right down to what happens if you two travel together.</p>
+        <span class="mg-code"><b>MG7-K2P</b>← this is what a code looks like</span>
+      </div>
+    </section>
+
+    <!-- ── 5. 데일리와 도감 ──────────────────────────── -->
+    <section class="mg-section">
+      <h2 class="mg-h2 mg-h2--center">A reason to open it again tomorrow</h2>
+      <div class="mg-dailies">
+          <div class="mg-daily">
+            <h3 class="mg-daily__title">Daily fortune</h3>
+            <p class="mg-daily__desc">A new one per type at midnight, generated right on the phone.</p>
+          </div>
+          <div class="mg-daily">
+            <h3 class="mg-daily__title">Daily balance game</h3>
+            <p class="mg-daily__desc">Answer today's question and see what all sixteen types would pick.</p>
+          </div>
+          <div class="mg-daily">
+            <h3 class="mg-daily__title">Mongle collection</h3>
+            <p class="mg-daily__desc">New costumes unlock as you check in, test and add friends. 32 today, more every update.</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- ── 6. 프라이버시 선언 ────────────────────────── -->
+    <section id="privacy" class="mg-privacy">
+      <div class="mg-pv__inner">
+        <span class="mg-pv__char"><svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFD8CA"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#D9A08C" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#D9A08C" opacity="0.3"/><path d="M44 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><path d="M66 57h10" stroke="#4B4358" stroke-width="3" stroke-linecap="round"/><circle cx="60" cy="68" r="3" fill="#4B4358"/><text x="86" y="36" font-family="Gaegu,cursive" font-size="15" fill="#D9A08C" font-weight="700">z z</text></g><g><path d="M90 8L95.04 15L90 22L84.96 15Z" fill="#FFD66E"/><path d="M100 22.8L102.304 26L100 29.2L97.696 26Z" fill="#FFC9D6"/></g></svg></span>
+        <h2>There is no server.<br />That is the whole point.</h2>
+        <p>Mongle has no server. No sign-up, no login, nothing uploaded anywhere. Your results never take a single step off your phone.</p>
+        <div class="mg-pv__chips">
+          <span class="mg-pv__chip">No account</span>
+          <span class="mg-pv__chip">The app does not track you</span>
+          <span class="mg-pv__chip">Works offline</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 7. FAQ ────────────────────────────────────── -->
+    <section id="faq" class="mg-section mg-section--narrow">
+      <h2 class="mg-h2 mg-h2--center">Frequently asked questions</h2>
+      <div class="mg-faqs">
+          <details class="mg-faq">
+            <summary><span>Can I take the test on the web?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>No — the test lives in the app. The character reveal and the result card are made for a phone screen. Install it and you are done in a minute.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Is it really free?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>Yes. Every feature is free and there is nothing to buy inside the app.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Are there ads?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>None. No banners, no interstitials, no rewarded ads.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Do I need an account?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>No. Install and start. We never ask for an email or a phone number.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Where is my data stored?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>Only on your phone. Mongle has no server, so even we have no way to see your results.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Do I lose my results if I change phones?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>Export your data to a file in Settings, then import it on the new one. There is no server, so there is no automatic backup — export before you wipe the old phone.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Is this test scientifically accurate?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>No. Mongle is entertainment, not a psychological assessment. Take it lightly.</p>
+          </details>
+          <details class="mg-faq">
+            <summary><span>Is the app available in English?</span><svg width="14" height="9" viewBox="0 0 14 9" aria-hidden="true"><path d="M1 1.5L7 7.5L13 1.5" stroke="#8A7A7D" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg></summary>
+            <p>The app UI is Korean for now. English is on the roadmap, without a fixed date — we would rather say so than promise a month we cannot keep.</p>
+          </details>
+      </div>
+    </section>
+
+    <!-- ── 8. 최종 CTA ───────────────────────────────── -->
+    <section class="mg-final">
+      <div class="mg-final__chars"><span class="mg-cta__char"><svg width="64" height="64" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#CDBCF4"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#9480CC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#9480CC" opacity="0.3"/><circle cx="49" cy="57" r="4.2" fill="#4B4358"/><circle cx="71" cy="57" r="4.2" fill="#4B4358"/><circle cx="60" cy="68" r="4.6" fill="#4B4358"/></g><g><text x="86" y="32" font-family="'Cafe24Ssurround','Gaegu',sans-serif" font-size="24" fill="#9480CC" font-weight="700">?</text><path d="M102 35L104.16 38L102 41L99.84 38Z" fill="#CDBCF4"/></g></svg></span><span class="mg-cta__char"><svg width="76" height="76" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 17C85 17 101 25 102 51C103 77 97 103 60 103C23 103 17 77 18 51C19 25 35 17 60 17Z" fill="#B3E4CD"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#7BB397" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#7BB397" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><circle cx="36" cy="4.5" r="3.4" fill="#FFC9D6"/><circle cx="41.3" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="39.3" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="32.7" cy="14.6" r="3.4" fill="#FFC9D6"/><circle cx="30.7" cy="8.6" r="3.4" fill="#FFC9D6"/><circle cx="36" cy="9.8" r="2.6" fill="#FFD66E"/></g></svg></span><span class="mg-cta__char"><svg width="96" height="96" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M27 55A33 33 0 0 1 93 55" stroke="#DB8365" stroke-width="5" fill="none" stroke-linecap="round"/><rect x="21" y="51" width="10" height="17" rx="5" fill="#DB8365"/><rect x="89" y="51" width="10" height="17" rx="5" fill="#DB8365"/></g></svg></span><span class="mg-cta__char"><svg width="76" height="76" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 14C82 14 100 33 101 57C102 83 88 106 60 106C32 106 18 83 19 57C20 33 38 14 60 14Z" fill="#9C82DC"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#6E56AC" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#6E56AC" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><path d="M45 21L49 8L58 16L60 5L62 16L71 8L75 21Z" fill="#FFD66E" stroke="#D9A93F" stroke-width="1.5" stroke-linejoin="round"/></svg></span><span class="mg-cta__char"><svg width="64" height="64" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 24C92 22 108 42 106 66C104 90 86 103 60 103C34 103 16 90 14 66C12 42 28 26 60 24Z" fill="#FFDA7E"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#C99B3F" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#C99B3F" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g><g><path d="M88 7L92.32 13L88 19L83.68 13Z" fill="#FFD66E"/><path d="M99 21.6L101.448 25L99 28.4L96.552 25Z" fill="#FF9D8A"/><path d="M79 4L81.16 7L79 10L76.84 7Z" fill="#A5D8F5"/></g></svg></span></div>
+      <h2>Time to meet your Mongle</h2>
+      <p>One minute. Really.</p>
+      <div class="mg-stores mg-stores--md">
+            <a class="mg-store is-disabled" data-store="appstore" data-store-app="mongle" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg width="20" height="24" viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg><span><span class="mg-store__sub">Coming soon</span><span class="mg-store__label">App Store</span></span>
+            </a>
+            <a class="mg-store is-disabled" data-store="playstore" data-store-app="mongle" href="#" aria-disabled="true" rel="noopener" target="_blank">
+              <svg width="19" height="21" viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg><span><span class="mg-store__sub">Coming soon</span><span class="mg-store__label">Google Play</span></span>
+            </a>
+          </div>
+    </section>
+  </main>
+
+  <footer class="mg-footer">
+    <div class="mg-footer__inner">
+      <div class="mg-footer__brand">
+        <span class="mg-footer__logo"><svg width="28" height="28" viewBox="0 0 120 120" aria-hidden="true" style="display:block;overflow:visible"><ellipse cx="60" cy="109" rx="27" ry="5" fill="rgba(110,86,140,0.10)"/><path d="M60 15C87 15 106 37 105 62C104 88 85 107 60 107C35 107 16 88 15 62C14 37 33 15 60 15Z" fill="#FFB199"/><ellipse cx="60" cy="93" rx="29" ry="11" fill="#DB8365" opacity="0.13"/><ellipse cx="42" cy="33" rx="12" ry="6.5" fill="#FFFFFF" opacity="0.42" transform="rotate(-16 42 33)"/><g><circle cx="37" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="83" cy="64" r="5.5" fill="#DB8365" opacity="0.3"/><circle cx="49" cy="57" r="3.4" fill="#4B4358"/><circle cx="71" cy="57" r="3.4" fill="#4B4358"/><path d="M52 64A8 7 0 0 0 68 64Z" fill="#4B4358"/></g></svg><span>Mongle</span></span>
+        <span class="mg-footer__tag">Sixteen personalities, sixteen Mongles</span>
+      </div>
+      <div class="mg-footer__links">
+        <a href="../">H1Soft home</a>
+        <a href="./privacy/">Privacy Policy</a>
+        <a href="./terms/">Terms of Service</a>
+        <a data-email="text" href="#">h1.soft.x001@gmail.com</a>
+      </div>
+    </div>
+    <div class="mg-footer__legal">
+      <span>© 2026 H1Soft.</span>
+      <p>Mongle is an independent service with no affiliation with The Myers-Briggs Company. MBTI® is a registered trademark of its respective owner. Mongle's questions and results are entertainment content we wrote ourselves, not a psychological assessment tool.</p>
+    </div>
+  </footer>
+</body>
+</html>
