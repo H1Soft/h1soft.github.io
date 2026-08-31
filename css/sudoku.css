@@ -12,6 +12,8 @@
   --sv-orange: #d9772b;
   --sv-sand: #e8c9a8;
   --sv-gold: #b98a2f;
+  --sv-max: 1080px;
+  --sv-read: 660px;
   --sv-serif: Lora, "Noto Serif KR", Georgia, serif;
   --sv-sans: Manrope, "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
@@ -250,18 +252,25 @@ img, svg { display: block; }
 
 /* ── 공통 섹션 ──────────────────────────────────────── */
 .sv-section {
-  padding: clamp(56px, 8vw, 88px) clamp(16px, 5vw, 120px);
+  padding: clamp(56px, 8vw, 96px) clamp(16px, 5vw, 48px);
   display: flex;
   flex-direction: column;
-  gap: clamp(28px, 4vw, 36px);
+  align-items: center;
+  gap: clamp(28px, 4vw, 40px);
 }
 .sv-section--white { background: var(--sv-paper); }
 .sv-section--cream { background: var(--sv-cream); }
-.sv-section--split { flex-direction: row; align-items: center; gap: clamp(32px, 5vw, 72px); flex-wrap: wrap; }
-.sv-section--faq { flex-direction: row; align-items: flex-start; gap: clamp(32px, 5vw, 72px); flex-wrap: wrap; }
+/* 섹션 안의 블록은 읽기 좋은 폭에서 멈춘다 */
+.sv-section > * { width: 100%; max-width: var(--sv-max); }
 
-.sv-copy { display: flex; flex-direction: column; gap: 14px; max-width: 440px; }
-.sv-copy--wide { max-width: 640px; }
+.sv-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  max-width: var(--sv-read);
+  text-align: center;
+}
 .sv-label { font-size: 12px; font-weight: 800; letter-spacing: 0.16em; color: var(--sv-orange); }
 .sv-label--onDark { color: var(--sv-sand); }
 .sv-section h2 {
@@ -272,51 +281,20 @@ img, svg { display: block; }
 }
 .sv-ko .sv-section h2 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.35; font-size: clamp(24px, 3vw, 33px); }
 .sv-copy p { font-size: clamp(15px, 2vw, 17px); line-height: 1.65; color: var(--sv-ink70); }
+.sv-section h2 { text-wrap: balance; }
 
-/* ── 여행 지도 ──────────────────────────────────────── */
-.sv-map {
-  position: relative;
-  flex: 1 1 420px;
-  max-width: 560px;
-  aspect-ratio: 560 / 360;
-  background: var(--sv-cream);
+/* ── 여행 지도 화면 ────────────────────────────────── */
+.sv-mapshot { max-width: 360px; margin: 0 auto; }
+.sv-mapshot img {
+  width: 100%;
+  height: auto;
+  border-radius: 26px;
   border: 1px solid var(--sv-line);
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 16px 40px rgba(31, 41, 51, 0.08);
+  box-shadow: 0 26px 60px rgba(31, 41, 51, 0.16);
 }
-.sv-section--white .sv-map { background: var(--sv-cream); }
-.sv-map__leg { position: absolute; border-top: 2.5px dashed rgba(31, 41, 51, 0.3); }
-.sv-map__leg--1 { left: 12%; top: 69%; width: 27%; transform: rotate(-24deg); }
-.sv-map__leg--2 { left: 39%; top: 47%; width: 27%; transform: rotate(-14deg); }
-.sv-map__leg--3 { left: 65%; top: 36%; width: 23%; transform: rotate(-10deg); border-top-color: rgba(31, 41, 51, 0.18); }
-
-.sv-city {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-  font-family: var(--sv-serif);
-  font-size: 14px;
-  font-weight: 600;
-}
-.sv-city i { position: relative; width: 64px; height: 64px; border-radius: 50%; overflow: hidden; display: block; }
-.sv-city i::before, .sv-city i::after { content: ""; position: absolute; }
-.sv-city--lisbon i::before { inset: 0; background: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.26) 0 5px, transparent 5px 12px); }
-.sv-city--lisbon i::after { left: 0; right: 0; bottom: 0; height: 18px; background: #c86b4a; }
-.sv-city--marrakesh i::before { left: 15px; bottom: 0; width: 34px; height: 40px; border-radius: 17px 17px 0 0; background: #b3541e; }
-.sv-city--kyoto i::before { left: 17px; top: 10px; width: 19px; height: 19px; border-radius: 50%; background: #c0452c; }
-.sv-city--kyoto i::after { left: 0; right: 0; bottom: 0; height: 14px; background: var(--sv-gold); }
-.sv-city--lisbon { left: 6%; top: 66%; }
-.sv-city--lisbon i { background: #2b5f8c; box-shadow: 0 8px 18px rgba(43, 95, 140, 0.3); }
-.sv-city--marrakesh { left: 35%; top: 44%; }
-.sv-city--marrakesh i { background: #d9a441; box-shadow: 0 8px 18px rgba(179, 84, 30, 0.3); }
-.sv-city--kyoto { left: 63%; top: 27%; }
-.sv-city--kyoto i { background: #2a2730; box-shadow: 0 8px 18px rgba(42, 39, 48, 0.35); }
 
 /* ── 엽서 ───────────────────────────────────────────── */
-.sv-postcards { display: flex; align-items: center; gap: clamp(12px, 2vw, 26px); flex-wrap: wrap; }
+.sv-postcards { display: flex; align-items: center; justify-content: center; gap: clamp(12px, 2vw, 26px); flex-wrap: wrap; }
 .sv-postcard {
   background: #fbf7ee;
   padding: 10px 10px 26px;
@@ -352,7 +330,17 @@ img, svg { display: block; }
   border-left-color: rgba(31, 41, 51, 0.35);
 }
 
-.sv-postcards__note { display: flex; flex-direction: column; gap: 10px; max-width: 240px; }
+/* 캡션은 엽서 줄 아래 한 줄로 내려 가운데 정렬 */
+.sv-postcards__note {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+  text-align: center;
+}
+.sv-stamps { justify-content: center; }
 .sv-postcards__cap { font-size: 12.5px; font-weight: 800; }
 .sv-stamps { display: flex; align-items: center; gap: 8px; }
 .sv-stamp {
@@ -389,6 +377,28 @@ img, svg { display: block; }
   vertical-align: 2px;
 }
 .sv-hint__desc { font-size: 12px; color: var(--sv-ink70); line-height: 1.55; }
+
+/* ── 앱 화면 스트립 ─────────────────────────────────── */
+.sv-shots {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(16px, 2.4vw, 28px);
+}
+.sv-shot { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+.sv-shot img {
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px -14px rgba(31, 41, 51, 0.4);
+}
+.sv-shot figcaption {
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--sv-ink70);
+  text-align: center;
+}
+.sv-shots__note { font-size: 12px; color: rgba(31, 41, 51, 0.5); text-align: center; }
 
 /* ── 전부 열립니다 ──────────────────────────────────── */
 .sv-open {
@@ -458,8 +468,7 @@ img, svg { display: block; }
 .sv-comfort p { font-size: 13px; color: var(--sv-ink70); line-height: 1.55; }
 
 /* ── FAQ ────────────────────────────────────────────── */
-.sv-section--faq .sv-copy { width: 360px; flex-shrink: 0; }
-.sv-faqs { flex: 1 1 380px; display: flex; flex-direction: column; }
+.sv-faqs { display: flex; flex-direction: column; max-width: 760px; margin: 0 auto; }
 .sv-faq { border-bottom: 1px solid rgba(31, 41, 51, 0.1); }
 .sv-faq summary {
   display: flex;
@@ -483,7 +492,7 @@ img, svg { display: block; }
   transition: transform 0.2s ease;
 }
 .sv-faq[open] .sv-faq__chev { transform: rotate(-135deg); }
-.sv-faq p { padding: 0 4px 18px; font-size: 14.5px; line-height: 1.65; color: var(--sv-ink70); max-width: 600px; }
+.sv-faq p { padding: 0 4px 18px; font-size: 14.5px; line-height: 1.65; color: var(--sv-ink70); }
 
 /* ── 최종 CTA ───────────────────────────────────────── */
 .sv-final {
@@ -536,18 +545,14 @@ img, svg { display: block; }
 /* ── 반응형 ─────────────────────────────────────────── */
 @media (max-width: 900px) {
   .sv-hints, .sv-comforts { grid-template-columns: repeat(2, 1fr); }
+  .sv-shots { grid-template-columns: repeat(3, 1fr); }
   .sv-route, .sv-dot { display: none; }
-  /* 세로로 접히면 wrap 이 줄마다 콘텐츠 폭을 잡아 뷰포트를 넘긴다 — nowrap 으로 고정 */
-  .sv-section--split, .sv-section--faq { flex-direction: column; align-items: stretch; flex-wrap: nowrap; }
-  .sv-section--faq .sv-copy { width: auto; }
-  .sv-copy, .sv-postcards__note { max-width: none; }
-  /* flex-basis 가 높이를 잡으면 aspect-ratio 가 폭을 되계산한다 — 폭을 직접 준다 */
-  .sv-map { flex: none; width: 100%; max-width: none; }
-  .sv-faqs { flex: none; }
+  .sv-postcards__note { max-width: none; }
 }
 
 @media (max-width: 680px) {
   .sv-hints, .sv-comforts { grid-template-columns: 1fr; }
+  .sv-shots { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .sv-nav__links { display: none; }
   .sv-hero__copy { align-items: center; text-align: center; }
   .sv-hero__copy .sv-stores { justify-content: center; }
