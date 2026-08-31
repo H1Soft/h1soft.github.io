@@ -25,12 +25,15 @@ robots.txt, sitemap.xml
 
 | 파일 | 용도 | 원본 |
 | --- | --- | --- |
-| `app_icon.png` (512), `favicon-32.png`, `apple-touch-icon.png` (180) | QR Scanner 아이콘 | `QR_icon.png` sips 리사이즈 |
+| `h1soft-logo.png` (512, 투명), `h1soft-mark.png` (128, 투명) | H1Soft 로고 — JSON-LD `logo`, 헤더·푸터 워드마크 | 원본 `h1.png` 트리밍 |
+| `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180), `h1soft-appicon.png` (512), 루트 `favicon.ico` | H1Soft 파비콘·앱 아이콘 | 짙은 남색 라운드 칩 + 로고 (`scratchpad/build_brand.py`) |
+| `app_icon.png` (512) | QR Scanner 앱 아이콘 | `QR_icon.png` sips 리사이즈 |
 | `seukscan-icon.png` (512) | 슥캔 아이콘 | Claude Design 프로젝트 `uploads/app-icon.png` |
 | `ongle-icon.png` (512) | 온글 아이콘 | 원본 1254px 리사이즈 |
 | `seukscan/{ko,en}/0X.webp` (640w) | 슥캔 스크린샷 | 원본 PNG 리사이즈+webp |
 | `ongle/{ko,en}/0X.webp` (640w) | 온글 스크린샷 | hwp 저장소 `store-screenshots/public/screenshots` 리사이즈+webp |
-| `og-image-ko.jpg` / `og-image-en.jpg` | OG 공유 이미지 | feature-graphic 1024×500 jpg 변환 |
+| `og-h1soft-ko.png` / `og-h1soft-en.png` (1200×630) | 루트 회사 OG | 로고 + 'IT 기술 스타트업' HTML → Chrome 헤드리스 (`scratchpad/build_og_brand.py`) |
+| `og-image-ko.jpg` / `og-image-en.jpg` | QR Scanner OG | feature-graphic 1024×500 jpg 변환 |
 | `mongle-og.png` / `mongle-og-en.png` (1200×630) | 몽글 OG | 시안 B-6 HTML → Chrome 헤드리스 캡처 |
 | `sudoku-og.png` / `sudoku-og-en.png` (1200×630) | 스도쿠 보야지 OG | 시안 W8 HTML → Chrome 헤드리스 캡처 |
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
@@ -52,6 +55,8 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 `/sudoku/` 의 인앱 화면 이미지는 스크린샷이 아니라 **디자인 시안을 실제로 렌더한 결과**입니다. Claude Design 의 `Sudoku Voyage 디자인.dc.html` 을 DC 런타임(`support.js` + `android-frame.jsx`)과 함께 로컬에서 띄우고 화면별로 캡처했습니다. 시안 본문의 `data-dc-script` 는 파일이 커서 API 응답 상한(256KiB)에 잘려 받지 못했기 때문에, 보드·입력판 데이터는 같은 프로젝트의 웹사이트 시안에 있는 `DCLogic` 을 기준으로 재구성했습니다 (스크립트: `scratchpad/make_screens.py`, `dcrender/dclogic.html` — 저장소에는 결과 이미지만 들어옵니다). 시안 주석(§ 참조 줄)과 화면 안의 한국어 주석 라벨은 캡처 전에 제거·영문화했습니다.
 
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
+
+브랜딩: 루트 페이지는 특정 제품이 아니라 **IT 기술 스타트업**으로 포지셔닝합니다. 파비콘·앱 아이콘·루트 OG·JSON-LD `logo` 는 전부 H1Soft 로고를 쓰고, QR Scanner 에셋은 `/qr-scanner/` 안에서만 씁니다 (예전에는 사이트 전역이 QR 아이콘이라 구글이 H1Soft = QR 앱으로 인식했습니다).
 
 ## 출시 후 할 일
 
