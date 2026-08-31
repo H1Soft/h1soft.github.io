@@ -378,26 +378,57 @@ img, svg { display: block; }
 }
 .sv-hint__desc { font-size: 12px; color: var(--sv-ink70); line-height: 1.55; }
 
-/* ── 앱 화면 스트립 ─────────────────────────────────── */
-.sv-shots {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: clamp(16px, 2.4vw, 28px);
+/* ── 앱 화면 — 세로형 쇼케이스 ─────────────────────── */
+.sv-show {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(56px, 7vw, 88px);
+  margin-top: clamp(8px, 2vw, 20px);
 }
-.sv-shot { margin: 0; display: flex; flex-direction: column; gap: 10px; }
-.sv-shot img {
+.sv-show__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(32px, 6vw, 80px);
+  flex-wrap: wrap;
+}
+.sv-show__row--reverse { flex-direction: row-reverse; }
+
+.sv-show__shot {
+  flex: 0 1 auto;
+  width: min(400px, 100%);
+}
+.sv-show__shot img {
   width: 100%;
   height: auto;
-  border-radius: 18px;
-  box-shadow: 0 18px 40px -14px rgba(31, 41, 51, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 28px 60px -18px rgba(31, 41, 51, 0.45);
 }
-.sv-shot figcaption {
-  font-size: 12.5px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: var(--sv-ink70);
-  text-align: center;
+
+.sv-show__text {
+  flex: 1 1 360px;
+  min-width: 0;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: left;
 }
+.sv-show__num {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: var(--sv-orange);
+}
+.sv-show__text h3 {
+  font-family: var(--sv-serif);
+  font-size: clamp(23px, 2.8vw, 31px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+.sv-ko .sv-show__text h3 { font-family: "Noto Sans KR", var(--sv-sans); font-weight: 700; line-height: 1.4; font-size: clamp(21px, 2.3vw, 27px); }
+.sv-show__text p { font-size: clamp(14.5px, 1.7vw, 16px); line-height: 1.7; color: var(--sv-ink70); }
+
 .sv-shots__note { font-size: 12px; color: rgba(31, 41, 51, 0.5); text-align: center; }
 
 /* ── 전부 열립니다 ──────────────────────────────────── */
@@ -545,14 +576,15 @@ img, svg { display: block; }
 /* ── 반응형 ─────────────────────────────────────────── */
 @media (max-width: 900px) {
   .sv-hints, .sv-comforts { grid-template-columns: repeat(2, 1fr); }
-  .sv-shots { grid-template-columns: repeat(3, 1fr); }
+  /* 400px 샷 + 360px 글이 한 줄에 안 들어가는 구간부터는 세로로 쌓는다 */
+  .sv-show__row, .sv-show__row--reverse { flex-direction: column; }
+  .sv-show__text { text-align: center; align-items: center; max-width: 560px; }
   .sv-route, .sv-dot { display: none; }
   .sv-postcards__note { max-width: none; }
 }
 
 @media (max-width: 680px) {
   .sv-hints, .sv-comforts { grid-template-columns: 1fr; }
-  .sv-shots { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .sv-nav__links { display: none; }
   .sv-hero__copy { align-items: center; text-align: center; }
   .sv-hero__copy .sv-stores { justify-content: center; }

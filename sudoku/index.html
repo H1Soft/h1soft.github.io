@@ -628,39 +628,95 @@
         <h2>앱 안은 이렇게 생겼습니다.</h2>
         <p>여행 저널을 그대로 옮긴 화면 — 홈에서 3초 안에 이어서 풀고, 지도에서 다음 지역을 열고, 앨범에서 모은 엽서를 봅니다.</p>
       </div>
-      <div class="sv-shots">
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/01-home.webp" width="640" height="1386" loading="lazy" decoding="async" alt="홈 — 이어하기와 데일리 퍼즐" />
-          <figcaption>홈 — 이어하기와 데일리 퍼즐</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/02-game.webp" width="640" height="1386" loading="lazy" decoding="async" alt="게임 — 셀 선택과 연관 하이라이트" />
-          <figcaption>게임 — 셀 선택과 연관 하이라이트</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/03-dark.webp" width="640" height="1386" loading="lazy" decoding="async" alt="다크 모드 — 밤에 맞춘 보드" />
-          <figcaption>다크 모드 — 밤에 맞춘 보드</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/04-album.webp" width="640" height="1386" loading="lazy" decoding="async" alt="도감 — 모은 엽서 앨범" />
-          <figcaption>도감 — 모은 엽서 앨범</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/05-daily.webp" width="640" height="1386" loading="lazy" decoding="async" alt="데일리 — 도장이 찍히는 캘린더" />
-          <figcaption>데일리 — 도장이 찍히는 캘린더</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/06-academy.webp" width="640" height="1386" loading="lazy" decoding="async" alt="아카데미 — 14가지 기법 레슨" />
-          <figcaption>아카데미 — 14가지 기법 레슨</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/07-postcard.webp" width="640" height="1386" loading="lazy" decoding="async" alt="엽서 획득 — 색이 차오르는 순간" />
-          <figcaption>엽서 획득 — 색이 차오르는 순간</figcaption>
-        </figure>
-        <figure class="sv-shot">
-          <img src="../assets/sudoku/08-passport.webp" width="640" height="1386" loading="lazy" decoding="async" alt="여권 — 스탬프 기록" />
-          <figcaption>여권 — 스탬프 기록</figcaption>
-        </figure>
+      <div class="sv-show">
+        <div class="sv-show__row">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/01-home.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 홈 화면 — 3초 안에 이어서 풉니다." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">01 · 홈</span>
+            <h3>3초 안에 이어서 풉니다.</h3>
+            <p>앱을 열면 이어하기 카드가 맨 위. 오늘의 데일리 퍼즐과 지금 지역의 진행도까지 한 화면에 있습니다.</p>
+          </div>
+        </div>
+        <div class="sv-show__row sv-show__row--reverse">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/02-game.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 게임 화면 — 칸을 고르면 길이 보입니다." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">02 · 게임</span>
+            <h3>칸을 고르면 길이 보입니다.</h3>
+            <p>고른 칸의 행·열·박스와 같은 숫자를 함께 비춥니다. 되돌리기·지우기·메모·힌트는 보드 바로 아래에.</p>
+          </div>
+        </div>
+        <div class="sv-show__row">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/03-dark.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 다크 모드 화면 — 밤에 풀기 위한 진짜 어두운 보드." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">03 · 다크 모드</span>
+            <h3>밤에 풀기 위한 진짜 어두운 보드.</h3>
+            <p>실수 제한 모드에서는 규칙에 어긋난 칸을 그 자리에서 표시합니다. 숫자마다 남은 개수는 입력판 아래 링으로.</p>
+          </div>
+        </div>
+        <div class="sv-show__row sv-show__row--reverse">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/04-album.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 도감 화면 — 모은 엽서를 한 장씩." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">04 · 도감</span>
+            <h3>모은 엽서를 한 장씩.</h3>
+            <p>라인아트로 시작해 별을 모을수록 색이 차오릅니다. 지역별로 걸러 보고, 아직 못 연 자리는 여는 조건이 보입니다.</p>
+          </div>
+        </div>
+        <div class="sv-show__row">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/05-daily.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 데일리 화면 — 하루 한 판, 도장 하나." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">05 · 데일리</span>
+            <h3>하루 한 판, 도장 하나.</h3>
+            <p>월간 캘린더에 그날의 난이도가 표시됩니다. 놓친 날은 소급해서 풀 수 있고, 실드로 연속 기록을 지킵니다.</p>
+          </div>
+        </div>
+        <div class="sv-show__row sv-show__row--reverse">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/06-academy.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 아카데미 화면 — 기법을 배우는 곳." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">06 · 아카데미</span>
+            <h3>기법을 배우는 곳.</h3>
+            <p>여정에서 새 기법이 처음 등장하면 3분짜리 레슨을 제안합니다. 거절해도 페널티는 없습니다. 14가지를 순서대로 익힐 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="sv-show__row">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/07-postcard.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 엽서 획득 화면 — 색이 차오르는 순간." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">07 · 엽서 획득</span>
+            <h3>색이 차오르는 순간.</h3>
+            <p>랜드마크 스테이지를 지나면 엽서를 받습니다. 앨범에 보관하거나 그 자리에서 공유하세요.</p>
+          </div>
+        </div>
+        <div class="sv-show__row sv-show__row--reverse">
+          <div class="sv-show__shot">
+            <img src="../assets/sudoku/08-passport.webp" width="640" height="1386" loading="lazy" decoding="async"
+                 alt="스도쿠 보야지 여권 화면 — 다녀온 자리를 남깁니다." />
+          </div>
+          <div class="sv-show__text">
+            <span class="sv-show__num" aria-hidden="true">08 · 여권</span>
+            <h3>다녀온 자리를 남깁니다.</h3>
+            <p>지역 완주, 연속 기록, 무실수 클리어마다 스탬프가 찍힙니다. 조건이 아직 가려진 히든 스탬프도 있습니다.</p>
+          </div>
+        </div>
       </div>
       <span class="sv-shots__note">실제 앱 화면 시안입니다. 출시 버전과 세부는 달라질 수 있습니다.</span>
     </section>
