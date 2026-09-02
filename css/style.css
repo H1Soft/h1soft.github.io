@@ -872,37 +872,77 @@ details p {
 @keyframes card-shimmer { from { background-position: 0% 50%; } to { background-position: 200% 50%; } }
 
 /* ── 제품 칩 (히어로 하단) ──────────────────────────── */
-.app-chips {
-  max-width: 1160px;
-  margin: clamp(28px, 4vw, 40px) auto 0;
-  display: flex;
-  gap: clamp(14px, 2.4vw, 28px);
-  flex-wrap: wrap;
-  justify-content: center;
+/* ── 히어로 제품 지도 — 분야 카드 3장, 아래 섹션 순서와 1:1 ── */
+.hero-map {
+  max-width: 1100px;
+  margin: clamp(32px, 4.5vw, 48px) auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(12px, 1.6vw, 16px);
+  text-align: left;
 }
-/* 카테고리 묶음 — 라벨 하나 + 그 분야의 앱 칩들 */
-.app-chips__group {
+.hero-map__card {
+  --cat: var(--primary);
   display: flex;
-  align-items: center;
-  gap: clamp(8px, 1.2vw, 12px);
-  flex-wrap: wrap;
-  padding: 8px 10px 8px 8px;
+  flex-direction: column;
+  gap: 14px;
+  padding: 16px 16px 16px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.55);
-  box-shadow: inset 0 0 0 1px rgba(23, 23, 25, 0.06);
+  background: #fff;
+  box-shadow: inset 0 0 0 1px var(--line-alt), 0 1px 2px rgba(23, 23, 25, 0.04);
+  border-top: 3px solid var(--cat);
 }
-.app-chips__label {
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--ink);
-  color: #fff;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
+.hero-map__card--life { --cat: #db8365; }
+.hero-map__card--games { --cat: #2c6e63; }
+
+.hero-map__head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto auto;
+  column-gap: 10px;
+  row-gap: 3px;
+  align-items: center;
   text-decoration: none;
+  color: var(--ink);
 }
-.app-chips__label:hover { background: var(--primary); }
+.hero-map__cat {
+  grid-column: 1;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--cat);
+}
+.hero-map__promise {
+  grid-column: 1;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
+.hero-map__arrow {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--bg-alt);
+  color: var(--ink-alt);
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+.hero-map__head:hover .hero-map__arrow { background: var(--cat); color: #fff; transform: translateX(2px); }
+
+.hero-map__apps { display: flex; flex-wrap: wrap; gap: 8px; }
+/* 카드 안에서는 떠다니는 애니메이션이 오히려 산만하다 — 정지, 크기 한 단계 축소 */
+.hero-map .app-chip { animation: none; padding: 8px 12px 8px 9px; font-size: 13px; gap: 8px; border-radius: 12px; }
+.hero-map .app-chip img, .hero-map .app-chip .app-mark--sm { width: 24px; height: 24px; }
+
+@media (max-width: 900px) {
+  .hero-map { grid-template-columns: 1fr; max-width: 560px; }
+}
 
 .app-chip {
   display: flex;
