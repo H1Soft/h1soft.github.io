@@ -876,9 +876,33 @@ details p {
   max-width: 1160px;
   margin: clamp(28px, 4vw, 40px) auto 0;
   display: flex;
-  gap: clamp(10px, 1.6vw, 16px);
+  gap: clamp(14px, 2.4vw, 28px);
   flex-wrap: wrap;
+  justify-content: center;
 }
+/* 카테고리 묶음 — 라벨 하나 + 그 분야의 앱 칩들 */
+.app-chips__group {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.2vw, 12px);
+  flex-wrap: wrap;
+  padding: 8px 10px 8px 8px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: inset 0 0 0 1px rgba(23, 23, 25, 0.06);
+}
+.app-chips__label {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.app-chips__label:hover { background: var(--primary); }
 
 .app-chip {
   display: flex;
@@ -1538,12 +1562,13 @@ details p {
 }
 
 .game-card {
+  margin-top: clamp(28px, 4.5vw, 44px); /* .tool-grid / .life-grid 와 동일 */
   display: grid;
   grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
   align-items: center;
-  gap: clamp(24px, 4vw, 48px);
-  padding: clamp(24px, 3.5vw, 40px);
-  border-radius: 24px;
+  gap: clamp(28px, 4.5vw, 56px);
+  padding: clamp(26px, 4vw, 40px);
+  border-radius: 26px;
   background: linear-gradient(135deg, #faf6ef 0%, #f1ece1 100%);
   box-shadow: inset 0 0 0 1px rgba(31, 41, 51, 0.08);
   color: var(--ink-normal);
@@ -1587,17 +1612,22 @@ details p {
 
 .game-card__body { display: flex; flex-direction: column; gap: 10px; }
 .game-card__badges { display: flex; flex-wrap: wrap; gap: 6px; }
-.game-card__brand {
-  font-family: var(--font-serif, "Noto Serif KR", serif);
-  font-size: 15px;
+.game-card__badge {
+  padding: 4px 11px;
+  border-radius: 999px;
+  background: rgba(44, 110, 99, 0.12);
+  color: #1f5249;
+  font-size: 11.5px;
   font-weight: 700;
-  color: #2c6e63;
+  letter-spacing: 0.02em;
 }
+.game-card__brand { font-size: 14px; font-weight: 700; letter-spacing: 0.06em; color: #2c6e63; }
 .game-card__head {
-  font-size: clamp(20px, 2.4vw, 27px);
+  font-size: clamp(22px, 3.4vw, 30px);
   font-weight: 700;
-  line-height: 1.35;
+  line-height: 1.4;
   word-break: keep-all;
+  text-wrap: balance;
 }
 .game-card__desc {
   font-size: 15px;
