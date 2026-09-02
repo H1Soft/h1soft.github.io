@@ -7,7 +7,7 @@ H1Soft 팀 공식 웹사이트 (정적 사이트, GitHub Pages 배포).
 ```
 index.html               팀 홈 (Hero·Pillars·유틸리티·라이프스타일·게임·About·FAQ·Contact)
 qr-scanner/index.html    QR Scanner 제품 상세 (/qr-scanner/ — Products·Showcase)
-seukscan/index.html      슥캔 제품 랜딩 (/seukscan/ — Hero·Features·Screens·FAQ)
+seukscan/index.html      슥캔 제품 랜딩 (/seukscan/ — Hero·Features·Showcase·FAQ, 화면 섹션은 QR 과 같은 세로 교차 배치)
 ongle/index.html         온글 제품 랜딩 (/ongle/ — 동일 구성 + 한컴 비제휴 고지)
 mongle/index.html        몽글 제품 랜딩 (/mongle/ — 자체 디자인 시스템, css/mongle.css)
 sudoku/index.html        스도쿠 보야지 랜딩 (/sudoku/ — 자체 디자인 시스템, css/sudoku.css)

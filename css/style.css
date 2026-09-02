@@ -401,6 +401,8 @@ a { color: var(--primary-strong); }
   object-fit: cover;
   object-position: 50% 100%;
 }
+/* 슥캔·온글은 앱바+본문이 화면 위쪽에 있어 상단 기준으로 자른다 (QR 은 하단 기준) */
+.showcase--top .showcase__shot img { object-position: 50% 25%; }
 
 .showcase__text {
   flex: 1 1 340px;
