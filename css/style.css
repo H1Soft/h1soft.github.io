@@ -401,8 +401,44 @@ a { color: var(--primary-strong); }
   object-fit: cover;
   object-position: 50% 100%;
 }
-/* 슥캔·온글은 앱바+본문이 화면 위쪽에 있어 상단 기준으로 자른다 (QR 은 하단 기준) */
-.showcase--top .showcase__shot img { object-position: 50% 25%; }
+/* 슥캔·온글은 원본 스크린샷이라 QR 처럼 배경+기기 프레임을 CSS 로 씌운다
+   (QR 은 스토어 스크린샷이라 프레임이 이미지 안에 이미 들어 있다) */
+.showcase--framed .showcase__shot {
+  border-color: transparent;
+  background: linear-gradient(165deg, #F8FAFF 0%, #E7EEFB 100%);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 8%;
+}
+
+.showcase__phone {
+  position: relative;
+  width: 78%;
+  padding: 22px 9px 9px;
+  border-radius: 36px;
+  background: #FCFDFF;
+  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.11), 0 26px 46px -22px rgba(15, 23, 42, 0.55);
+}
+/* 펀치홀 카메라 */
+.showcase__phone::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #14171c;
+}
+.showcase__phone img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 27px 27px 0 0;
+  object-fit: fill;
+}
 
 .showcase__text {
   flex: 1 1 340px;

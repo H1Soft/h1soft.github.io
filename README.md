@@ -38,6 +38,8 @@ robots.txt, sitemap.xml
 | `sudoku-og.png` / `sudoku-og-en.png` (1200×630) | 스도쿠 보야지 OG | 시안 W8 HTML → Chrome 헤드리스 캡처 |
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
 | `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
+
+QR Scanner 의 쇼케이스 이미지는 스토어 스크린샷이라 배경·기기 프레임이 이미 이미지 안에 있습니다. 슥캔·온글은 앱 화면 원본이라 같은 룩앤필을 CSS 로 만듭니다 — `.showcase--framed` 가 카드에 옅은 파랑 배경을 깔고, `.showcase__phone` 이 펀치홀이 있는 밝은 기기 셸을 씌운 뒤 화면이 카드 아래로 흘러 나가게 잘립니다 (크롭 확대 없음).
 | `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
 
 재생성:
