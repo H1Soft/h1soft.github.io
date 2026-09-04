@@ -4,10 +4,7 @@
 const CONFIG = {
   // QR Scanner (data-store-app 미지정 시 기본값)
   APP_STORE_URL: "", // 예: "https://apps.apple.com/app/id0000000000"
-  // 비공개 테스트 중 — 정식 출시(프로덕션 트랙 공개) 시 아래 URL을 PLAY_STORE_URL에 넣기.
-  // 테스트 중에 걸면 테스터 외 방문자는 스토어에서 "찾을 수 없음"이 뜸.
-  // https://play.google.com/store/apps/details?id=com.h1soft.codescanner
-  PLAY_STORE_URL: "",
+  PLAY_STORE_URL: "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
 
   // 슥캔 (data-store-app="seukscan")
   SEUKSCAN_APP_STORE_URL: "",
