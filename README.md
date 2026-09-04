@@ -21,7 +21,7 @@ js/config.js             ★ 가변 값 관리 지점 (스토어 URL, 문의 이
 js/site.js               Products 드롭다운, 스크롤 등장, 숫자 카운트업
 js/sagak.js              사각사각 랜딩의 스크롤 등장
 assets/                  이미지 (아래 참고)
-robots.txt, sitemap.xml
+robots.txt, sitemap.xml     sitemap 은 `scratchpad/build_sitemap.py` 로 생성 (파일 스캔 + hreflang 대응)
 ```
 
 ## assets/ 구성
@@ -69,6 +69,8 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 브랜딩: 루트 페이지는 특정 제품이 아니라 **IT 기술 스타트업**으로 포지셔닝합니다. 사용자에게 보이는 문구에는 Kotlin Multiplatform·Compose Multiplatform·Rust 같은 기술 용어를 쓰지 않습니다 — "아이폰과 안드로이드에서 똑같이", "내 폰 안에서 처리"처럼 풀어 씁니다 (JSON-LD `knowsAbout` 은 검색엔진용 구조화 데이터라 기술명을 유지). 제품 분야는 **매일 쓰는 도구 / 라이프스타일 / 게임** 세 가지로 부르고, 히어로 칩도 이 세 묶음으로 나눕니다. 파비콘·앱 아이콘·루트 OG·JSON-LD `logo` 는 전부 H1Soft 로고를 쓰고, QR Scanner 에셋은 `/qr-scanner/` 안에서만 씁니다 (예전에는 사이트 전역이 QR 아이콘이라 구글이 H1Soft = QR 앱으로 인식했습니다).
 
 스토어 버튼에는 App Store(사과)·Google Play(삼각형) 아이콘을 항상 함께 둡니다 — `style.css` 의 `.store-btn`(QR·슥캔·온글), `mongle.css` 의 `.mg-store`, `sudoku.css` 의 `.sv-store` 모두 같은 SVG 를 씁니다.
+
+검색 노출: 루트 페이지에 Google Search Console · 네이버 서치어드바이저 소유확인 메타가 있고(사이트 단위라 하위 페이지에는 넣지 않습니다), `robots.txt` 는 전체 허용 + Yeti(네이버)·Daum 을 명시합니다. `sitemap.xml` 은 저장소의 모든 `index.html` 을 스캔해 만들고 같은 문서의 언어 대응을 `xhtml:link` 로 함께 적습니다 — 새 페이지를 만든 뒤에는 `python3 scratchpad/build_sitemap.py` 를 다시 돌립니다. 색인 요청(Search Console URL 검사 · 서치어드바이저 웹페이지 수집)은 사람이 직접 넣어야 합니다.
 
 H 마크는 썸네일(파비콘·앱 아이콘)에만 씁니다. 헤더·푸터 워드마크는 `H1Soft.` 텍스트 그대로입니다.
 
