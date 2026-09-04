@@ -39,7 +39,7 @@ robots.txt, sitemap.xml
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
 | `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
 
-QR Scanner 의 쇼케이스 이미지는 스토어 스크린샷이라 배경·기기 프레임이 이미 이미지 안에 있습니다. 슥캔·온글은 앱 화면 원본이라 같은 룩앤필을 CSS 로 만듭니다 — `.showcase--framed` 가 카드에 옅은 파랑 배경을 깔고, `.showcase__phone` 이 펀치홀이 있는 밝은 기기 셸을 씌운 뒤 화면이 카드 아래로 흘러 나가게 잘립니다 (크롭 확대 없음).
+QR Scanner 의 쇼케이스 이미지는 스토어 스크린샷이라 배경·기기 프레임이 이미 이미지 안에 있습니다. 슥캔·온글은 앱 화면 원본이라 같은 룩앤필을 CSS 로 만듭니다 — `.showcase--framed` 가 카드에 옅은 파랑 배경을 깔고, `.showcase__phone` 이 펀치홀이 있는 밝은 기기 셸을 씌운 뒤 화면이 카드 아래로 흘러 나가게 잘립니다 (크롭 확대 없음). 셸 치수는 QR 스토어 스크린샷의 목업을 실측한 값(1000px 캔버스 기준 프레임 폭 808 · 옆 베젤 24 · 윗 베젤 48 · 펀치홀 22 · 라운드 63)을 카드 폭 기준 컨테이너 단위(`cqw`)로 옮긴 것이라 QR 카드와 프레임이 같습니다. 슥캔·온글 히어로에는 QR 처럼 기기 이미지를 두지 않고 문안만 가운데 정렬합니다(`.app-hero__col:only-child`).
 | `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
 
 재생성:

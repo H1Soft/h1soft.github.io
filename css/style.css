@@ -402,41 +402,45 @@ a { color: var(--primary-strong); }
   object-position: 50% 100%;
 }
 /* 슥캔·온글은 원본 스크린샷이라 QR 처럼 배경+기기 프레임을 CSS 로 씌운다
-   (QR 은 스토어 스크린샷이라 프레임이 이미지 안에 이미 들어 있다) */
+   (QR 은 스토어 스크린샷이라 프레임이 이미지 안에 이미 들어 있다).
+   치수는 QR 스토어 스크린샷의 기기 목업을 실측해 옮긴 값이다 —
+   1000px 캔버스 기준 프레임 폭 808 / 옆 베젤 24 / 윗 베젤 48 / 펀치홀 22.
+   카드 폭이 곧 그 캔버스 폭이므로 컨테이너 단위(cqw)로 그대로 쓴다. */
 .showcase--framed .showcase__shot {
   border-color: transparent;
-  background: linear-gradient(165deg, #F8FAFF 0%, #E7EEFB 100%);
+  background: linear-gradient(168deg, #F6F9FE 0%, #EDF2FE 100%);
+  container-type: inline-size;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 8%;
 }
 
 .showcase__phone {
   position: relative;
-  width: 78%;
-  padding: 22px 9px 9px;
-  border-radius: 36px;
-  background: #FCFDFF;
-  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.11), 0 26px 46px -22px rgba(15, 23, 42, 0.55);
+  margin-top: 2.9cqw;
+  width: 80.8cqw;
+  padding: 4.8cqw 2.4cqw 2.4cqw;
+  border-radius: 6.3cqw;
+  background: #F5F4F9;
+  box-shadow: 0 0 0 1px #E9E8EE, 0 2.2cqw 4.6cqw -1.9cqw rgba(15, 23, 42, 0.3);
 }
 /* 펀치홀 카메라 */
 .showcase__phone::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 2.5cqw;
   left: 50%;
   transform: translateX(-50%);
-  width: 9px;
-  height: 9px;
+  width: 2.2cqw;
+  height: 2.2cqw;
   border-radius: 50%;
-  background: #14171c;
+  background: #111;
 }
 .showcase__phone img {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 27px 27px 0 0;
+  border-radius: 4cqw 4cqw 0 0;
   object-fit: fill;
 }
 
@@ -1247,6 +1251,15 @@ details p {
   gap: 20px;
 }
 
+/* 히어로에 기기 이미지가 없으면 한 단으로 가운데 정렬한다 */
+.app-hero__col:only-child {
+  max-width: 720px;
+  align-items: center;
+  text-align: center;
+}
+.app-hero__col:only-child .store-buttons,
+.app-hero__col:only-child .trust-chips { justify-content: center; }
+
 .app-hero__id { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
 .app-hero__id > img { width: 52px; height: 52px; border-radius: 13px; border: 1px solid var(--line-neutral); background: #fff; }
 .app-hero__meta { display: flex; flex-direction: column; gap: 2px; }
@@ -1298,17 +1311,6 @@ details p {
   white-space: nowrap;
 }
 
-/* 폰 목업 */
-.phone {
-  width: min(280px, 74vw);
-  padding: 10px;
-  border-radius: 40px;
-  background: var(--dark-btn);
-  box-shadow: 0 24px 48px -20px rgba(29, 78, 216, 0.38);
-  animation: app-float 6s ease-in-out infinite;
-}
-.phone__screen { border-radius: 31px; overflow: hidden; aspect-ratio: 9 / 19; background: #0b0d12; }
-.phone__screen img { width: 100%; height: 100%; object-fit: cover; }
 
 /* 기능 카드 */
 .feature-grid {
