@@ -11,12 +11,15 @@ seukscan/index.html      슥캔 제품 랜딩 (/seukscan/ — Hero·Features·Sh
 ongle/index.html         온글 제품 랜딩 (/ongle/ — 동일 구성 + 한컴 비제휴 고지)
 mongle/index.html        몽글 제품 랜딩 (/mongle/ — 자체 디자인 시스템, css/mongle.css)
 sudoku/index.html        스도쿠 보야지 랜딩 (/sudoku/ — 자체 디자인 시스템, css/sudoku.css)
+sagak/index.html         사각사각(SAGAK) 랜딩 (/sagak/ · /en/sagak/ · /ja/sagak/ — 자체 디자인 시스템, css/sagak.css)
 privacy/, terms/         약관 — 사이트 공통 + 제품별(qr-scanner/, seukscan/, ongle/, mongle/, sudoku/ 하위)
 css/style.css            전체 스타일
 css/mongle.css           몽글 전용 스타일 (크림·라운드 토큰, style.css 미사용)
 css/sudoku.css           스도쿠 보야지 전용 스타일 (크림·티일 토큰, style.css 미사용)
+css/sagak.css            사각사각 전용 스타일 (Flexoki 종이·잉크 토큰, style.css 미사용)
 js/config.js             ★ 가변 값 관리 지점 (스토어 URL, 문의 이메일)
 js/site.js               Products 드롭다운, 스크롤 등장, 숫자 카운트업
+js/sagak.js              사각사각 랜딩의 스크롤 등장
 assets/                  이미지 (아래 참고)
 robots.txt, sitemap.xml
 ```
@@ -36,6 +39,9 @@ robots.txt, sitemap.xml
 | `og-image-ko.jpg` / `og-image-en.jpg` | QR Scanner OG | feature-graphic 1024×500 jpg 변환 |
 | `mongle-og.png` / `mongle-og-en.png` (1200×630) | 몽글 OG | 시안 B-6 HTML → Chrome 헤드리스 캡처 |
 | `sudoku-og.png` / `sudoku-og-en.png` (1200×630) | 스도쿠 보야지 OG | 시안 W8 HTML → Chrome 헤드리스 캡처 |
+| `sagak-icon.png` (512) | 사각사각 앱 아이콘 | 제공받은 우표 원본을 정사각 크롭 + 256색 |
+| `sagak/0X-*.webp` (640w) | 사각사각 인앱 화면 | Claude Design `SAGAK 주요 화면 / 전체 화면.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
+| `sagak-og-{ko,en,ja}.png` (1200×630) | 사각사각 OG | 아이콘 + 표제 HTML → Chrome 헤드리스 (`scratchpad/build_sagak_og.py`) |
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
 | `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
 | `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
@@ -55,6 +61,8 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 스도쿠 보드(랜딩 히어로·힌트 3종·홈 게임 카드·OG)도 같은 방식으로, 시안의 `DCLogic.board()` 를 그대로 옮겨 빌드 타임에 HTML 로 펼쳐 넣습니다.
 
 `/sudoku/` 의 인앱 화면 이미지는 스크린샷이 아니라 **디자인 시안을 실제로 렌더한 결과**입니다. Claude Design 의 `Sudoku Voyage 디자인.dc.html` 을 DC 런타임(`support.js` + `android-frame.jsx`)과 함께 로컬에서 띄우고 화면별로 캡처했습니다. 시안 본문의 `data-dc-script` 는 파일이 커서 API 응답 상한(256KiB)에 잘려 받지 못했기 때문에, 보드·입력판 데이터는 같은 프로젝트의 웹사이트 시안에 있는 `DCLogic` 을 기준으로 재구성했습니다 (스크립트: `scratchpad/make_screens.py`, `dcrender/dclogic.html` — 저장소에는 결과 이미지만 들어옵니다). 시안 주석(§ 참조 줄)과 화면 안의 한국어 주석 라벨은 캡처 전에 제거·영문화했습니다. 화면 문안은 전부 영문이라 표제 서체는 시안대로 Lora 를 씁니다 — 세리프 전환은 KO 랜딩의 한글 표제(`Noto Serif KR 600`)에만 적용됩니다.
+
+`/sagak/` 는 사각사각(SAGAK) 시카쿠 퍼즐 앱 랜딩입니다. 앱 PRD(`Sagak/docs/PRD.md` v4.4)와 그로부터 파생한 `Sagak/docs/WEBSITE_PRD.md` 를 근거로 만들었고, 시안은 Claude Design 캔버스(데스크탑·모바일·밤 종이)로 먼저 그렸습니다. 한국어 · 영어 · 일본어 3개 언어이며 hreflang 으로 상호 연결합니다(약관·개인정보는 KO/EN 만 — 일본어 페이지는 영문 약관으로 연결). 인앱 화면은 스크린샷이 아니라 Claude Design 의 화면 시안을 DC 런타임으로 렌더해 캡처한 것입니다 (`scratchpad/sagak/shots2.py`). 재료 규칙(종이·연필·잉크·도장)에 따라 그라디언트 버튼·네온·이모지·파티클을 쓰지 않고, 색은 Flexoki 팔레트를 그대로 씁니다. ⚠️ 카피에 "무료 · 광고 없음 · calm/relaxing/zen · 니콜리"를 쓰지 않습니다 — 앱 PRD §1.4 · §3.2 의 금지 사항입니다.
 
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 

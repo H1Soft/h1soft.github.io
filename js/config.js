@@ -21,6 +21,10 @@ const CONFIG = {
   SUDOKU_APP_STORE_URL: "",
   SUDOKU_PLAY_STORE_URL: "",
 
+  // 사각사각 (data-store-app="sagak")
+  SAGAK_APP_STORE_URL: "",
+  SAGAK_PLAY_STORE_URL: "",
+
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
 };
 
@@ -30,6 +34,7 @@ const STORE_URLS = {
   ongle: { appstore: "", playstore: CONFIG.ONGLE_PLAY_STORE_URL },
   mongle: { appstore: CONFIG.MONGLE_APP_STORE_URL, playstore: CONFIG.MONGLE_PLAY_STORE_URL },
   sudoku: { appstore: CONFIG.SUDOKU_APP_STORE_URL, playstore: CONFIG.SUDOKU_PLAY_STORE_URL },
+  sagak: { appstore: CONFIG.SAGAK_APP_STORE_URL, playstore: CONFIG.SAGAK_PLAY_STORE_URL },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
