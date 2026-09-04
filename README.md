@@ -27,7 +27,7 @@ robots.txt, sitemap.xml
 | --- | --- | --- |
 | `h1soft-logo.png` (512, 투명) | H1Soft 로고 — JSON-LD `logo` | 원본 `h1.png` 트리밍 |
 | `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180), `h1soft-appicon.png` (512), 루트 `favicon.ico` | H1Soft 파비콘·앱 아이콘 | 흰색 계열 라운드 칩 + 헤어라인 + 로고 (`scratchpad/build_brand.py`) |
-| `app_icon.png` (512) | QR Scanner 앱 아이콘 | `QR_icon.png` sips 리사이즈 |
+| `app_icon.png` (512) | QR Scanner 앱 아이콘 | Google Play 스토어 등록본 (2026-09-04 새 아이콘으로 교체). `QR_icon.png` 은 그 이전 아이콘 원본이고 페이지에서는 쓰지 않습니다 |
 | `seukscan-icon.png` (512) | 슥캔 아이콘 | Claude Design 프로젝트 `uploads/app-icon.png` |
 | `ongle-icon.png` (512) | 온글 아이콘 | 원본 1254px 리사이즈 |
 | `seukscan/{ko,en}/0X.webp` (640w) | 슥캔 스크린샷 | 원본 PNG 리사이즈+webp |
@@ -38,9 +38,9 @@ robots.txt, sitemap.xml
 | `sudoku-og.png` / `sudoku-og-en.png` (1200×630) | 스도쿠 보야지 OG | 시안 W8 HTML → Chrome 헤드리스 캡처 |
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
 | `screenshots/{ko,en}/0X-*.webp` (640w) | 쇼케이스 이미지 | 플레이스토어 스크린샷 1080×1920 리사이즈+webp |
+| `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
 
 QR Scanner 의 쇼케이스 이미지는 스토어 스크린샷이라 배경·기기 프레임이 이미 이미지 안에 있습니다. 슥캔·온글은 앱 화면 원본이라 같은 룩앤필을 CSS 로 만듭니다 — `.showcase--framed` 가 카드에 옅은 파랑 배경을 깔고, `.showcase__phone` 이 펀치홀이 있는 밝은 기기 셸을 씌운 뒤 화면이 카드 아래로 흘러 나가게 잘립니다 (크롭 확대 없음). 셸 치수는 QR 스토어 스크린샷의 목업을 실측한 값(1000px 캔버스 기준 프레임 폭 808 · 옆 베젤 24 · 윗 베젤 48 · 펀치홀 22 · 라운드 63)을 카드 폭 기준 컨테이너 단위(`cqw`)로 옮긴 것이라 QR 카드와 프레임이 같습니다. 슥캔·온글 히어로에는 QR 처럼 기기 이미지를 두지 않고 문안만 가운데 정렬합니다(`.app-hero__col:only-child`).
-| `qr-scanner-play-store-screenshots/` | 스토어용 원본 보관 | — |
 
 재생성:
 
@@ -59,6 +59,8 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
 
 브랜딩: 루트 페이지는 특정 제품이 아니라 **IT 기술 스타트업**으로 포지셔닝합니다. 사용자에게 보이는 문구에는 Kotlin Multiplatform·Compose Multiplatform·Rust 같은 기술 용어를 쓰지 않습니다 — "아이폰과 안드로이드에서 똑같이", "내 폰 안에서 처리"처럼 풀어 씁니다 (JSON-LD `knowsAbout` 은 검색엔진용 구조화 데이터라 기술명을 유지). 제품 분야는 **매일 쓰는 도구 / 라이프스타일 / 게임** 세 가지로 부르고, 히어로 칩도 이 세 묶음으로 나눕니다. 파비콘·앱 아이콘·루트 OG·JSON-LD `logo` 는 전부 H1Soft 로고를 쓰고, QR Scanner 에셋은 `/qr-scanner/` 안에서만 씁니다 (예전에는 사이트 전역이 QR 아이콘이라 구글이 H1Soft = QR 앱으로 인식했습니다).
+
+스토어 버튼에는 App Store(사과)·Google Play(삼각형) 아이콘을 항상 함께 둡니다 — `style.css` 의 `.store-btn`(QR·슥캔·온글), `mongle.css` 의 `.mg-store`, `sudoku.css` 의 `.sv-store` 모두 같은 SVG 를 씁니다.
 
 H 마크는 썸네일(파비콘·앱 아이콘)에만 씁니다. 헤더·푸터 워드마크는 `H1Soft.` 텍스트 그대로입니다.
 

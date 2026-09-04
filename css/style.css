@@ -329,14 +329,16 @@ a { color: var(--primary-strong); }
 
 .store-btn {
   display: flex;
-  flex-direction: column;
-  gap: 2px;
+  align-items: center;
+  gap: 11px;
   background: var(--dark-btn);
   border-radius: 14px;
-  padding: 11px 24px;
+  padding: 11px 20px;
   min-width: 140px;
   text-decoration: none;
 }
+.store-btn__icon { flex: none; }
+.store-btn__text { display: flex; flex-direction: column; gap: 2px; }
 .store-btn:hover { background: var(--dark-btn-hover); }
 
 .store-btn__sub {
