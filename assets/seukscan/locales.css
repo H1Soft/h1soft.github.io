@@ -15,9 +15,6 @@
 .locale-switch__options svg{flex-shrink:0}
 .locale-switch summary:focus-visible,.locale-switch a:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
 .trust-chip{white-space:normal;max-width:100%}
-/* iPhone captures already contain their camera cutout; retain the shared frame. */
-.showcase__phone{padding-top:2.4cqw}
-.showcase__phone::before{display:none}
 [dir=rtl] .site-nav{margin-left:0;margin-inline-start:auto}
 [dir=rtl] .policy-header .locale-switch{margin-left:0;margin-inline-start:auto}
 [dir=rtl] .app-hero h1,[dir=rtl] .section__title{letter-spacing:normal}
