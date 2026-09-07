@@ -1,0 +1,39 @@
+/* QR pages extend H1Soft's Wanted design tokens; the shared layout is unchanged. */
+.qr-language-picker { position: relative; flex: 0 0 auto; margin-inline-start: 0; }
+.qr-language-picker summary { list-style: none; cursor: pointer; }
+.qr-language-picker summary::-webkit-details-marker { display: none; }
+.qr-language-trigger { display: flex; align-items: center; gap: 7px; min-height: 38px; max-width: 180px; padding: 6px 12px; border: 3px solid var(--fill); border-radius: 999px; background: #fff; color: var(--ink); font-family: inherit; font-size: 13px; font-weight: 600; line-height: 1.4; box-shadow: 0 1px 3px rgba(23,23,25,.08); }
+.qr-language-trigger > span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.qr-language-trigger svg { flex: 0 0 auto; width: 16px; height: 16px; }
+.qr-language-chevron { color: var(--ink-alt); transition: transform .2s ease; }
+.qr-language-picker[open] .qr-language-chevron { transform: rotate(180deg); }
+.qr-language-panel { position: absolute; inset-inline-end: 0; top: calc(100% + 12px); width: 440px; max-width: calc(100vw - 32px); padding: 20px; border-radius: 16px; background: #fff; box-shadow: 0 12px 40px -8px rgba(23,23,25,.22), inset 0 0 0 1px var(--line-alt); }
+.qr-language-panel p { padding: 0; }
+.qr-language-heading { font-size: 17px; line-height: 1.5; font-weight: 700; letter-spacing: -.02em; color: var(--ink); }
+.qr-language-count { color: var(--ink-alt); font-size: 13px; line-height: 1.6; margin-top: 3px; }
+.qr-language-search { margin: 14px 0 12px; }
+.qr-language-search input { display: block; width: 100%; min-height: 44px; padding: 11px 13px; border: 1px solid var(--line-neutral); border-radius: 10px; color: var(--ink); background: var(--bg-alt); font: inherit; font-size: 14px; }
+.qr-language-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 4px; margin-top: 14px; max-height: min(420px,calc(100dvh - 245px)); overflow-y: auto; overscroll-behavior: contain; scrollbar-gutter: stable; }
+.qr-language-option { display: flex; align-items: center; justify-content: space-between; gap: 8px; min-height: 46px; padding: 10px 12px; border-radius: 10px; color: var(--ink-neutral); text-decoration: none; font-size: 14px; font-weight: 500; line-height: 1.5; }
+.qr-language-option:hover { background: var(--bg-alt); color: var(--ink); }
+.qr-language-option[aria-current="page"] { background: var(--blue-95); color: var(--primary-strong); font-weight: 700; }
+.qr-language-option svg { width: 18px; height: 18px; flex: 0 0 auto; }
+.qr-language-option[hidden], .qr-language-search[hidden], .qr-language-empty[hidden] { display: none; }
+.qr-language-empty { color: var(--ink-alt); font-size: 14px; padding: 20px 0 8px; }
+.qr-language-picker :focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.qr-support { max-width: 100%; margin-top: 6px; color: var(--ink-alt); font-size: 13px; line-height: 1.7; }
+.qr-page .site-nav { margin-left: 0; margin-inline-start: auto; }
+.qr-page .site-footer__brand { scroll-margin-top: 88px; }
+.qr-page [dir="rtl"] { unicode-bidi: isolate; }
+html[dir="rtl"] .qr-page .site-nav { margin-left: 0; margin-right: auto; }
+html[dir="rtl"] .qr-page .showcase__text { text-align: right; }
+html[dir="rtl"] .qr-page .nav-dropdown { right: auto; left: 24px; }
+html[dir="rtl"] .qr-page .logo, html[dir="rtl"] .qr-page .site-footer__logo { direction: ltr; }
+@media(max-width:767px) {
+  .qr-language-picker { margin-inline-start: auto; }
+  .qr-language-trigger { max-width: 160px; }
+  .qr-language-panel { padding: 16px; }
+  .qr-language-heading { font-size: 16px; }
+  .qr-language-option { padding: 10px; }
+}
+@media(prefers-reduced-motion:reduce) { .qr-language-chevron { transition: none; } }

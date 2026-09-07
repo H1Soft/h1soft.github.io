@@ -15,3 +15,5 @@ Sitemap: https://h1soft.github.io/sitemap-1.xml
 Sitemap: https://h1soft.github.io/ongle/sitemap.xml
 Sitemap: https://h1soft.github.io/sudoku-sitemap.xml
 Sitemap: https://h1soft.github.io/sagak/sitemap.xml
+
+Sitemap: https://h1soft.github.io/qr-scanner/sitemap.xml

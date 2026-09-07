@@ -1,264 +1,222 @@
 <!DOCTYPE html>
-<html lang="ko">
+
+<html dir="ltr" lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- ── SEO ─────────────────────────────────────────── -->
+<title>QR 코드 스캐너 및 생성기 | H1Soft</title>
+<meta content="카메라로 QR 코드를 스캔하거나 사진 속 코드를 읽어 보세요. 링크, Wi-Fi, 전화번호와 이메일을 QR 코드로 만들어 이미지로 저장하고 공유할 수 있습니다. 기기에 보관된 스캔·생성 기록도 다시 확인하세요." name="description"/>
 
-  <!-- ── SEO ─────────────────────────────────────────── -->
-  <title>QR Scanner — 1초면 끝나는 QR 스캔·생성 앱 | H1Soft</title>
-  <meta name="description" content="1초면 끝나는 QR 스캔·생성 앱 QR Scanner. 와이파이·링크·연락처 등 16종 QR 생성, 기록은 기기에만 저장되는 완전한 프라이버시, 오프라인 동작. Kotlin Multiplatform 팀 H1Soft가 만듭니다." />
-  <meta name="keywords" content="QR 스캐너, QR 코드 생성, QR 코드 만들기, 와이파이 QR, QR 스캔 앱, QR 코드 스캔, H1Soft" />
-  <meta name="author" content="H1Soft" />
-  <link rel="canonical" href="https://h1soft.github.io/qr-scanner/" />
-  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
-  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
-  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
+<meta content="H1Soft" name="author"/>
+<link href="https://h1soft.github.io/qr-scanner/" rel="canonical"/>
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="H1Soft" />
-  <meta property="og:title" content="QR Scanner — 1초면 끝나는 QR 스캔·생성 | H1Soft" />
-  <meta property="og:description" content="1초면 끝나는 QR 스캔·생성. 16종 QR 생성, 완전한 프라이버시, 오프라인 동작." />
-  <meta property="og:image" content="https://h1soft.github.io/assets/og-image-ko.jpg" />
-  <meta property="og:url" content="https://h1soft.github.io/qr-scanner/" />
-  <meta property="og:locale" content="ko_KR" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="QR Scanner — 1초면 끝나는 QR 스캔·생성 | H1Soft" />
-  <meta name="twitter:description" content="1초면 끝나는 QR 스캔·생성. 16종 QR 생성, 완전한 프라이버시, 오프라인 동작." />
-  <meta name="twitter:image" content="https://h1soft.github.io/assets/og-image-ko.jpg" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="48x48" href="../assets/favicon-48.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<meta content="website" property="og:type"/>
+<meta content="H1Soft" property="og:site_name"/>
+<meta content="QR 코드 스캐너 및 생성기 | H1Soft" property="og:title"/>
+<meta content="카메라로 QR 코드를 스캔하거나 사진 속 코드를 읽어 보세요. 링크, Wi-Fi, 전화번호와 이메일을 QR 코드로 만들어 이미지로 저장하고 공유할 수 있습니다. 기기에 보관된 스캔·생성 기록도 다시 확인하세요." property="og:description"/>
+<meta content="https://h1soft.github.io/assets/qr-scanner/ko/01-hero.webp" property="og:image"/>
+<meta content="https://h1soft.github.io/qr-scanner/" property="og:url"/>
+<meta content="ko_KR" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="QR 코드 스캐너 및 생성기 | H1Soft" name="twitter:title"/>
+<meta content="카메라로 QR 코드를 스캔하거나 사진 속 코드를 읽어 보세요. 링크, Wi-Fi, 전화번호와 이메일을 QR 코드로 만들어 이미지로 저장하고 공유할 수 있습니다. 기기에 보관된 스캔·생성 기록도 다시 확인하세요." name="twitter:description"/>
+<meta content="https://h1soft.github.io/assets/qr-scanner/ko/01-hero.webp" name="twitter:image"/>
+<link href="../assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../assets/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="../assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<link href="../css/style.css" rel="stylesheet"/>
+<script defer="" src="../js/config.js"></script>
+<script defer="" src="../js/site.js"></script>
 
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="../js/config.js" defer></script>
-  <script src="../js/site.js" defer></script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "QR Scanner",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "1초면 끝나는 QR 스캔·생성 앱. 16종 QR 생성, 기록은 기기에만 저장, 오프라인 동작, 18개 언어 지원.",
-    "installUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
-    "downloadUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
-    "author": { "@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/" }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "H1Soft", "item": "https://h1soft.github.io/" },
-      { "@type": "ListItem", "position": 2, "name": "QR Scanner", "item": "https://h1soft.github.io/qr-scanner/" }
-    ]
-  }
-  </script>
-</head>
-<body id="top">
-
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="../index.html#top" class="logo" aria-label="H1Soft 홈">H1Soft<span class="logo-dot">.</span></a>
-      <nav class="site-nav" aria-label="주요 메뉴">
-        <button type="button" class="nav-products" id="nav-products" aria-expanded="false" aria-controls="nav-dropdown">Products<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
-      <div class="nav-dropdown" id="nav-dropdown" hidden>
-        <div class="nav-col">
-          <span class="nav-col__label">매일 쓰는 도구</span>
-          <a class="nav-item" href="index.html"><img src="../assets/app_icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR 스캔·생성</span></span></a>
-          <a class="nav-item" href="../seukscan/index.html"><img src="../assets/seukscan-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">슥캔</span><span class="nav-item__type">문서 스캐너·OCR</span></span></a>
-          <a class="nav-item" href="../ongle/index.html"><img src="../assets/ongle-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">온글</span><span class="nav-item__type">HWP·HWPX 뷰어</span></span></a>
-        </div>
-        <div class="nav-col">
-          <span class="nav-col__label">라이프스타일</span>
-          <a class="nav-item" href="/skinping/"><span class="app-mark app-mark--skinping" aria-hidden="true"><span class="drop"></span></span><span><span class="nav-item__name">피부핑</span><span class="nav-item__type">AI 피부 루틴</span></span></a>
-          <a class="nav-item" href="../mongle/index.html"><span class="app-mark app-mark--mongle" aria-hidden="true"><span class="blob"></span></span><span><span class="nav-item__name">몽글</span><span class="nav-item__type">성격 테스트</span></span></a>
-          <a class="nav-item" href="/lol.dating/"><span class="app-mark app-mark--lol" aria-hidden="true">롤</span><span><span class="nav-item__name">롤개팅</span><span class="nav-item__type">게이머 소개팅</span></span></a>
-        </div>
-        <div class="nav-col">
-          <span class="nav-col__label">게임</span>
-          <a class="nav-item" href="../sudoku/index.html"><span class="app-mark app-mark--sudoku" aria-hidden="true"><span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">스도쿠 보야지</span><span class="nav-item__type">스도쿠 퍼즐</span></span></a>
-          <a class="nav-item" href="../sagak/index.html"><span class="app-mark app-mark--sagak" aria-hidden="true"><span class="grid"><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">사각사각</span><span class="nav-item__type">시카쿠 퍼즐</span></span></a>
-        </div>
-      </div>
-      <span class="header-divider" aria-hidden="true"></span>
-      <div class="lang-toggle">
-        <span class="is-active">KO</span>
-        <a href="../en/qr-scanner/index.html" lang="en" hreflang="en">EN</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- ── 1. Page lead ──────────────────────────────── -->
-    <section class="hero hero--page">
-      <div class="hero__inner">
-        <span class="eyebrow">EVERYDAY TOOLS</span>
-        <h1>QR Scanner</h1>
-        <p class="hero__sub">1초면 끝나는 QR 스캔·생성. 기록은 기기에만 남고, 오프라인에서도 동작합니다.</p>
-        <div class="hero__cta"><a href="../index.html#tools" class="btn btn--ghost">← 전체 제품 보기</a></div>
-      </div>
-    </section>
-
+<link href="https://h1soft.github.io/qr-scanner/" hreflang="ko" rel="alternate"/><link href="https://h1soft.github.io/en/qr-scanner/" hreflang="en" rel="alternate"/><link href="https://h1soft.github.io/ja/qr-scanner/" hreflang="ja" rel="alternate"/><link href="https://h1soft.github.io/zh-CN/qr-scanner/" hreflang="zh-CN" rel="alternate"/><link href="https://h1soft.github.io/zh-TW/qr-scanner/" hreflang="zh-TW" rel="alternate"/><link href="https://h1soft.github.io/es/qr-scanner/" hreflang="es" rel="alternate"/><link href="https://h1soft.github.io/fr/qr-scanner/" hreflang="fr" rel="alternate"/><link href="https://h1soft.github.io/de/qr-scanner/" hreflang="de" rel="alternate"/><link href="https://h1soft.github.io/pt/qr-scanner/" hreflang="pt" rel="alternate"/><link href="https://h1soft.github.io/ru/qr-scanner/" hreflang="ru" rel="alternate"/><link href="https://h1soft.github.io/ar/qr-scanner/" hreflang="ar" rel="alternate"/><link href="https://h1soft.github.io/hi/qr-scanner/" hreflang="hi" rel="alternate"/><link href="https://h1soft.github.io/it/qr-scanner/" hreflang="it" rel="alternate"/><link href="https://h1soft.github.io/nl/qr-scanner/" hreflang="nl" rel="alternate"/><link href="https://h1soft.github.io/tr/qr-scanner/" hreflang="tr" rel="alternate"/><link href="https://h1soft.github.io/pl/qr-scanner/" hreflang="pl" rel="alternate"/><link href="https://h1soft.github.io/sv/qr-scanner/" hreflang="sv" rel="alternate"/><link href="https://h1soft.github.io/da/qr-scanner/" hreflang="da" rel="alternate"/><link href="https://h1soft.github.io/fi/qr-scanner/" hreflang="fi" rel="alternate"/><link href="https://h1soft.github.io/nb/qr-scanner/" hreflang="nb" rel="alternate"/><link href="https://h1soft.github.io/th/qr-scanner/" hreflang="th" rel="alternate"/><link href="https://h1soft.github.io/id/qr-scanner/" hreflang="id" rel="alternate"/><link href="https://h1soft.github.io/ms/qr-scanner/" hreflang="ms" rel="alternate"/><link href="https://h1soft.github.io/vi/qr-scanner/" hreflang="vi" rel="alternate"/><link href="https://h1soft.github.io/uk/qr-scanner/" hreflang="uk" rel="alternate"/><link href="https://h1soft.github.io/cs/qr-scanner/" hreflang="cs" rel="alternate"/><link href="https://h1soft.github.io/ro/qr-scanner/" hreflang="ro" rel="alternate"/><link href="https://h1soft.github.io/hu/qr-scanner/" hreflang="hu" rel="alternate"/><link href="https://h1soft.github.io/el/qr-scanner/" hreflang="el" rel="alternate"/><link href="https://h1soft.github.io/he/qr-scanner/" hreflang="he" rel="alternate"/><link href="https://h1soft.github.io/fa/qr-scanner/" hreflang="fa" rel="alternate"/><link href="https://h1soft.github.io/en/qr-scanner/" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "QR Scanner", "operatingSystem": "Android, iOS", "applicationCategory": "UtilitiesApplication", "description": "카메라로 QR 코드를 스캔하거나 사진 속 코드를 읽어 보세요. 링크, Wi-Fi, 전화번호와 이메일을 QR 코드로 만들어 이미지로 저장하고 공유할 수 있습니다. 기기에 보관된 스캔·생성 기록도 다시 확인하세요.", "url": "https://h1soft.github.io/qr-scanner/", "inLanguage": "ko", "image": "https://h1soft.github.io/assets/qr-scanner/ko/01-hero.webp", "installUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner", "author": {"@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "H1Soft", "item": "https://h1soft.github.io/"}, {"@type": "ListItem", "position": 2, "name": "QR 코드 스캐너 및 생성기", "item": "https://h1soft.github.io/qr-scanner/"}]}</script><link href="../css/qr-language.css" rel="stylesheet"/><script defer="True" src="../js/qr-language.js"></script></head>
+<body class="qr-page" id="top">
+<header class="site-header">
+<div class="container site-header__inner">
+<a aria-label="H1Soft" class="logo" href="../index.html#top">H1Soft<span class="logo-dot">.</span></a>
+<nav aria-label="제품" class="site-nav">
+<button aria-controls="nav-dropdown" aria-expanded="false" class="nav-products" id="nav-products" type="button">제품<svg aria-hidden="true" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+<a href="../index.html#about">소개</a>
+<a href="../index.html#faq">자주 묻는 질문</a>
+<a href="#support">문의</a>
+</nav>
+<div class="nav-dropdown" hidden="" id="nav-dropdown">
+<div class="nav-col">
+<span class="nav-col__label">일상의 도구</span>
+<a class="nav-item" href="index.html"><img alt="" height="28" src="../assets/app_icon.png" width="28"/><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR 코드 스캐너 및 생성기</span></span></a>
+<a class="nav-item" href="../seukscan/index.html"><img alt="" height="28" src="../assets/seukscan-icon.png" width="28"/><span><span class="nav-item__name">슥캔</span><span class="nav-item__type">문서 스캐너·OCR</span></span></a>
+<a class="nav-item" href="../ongle/index.html"><img alt="" height="28" src="../assets/ongle-icon.png" width="28"/><span><span class="nav-item__name">온글</span><span class="nav-item__type">HWP·HWPX 뷰어</span></span></a>
+</div>
+<div class="nav-col">
+<span class="nav-col__label">라이프스타일</span>
+<a class="nav-item" href="https://h1soft.github.io/skinping/"><span aria-hidden="true" class="app-mark app-mark--skinping"><span class="drop"></span></span><span><span class="nav-item__name">피부핑</span><span class="nav-item__type">AI 피부 루틴</span></span></a>
+<a class="nav-item" href="../mongle/index.html"><span aria-hidden="true" class="app-mark app-mark--mongle"><span class="blob"></span></span><span><span class="nav-item__name">몽글</span><span class="nav-item__type">성격 테스트</span></span></a>
+<a class="nav-item" href="https://h1soft.github.io/lol.dating/"><span aria-hidden="true" class="app-mark app-mark--lol">롤</span><span><span class="nav-item__name">롤개팅</span><span class="nav-item__type">게이머 소개팅</span></span></a>
+</div>
+<div class="nav-col">
+<span class="nav-col__label">게임</span>
+<a class="nav-item" href="../sudoku/index.html"><span aria-hidden="true" class="app-mark app-mark--sudoku"><span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">스도쿠 보야지</span><span class="nav-item__type">스도쿠 퍼즐</span></span></a>
+<a class="nav-item" href="../sagak/index.html"><span aria-hidden="true" class="app-mark app-mark--sagak"><span class="grid"><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">사각사각</span><span class="nav-item__type">시카쿠 퍼즐</span></span></a>
+</div>
+</div>
+<span aria-hidden="true" class="header-divider"></span>
+<details class="qr-language-picker"><summary aria-label="웹사이트 언어 선택" class="qr-language-trigger"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></svg><span dir="auto">한국어</span><svg aria-hidden="true" class="qr-language-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m7 10 5 5 5-5"></path></svg></summary>
+<div class="qr-language-panel"><p class="qr-language-heading">웹사이트 언어 선택</p><p class="qr-language-count">31개 언어 지원</p>
+<div class="qr-language-search" hidden=""><input aria-label="언어 검색" autocomplete="off" placeholder="언어 검색" type="search"/></div>
+<nav aria-label="웹사이트 언어 선택" class="qr-language-grid"><a aria-current="page" class="qr-language-option" data-search="한국어 Korean ko" href="index.html" hreflang="ko" lang="ko"><bdi dir="ltr">한국어</bdi><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg></a><a class="qr-language-option" data-search="English English en" href="../en/qr-scanner/index.html" hreflang="en" lang="en"><bdi dir="ltr">English</bdi></a><a class="qr-language-option" data-search="日本語 Japanese ja" href="../ja/qr-scanner/index.html" hreflang="ja" lang="ja"><bdi dir="ltr">日本語</bdi></a><a class="qr-language-option" data-search="简体中文 Simplified Chinese zh-CN" href="../zh-CN/qr-scanner/index.html" hreflang="zh-CN" lang="zh-CN"><bdi dir="ltr">简体中文</bdi></a><a class="qr-language-option" data-search="繁體中文 Traditional Chinese zh-TW" href="../zh-TW/qr-scanner/index.html" hreflang="zh-TW" lang="zh-TW"><bdi dir="ltr">繁體中文</bdi></a><a class="qr-language-option" data-search="Español Spanish es" href="../es/qr-scanner/index.html" hreflang="es" lang="es"><bdi dir="ltr">Español</bdi></a><a class="qr-language-option" data-search="Français French fr" href="../fr/qr-scanner/index.html" hreflang="fr" lang="fr"><bdi dir="ltr">Français</bdi></a><a class="qr-language-option" data-search="Deutsch German de" href="../de/qr-scanner/index.html" hreflang="de" lang="de"><bdi dir="ltr">Deutsch</bdi></a><a class="qr-language-option" data-search="Português Portuguese pt" href="../pt/qr-scanner/index.html" hreflang="pt" lang="pt"><bdi dir="ltr">Português</bdi></a><a class="qr-language-option" data-search="Русский Russian ru" href="../ru/qr-scanner/index.html" hreflang="ru" lang="ru"><bdi dir="ltr">Русский</bdi></a><a class="qr-language-option" data-search="العربية Arabic ar" href="../ar/qr-scanner/index.html" hreflang="ar" lang="ar"><bdi dir="rtl">العربية</bdi></a><a class="qr-language-option" data-search="हिन्दी Hindi hi" href="../hi/qr-scanner/index.html" hreflang="hi" lang="hi"><bdi dir="ltr">हिन्दी</bdi></a><a class="qr-language-option" data-search="Italiano Italian it" href="../it/qr-scanner/index.html" hreflang="it" lang="it"><bdi dir="ltr">Italiano</bdi></a><a class="qr-language-option" data-search="Nederlands Dutch nl" href="../nl/qr-scanner/index.html" hreflang="nl" lang="nl"><bdi dir="ltr">Nederlands</bdi></a><a class="qr-language-option" data-search="Türkçe Turkish tr" href="../tr/qr-scanner/index.html" hreflang="tr" lang="tr"><bdi dir="ltr">Türkçe</bdi></a><a class="qr-language-option" data-search="Polski Polish pl" href="../pl/qr-scanner/index.html" hreflang="pl" lang="pl"><bdi dir="ltr">Polski</bdi></a><a class="qr-language-option" data-search="Svenska Swedish sv" href="../sv/qr-scanner/index.html" hreflang="sv" lang="sv"><bdi dir="ltr">Svenska</bdi></a><a class="qr-language-option" data-search="Dansk Danish da" href="../da/qr-scanner/index.html" hreflang="da" lang="da"><bdi dir="ltr">Dansk</bdi></a><a class="qr-language-option" data-search="Suomi Finnish fi" href="../fi/qr-scanner/index.html" hreflang="fi" lang="fi"><bdi dir="ltr">Suomi</bdi></a><a class="qr-language-option" data-search="Norsk Norwegian nb" href="../nb/qr-scanner/index.html" hreflang="nb" lang="nb"><bdi dir="ltr">Norsk</bdi></a><a class="qr-language-option" data-search="ภาษาไทย Thai th" href="../th/qr-scanner/index.html" hreflang="th" lang="th"><bdi dir="ltr">ภาษาไทย</bdi></a><a class="qr-language-option" data-search="Bahasa Indonesia Indonesian id" href="../id/qr-scanner/index.html" hreflang="id" lang="id"><bdi dir="ltr">Bahasa Indonesia</bdi></a><a class="qr-language-option" data-search="Bahasa Melayu Malay ms" href="../ms/qr-scanner/index.html" hreflang="ms" lang="ms"><bdi dir="ltr">Bahasa Melayu</bdi></a><a class="qr-language-option" data-search="Tiếng Việt Vietnamese vi" href="../vi/qr-scanner/index.html" hreflang="vi" lang="vi"><bdi dir="ltr">Tiếng Việt</bdi></a><a class="qr-language-option" data-search="Українська Ukrainian uk" href="../uk/qr-scanner/index.html" hreflang="uk" lang="uk"><bdi dir="ltr">Українська</bdi></a><a class="qr-language-option" data-search="Čeština Czech cs" href="../cs/qr-scanner/index.html" hreflang="cs" lang="cs"><bdi dir="ltr">Čeština</bdi></a><a class="qr-language-option" data-search="Română Romanian ro" href="../ro/qr-scanner/index.html" hreflang="ro" lang="ro"><bdi dir="ltr">Română</bdi></a><a class="qr-language-option" data-search="Magyar Hungarian hu" href="../hu/qr-scanner/index.html" hreflang="hu" lang="hu"><bdi dir="ltr">Magyar</bdi></a><a class="qr-language-option" data-search="Ελληνικά Greek el" href="../el/qr-scanner/index.html" hreflang="el" lang="el"><bdi dir="ltr">Ελληνικά</bdi></a><a class="qr-language-option" data-search="עברית Hebrew he" href="../he/qr-scanner/index.html" hreflang="he" lang="he"><bdi dir="rtl">עברית</bdi></a><a class="qr-language-option" data-search="فارسی Persian fa" href="../fa/qr-scanner/index.html" hreflang="fa" lang="fa"><bdi dir="rtl">فارسی</bdi></a></nav><p class="qr-language-empty" hidden="" role="status">일치하는 언어가 없습니다.</p></div></details>
+</div>
+</header>
+<main>
+<!-- ── 1. Page lead ──────────────────────────────── -->
+<section class="hero hero--page">
+<div class="hero__inner">
+<span class="eyebrow">일상의 도구</span>
+<h1>QR Scanner</h1>
+<p class="hero__sub">1초면 끝나는 QR 스캔·생성. 기록은 기기에만 남고, 오프라인에서도 동작합니다.</p>
+<div class="hero__cta"><a class="btn btn--ghost" href="../index.html#tools">← 전체 제품 보기</a></div>
+</div>
+</section>
 <!-- ── 2. Products ───────────────────────────────── -->
-    <section id="products" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Products</span>
-          <h2 class="section__title">H1Soft의 첫 번째 제품</h2>
-        </div>
+<section class="section" id="products">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">제품</span>
+<h2 class="section__title">H1Soft의 첫 번째 제품</h2>
+</div>
+<article class="product-card">
+<div class="product-card__head">
+<img alt="QR Scanner" class="product-card__icon" height="88" src="../assets/app_icon.png" width="88"/>
+<div class="product-card__title">
+<div class="product-card__name-row">
+<span class="product-card__name">QR Scanner</span>
+<span class="badge--new">신규</span>
+</div>
+<span class="product-card__tagline">1초면 끝나는 QR 스캔·생성</span>
+</div>
+</div>
+<div class="product-card__grid">
+<div class="feature-col">
+<span class="col-label">핵심 기능</span>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>실시간 초고속 QR 스캔 — 플래시·갤러리 이미지 스캔 지원</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>링크·텍스트·전화번호·위치·이메일·SMS·와이파이·달력 QR 생성</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Facebook, X, YouTube, Instagram, KakaoTalk, Line 등 소셜 QR 생성</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>고화질 PNG 저장 및 시스템 공유</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>히스토리 로컬 저장 — 서버 전송 없는 완전한 프라이버시</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>31개 언어 지원 · 오프라인 스캔·생성·기록</span></div>
+</div>
+<div class="recommend">
+<span class="col-label">이런 분들에게 추천해요</span>
+<div class="recommend-item"><span>카메라 앱의 느린 QR 인식이 답답했던 분</span></div>
+<div class="recommend-item"><span>와이파이·연락처·링크를 QR로 만들어 공유하고 싶은 분</span></div>
+<div class="recommend-item"><span>스캔 기록이 서버에 남는 것이 꺼려지는 분</span></div>
+</div>
+</div>
+<div class="store-block">
+<div class="store-buttons">
+<a aria-disabled="true" class="store-btn is-disabled" href="#" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="store-btn__icon" height="24" viewbox="0 0 20 24" width="20"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"></path></svg>
+<span class="store-btn__text"><span class="store-btn__sub">출시 준비 중</span><span class="store-btn__label">App Store</span></span>
+</a>
+<a class="store-btn" href="https://play.google.com/store/apps/details?id=com.h1soft.codescanner" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="store-btn__icon" height="21" viewbox="0 0 24 26" width="19"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"></path><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"></path><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"></path><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"></path></svg>
+<span class="store-btn__text"><span class="store-btn__sub">다운로드</span><span class="store-btn__label">Google Play</span></span>
+</a>
+</div>
 
-        <article class="product-card">
-          <div class="product-card__head">
-            <img src="../assets/app_icon.png" alt="QR Scanner 앱 아이콘" class="product-card__icon" width="88" height="88" />
-            <div class="product-card__title">
-              <div class="product-card__name-row">
-                <span class="product-card__name">QR Scanner</span>
-                <span class="badge--new">NEW</span>
-              </div>
-              <span class="product-card__tagline">1초면 끝나는 QR 스캔·생성</span>
-            </div>
-          </div>
-
-          <div class="product-card__grid">
-            <div class="feature-col">
-              <span class="col-label">핵심 기능</span>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>실시간 초고속 QR 스캔 — 플래시·갤러리 이미지 스캔 지원</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>링크·텍스트·전화번호·위치·이메일·SMS·와이파이·달력 QR 생성</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Facebook, X, YouTube, Instagram, KakaoTalk, Line 등 소셜 QR 생성</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>고화질 PNG 저장 및 시스템 공유</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>히스토리 로컬 저장 — 서버 전송 없는 완전한 프라이버시</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>18개 언어 지원 · 오프라인 동작</span></div>
-            </div>
-
-            <div class="recommend">
-              <span class="col-label">이런 분들에게 추천해요</span>
-              <div class="recommend-item"><span>카메라 앱의 느린 QR 인식이 답답했던 분</span></div>
-              <div class="recommend-item"><span>와이파이·연락처·링크를 QR로 만들어 공유하고 싶은 분</span></div>
-              <div class="recommend-item"><span>스캔 기록이 서버에 남는 것이 꺼려지는 분</span></div>
-            </div>
-          </div>
-
-          <div class="store-block">
-            <div class="store-buttons">
-              <a class="store-btn is-disabled" data-store="appstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
-                <svg class="store-btn__icon" width="20" height="24" viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg>
-                <span class="store-btn__text"><span class="store-btn__sub">Coming soon</span><span class="store-btn__label">App Store</span></span>
-              </a>
-              <a class="store-btn is-disabled" data-store="playstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
-                <svg class="store-btn__icon" width="19" height="21" viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg>
-                <span class="store-btn__text"><span class="store-btn__sub">Coming soon</span><span class="store-btn__label">Google Play</span></span>
-              </a>
-            </div>
-            <span class="store-note" data-store-note>출시 후 다운로드 링크가 활성화됩니다.</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
+</div>
+</article>
+</div>
+</section>
 <!-- ── 3. Showcase ───────────────────────────────── -->
-    <section class="section section--alt" aria-label="QR Scanner 기능 소개">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Showcase</span>
-          <h2 class="section__title">화면으로 미리 만나보세요</h2>
-        </div>
-
-        <div class="showcase">
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../assets/screenshots/ko/01-hero.webp" alt="QR Scanner 스캔 화면 — 실시간 초고속 스캔" width="1000" height="1777" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">01</span>
-              <h3>1초면 끝날 일을 왜 5초씩?</h3>
-              <p>앱을 열면 바로 스캔. 인식 즉시 상세 페이지로 자동 이동. 플래시·갤러리 스캔 지원.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot"><img src="../assets/screenshots/ko/02-create.webp" alt="QR 생성 화면 — 일반·소셜 QR 유형 선택" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">02</span>
-              <h3>뭐든 QR로 만들기</h3>
-              <p>링크·와이파이·연락처까지 한 번에. 일반 7종 + 소셜 9종 생성 지원.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../assets/screenshots/ko/03-share.webp" alt="생성된 QR 상세 화면 — 고화질 PNG 저장과 공유" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">03</span>
-              <h3>만들면 바로 저장하고 공유</h3>
-              <p>1024×1024 고화질 PNG 저장, 시스템 공유 시트로 즉시 전달.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot"><img src="../assets/screenshots/ko/04-history.webp" alt="히스토리 화면 — 기기에만 저장되는 기록" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">04</span>
-              <h3>기록은 오직 내 기기에만</h3>
-              <p>서버 전송 없음. 스캔·생성 기록 전부 로컬 저장. 완전한 프라이버시.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../assets/screenshots/ko/05-more.webp?v=a9eaaa8f937b" alt="설정 화면 — 언어, 약관, 앱 버전" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">05</span>
-              <h3>18개 언어 · 오프라인 동작</h3>
-              <p>네트워크 없이도 스캔·생성·히스토리가 완벽 동작.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
-        <span class="site-footer__slogan">매일 쓰는 도구부터 오래 함께할 브랜드까지 — 어떤 폰에서든 똑같이.</span>
-        <a class="site-footer__mail" data-email="text" href="#">h1.soft.x001@gmail.com</a>
-        <span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
-      </div>
-      <div class="site-footer__cols">
-        <div class="site-footer__col">
-          <span class="site-footer__label">매일 쓰는 도구</span>
-          <a href="index.html">QR Scanner</a>
-          <a href="../seukscan/index.html">슥캔</a>
-          <a href="../ongle/index.html">온글</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">라이프스타일</span>
-          <a href="../mongle/index.html">몽글</a>
-          <a href="/skinping/">피부핑</a>
-          <a href="/lol.dating/">롤개팅</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">게임</span>
-          <a href="../sudoku/index.html">스도쿠 보야지</a>
-          <a href="../sagak/index.html">사각사각</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">LEGAL</span>
-          <a href="privacy/index.html">개인정보처리방침</a>
-          <a href="terms/index.html">이용약관</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+<section aria-label="앱 화면 살펴보기" class="section section--alt">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">앱 화면 살펴보기</span>
+<h2 class="section__title">앱 화면 살펴보기</h2>
+</div>
+<div class="showcase">
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="카메라 미리보기와 조명, 이미지 선택 버튼이 있는 QR 스캔 화면" decoding="async" height="1777" src="../assets/qr-scanner/ko/01-hero.webp?v=590de538db39" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">01</span>
+<h3>1초면 끝날 일을 왜 5초씩?</h3>
+<p>앱을 열면 바로 스캔. 인식 즉시 상세 페이지로 자동 이동. 플래시·갤러리 스캔 지원.</p>
+</div>
+</div>
+<div class="showcase__row showcase__row--reverse">
+<div class="showcase__shot"><img alt="링크, 텍스트, Wi-Fi 등 QR 코드 유형을 선택하는 만들기 화면" decoding="async" height="1777" loading="lazy" src="../assets/qr-scanner/ko/02-create.webp?v=166fcb509685" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">02</span>
+<h3>뭐든 QR로 만들기</h3>
+<p>링크·와이파이·연락처까지 한 번에. 일반 7종 + 소셜 9종 생성 지원.</p>
+</div>
+</div>
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="QR 코드 이미지와 저장·공유 버튼이 있는 결과 화면" decoding="async" height="1777" loading="lazy" src="../assets/qr-scanner/ko/03-share.webp?v=2bf17b338c0f" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">03</span>
+<h3>만들면 바로 저장하고 공유</h3>
+<p>1024×1024 고화질 PNG 저장, 시스템 공유 시트로 즉시 전달.</p>
+</div>
+</div>
+<div class="showcase__row showcase__row--reverse">
+<div class="showcase__shot"><img alt="스캔하거나 만든 QR 코드 목록이 표시된 히스토리 화면" decoding="async" height="1777" loading="lazy" src="../assets/qr-scanner/ko/04-history.webp?v=fd3f1a374b2a" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">04</span>
+<h3>기록은 오직 내 기기에만</h3>
+<p>서버 전송 없음. 스캔·생성 기록 전부 로컬 저장. 완전한 프라이버시.</p>
+</div>
+</div>
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="언어 메뉴와 앱 버전 정보가 있는 설정 화면" decoding="async" height="1777" loading="lazy" src="../assets/qr-scanner/ko/05-more.webp?v=102a436b6655" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">05</span>
+<h3>31개 언어 지원</h3>
+<p>네트워크 없이도 스캔·생성·히스토리가 완벽 동작.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div class="site-footer__brand" id="support">
+<span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
+<span class="site-footer__slogan">매일 쓰는 도구부터 오래 함께할 브랜드까지 — 어떤 폰에서든 똑같이.</span>
+<a class="site-footer__mail" data-email="text" href="mailto:h1.soft.x001@gmail.com">h1.soft.x001@gmail.com</a><p class="qr-support">문의 시 앱 버전, 기기 모델, 운영체제 버전과 문제를 재현하는 절차를 알려 주세요. 비밀번호나 개인정보가 담긴 QR 코드 내용은 보내지 마세요.</p>
+<span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
+</div>
+<div class="site-footer__cols">
+<div class="site-footer__col">
+<span class="site-footer__label">일상의 도구</span>
+<a href="index.html">QR Scanner</a>
+<a href="../seukscan/index.html">슥캔</a>
+<a href="../ongle/index.html">온글</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">라이프스타일</span>
+<a href="../mongle/index.html">몽글</a>
+<a href="https://h1soft.github.io/skinping/">피부핑</a>
+<a href="https://h1soft.github.io/lol.dating/">롤개팅</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">게임</span>
+<a href="../sudoku/index.html">스도쿠 보야지</a>
+<a href="../sagak/index.html">사각사각</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">약관 및 정책</span>
+<a href="privacy/index.html">개인 정보 보호 정책</a>
+<a href="terms/index.html">이용 약관</a>
+</div>
+</div>
+</div>
+</footer>
 </body>
 </html>

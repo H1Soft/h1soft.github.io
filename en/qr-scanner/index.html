@@ -1,264 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html dir="ltr" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<!-- ── SEO ─────────────────────────────────────────── -->
+<title>QR Code Scanner &amp; Generator | H1Soft</title>
+<meta content="Scan QR codes with your camera or from photos. Create codes for links, Wi-Fi and contact details, save and share images, and revisit your scan history." name="description"/>
 
-  <!-- ── SEO ─────────────────────────────────────────── -->
-  <title>QR Scanner — scan and create QR codes in one second | H1Soft</title>
-  <meta name="description" content="QR Scanner: scan and create QR codes in one second. 16 QR types including Wi-Fi, links and contacts. All history stays on your device — private and offline-ready. Built by H1Soft with Kotlin Multiplatform." />
-  <meta name="keywords" content="QR scanner, QR code generator, create QR code, Wi-Fi QR, QR scan app, H1Soft" />
-  <meta name="author" content="H1Soft" />
-  <link rel="canonical" href="https://h1soft.github.io/en/qr-scanner/" />
-  <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
-  <link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
-  <link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
+<meta content="H1Soft" name="author"/>
+<link href="https://h1soft.github.io/en/qr-scanner/" rel="canonical"/>
 
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="H1Soft" />
-  <meta property="og:title" content="QR Scanner — scan and create QR codes in one second | H1Soft" />
-  <meta property="og:description" content="Scan and create QR codes in one second. 16 QR types, full privacy, offline-ready." />
-  <meta property="og:image" content="https://h1soft.github.io/assets/og-image-en.jpg" />
-  <meta property="og:url" content="https://h1soft.github.io/en/qr-scanner/" />
-  <meta property="og:locale" content="en_US" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="QR Scanner — scan and create QR codes in one second | H1Soft" />
-  <meta name="twitter:description" content="Scan and create QR codes in one second. 16 QR types, full privacy, offline-ready." />
-  <meta name="twitter:image" content="https://h1soft.github.io/assets/og-image-en.jpg" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="48x48" href="../../assets/favicon-48.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/apple-touch-icon.png" />
 
-  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+<meta content="website" property="og:type"/>
+<meta content="H1Soft" property="og:site_name"/>
+<meta content="QR Code Scanner &amp; Generator | H1Soft" property="og:title"/>
+<meta content="Scan QR codes with your camera or from photos. Create codes for links, Wi-Fi and contact details, save and share images, and revisit your scan history." property="og:description"/>
+<meta content="https://h1soft.github.io/assets/qr-scanner/en/01-hero.webp" property="og:image"/>
+<meta content="https://h1soft.github.io/en/qr-scanner/" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="QR Code Scanner &amp; Generator | H1Soft" name="twitter:title"/>
+<meta content="Scan QR codes with your camera or from photos. Create codes for links, Wi-Fi and contact details, save and share images, and revisit your scan history." name="twitter:description"/>
+<meta content="https://h1soft.github.io/assets/qr-scanner/en/01-hero.webp" name="twitter:image"/>
+<link href="../../assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
+<link href="../../assets/favicon-48.png" rel="icon" sizes="48x48" type="image/png"/>
+<link href="../../assets/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link crossorigin="" href="https://cdn.jsdelivr.net" rel="preconnect"/>
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" rel="stylesheet"/>
+<link href="../../css/style.css" rel="stylesheet"/>
+<script defer="" src="../../js/config.js"></script>
+<script defer="" src="../../js/site.js"></script>
 
-  <link rel="stylesheet" href="../../css/style.css" />
-  <script src="../../js/config.js" defer></script>
-  <script src="../../js/site.js" defer></script>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "QR Scanner",
-    "operatingSystem": "iOS, Android",
-    "applicationCategory": "UtilitiesApplication",
-    "description": "Scan and create QR codes in one second. 16 QR types, history stays on device, offline-ready, 18 languages.",
-    "installUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
-    "downloadUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
-    "author": { "@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/" }
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "H1Soft", "item": "https://h1soft.github.io/en/" },
-      { "@type": "ListItem", "position": 2, "name": "QR Scanner", "item": "https://h1soft.github.io/en/qr-scanner/" }
-    ]
-  }
-  </script>
-</head>
-<body id="top">
-
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a href="../index.html#top" class="logo" aria-label="H1Soft home">H1Soft<span class="logo-dot">.</span></a>
-      <nav class="site-nav" aria-label="Main menu">
-        <button type="button" class="nav-products" id="nav-products" aria-expanded="false" aria-controls="nav-dropdown">Products<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-        <a href="../index.html#about">About</a>
-        <a href="../index.html#faq">FAQ</a>
-        <a href="../index.html#contact">Contact</a>
-      </nav>
-      <div class="nav-dropdown" id="nav-dropdown" hidden>
-        <div class="nav-col">
-          <span class="nav-col__label">Everyday Tools</span>
-          <a class="nav-item" href="index.html"><img src="../../assets/app_icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR scan & create</span></span></a>
-          <a class="nav-item" href="../seukscan/index.html"><img src="../../assets/seukscan-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">Seukscan</span><span class="nav-item__type">Doc scanner · OCR</span></span></a>
-          <a class="nav-item" href="../ongle/index.html"><img src="../../assets/ongle-icon.png" alt="" width="28" height="28" /><span><span class="nav-item__name">Ongle</span><span class="nav-item__type">HWP·HWPX viewer</span></span></a>
-        </div>
-        <div class="nav-col">
-          <span class="nav-col__label">Lifestyle</span>
-          <a class="nav-item" href="/skinping/"><span class="app-mark app-mark--skinping" aria-hidden="true"><span class="drop"></span></span><span><span class="nav-item__name">Skinping</span><span class="nav-item__type">AI skin routine</span></span></a>
-          <a class="nav-item" href="../mongle/index.html"><span class="app-mark app-mark--mongle" aria-hidden="true"><span class="blob"></span></span><span><span class="nav-item__name">Mongle</span><span class="nav-item__type">Personality test</span></span></a>
-          <a class="nav-item" href="/lol.dating/"><span class="app-mark app-mark--lol" aria-hidden="true">롤</span><span><span class="nav-item__name">LoLdating</span><span class="nav-item__type">Dating for gamers</span></span></a>
-        </div>
-        <div class="nav-col">
-          <span class="nav-col__label">Games</span>
-          <a class="nav-item" href="../sudoku/index.html"><span class="app-mark app-mark--sudoku" aria-hidden="true"><span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">Sudoku Voyage</span><span class="nav-item__type">Sudoku puzzle</span></span></a>
-          <a class="nav-item" href="../sagak/index.html"><span class="app-mark app-mark--sagak" aria-hidden="true"><span class="grid"><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">SAGAK</span><span class="nav-item__type">Shikaku puzzle</span></span></a>
-        </div>
-      </div>
-      <span class="header-divider" aria-hidden="true"></span>
-      <div class="lang-toggle">
-        <a href="../../qr-scanner/index.html" lang="ko" hreflang="ko">KO</a>
-        <span class="is-active">EN</span>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- ── 1. Page lead ──────────────────────────────── -->
-    <section class="hero hero--page">
-      <div class="hero__inner">
-        <span class="eyebrow">EVERYDAY TOOLS</span>
-        <h1>QR Scanner</h1>
-        <p class="hero__sub">Scan and create QR codes in one second. History stays on your device and it works offline.</p>
-        <div class="hero__cta"><a href="../index.html#tools" class="btn btn--ghost">← All products</a></div>
-      </div>
-    </section>
-
+<link href="https://h1soft.github.io/qr-scanner/" hreflang="ko" rel="alternate"/><link href="https://h1soft.github.io/en/qr-scanner/" hreflang="en" rel="alternate"/><link href="https://h1soft.github.io/ja/qr-scanner/" hreflang="ja" rel="alternate"/><link href="https://h1soft.github.io/zh-CN/qr-scanner/" hreflang="zh-CN" rel="alternate"/><link href="https://h1soft.github.io/zh-TW/qr-scanner/" hreflang="zh-TW" rel="alternate"/><link href="https://h1soft.github.io/es/qr-scanner/" hreflang="es" rel="alternate"/><link href="https://h1soft.github.io/fr/qr-scanner/" hreflang="fr" rel="alternate"/><link href="https://h1soft.github.io/de/qr-scanner/" hreflang="de" rel="alternate"/><link href="https://h1soft.github.io/pt/qr-scanner/" hreflang="pt" rel="alternate"/><link href="https://h1soft.github.io/ru/qr-scanner/" hreflang="ru" rel="alternate"/><link href="https://h1soft.github.io/ar/qr-scanner/" hreflang="ar" rel="alternate"/><link href="https://h1soft.github.io/hi/qr-scanner/" hreflang="hi" rel="alternate"/><link href="https://h1soft.github.io/it/qr-scanner/" hreflang="it" rel="alternate"/><link href="https://h1soft.github.io/nl/qr-scanner/" hreflang="nl" rel="alternate"/><link href="https://h1soft.github.io/tr/qr-scanner/" hreflang="tr" rel="alternate"/><link href="https://h1soft.github.io/pl/qr-scanner/" hreflang="pl" rel="alternate"/><link href="https://h1soft.github.io/sv/qr-scanner/" hreflang="sv" rel="alternate"/><link href="https://h1soft.github.io/da/qr-scanner/" hreflang="da" rel="alternate"/><link href="https://h1soft.github.io/fi/qr-scanner/" hreflang="fi" rel="alternate"/><link href="https://h1soft.github.io/nb/qr-scanner/" hreflang="nb" rel="alternate"/><link href="https://h1soft.github.io/th/qr-scanner/" hreflang="th" rel="alternate"/><link href="https://h1soft.github.io/id/qr-scanner/" hreflang="id" rel="alternate"/><link href="https://h1soft.github.io/ms/qr-scanner/" hreflang="ms" rel="alternate"/><link href="https://h1soft.github.io/vi/qr-scanner/" hreflang="vi" rel="alternate"/><link href="https://h1soft.github.io/uk/qr-scanner/" hreflang="uk" rel="alternate"/><link href="https://h1soft.github.io/cs/qr-scanner/" hreflang="cs" rel="alternate"/><link href="https://h1soft.github.io/ro/qr-scanner/" hreflang="ro" rel="alternate"/><link href="https://h1soft.github.io/hu/qr-scanner/" hreflang="hu" rel="alternate"/><link href="https://h1soft.github.io/el/qr-scanner/" hreflang="el" rel="alternate"/><link href="https://h1soft.github.io/he/qr-scanner/" hreflang="he" rel="alternate"/><link href="https://h1soft.github.io/fa/qr-scanner/" hreflang="fa" rel="alternate"/><link href="https://h1soft.github.io/en/qr-scanner/" hreflang="x-default" rel="alternate"/><script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "QR Scanner", "operatingSystem": "Android, iOS", "applicationCategory": "UtilitiesApplication", "description": "Scan QR codes with your camera or from photos. Create codes for links, Wi-Fi and contact details, save and share images, and revisit your scan history.", "url": "https://h1soft.github.io/en/qr-scanner/", "inLanguage": "en", "image": "https://h1soft.github.io/assets/qr-scanner/en/01-hero.webp", "installUrl": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner", "author": {"@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "H1Soft", "item": "https://h1soft.github.io/"}, {"@type": "ListItem", "position": 2, "name": "QR code scanner and generator", "item": "https://h1soft.github.io/en/qr-scanner/"}]}</script><link href="../../css/qr-language.css" rel="stylesheet"/><script defer="True" src="../../js/qr-language.js"></script></head>
+<body class="qr-page" id="top">
+<header class="site-header">
+<div class="container site-header__inner">
+<a aria-label="H1Soft" class="logo" href="../index.html#top">H1Soft<span class="logo-dot">.</span></a>
+<nav aria-label="Products" class="site-nav">
+<button aria-controls="nav-dropdown" aria-expanded="false" class="nav-products" id="nav-products" type="button">Products<svg aria-hidden="true" fill="none" height="12" viewbox="0 0 12 12" width="12"><path d="M3 4.5l3 3 3-3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path></svg></button>
+<a href="../index.html#about">About</a>
+<a href="../index.html#faq">FAQ</a>
+<a href="#support">Contact</a>
+</nav>
+<div class="nav-dropdown" hidden="" id="nav-dropdown">
+<div class="nav-col">
+<span class="nav-col__label">Everyday Tools</span>
+<a class="nav-item" href="index.html"><img alt="" height="28" src="../../assets/app_icon.png" width="28"/><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR code scanner and generator</span></span></a>
+<a class="nav-item" href="../seukscan/index.html"><img alt="" height="28" src="../../assets/seukscan-icon.png" width="28"/><span><span class="nav-item__name">Seukscan</span><span class="nav-item__type">Doc scanner · OCR</span></span></a>
+<a class="nav-item" href="../ongle/index.html"><img alt="" height="28" src="../../assets/ongle-icon.png" width="28"/><span><span class="nav-item__name">Ongle</span><span class="nav-item__type">HWP·HWPX viewer</span></span></a>
+</div>
+<div class="nav-col">
+<span class="nav-col__label">Lifestyle</span>
+<a class="nav-item" href="https://h1soft.github.io/skinping/"><span aria-hidden="true" class="app-mark app-mark--skinping"><span class="drop"></span></span><span><span class="nav-item__name">Skinping</span><span class="nav-item__type">AI skin routine</span></span></a>
+<a class="nav-item" href="../mongle/index.html"><span aria-hidden="true" class="app-mark app-mark--mongle"><span class="blob"></span></span><span><span class="nav-item__name">Mongle</span><span class="nav-item__type">Personality test</span></span></a>
+<a class="nav-item" href="https://h1soft.github.io/lol.dating/"><span aria-hidden="true" class="app-mark app-mark--lol">롤</span><span><span class="nav-item__name">LoLdating</span><span class="nav-item__type">Dating for gamers</span></span></a>
+</div>
+<div class="nav-col">
+<span class="nav-col__label">Games</span>
+<a class="nav-item" href="../sudoku/index.html"><span aria-hidden="true" class="app-mark app-mark--sudoku"><span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">Sudoku Voyage</span><span class="nav-item__type">Sudoku puzzle</span></span></a>
+<a class="nav-item" href="../sagak/index.html"><span aria-hidden="true" class="app-mark app-mark--sagak"><span class="grid"><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">SAGAK</span><span class="nav-item__type">Shikaku puzzle</span></span></a>
+</div>
+</div>
+<span aria-hidden="true" class="header-divider"></span>
+<details class="qr-language-picker"><summary aria-label="Choose your website language" class="qr-language-trigger"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><ellipse cx="12" cy="12" rx="4" ry="9"></ellipse><path d="M3 12h18"></path></svg><span dir="auto">English</span><svg aria-hidden="true" class="qr-language-chevron" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m7 10 5 5 5-5"></path></svg></summary>
+<div class="qr-language-panel"><p class="qr-language-heading">Choose your website language</p><p class="qr-language-count">31 languages</p>
+<div class="qr-language-search" hidden=""><input aria-label="Search languages" autocomplete="off" placeholder="Search languages" type="search"/></div>
+<nav aria-label="Choose your website language" class="qr-language-grid"><a class="qr-language-option" data-search="한국어 Korean ko" href="../../qr-scanner/index.html" hreflang="ko" lang="ko"><bdi dir="ltr">한국어</bdi></a><a aria-current="page" class="qr-language-option" data-search="English English en" href="index.html" hreflang="en" lang="en"><bdi dir="ltr">English</bdi><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></svg></a><a class="qr-language-option" data-search="日本語 Japanese ja" href="../../ja/qr-scanner/index.html" hreflang="ja" lang="ja"><bdi dir="ltr">日本語</bdi></a><a class="qr-language-option" data-search="简体中文 Simplified Chinese zh-CN" href="../../zh-CN/qr-scanner/index.html" hreflang="zh-CN" lang="zh-CN"><bdi dir="ltr">简体中文</bdi></a><a class="qr-language-option" data-search="繁體中文 Traditional Chinese zh-TW" href="../../zh-TW/qr-scanner/index.html" hreflang="zh-TW" lang="zh-TW"><bdi dir="ltr">繁體中文</bdi></a><a class="qr-language-option" data-search="Español Spanish es" href="../../es/qr-scanner/index.html" hreflang="es" lang="es"><bdi dir="ltr">Español</bdi></a><a class="qr-language-option" data-search="Français French fr" href="../../fr/qr-scanner/index.html" hreflang="fr" lang="fr"><bdi dir="ltr">Français</bdi></a><a class="qr-language-option" data-search="Deutsch German de" href="../../de/qr-scanner/index.html" hreflang="de" lang="de"><bdi dir="ltr">Deutsch</bdi></a><a class="qr-language-option" data-search="Português Portuguese pt" href="../../pt/qr-scanner/index.html" hreflang="pt" lang="pt"><bdi dir="ltr">Português</bdi></a><a class="qr-language-option" data-search="Русский Russian ru" href="../../ru/qr-scanner/index.html" hreflang="ru" lang="ru"><bdi dir="ltr">Русский</bdi></a><a class="qr-language-option" data-search="العربية Arabic ar" href="../../ar/qr-scanner/index.html" hreflang="ar" lang="ar"><bdi dir="rtl">العربية</bdi></a><a class="qr-language-option" data-search="हिन्दी Hindi hi" href="../../hi/qr-scanner/index.html" hreflang="hi" lang="hi"><bdi dir="ltr">हिन्दी</bdi></a><a class="qr-language-option" data-search="Italiano Italian it" href="../../it/qr-scanner/index.html" hreflang="it" lang="it"><bdi dir="ltr">Italiano</bdi></a><a class="qr-language-option" data-search="Nederlands Dutch nl" href="../../nl/qr-scanner/index.html" hreflang="nl" lang="nl"><bdi dir="ltr">Nederlands</bdi></a><a class="qr-language-option" data-search="Türkçe Turkish tr" href="../../tr/qr-scanner/index.html" hreflang="tr" lang="tr"><bdi dir="ltr">Türkçe</bdi></a><a class="qr-language-option" data-search="Polski Polish pl" href="../../pl/qr-scanner/index.html" hreflang="pl" lang="pl"><bdi dir="ltr">Polski</bdi></a><a class="qr-language-option" data-search="Svenska Swedish sv" href="../../sv/qr-scanner/index.html" hreflang="sv" lang="sv"><bdi dir="ltr">Svenska</bdi></a><a class="qr-language-option" data-search="Dansk Danish da" href="../../da/qr-scanner/index.html" hreflang="da" lang="da"><bdi dir="ltr">Dansk</bdi></a><a class="qr-language-option" data-search="Suomi Finnish fi" href="../../fi/qr-scanner/index.html" hreflang="fi" lang="fi"><bdi dir="ltr">Suomi</bdi></a><a class="qr-language-option" data-search="Norsk Norwegian nb" href="../../nb/qr-scanner/index.html" hreflang="nb" lang="nb"><bdi dir="ltr">Norsk</bdi></a><a class="qr-language-option" data-search="ภาษาไทย Thai th" href="../../th/qr-scanner/index.html" hreflang="th" lang="th"><bdi dir="ltr">ภาษาไทย</bdi></a><a class="qr-language-option" data-search="Bahasa Indonesia Indonesian id" href="../../id/qr-scanner/index.html" hreflang="id" lang="id"><bdi dir="ltr">Bahasa Indonesia</bdi></a><a class="qr-language-option" data-search="Bahasa Melayu Malay ms" href="../../ms/qr-scanner/index.html" hreflang="ms" lang="ms"><bdi dir="ltr">Bahasa Melayu</bdi></a><a class="qr-language-option" data-search="Tiếng Việt Vietnamese vi" href="../../vi/qr-scanner/index.html" hreflang="vi" lang="vi"><bdi dir="ltr">Tiếng Việt</bdi></a><a class="qr-language-option" data-search="Українська Ukrainian uk" href="../../uk/qr-scanner/index.html" hreflang="uk" lang="uk"><bdi dir="ltr">Українська</bdi></a><a class="qr-language-option" data-search="Čeština Czech cs" href="../../cs/qr-scanner/index.html" hreflang="cs" lang="cs"><bdi dir="ltr">Čeština</bdi></a><a class="qr-language-option" data-search="Română Romanian ro" href="../../ro/qr-scanner/index.html" hreflang="ro" lang="ro"><bdi dir="ltr">Română</bdi></a><a class="qr-language-option" data-search="Magyar Hungarian hu" href="../../hu/qr-scanner/index.html" hreflang="hu" lang="hu"><bdi dir="ltr">Magyar</bdi></a><a class="qr-language-option" data-search="Ελληνικά Greek el" href="../../el/qr-scanner/index.html" hreflang="el" lang="el"><bdi dir="ltr">Ελληνικά</bdi></a><a class="qr-language-option" data-search="עברית Hebrew he" href="../../he/qr-scanner/index.html" hreflang="he" lang="he"><bdi dir="rtl">עברית</bdi></a><a class="qr-language-option" data-search="فارسی Persian fa" href="../../fa/qr-scanner/index.html" hreflang="fa" lang="fa"><bdi dir="rtl">فارسی</bdi></a></nav><p class="qr-language-empty" hidden="" role="status">No languages found.</p></div></details>
+</div>
+</header>
+<main>
+<!-- ── 1. Page lead ──────────────────────────────── -->
+<section class="hero hero--page">
+<div class="hero__inner">
+<span class="eyebrow">Everyday Tools</span>
+<h1>QR Scanner</h1>
+<p class="hero__sub">Scan and create QR codes in one second. History stays on your device and it works offline.</p>
+<div class="hero__cta"><a class="btn btn--ghost" href="../index.html#tools">← All products</a></div>
+</div>
+</section>
 <!-- ── 2. Products ───────────────────────────────── -->
-    <section id="products" class="section">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Products</span>
-          <h2 class="section__title">Our first product</h2>
-        </div>
+<section class="section" id="products">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">Products</span>
+<h2 class="section__title">Our first product</h2>
+</div>
+<article class="product-card">
+<div class="product-card__head">
+<img alt="QR Scanner" class="product-card__icon" height="88" src="../../assets/app_icon.png" width="88"/>
+<div class="product-card__title">
+<div class="product-card__name-row">
+<span class="product-card__name">QR Scanner</span>
+<span class="badge--new">NEW</span>
+</div>
+<span class="product-card__tagline">QR scanning and creation, done in a second</span>
+</div>
+</div>
+<div class="product-card__grid">
+<div class="feature-col">
+<span class="col-label">Key features</span>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Real-time, ultra-fast QR scanning — flash and gallery image scan</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Create QR codes for links, text, phone, location, email, SMS, Wi-Fi and calendar</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>Social QR for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>High-resolution PNG export and system share</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>History stored locally — complete privacy, nothing sent to servers</span></div>
+<div class="feature-item"><svg fill="none" height="20" viewbox="0 0 20 20" width="20"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"></circle><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path></svg><span>31 languages · Offline scanning, creation and history</span></div>
+</div>
+<div class="recommend">
+<span class="col-label">Recommended for</span>
+<div class="recommend-item"><span>Anyone tired of the camera app taking forever to catch a QR</span></div>
+<div class="recommend-item"><span>People who want to share Wi-Fi, contacts or links as QR codes</span></div>
+<div class="recommend-item"><span>Anyone uncomfortable with scan history living on a server</span></div>
+</div>
+</div>
+<div class="store-block">
+<div class="store-buttons">
+<a aria-disabled="true" class="store-btn is-disabled" href="#" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="store-btn__icon" height="24" viewbox="0 0 20 24" width="20"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"></path></svg>
+<span class="store-btn__text"><span class="store-btn__sub">Coming soon</span><span class="store-btn__label">App Store</span></span>
+</a>
+<a class="store-btn" href="https://play.google.com/store/apps/details?id=com.h1soft.codescanner" rel="noopener" target="_blank">
+<svg aria-hidden="true" class="store-btn__icon" height="21" viewbox="0 0 24 26" width="19"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"></path><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"></path><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"></path><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"></path></svg>
+<span class="store-btn__text"><span class="store-btn__sub">Download</span><span class="store-btn__label">Google Play</span></span>
+</a>
+</div>
 
-        <article class="product-card">
-          <div class="product-card__head">
-            <img src="../../assets/app_icon.png" alt="QR Scanner app icon" class="product-card__icon" width="88" height="88" />
-            <div class="product-card__title">
-              <div class="product-card__name-row">
-                <span class="product-card__name">QR Scanner</span>
-                <span class="badge--new">NEW</span>
-              </div>
-              <span class="product-card__tagline">QR scanning and creation, done in a second</span>
-            </div>
-          </div>
-
-          <div class="product-card__grid">
-            <div class="feature-col">
-              <span class="col-label">Key features</span>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Real-time, ultra-fast QR scanning — flash and gallery image scan</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Create QR codes for links, text, phone, location, email, SMS, Wi-Fi and calendar</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Social QR for Facebook, X, YouTube, Instagram, KakaoTalk, Line and more</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>High-resolution PNG export and system share</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>History stored locally — complete privacy, nothing sent to servers</span></div>
-              <div class="feature-item"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8.2" stroke="rgb(0,94,235)" stroke-width="1.6"/><path d="M6.4 10.2l2.4 2.4 4.8-4.9" stroke="rgb(0,94,235)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg><span>18 languages · works offline</span></div>
-            </div>
-
-            <div class="recommend">
-              <span class="col-label">Recommended for</span>
-              <div class="recommend-item"><span>Anyone tired of the camera app taking forever to catch a QR</span></div>
-              <div class="recommend-item"><span>People who want to share Wi-Fi, contacts or links as QR codes</span></div>
-              <div class="recommend-item"><span>Anyone uncomfortable with scan history living on a server</span></div>
-            </div>
-          </div>
-
-          <div class="store-block">
-            <div class="store-buttons">
-              <a class="store-btn is-disabled" data-store="appstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
-                <svg class="store-btn__icon" width="20" height="24" viewBox="0 0 20 24" aria-hidden="true"><path d="M16.4 12.7c0-2.6 2.1-3.9 2.2-4-1.2-1.8-3.1-2-3.8-2.1-1.6-.2-3.1 1-3.9 1-.8 0-2.1-.9-3.4-.9-1.8 0-3.4 1-4.3 2.6-1.8 3.2-.5 7.9 1.3 10.5.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.4-.8s2 .8 3.4.8c1.4 0 2.3-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.8-1.1-2.8-4.1zM13.8 3.5c.7-.9 1.2-2.1 1.1-3.3-1 0-2.3.7-3 1.6-.7.8-1.3 2-1.1 3.2 1.1.1 2.3-.6 3-1.5z" fill="#fff"/></svg>
-                <span class="store-btn__text"><span class="store-btn__sub">Coming soon</span><span class="store-btn__label">App Store</span></span>
-              </a>
-              <a class="store-btn is-disabled" data-store="playstore" href="#" aria-disabled="true" rel="noopener" target="_blank">
-                <svg class="store-btn__icon" width="19" height="21" viewBox="0 0 24 26" aria-hidden="true"><path d="M3 2.2v21.6L14.3 13 3 2.2z" fill="#00C4FF"/><path d="M3 2.2L14.3 13l3.8-3.7L4.6 1.5C4 .1 3 .8 3 2.2z" fill="#00E064"/><path d="M3 23.8c0 1.4 1 2.1 1.6.7l13.5-7.8-3.8-3.7L3 23.8z" fill="#FF3A44"/><path d="M18.1 9.3L14.3 13l3.8 3.7 3.4-2c1.1-.6 1.1-2.8 0-3.4l-3.4-2z" fill="#FFCE00"/></svg>
-                <span class="store-btn__text"><span class="store-btn__sub">Coming soon</span><span class="store-btn__label">Google Play</span></span>
-              </a>
-            </div>
-            <span class="store-note" data-store-note>Download links go live at launch.</span>
-          </div>
-        </article>
-      </div>
-    </section>
-
+</div>
+</article>
+</div>
+</section>
 <!-- ── 3. Showcase ───────────────────────────────── -->
-    <section class="section section--alt" aria-label="QR Scanner features">
-      <div class="container">
-        <div class="section-head">
-          <span class="eyebrow">Showcase</span>
-          <h2 class="section__title">See it in action</h2>
-        </div>
-
-        <div class="showcase">
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../../assets/screenshots/en/01-hero.webp" alt="QR Scanner scan screen — real-time ultra-fast scanning" width="1000" height="1777" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">01</span>
-              <h3>Why take 5 seconds for a 1-second job?</h3>
-              <p>Scanning starts the moment the app opens. Recognized codes jump straight to their detail page. Flash and gallery scans included.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot"><img src="../../assets/screenshots/en/02-create.webp" alt="QR create screen — choosing general and social QR types" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">02</span>
-              <h3>Turn anything into a QR.</h3>
-              <p>Links, Wi-Fi, contacts — one tap. General and social QR types in one place.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../../assets/screenshots/en/03-share.webp" alt="Created QR detail screen — high-resolution PNG export and share" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">03</span>
-              <h3>Save it. Share it.</h3>
-              <p>1024×1024 high-resolution PNG export, delivered instantly through the system share sheet.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row showcase__row--reverse">
-            <div class="showcase__shot"><img src="../../assets/screenshots/en/04-history.webp" alt="History screen — records stored on device only" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">04</span>
-              <h3>History stays on your device.</h3>
-              <p>Nothing leaves your phone. Every scan and creation is stored locally. Complete privacy.</p>
-            </div>
-          </div>
-
-          <div class="showcase__row">
-            <div class="showcase__shot"><img src="../../assets/screenshots/en/05-more.webp" alt="Settings screen — languages, terms, app version" width="1000" height="1777" loading="lazy" /></div>
-            <div class="showcase__text">
-              <span class="showcase__num" aria-hidden="true">05</span>
-              <h3>18 languages · offline</h3>
-              <p>Scan, create and browse history — no network needed.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <div class="site-footer__brand">
-        <span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
-        <span class="site-footer__slogan">From everyday tools to long-run brands — the same on any phone.</span>
-        <a class="site-footer__mail" data-email="text" href="#">h1.soft.x001@gmail.com</a>
-        <span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
-      </div>
-      <div class="site-footer__cols">
-        <div class="site-footer__col">
-          <span class="site-footer__label">Everyday Tools</span>
-          <a href="index.html">QR Scanner</a>
-          <a href="../seukscan/index.html">Seukscan</a>
-          <a href="../ongle/index.html">Ongle</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">Lifestyle</span>
-          <a href="../mongle/index.html">Mongle</a>
-          <a href="/skinping/">Skinping</a>
-          <a href="/lol.dating/">LoLdating</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">Games</span>
-          <a href="../sudoku/index.html">Sudoku Voyage</a>
-          <a href="../sagak/index.html">SAGAK</a>
-        </div>
-        <div class="site-footer__col">
-          <span class="site-footer__label">LEGAL</span>
-          <a href="privacy/index.html">Privacy Policy</a>
-          <a href="terms/index.html">Terms of Service</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+<section aria-label="See the app" class="section section--alt">
+<div class="container">
+<div class="section-head">
+<span class="eyebrow">See the app</span>
+<h2 class="section__title">See the app</h2>
+</div>
+<div class="showcase">
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="QR scanning screen with a camera view, flashlight control and photo picker" decoding="async" height="1777" src="../../assets/qr-scanner/en/01-hero.webp?v=6f2354503de0" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">01</span>
+<h3>Why take 5 seconds for a 1-second job?</h3>
+<p>Scanning starts the moment the app opens. Recognized codes jump straight to their detail page. Flash and gallery scans included.</p>
+</div>
+</div>
+<div class="showcase__row showcase__row--reverse">
+<div class="showcase__shot"><img alt="QR creation screen with options for links, text and Wi-Fi" decoding="async" height="1777" loading="lazy" src="../../assets/qr-scanner/en/02-create.webp?v=1d40e716b7dc" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">02</span>
+<h3>Turn anything into a QR.</h3>
+<p>Links, Wi-Fi, contacts — one tap. General and social QR types in one place.</p>
+</div>
+</div>
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="QR result screen with an image preview and Save and Share buttons" decoding="async" height="1777" loading="lazy" src="../../assets/qr-scanner/en/03-share.webp?v=844f97b448ca" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">03</span>
+<h3>Save it. Share it.</h3>
+<p>1024×1024 high-resolution PNG export, delivered instantly through the system share sheet.</p>
+</div>
+</div>
+<div class="showcase__row showcase__row--reverse">
+<div class="showcase__shot"><img alt="History screen listing scanned and created QR codes" decoding="async" height="1777" loading="lazy" src="../../assets/qr-scanner/en/04-history.webp?v=9068c647def7" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">04</span>
+<h3>History stays on your device.</h3>
+<p>Nothing leaves your phone. Every scan and creation is stored locally. Complete privacy.</p>
+</div>
+</div>
+<div class="showcase__row">
+<div class="showcase__shot"><img alt="Settings screen with Language and app version information" decoding="async" height="1777" loading="lazy" src="../../assets/qr-scanner/en/05-more.webp?v=d107c4b4cb62" width="1000"/></div>
+<div class="showcase__text">
+<span aria-hidden="true" class="showcase__num">05</span>
+<h3>31 languages</h3>
+<p>Scan, create and browse history — no network needed.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div class="site-footer__brand" id="support">
+<span class="site-footer__logo">H1Soft<span class="logo-dot">.</span></span>
+<span class="site-footer__slogan">From everyday tools to long-run brands — the same on any phone.</span>
+<a class="site-footer__mail" data-email="text" href="mailto:h1.soft.x001@gmail.com">h1.soft.x001@gmail.com</a><p class="qr-support">For help, include the app version, device model, operating system version and steps to reproduce the issue. Do not send passwords or QR code content containing personal information.</p>
+<span class="site-footer__copy">© 2026 H1Soft. All rights reserved.</span>
+</div>
+<div class="site-footer__cols">
+<div class="site-footer__col">
+<span class="site-footer__label">Everyday Tools</span>
+<a href="index.html">QR Scanner</a>
+<a href="../seukscan/index.html">Seukscan</a>
+<a href="../ongle/index.html">Ongle</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">Lifestyle</span>
+<a href="../mongle/index.html">Mongle</a>
+<a href="https://h1soft.github.io/skinping/">Skinping</a>
+<a href="https://h1soft.github.io/lol.dating/">LoLdating</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">Games</span>
+<a href="../sudoku/index.html">Sudoku Voyage</a>
+<a href="../sagak/index.html">SAGAK</a>
+</div>
+<div class="site-footer__col">
+<span class="site-footer__label">Legal</span>
+<a href="privacy/index.html">Privacy Policy</a>
+<a href="terms/index.html">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
 </body>
 </html>
