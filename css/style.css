@@ -1464,6 +1464,20 @@ details p {
 }
 
 /* 온글 랜딩 변형 */
+@media (min-width: 800px) {
+  .theme-ongle .showcase__row {
+    max-width: 880px;
+    width: 100%;
+    margin-inline: auto;
+    column-gap: 40px;
+    flex-wrap: nowrap;
+  }
+  .theme-ongle .showcase__text {
+    flex: 0 1 340px;
+    max-width: 340px;
+  }
+}
+
 .app-hero--ongle { background: linear-gradient(180deg, rgb(240, 245, 255) 0%, #fff 88%); }
 .app-hero--ongle h1 .grad { background: linear-gradient(90deg, #3366ff, #60a5fa); -webkit-background-clip: text; background-clip: text; }
 .app-hero__badge--muted { background: var(--fill); color: var(--ink-neutral); }
