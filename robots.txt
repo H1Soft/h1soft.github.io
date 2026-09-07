@@ -11,3 +11,5 @@ Allow: /
 
 Sitemap: https://h1soft.github.io/sitemap.xml
 Sitemap: https://h1soft.github.io/sitemap-1.xml
+
+Sitemap: https://h1soft.github.io/ongle/sitemap.xml
