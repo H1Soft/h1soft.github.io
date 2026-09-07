@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/9bfe70fd1d70600c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/36120862013ba0d8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/a13d9b41b0a471ce.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/6bad1a774228464c.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/b9584e099e0e7f1e.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/0013992696cf3a14.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Noto Serif KR';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/assets/sudoku-release/fonts/2ef25ebe470c767a.ttf) format('truetype');
+}
+
+:root{color-scheme:light;--ink:#1f2933;--paper:#f7f1e6;--green:#173f38;--orange:#b65a22}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.75 Manrope,system-ui,sans-serif}a{color:inherit;text-underline-offset:5px}header,footer,main{max-width:1200px;margin:auto;padding:28px}header,footer{display:flex;align-items:center;gap:28px;flex-wrap:wrap}header{border-bottom:1px solid #d9d0c0}header nav{margin-inline-start:auto;display:flex;gap:20px}.brand{display:flex;gap:12px;align-items:center;text-decoration:none;font-weight:700}.brand img{border-radius:12px}details{position:relative}summary{cursor:pointer}.languages{position:absolute;inset-inline-end:0;top:36px;z-index:10;padding:20px;background:#fff;box-shadow:0 8px 40px #0002;display:grid;grid-template-columns:repeat(2,140px);gap:10px}.hero{display:grid;grid-template-columns:1.1fr .8fr;gap:80px;align-items:center;padding:70px 0 100px}.hero-image{width:100%;max-width:380px;height:auto;border-radius:28px;box-shadow:0 24px 65px #173f3822}h1,h2,h3{font-family:Lora,'Noto Serif KR',Georgia,serif;line-height:1.2;font-weight:600}h1{font-size:clamp(42px,5.5vw,72px);letter-spacing:-.035em;margin:20px 0}h2{font-size:36px}h3{font-size:22px}.eyebrow{color:var(--orange);font-size:13px;font-weight:700;letter-spacing:.08em}.lead{font-size:20px;color:#4b5b59;line-height:1.8}.button{display:inline-block;background:var(--green);color:#fff;padding:14px 24px;border-radius:9px;text-decoration:none;margin-top:20px}.gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}.gallery img{width:100%;height:auto;border-radius:16px}.gallery article{min-width:0}.details-copy{max-width:780px;margin:70px auto}.details-copy p{padding:18px 0;border-bottom:1px solid #ded4c4}.policy{max-width:840px;min-height:70vh}.policy h1{font-size:46px}footer{font-size:13px;border-top:1px solid #d9d0c0;color:#52625b}a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:5px}@media(max-width:700px){header,footer,main{padding:20px}header nav{margin:0}.hero{grid-template-columns:1fr;gap:32px;padding:32px 0 60px}.hero-image{max-width:310px;justify-self:center}.gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}h3{font-size:17px}.policy h1{font-size:36px}.lead{font-size:18px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
