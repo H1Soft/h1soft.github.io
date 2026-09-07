@@ -1,341 +1,232 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version='1.0' encoding='utf-8'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:html="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://h1soft.github.io/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/ongle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/qr-scanner/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/sagak/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/seukscan/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/sudoku/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
+    <html:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/ongle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/qr-scanner/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/sagak/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/seukscan/</loc>
-    <lastmod>2026-09-04</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/sudoku/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
+    <html:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/ja/sagak/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
-    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
+    <html:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/ongle/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/ongle/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/qr-scanner/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/qr-scanner/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/sagak/privacy/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/sagak/terms/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/seukscan/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/seukscan/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/sudoku/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/sudoku/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/ongle/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/ongle/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/ongle/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/ongle/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/ongle/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/qr-scanner/privacy/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/qr-scanner/terms/</loc>
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/qr-scanner/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/qr-scanner/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/sagak/privacy/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/privacy/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/privacy/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/sagak/terms/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/seukscan/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/seukscan/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/seukscan/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/seukscan/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/seukscan/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/sudoku/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/privacy/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/privacy/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/sudoku/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/terms/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/terms/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/terms/" />
+    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sagak/terms/" />
+    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/terms/" />
+    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/skinping/</loc>
@@ -373,37 +264,241 @@
     <changefreq>monthly</changefreq>
     <priority>0.2</priority>
   </url>
-<url><loc>https://h1soft.github.io/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/en/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/en/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/en/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/ja/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/ja/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/ja/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hans/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hans/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hans/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hant/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hant/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/zh-Hant/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/es/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/es/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/es/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/fr/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/fr/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/fr/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/de/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/de/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/de/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/pt/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/pt/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/pt/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/id/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/id/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/id/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/vi/mongle/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/vi/mongle/support/</loc><lastmod>2026-09-07</lastmod></url>
-<url><loc>https://h1soft.github.io/vi/mongle/privacy/</loc><lastmod>2026-09-07</lastmod></url>
+  <url>
+    <loc>https://h1soft.github.io/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/it/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/it/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/it/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nl/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nl/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nl/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pl/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pl/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pl/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/tr/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/tr/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/tr/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ru/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ru/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ru/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fa/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fa/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fa/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-CN/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-CN/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-CN/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-TW/seukscan/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-TW/seukscan/privacy/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-TW/seukscan/terms/</loc>
+    <lastmod>2026-09-08</lastmod>
+  </url>
+<url><loc>https://h1soft.github.io/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/en/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/en/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/en/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/ja/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/ja/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/ja/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hans/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hans/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hans/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hant/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hant/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/zh-Hant/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/es/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/es/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/es/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/fr/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/fr/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/fr/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/de/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/de/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/de/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/pt/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/pt/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/pt/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/id/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/id/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/id/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/vi/mongle/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/vi/mongle/privacy/</loc><lastmod>2026-09-08</lastmod></url>
+<url><loc>https://h1soft.github.io/vi/mongle/support/</loc><lastmod>2026-09-08</lastmod></url>
 </urlset>

@@ -1,0 +1,28 @@
+/* Language selection extends the original H1Soft segmented toggle and Products
+   dropdown. The shared stylesheet owns layout, fonts, colors, corners, shadows. */
+.locale-switch{position:relative;flex-shrink:0}
+.locale-switch summary{align-items:center;gap:3px;cursor:pointer;list-style:none;padding-inline-end:9px}
+.locale-switch summary::-webkit-details-marker{display:none}
+.locale-switch__chevron{color:var(--ink-alt);transition:transform .2s ease}
+.locale-switch[open] .locale-switch__chevron{transform:rotate(180deg);color:var(--primary)}
+.locale-switch__menu.nav-dropdown{inset-inline-end:0;inset-inline-start:auto;display:block;width:360px;max-width:calc(100vw - 40px);max-height:min(520px,75vh);overflow:auto;overscroll-behavior:contain}
+.locale-switch:not([open])>.locale-switch__menu{display:none}
+.locale-switch__options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;margin-top:10px}
+.locale-switch__options .nav-item{justify-content:space-between;min-height:44px;min-width:0}
+.locale-switch__options .nav-item__name{min-width:0;overflow-wrap:anywhere}
+.locale-switch__options [aria-current]{background:var(--blue-95);color:var(--primary-strong)}
+.locale-switch__options [aria-current] .nav-item__name{color:inherit}
+.locale-switch__options svg{flex-shrink:0}
+.locale-switch summary:focus-visible,.locale-switch a:focus-visible{outline:2px solid var(--primary);outline-offset:3px}
+.trust-chip{white-space:normal;max-width:100%}
+[dir=rtl] .site-nav{margin-left:0;margin-inline-start:auto}
+[dir=rtl] .policy-header .locale-switch{margin-left:0;margin-inline-start:auto}
+[dir=rtl] .app-hero h1,[dir=rtl] .section__title{letter-spacing:normal}
+[dir=rtl] .site-footer__mail{direction:ltr;unicode-bidi:isolate}
+@media(max-width:767px){
+  .locale-switch{margin-inline-start:auto}
+  .site-nav{flex-wrap:wrap;row-gap:8px}
+  .policy-header__inner{height:auto;flex-wrap:wrap;gap:8px 14px;padding-block:12px}
+  .policy-back{order:3;flex-basis:100%;margin:0}
+}
+@media(prefers-reduced-motion:reduce){.locale-switch__chevron{transition:none}}
