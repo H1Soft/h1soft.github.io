@@ -1,0 +1,11 @@
+/* Language picker: reuse H1Soft's segmented control and Products menu components. */
+.lang-picker { position: relative; flex-shrink: 0; }
+.lang-toggle .lang-trigger { border-radius: 999px; padding: 5px 12px; font-size: 13px; gap: 8px; cursor: pointer; }
+.lang-picker .nav-dropdown { right: auto; inset-inline-end: 0; width: 400px; max-width: calc(100vw - 32px); display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px; padding: 12px; max-height: min(540px, 75vh); overflow-y: auto; }
+.lang-picker .nav-dropdown[hidden] { display: none; }
+.lang-picker .nav-item { justify-content: space-between; min-height: 42px; }
+.lang-picker .nav-item[aria-current="page"] { background: var(--blue-95); }
+.lang-picker .nav-item[aria-current="page"] .nav-item__name { color: var(--primary-strong); }
+.lang-picker .nav-item svg { color: var(--primary); flex-shrink: 0; }
+.lang-picker button:focus-visible, .lang-picker a:focus-visible { outline: 2px solid var(--primary); outline-offset: 2px; }
+@media (max-width: 767px) { .lang-picker { margin-inline-start: auto; } .lang-picker .nav-dropdown { left: auto; right: auto; inset-inline-end: 0; } }
