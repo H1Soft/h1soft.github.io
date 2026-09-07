@@ -1,0 +1,93 @@
+/* Localization controls use the existing Mongle and H1Soft design tokens. */
+.mg-locale {
+  position: relative;
+  flex-shrink: 0;
+  color: var(--mg-ink, var(--ink));
+  --locale-surface: var(--mg-surface, #fff);
+  --locale-line: var(--mg-hairline, var(--line-alt));
+  --locale-focus: var(--mg-focus, var(--primary));
+  --locale-selected: var(--blue-95, #f1ecfc);
+  --locale-text: var(--mg-ink, var(--ink));
+  --locale-muted: var(--mg-ink55, var(--ink-alt));
+}
+.mg-locale > summary {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  min-height: 40px;
+  padding: 3px 10px 3px 3px;
+  border: 1px solid var(--locale-line);
+  border-radius: 999px;
+  background: var(--locale-surface);
+  list-style: none;
+  cursor: pointer;
+}
+.mg-locale > summary::-webkit-details-marker { display: none; }
+.mg-locale > summary::marker { content: ''; }
+.mg-locale > summary .is-active {
+  display: block;
+  min-width: 40px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  color: var(--locale-text);
+  background: var(--locale-selected);
+  box-shadow: inset 0 0 0 1.5px var(--mg-border, var(--line));
+  font-size: 12.5px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+}
+.mg-locale > summary > svg { color: var(--locale-muted); transition: transform .2s ease; }
+.mg-locale[open] > summary > svg { transform: rotate(180deg); }
+.mg-locale__menu {
+  position: absolute;
+  z-index: 100;
+  inset-block-start: calc(100% + 8px);
+  inset-inline-end: 0;
+  width: 232px;
+  max-width: calc(100vw - 32px);
+  max-height: min(65vh, 520px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 6px;
+  border: 1px solid var(--locale-line);
+  border-radius: 18px;
+  background: var(--locale-surface);
+  box-shadow: var(--mg-soft-lg, 0 14px 40px rgba(23,23,23,.09));
+}
+.mg-locale__menu a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 44px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  color: var(--locale-text);
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.mg-locale__menu a:hover,
+.mg-locale__menu a[aria-current="page"] { background: var(--locale-selected); }
+.mg-locale__menu a[aria-current="page"] { font-weight: 700; }
+.mg-locale :focus-visible { outline: 3px solid var(--locale-focus); outline-offset: 2px; }
+.mg-locale__menu a:focus-visible { outline-offset: -2px; }
+/* Permit translated words to wrap without changing the original type scale. */
+.mg-cell, .mg-hero__copy, .mg-daily, .mg-split > div { min-width: 0; }
+.mg-cell__name, .mg-cell__desc, .mg-phone__nick, .mg-phone__quote,
+.mg-daily__title, .mg-body, .mg-h2, .mg-hero__sub { overflow-wrap: anywhere; }
+html:lang(ja), html:lang(zh-Hans), html:lang(zh-Hant), html:lang(vi) {
+  --mg-display: "Pretendard Variable", Pretendard, sans-serif;
+  --mg-hand: "Pretendard Variable", Pretendard, sans-serif;
+}
+@media (max-width: 680px) {
+  .mg-locale__menu { position: fixed; top: 64px; right: 16px; }
+  .mongle-policy .mg-locale { margin-left: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .mg-locale > summary > svg { transition: none; }
+}
