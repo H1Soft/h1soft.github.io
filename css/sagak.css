@@ -1,22 +1,23 @@
 /* 사각사각(SAGAK) 전용 스타일 — 종이·연필·잉크·도장 (앱 PRD §7 토큰, Flexoki) */
 :root {
-  --pg-base: #FFFCF0;
-  --pg-board: #F2F0E5;
-  --pg-card: #FBF9F1;
-  --rule-soft: #DAD8CE;
-  --rule-strong: #B7B5AC;
-  --ink: #100F0F;
-  --ink-muted: #6F6E69;
-  --ink-faint: #9F9D96;
-  --seal: #AF3029;
-  --accent: #205EA6;
-  --ink-red: #AF3029;
-  --ink-blue: #205EA6;
-  --ink-yellow: #AD8301;
-  --ink-green: #66800B;
-  --ink-tan: #DDB962;
-  --shadow: rgba(16, 15, 15, 0.13);
-  --stamp-paper: #FFFFFF;
+  color-scheme: dark;
+  --pg-base: #100F0F;
+  --pg-board: #1C1B1A;
+  --pg-card: #282726;
+  --rule-soft: #343331;
+  --rule-strong: #575653;
+  --ink: #CECDC3;
+  --ink-muted: #96948E;
+  --ink-faint: #6F6E69;
+  --seal: #D14D41;
+  --accent: #4385BE;
+  --ink-red: #D14D41;
+  --ink-blue: #4385BE;
+  --ink-yellow: #D0A215;
+  --ink-green: #879A39;
+  --ink-tan: #D9BA7A;
+  --shadow: rgba(0, 0, 0, 0.5);
+  --stamp-paper: #34332F;
   --serif: Fraunces, "Times New Roman", Georgia, serif;
   --sans: "Pretendard Variable", Pretendard, "Apple SD Gothic Neo", system-ui, sans-serif;
   --sans-jp: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", system-ui, sans-serif;
@@ -25,27 +26,6 @@
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.32'/%3E%3C/svg%3E");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --pg-base: #100F0F;
-    --pg-board: #1C1B1A;
-    --pg-card: #282726;
-    --rule-soft: #343331;
-    --rule-strong: #575653;
-    --ink: #CECDC3;
-    --ink-muted: #96948E;
-    --ink-faint: #6F6E69;
-    --seal: #D14D41;
-    --accent: #4385BE;
-    --ink-red: #D14D41;
-    --ink-blue: #4385BE;
-    --ink-yellow: #D0A215;
-    --ink-green: #879A39;
-    --ink-tan: #D9BA7A;
-    --shadow: rgba(0, 0, 0, 0.5);
-    --stamp-paper: #34332F;
-  }
-}
 
 html[lang="ja"] { --sans: var(--sans-jp); }
 
