@@ -19,15 +19,6 @@
     <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
   </url>
   <url>
-    <loc>https://h1soft.github.io/mongle/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/" />
-  </url>
-  <url>
     <loc>https://h1soft.github.io/ongle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -81,15 +72,6 @@
     <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/terms/" />
     <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/terms/" />
     <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/mongle/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/ongle/</loc>
@@ -155,24 +137,6 @@
     <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sagak/" />
     <html:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/sagak/" />
     <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sagak/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/mongle/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/privacy/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/privacy/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/mongle/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/terms/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/terms/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/ongle/privacy/</loc>
@@ -245,24 +209,6 @@
     <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/sudoku/terms/" />
     <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/sudoku/terms/" />
     <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/sudoku/terms/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/mongle/privacy/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/privacy/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/privacy/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/privacy/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/mongle/terms/</loc>
-    <lastmod>2026-08-31</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.2</priority>
-    <html:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/mongle/terms/" />
-    <html:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/mongle/terms/" />
-    <html:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/mongle/terms/" />
   </url>
   <url>
     <loc>https://h1soft.github.io/en/ongle/privacy/</loc>
@@ -347,6 +293,162 @@
     <lastmod>2026-08-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/skinping/privacy/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/skinping/terms/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/lol.dating/privacy/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/lol.dating/terms/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hans/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hans/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hans/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hant/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hant/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-Hant/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/mongle/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/mongle/support/</loc>
+    <lastmod>2026-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/mongle/privacy/</loc>
+    <lastmod>2026-09-07</lastmod>
   </url>
   <url>
     <loc>https://h1soft.github.io/seukscan/</loc>
