@@ -1,0 +1,99 @@
+/* Screenshot layout follows the QR Scanner showcase.
+   Keep all selectors scoped to this section; preserve the rest of Mongle. */
+.mg-app-showcase__intro { max-width: 760px; text-align: left; }
+.mg-app-showcase__intro .mg-body { max-width: none; }
+.mg-app-showcase__rows {
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
+.mg-app-showcase__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 72px;
+  flex-wrap: wrap;
+  margin: 0;
+  scroll-margin-top: 100px;
+}
+.mg-app-showcase__row--reverse { flex-direction: row-reverse; }
+/* The screenshot column is transparent; the device itself provides the frame. */
+.mg-app-showcase__shot {
+  flex: 1 1 380px;
+  min-width: 0;
+  max-width: min(500px, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mg-app-showcase__device {
+  position: relative;
+  width: min(100%, 310px);
+  aspect-ratio: 1022 / 2082;
+  filter: drop-shadow(0 16px 22px rgba(51, 41, 43, .12));
+}
+.mg-app-showcase__bezel {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* Calibrated to the reusable phone asset's 918 × 1990 screen at (52, 46). */
+.mg-app-showcase__screen {
+  position: absolute;
+  z-index: 1;
+  left: 5.0880626%;
+  top: 2.2094140%;
+  width: 89.8238748%;
+  height: 95.5811720%;
+  border-radius: 13.7254902% / 6.3316583%;
+  overflow: hidden;
+  background: #fff9f1;
+}
+.mg-app-showcase__screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.mg-app-showcase__text {
+  flex: 1 1 340px;
+  min-width: 0;
+  max-width: min(440px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.mg-app-showcase__num {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  color: var(--mg-accent);
+}
+.mg-app-showcase__text h3 {
+  margin: 0;
+  font-family: var(--mg-display);
+  font-size: 28px;
+  line-height: 1.358;
+  letter-spacing: -.0236em;
+  font-weight: 700;
+  color: var(--mg-ink);
+  word-break: keep-all;
+}
+.mg-app-showcase__text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: .0057em;
+  font-weight: 500;
+  color: var(--mg-ink70);
+  word-break: keep-all;
+  text-wrap: pretty;
+}
+@media (max-width: 767px) {
+  .mg-app-showcase__rows { margin-top: 48px; gap: 64px; }
+  .mg-app-showcase__row,
+  .mg-app-showcase__row--reverse { gap: 32px; }
+  .mg-app-showcase__device { width: min(100%, 270px); }
+}
