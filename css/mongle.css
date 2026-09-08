@@ -72,7 +72,8 @@ img, svg { display: block; }
 }
 
 .mg-brand { display: flex; align-items: center; gap: 9px; color: var(--mg-ink); }
-.mg-brand span { font-family: var(--mg-display); font-size: 21px; }
+/* Keep the wordmark in the brand font when translated headings use a fallback. */
+.mg-brand span { font-family: "Cafe24Ssurround", "Pretendard Variable", Pretendard, sans-serif; font-size: 21px; }
 
 .mg-nav__links { margin-left: auto; display: flex; align-items: center; gap: clamp(14px, 2.4vw, 24px); }
 .mg-nav__links a { font-size: 14px; font-weight: 600; color: var(--mg-ink70); }
