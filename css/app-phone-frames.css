@@ -1,0 +1,71 @@
+/* Same reusable bezel and calibrated screen bounds as Mongle's showcase.
+   Preserve each app's surrounding layout, copy, and original captures. */
+#screens .showcase--framed .showcase__shot {
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  overflow: visible;
+  align-items: center;
+  container-type: normal;
+}
+#screens .showcase-device {
+  position: relative;
+  flex: 0 1 310px;
+  width: min(100%, 310px);
+  aspect-ratio: 1022 / 2082;
+  filter: drop-shadow(0 16px 22px rgba(15, 23, 42, .12));
+}
+#screens .showcase-device__bezel {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#screens .showcase-device__screen {
+  position: absolute;
+  z-index: 1;
+  left: 5.0880626%;
+  top: 2.2094140%;
+  width: 89.8238748%;
+  height: 95.5811720%;
+  border-radius: 13.7254902% / 6.3316583%;
+  overflow: hidden;
+  background: var(--screen-background, #fff);
+}
+#screens .showcase-device__screen img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+/* Keep each app's existing text column and section layout. */
+#screens .sv-show__shot,
+#screens .sg-frame-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+#screens .sg-frame-slot {
+  flex: 0 1 310px;
+  width: min(100%, 310px);
+}
+/* Black metal finish for Sagak's bezel only; keep the app screen in full color. */
+#screens .sg-frame-slot .showcase-device__bezel {
+  filter: grayscale(1) brightness(.28) contrast(1.1);
+}
+#screens .sv-show__shot .showcase-device img {
+  border-radius: 0;
+  box-shadow: none;
+}
+@media (max-width: 767px) {
+  #screens .showcase-device {
+    flex-basis: 270px;
+    width: min(100%, 270px);
+  }
+  #screens .sg-frame-slot {
+    flex-basis: 270px;
+    width: min(100%, 270px);
+  }
+}
