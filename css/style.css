@@ -810,6 +810,7 @@ details p {
   background: #fff;
   box-shadow: 0 12px 40px -8px rgba(23, 23, 25, 0.22), inset 0 0 0 1px var(--line-alt);
 }
+.nav-dropdown { max-height: calc(100dvh - 100px); overflow-y: auto; overscroll-behavior: contain; }
 .nav-dropdown[hidden] { display: none; }
 
 .nav-col { display: flex; flex-direction: column; gap: 8px; min-width: 200px; }
@@ -1026,6 +1027,12 @@ details p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
   gap: clamp(12px, 2vw, 20px);
+}
+
+/* Four products form balanced pairs at desktop widths. */
+.tool-grid--four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 680px) {
+  .tool-grid--four { grid-template-columns: minmax(0, 1fr); }
 }
 
 .tool-card {

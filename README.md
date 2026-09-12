@@ -92,3 +92,12 @@ gh repo create h1soft/h1soft.github.io --public --source=. --push
 
 user/org 이름과 같은 `<이름>.github.io` 저장소는 main 푸시만으로 자동 배포.
 1~2분 후 `https://h1soft.github.io/` 에서 확인. (Settings → Pages에서 상태 확인 가능)
+
+
+## Phone Cleaner site integration (2026-09-12)
+
+`/cleaner/` (Korean) and `/cleaner/en/` (English) are linked from both company home pages, shared product dropdowns and footers, and the existing “More from H1Soft” sections on SeukScan and Ongle pages. Other locales link to the English cleaner page with `hreflang="en"`; no nonexistent localized cleaner route is generated. The approved icon is reused from `cleaner/assets/app-icon.webp`.
+
+The new entry uses existing `.tool-card`, `.nav-item`, and `.more-card` components. The four home utility cards use `.tool-grid--four`: two columns above 680px, one below, retaining existing spacing, typography, borders, and hover states. Product menus scroll within the viewport on short screens. Brand-specific pages without a cross-product list keep their existing navigation.
+
+The home copy, nine-app counter, FAQ/structured product list, and both root sitemaps include Phone Cleaner. It is marked Android / coming soon; no store download link is fabricated.
