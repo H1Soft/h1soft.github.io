@@ -101,3 +101,9 @@ user/org 이름과 같은 `<이름>.github.io` 저장소는 main 푸시만으로
 The new entry uses existing `.tool-card`, `.nav-item`, and `.more-card` components. The four home utility cards use `.tool-grid--four`: two columns above 680px, one below, retaining existing spacing, typography, borders, and hover states. Product menus scroll within the viewport on short screens. Brand-specific pages without a cross-product list keep their existing navigation.
 
 The home copy, nine-app counter, FAQ/structured product list, and both root sitemaps include Phone Cleaner. It is marked Android / coming soon; no store download link is fabricated.
+
+## Phone Cleaner policy pages (2026-09-12)
+
+Product-specific privacy and terms pages live at `/cleaner/privacy/`, `/cleaner/terms/`, `/cleaner/en/privacy/`, and `/cleaner/en/terms/`. They reuse the landing page header, font and design tokens, with shared `cleaner/legal.css` for readable policy content, desktop section navigation and a collapsible mobile table of contents. Locale switching preserves the policy and section. Both landing-page footers and root sitemaps link to these pages.
+
+The privacy policy separates on-device app processing from GitHub Pages visitor logs and voluntary support emails. It reflects the current release manifest and local data model; the support retention period follows the existing H1Soft privacy policy. Revisit this content before introducing network services, analytics, billing or new permissions.

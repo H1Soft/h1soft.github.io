@@ -13,3 +13,6 @@
 .feature-icon svg{width:23px;height:23px}.dialog-toolbar{position:sticky;top:0;z-index:2;background:var(--ink)}.dialog-content{position:relative;align-items:flex-start}.dialog-content img{width:100%;max-height:none}.dialog-content .circle-button{position:sticky;top:130px;margin-top:80px}@media(max-width:720px){.dialog-content img{max-width:100%}.dialog-content .circle-button{position:absolute;top:200px;margin-top:0;z-index:1}.dialog-content #dialog-prev{left:12px}.dialog-content #dialog-next{right:12px}}
 
 .mobile-br{display:none}@media(max-width:720px){.section-heading{display:block}.gallery-controls{justify-content:flex-end;margin-top:18px}.mobile-br{display:block}}
+
+/* Policy navigation remains reachable on narrow screens. */
+.footer-bottom>div{flex-wrap:wrap;gap:8px 24px}.footer-bottom a{display:inline-flex;align-items:center;min-height:44px}
