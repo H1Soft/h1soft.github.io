@@ -40,7 +40,7 @@ document.addEventListener('keydown', event => {
     closeProducts(true);
   }
 });
-// Keep the current section when moving between the two static language pages.
+// Keep the current document and section across all static language versions.
 document.querySelectorAll('.qr-language-option').forEach(link => {
   const update = () => { link.hash = window.location.hash; };
   update(); window.addEventListener('hashchange', update);

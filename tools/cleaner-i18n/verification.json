@@ -1,0 +1,429 @@
+{
+  "pages": 51,
+  "languages": 17,
+  "localAssets": 129,
+  "allChecksPassed": true,
+  "checks": [
+    "complete translation catalogs",
+    "51 unique titles",
+    "self canonical",
+    "reciprocal 18 hreflang links",
+    "17 language menu destinations",
+    "localized images and descriptions",
+    "same-language legal links",
+    "all product asset links exist",
+    "10 complete legal sections each",
+    "localized structured data",
+    "two sitemaps"
+  ],
+  "results": [
+    {
+      "locale": "de",
+      "kind": "home",
+      "path": "/cleaner/de/",
+      "title": "Phone Cleaner: Fotos aufräumen & Speicher freigeben | H1Soft",
+      "descriptionLength": 171,
+      "status": "pass"
+    },
+    {
+      "locale": "de",
+      "kind": "privacy",
+      "path": "/cleaner/de/privacy/",
+      "title": "Datenschutzerklärung | Phone Cleaner · H1Soft",
+      "descriptionLength": 93,
+      "status": "pass"
+    },
+    {
+      "locale": "de",
+      "kind": "terms",
+      "path": "/cleaner/de/terms/",
+      "title": "Nutzungsbedingungen | Phone Cleaner · H1Soft",
+      "descriptionLength": 96,
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "kind": "home",
+      "path": "/cleaner/en/",
+      "title": "Phone Cleaner: Photo & Storage Cleanup | H1Soft",
+      "descriptionLength": 138,
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "kind": "privacy",
+      "path": "/cleaner/en/privacy/",
+      "title": "Privacy policy | Phone Cleaner · H1Soft",
+      "descriptionLength": 70,
+      "status": "pass"
+    },
+    {
+      "locale": "en",
+      "kind": "terms",
+      "path": "/cleaner/en/terms/",
+      "title": "Terms of use | Phone Cleaner · H1Soft",
+      "descriptionLength": 67,
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "kind": "home",
+      "path": "/cleaner/es/",
+      "title": "Phone Cleaner: organiza fotos y libera espacio | H1Soft",
+      "descriptionLength": 157,
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "kind": "privacy",
+      "path": "/cleaner/es/privacy/",
+      "title": "Política de privacidad | Phone Cleaner · H1Soft",
+      "descriptionLength": 63,
+      "status": "pass"
+    },
+    {
+      "locale": "es",
+      "kind": "terms",
+      "path": "/cleaner/es/terms/",
+      "title": "Condiciones de uso | Phone Cleaner · H1Soft",
+      "descriptionLength": 62,
+      "status": "pass"
+    },
+    {
+      "locale": "fa",
+      "kind": "home",
+      "path": "/cleaner/fa/",
+      "title": "Phone Cleaner: مرتب‌سازی عکس‌ها و آزادسازی فضای گوشی | H1Soft",
+      "descriptionLength": 155,
+      "status": "pass"
+    },
+    {
+      "locale": "fa",
+      "kind": "privacy",
+      "path": "/cleaner/fa/privacy/",
+      "title": "سیاست حریم خصوصی | Phone Cleaner · H1Soft",
+      "descriptionLength": 64,
+      "status": "pass"
+    },
+    {
+      "locale": "fa",
+      "kind": "terms",
+      "path": "/cleaner/fa/terms/",
+      "title": "شرایط استفاده | Phone Cleaner · H1Soft",
+      "descriptionLength": 61,
+      "status": "pass"
+    },
+    {
+      "locale": "fr",
+      "kind": "home",
+      "path": "/cleaner/fr/",
+      "title": "Phone Cleaner : trier les photos, libérer de l’espace | H1Soft",
+      "descriptionLength": 195,
+      "status": "pass"
+    },
+    {
+      "locale": "fr",
+      "kind": "privacy",
+      "path": "/cleaner/fr/privacy/",
+      "title": "Politique de confidentialité | Phone Cleaner · H1Soft",
+      "descriptionLength": 82,
+      "status": "pass"
+    },
+    {
+      "locale": "fr",
+      "kind": "terms",
+      "path": "/cleaner/fr/terms/",
+      "title": "Conditions d’utilisation | Phone Cleaner · H1Soft",
+      "descriptionLength": 69,
+      "status": "pass"
+    },
+    {
+      "locale": "id",
+      "kind": "home",
+      "path": "/cleaner/id/",
+      "title": "Phone Cleaner: Rapikan foto & bersihkan penyimpanan | H1Soft",
+      "descriptionLength": 154,
+      "status": "pass"
+    },
+    {
+      "locale": "id",
+      "kind": "privacy",
+      "path": "/cleaner/id/privacy/",
+      "title": "Kebijakan privasi | Phone Cleaner · H1Soft",
+      "descriptionLength": 69,
+      "status": "pass"
+    },
+    {
+      "locale": "id",
+      "kind": "terms",
+      "path": "/cleaner/id/terms/",
+      "title": "Ketentuan penggunaan | Phone Cleaner · H1Soft",
+      "descriptionLength": 59,
+      "status": "pass"
+    },
+    {
+      "locale": "it",
+      "kind": "home",
+      "path": "/cleaner/it/",
+      "title": "Phone Cleaner: pulizia foto e spazio sul telefono | H1Soft",
+      "descriptionLength": 158,
+      "status": "pass"
+    },
+    {
+      "locale": "it",
+      "kind": "privacy",
+      "path": "/cleaner/it/privacy/",
+      "title": "Informativa sulla privacy | Phone Cleaner · H1Soft",
+      "descriptionLength": 70,
+      "status": "pass"
+    },
+    {
+      "locale": "it",
+      "kind": "terms",
+      "path": "/cleaner/it/terms/",
+      "title": "Condizioni d’uso | Phone Cleaner · H1Soft",
+      "descriptionLength": 76,
+      "status": "pass"
+    },
+    {
+      "locale": "nl",
+      "kind": "home",
+      "path": "/cleaner/nl/",
+      "title": "Phone Cleaner: foto’s opruimen en ruimte vrijmaken | H1Soft",
+      "descriptionLength": 158,
+      "status": "pass"
+    },
+    {
+      "locale": "nl",
+      "kind": "privacy",
+      "path": "/cleaner/nl/privacy/",
+      "title": "Privacybeleid | Phone Cleaner · H1Soft",
+      "descriptionLength": 74,
+      "status": "pass"
+    },
+    {
+      "locale": "nl",
+      "kind": "terms",
+      "path": "/cleaner/nl/terms/",
+      "title": "Gebruiksvoorwaarden | Phone Cleaner · H1Soft",
+      "descriptionLength": 89,
+      "status": "pass"
+    },
+    {
+      "locale": "pl",
+      "kind": "home",
+      "path": "/cleaner/pl/",
+      "title": "Phone Cleaner: Porządkowanie zdjęć i pamięci | H1Soft",
+      "descriptionLength": 167,
+      "status": "pass"
+    },
+    {
+      "locale": "pl",
+      "kind": "privacy",
+      "path": "/cleaner/pl/privacy/",
+      "title": "Polityka prywatności | Phone Cleaner · H1Soft",
+      "descriptionLength": 82,
+      "status": "pass"
+    },
+    {
+      "locale": "pl",
+      "kind": "terms",
+      "path": "/cleaner/pl/terms/",
+      "title": "Warunki korzystania | Phone Cleaner · H1Soft",
+      "descriptionLength": 69,
+      "status": "pass"
+    },
+    {
+      "locale": "pt",
+      "kind": "home",
+      "path": "/cleaner/pt/",
+      "title": "Phone Cleaner: limpeza de fotos e espaço no celular | H1Soft",
+      "descriptionLength": 145,
+      "status": "pass"
+    },
+    {
+      "locale": "pt",
+      "kind": "privacy",
+      "path": "/cleaner/pt/privacy/",
+      "title": "Política de privacidade | Phone Cleaner · H1Soft",
+      "descriptionLength": 67,
+      "status": "pass"
+    },
+    {
+      "locale": "pt",
+      "kind": "terms",
+      "path": "/cleaner/pt/terms/",
+      "title": "Termos de uso | Phone Cleaner · H1Soft",
+      "descriptionLength": 61,
+      "status": "pass"
+    },
+    {
+      "locale": "ru",
+      "kind": "home",
+      "path": "/cleaner/ru/",
+      "title": "Phone Cleaner: Порядок в фото и очистка хранилища | H1Soft",
+      "descriptionLength": 169,
+      "status": "pass"
+    },
+    {
+      "locale": "ru",
+      "kind": "privacy",
+      "path": "/cleaner/ru/privacy/",
+      "title": "Политика конфиденциальности | Phone Cleaner · H1Soft",
+      "descriptionLength": 70,
+      "status": "pass"
+    },
+    {
+      "locale": "ru",
+      "kind": "terms",
+      "path": "/cleaner/ru/terms/",
+      "title": "Условия использования | Phone Cleaner · H1Soft",
+      "descriptionLength": 98,
+      "status": "pass"
+    },
+    {
+      "locale": "tr",
+      "kind": "home",
+      "path": "/cleaner/tr/",
+      "title": "Phone Cleaner: Fotoğraf ve Depolama Alanı Temizliği | H1Soft",
+      "descriptionLength": 176,
+      "status": "pass"
+    },
+    {
+      "locale": "tr",
+      "kind": "privacy",
+      "path": "/cleaner/tr/privacy/",
+      "title": "Gizlilik politikası | Phone Cleaner · H1Soft",
+      "descriptionLength": 78,
+      "status": "pass"
+    },
+    {
+      "locale": "tr",
+      "kind": "terms",
+      "path": "/cleaner/tr/terms/",
+      "title": "Kullanım koşulları | Phone Cleaner · H1Soft",
+      "descriptionLength": 60,
+      "status": "pass"
+    },
+    {
+      "locale": "vi",
+      "kind": "home",
+      "path": "/cleaner/vi/",
+      "title": "Phone Cleaner: Dọn ảnh và giải phóng bộ nhớ | H1Soft",
+      "descriptionLength": 140,
+      "status": "pass"
+    },
+    {
+      "locale": "vi",
+      "kind": "privacy",
+      "path": "/cleaner/vi/privacy/",
+      "title": "Chính sách quyền riêng tư | Phone Cleaner · H1Soft",
+      "descriptionLength": 77,
+      "status": "pass"
+    },
+    {
+      "locale": "vi",
+      "kind": "terms",
+      "path": "/cleaner/vi/terms/",
+      "title": "Điều khoản sử dụng | Phone Cleaner · H1Soft",
+      "descriptionLength": 65,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-CN",
+      "kind": "home",
+      "path": "/cleaner/zh-CN/",
+      "title": "Phone Cleaner：照片整理与手机存储空间清理 | H1Soft",
+      "descriptionLength": 61,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-CN",
+      "kind": "privacy",
+      "path": "/cleaner/zh-CN/privacy/",
+      "title": "隐私政策 | Phone Cleaner · H1Soft",
+      "descriptionLength": 21,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-CN",
+      "kind": "terms",
+      "path": "/cleaner/zh-CN/terms/",
+      "title": "使用条款 | Phone Cleaner · H1Soft",
+      "descriptionLength": 34,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-TW",
+      "kind": "home",
+      "path": "/cleaner/zh-TW/",
+      "title": "Phone Cleaner：照片整理與手機儲存空間清理 | H1Soft",
+      "descriptionLength": 62,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-TW",
+      "kind": "privacy",
+      "path": "/cleaner/zh-TW/privacy/",
+      "title": "隱私權政策 | Phone Cleaner · H1Soft",
+      "descriptionLength": 21,
+      "status": "pass"
+    },
+    {
+      "locale": "zh-TW",
+      "kind": "terms",
+      "path": "/cleaner/zh-TW/terms/",
+      "title": "使用條款 | Phone Cleaner · H1Soft",
+      "descriptionLength": 35,
+      "status": "pass"
+    },
+    {
+      "locale": "ko",
+      "kind": "home",
+      "path": "/cleaner/",
+      "title": "폰 클리너 — 중복 사진·동영상·저장 공간 정리 | H1Soft",
+      "descriptionLength": 93,
+      "status": "pass"
+    },
+    {
+      "locale": "ko",
+      "kind": "privacy",
+      "path": "/cleaner/privacy/",
+      "title": "개인정보 처리방침 | 폰 클리너 · H1Soft",
+      "descriptionLength": 27,
+      "status": "pass"
+    },
+    {
+      "locale": "ko",
+      "kind": "terms",
+      "path": "/cleaner/terms/",
+      "title": "이용약관 | 폰 클리너 · H1Soft",
+      "descriptionLength": 32,
+      "status": "pass"
+    },
+    {
+      "locale": "ja",
+      "kind": "home",
+      "path": "/cleaner/ja/",
+      "title": "Phone Cleaner：写真整理・スマホのストレージ整理 | H1Soft",
+      "descriptionLength": 83,
+      "status": "pass"
+    },
+    {
+      "locale": "ja",
+      "kind": "privacy",
+      "path": "/cleaner/ja/privacy/",
+      "title": "プライバシーポリシー | Phone Cleaner · H1Soft",
+      "descriptionLength": 34,
+      "status": "pass"
+    },
+    {
+      "locale": "ja",
+      "kind": "terms",
+      "path": "/cleaner/ja/terms/",
+      "title": "利用規約 | Phone Cleaner · H1Soft",
+      "descriptionLength": 42,
+      "status": "pass"
+    }
+  ]
+}

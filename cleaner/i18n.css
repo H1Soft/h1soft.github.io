@@ -1,0 +1,44 @@
+/* Local fonts and logical layout retain the original product design in 17 languages. */
+@font-face{font-family:CleanerLatin;src:url('assets/fonts/latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:CleanerArabic;src:url('assets/fonts/fa.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:CleanerJapanese;src:url('assets/fonts/ja.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:CleanerChinese;src:url('assets/fonts/zh-CN.woff2') format('woff2');font-weight:100 900;font-display:swap}
+@font-face{font-family:CleanerTaiwan;src:url('assets/fonts/zh-TW.woff2') format('woff2');font-weight:100 900;font-display:swap}
+html:not([lang="ko"]) body{font-family:CleanerLatin,Pretendard,system-ui,sans-serif;word-break:normal;overflow-wrap:break-word}
+html[lang="ja"] body{font-family:CleanerJapanese,system-ui,sans-serif}
+html[lang="zh-CN"] body{font-family:CleanerChinese,system-ui,sans-serif}
+html[lang="zh-TW"] body{font-family:CleanerTaiwan,system-ui,sans-serif}
+html[lang="fa"] body{font-family:CleanerArabic,system-ui,sans-serif}
+.hero-copy,.features article>div,.section-heading>div,.privacy-heading>div{min-width:0}
+.hero-grid{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+h1,h2,h3{overflow-wrap:break-word;text-wrap:balance}
+.hero-actions,.footer-top,.footer-bottom{flex-wrap:wrap}
+.app-name img,.privacy-symbol,.product-intro img{flex-shrink:0}
+.site-header .qr-language-panel{width:440px;max-height:calc(100dvh - 90px);overflow:auto}
+.qr-language-trigger{min-height:44px}
+.nav-dropdown{max-height:calc(100dvh - 90px);overflow:auto}
+.gallery{scroll-padding-inline-start:max(32px,calc((100vw - 1160px)/2))}
+.screen-open{text-align:start}
+.contact>a,.legal-contact>a{overflow-wrap:anywhere;unicode-bidi:plaintext}
+.gallery-bottom>span,#gallery-position{direction:ltr;unicode-bidi:isolate}
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,html[dir="rtl"] .eyebrow{letter-spacing:0;line-height:1.65}
+html[dir="rtl"] .product-intro{border-right:0;border-inline-end:1px solid var(--border)}
+html[dir="rtl"] .privacy-copy{padding-left:0}
+html[dir="rtl"] .faq-list details p{padding:0 0 24px 35px}
+html[dir="rtl"] .legal-summary>div+div{border-left:0;border-inline-start:1px solid var(--border)}
+html[dir="rtl"] .legal-content ul{padding-left:0;padding-inline-start:22px}
+html[dir="rtl"] .gallery-controls .circle-button,html[dir="rtl"] .dialog-content .circle-button{transform:scaleX(-1)}
+html[dir="rtl"] .hero-visual{direction:ltr}
+html[dir="rtl"] .wordmark{direction:ltr;display:inline-block}
+@media(max-width:767px){
+  .site-header .qr-language-panel{width:min(440px,calc(100vw - 32px))}
+  .site-header .qr-language-trigger{max-width:170px}
+  .site-header .site-nav{display:none}
+}
+@media(max-width:720px){
+  .gallery{scroll-padding-inline-start:20px}
+  html[dir="rtl"] .privacy-copy{padding-inline-start:70px}
+  html[dir="rtl"] .product-intro{border-inline-end:0}
+  h1{hyphens:auto}
+}
+@media(max-width:600px){html[dir="rtl"] .legal-summary>div+div{border-inline-start:0}}

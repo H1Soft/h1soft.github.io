@@ -4,26 +4,29 @@ const previous = document.querySelector('#previous');
 const next = document.querySelector('#next');
 const position = document.querySelector('#gallery-position');
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const rtl = document.documentElement.dir === 'rtl';
 const behavior = () => reduceMotion.matches ? 'instant' : 'smooth';
 function galleryState() {
-  const offset = gallery.scrollLeft;
+  const offset = Math.abs(gallery.scrollLeft);
   const max = gallery.scrollWidth - gallery.clientWidth;
   previous.disabled = offset < 2;
   next.disabled = offset >= max - 2;
   const viewport = gallery.getBoundingClientRect();
-  const first = cards.findIndex(card => card.getBoundingClientRect().right > viewport.left + 60);
+  const first = cards.findIndex(card => rtl
+    ? card.getBoundingClientRect().left < viewport.right - 60
+    : card.getBoundingClientRect().right > viewport.left + 60);
   position.textContent = `${String(Math.max(first, 0) + 1).padStart(2, '0')} / 05`;
 }
 function moveGallery(direction) {
   const step = cards[0].getBoundingClientRect().width + parseFloat(getComputedStyle(gallery).gap);
-  gallery.scrollBy({left: direction * step, behavior: behavior()});
+  gallery.scrollBy({left: direction * step * (rtl ? -1 : 1), behavior: behavior()});
 }
 previous.addEventListener('click', () => moveGallery(-1));
 next.addEventListener('click', () => moveGallery(1));
 gallery.addEventListener('keydown', event => {
   if (event.target !== gallery) return;
   if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
-    event.preventDefault(); moveGallery(event.key === 'ArrowRight' ? 1 : -1);
+    event.preventDefault(); moveGallery((event.key === 'ArrowRight' ? 1 : -1) * (rtl ? -1 : 1));
   }
 });
 let scrollFrame;
@@ -68,8 +71,8 @@ close.addEventListener('click', () => dialog.close());
 dialogPrev.addEventListener('click', () => showScreen(active - 1));
 dialogNext.addEventListener('click', () => showScreen(active + 1));
 dialog.addEventListener('keydown', event => {
-  if (event.key === 'ArrowLeft') { event.preventDefault(); showScreen(active - 1); }
-  if (event.key === 'ArrowRight') { event.preventDefault(); showScreen(active + 1); }
+  if (event.key === 'ArrowLeft') { event.preventDefault(); showScreen(active + (rtl ? 1 : -1)); }
+  if (event.key === 'ArrowRight') { event.preventDefault(); showScreen(active + (rtl ? -1 : 1)); }
 });
 dialog.addEventListener('click', event => {
   if (event.target !== dialog) return;
