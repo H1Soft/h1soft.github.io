@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 ORIGIN = 'https://h1soft.github.io'
 BASE = ORIGIN + '/cleaner/'
-REV = '20260915-fe51859c5f'
+REV = '20260917-bca163c928'
 LANGUAGES = {
     'de': 'Deutsch', 'en': 'English', 'es': 'Español', 'fa': 'فارسی',
     'fr': 'Français', 'id': 'Bahasa Indonesia', 'it': 'Italiano',
@@ -138,7 +138,7 @@ def render(code, kind):
                     local_kind = 'privacy' if tail.startswith('privacy') else 'terms' if tail.startswith('terms') else 'home'
                     path = route(code, local_kind)
                 else: path = '/cleaner/' + tail
-                path = re.sub(r'(app-icon|favicon)-20260914(?:-final|-eb3c9f63bc)?\.(webp|png)',rf'\1-{REV}.\2',path)
+                path = re.sub(r'(app-icon|favicon)-[0-9]{8}(?:-[a-z0-9]+)?\.(webp|png)',rf'\1-{REV}.\2',path)
                 # Stable CSS/JS URLs are versioned to prevent mixed old/new interactions.
                 query = '?v=20260915-i18n' if path.endswith(('.css','.js')) else ''
                 tag[attr] = path + query + ('#'+resolved.fragment if resolved.fragment else '')

@@ -4,7 +4,7 @@
 <title>이용약관 | 폰 클리너 · H1Soft</title><meta name="description" content="파일을 고르고 정리하기 전에, 사용 조건을 확인해 주세요.">
 <meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://h1soft.github.io/cleaner/terms/">
 <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/cleaner/terms/"><link rel="alternate" hreflang="en" href="https://h1soft.github.io/cleaner/en/terms/"><link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/cleaner/terms/">
-<link rel="icon" href="../assets/favicon-20260915-fe51859c5f.png" type="image/png">
+<link rel="icon" href="../assets/favicon-20260917-bca163c928.png" type="image/png">
 <link rel="preload" href="../assets/Pretendard.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../header.css"><link rel="stylesheet" href="../legal.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "이용약관 | 폰 클리너", "url": "https://h1soft.github.io/cleaner/terms/", "inLanguage": "ko", "dateModified": "2026-09-12", "publisher": {"@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/"}}</script>
@@ -25,7 +25,7 @@
 <a class="nav-item" href="https://h1soft.github.io/qr-scanner/index.html"><img alt="" height="28" src="../assets/nav-qr.png" width="28"/><span><span class="nav-item__name">QR Scanner</span><span class="nav-item__type">QR 코드 스캐너 및 생성기</span></span></a>
 <a class="nav-item" href="https://h1soft.github.io/ko/seukscan/index.html"><img alt="" height="28" src="../assets/nav-scan.png" width="28"/><span><span class="nav-item__name">슥캔</span><span class="nav-item__type">문서 스캐너·OCR</span></span></a>
 <a class="nav-item" href="https://h1soft.github.io/ongle/index.html"><img alt="" height="28" src="../assets/nav-ongle.png" width="28"/><span><span class="nav-item__name">온글</span><span class="nav-item__type">HWP·HWPX 뷰어</span></span></a>
-<a class="nav-item" href="../" hreflang="ko" lang="ko"><img src="../assets/app-icon-20260915-fe51859c5f.webp" alt="" width="28" height="28"/><span><span class="nav-item__name">폰 클리너</span><span class="nav-item__type">사진·저장 공간 정리</span></span></a>
+<a class="nav-item" href="../" hreflang="ko" lang="ko"><img src="../assets/app-icon-20260917-bca163c928.webp" alt="" width="28" height="28"/><span><span class="nav-item__name">폰 클리너</span><span class="nav-item__type">사진·저장 공간 정리</span></span></a>
 </div>
 <div class="nav-col">
 <span class="nav-col__label">라이프스타일</span>
@@ -44,7 +44,7 @@
 </div>
 </header>
 <main id="main" class="container legal-main">
-<nav class="legal-breadcrumb" aria-label="현재 위치"><a href="../"><img src="../assets/app-icon-20260915-fe51859c5f.webp" width="28" height="28" alt="">폰 클리너</a><span aria-hidden="true">/</span><span aria-current="page">이용약관</span></nav>
+<nav class="legal-breadcrumb" aria-label="현재 위치"><a href="../"><img src="../assets/app-icon-20260917-bca163c928.webp" width="28" height="28" alt="">폰 클리너</a><span aria-hidden="true">/</span><span aria-current="page">이용약관</span></nav>
 <div class="legal-heading"><p class="eyebrow">PHONE CLEANER · 개인정보와 이용 안내</p><h1>이용약관</h1><p class="legal-lede">파일을 고르고 정리하기 전에, 사용 조건을 확인해 주세요.</p><p class="legal-date">시행일 · 2026년 9월 12일</p></div>
 <div class="legal-summary" aria-label="핵심 안내"><div><h2>직접 보고 선택</h2><p>정리는 사용자가 실행한 작업만 진행해요.</p></div><div><h2>30일 미디어 휴지통</h2><p>앱 보관·삭제에는 적용되지 않아요.</p></div><div><h2>결과 확인 후 원본 정리</h2><p>줄이기만으로 원본을 지우지 않아요.</p></div></div>
 <div class="legal-layout"><aside class="legal-sidebar"><nav aria-label="이 페이지에서"><h2>이 페이지에서</h2><ol><li><a href="#scope"><span>01</span>서비스와 약관의 범위</a></li><li><a href="#availability"><span>02</span>사용 환경과 제공 기능</a></li><li><a href="#choices"><span>03</span>파일 선택과 실행 확인</a></li><li><a href="#bin"><span>04</span>휴지통과 영구 삭제</a></li><li><a href="#shrinking"><span>05</span>사진·동영상 줄이기</a></li><li><a href="#apps"><span>06</span>앱 보관과 앱 삭제</a></li><li><a href="#responsibilities"><span>07</span>이용자의 권리와 책임</a></li><li><a href="#changes"><span>08</span>변경·중단과 이용 종료</a></li><li><a href="#liability"><span>09</span>문제 발생 시 책임과 분쟁 해결</a></li><li><a href="#contact"><span>10</span>시행일과 문의</a></li></ol></nav></aside>
