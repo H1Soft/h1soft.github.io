@@ -17,6 +17,7 @@ Recorded on 17 September 2026. This is a continuous recording of the working And
 | File | Format / contents | Size |
 | --- | --- | ---: |
 | `public/media/nonogram-trip.mp4` | H.264 Main, yuv420p, 720 × 1600, 30 fps, **35.000 seconds**, 1,050 frames, no audio | 495,219 bytes |
+| `public/media/nonogram-trip.webm` | VP9 Profile 0, yuv420p, 720 × 1600, 30 fps, **35.000 seconds**, 1,050 frames, no audio | 732,816 bytes |
 | `public/images/video-poster.webp` | Actual album frame at 00:01, 720 × 1600 | 41,356 bytes |
 | `public/media/captions-en.vtt` | Eight English descriptive captions | UTF-8 WebVTT |
 | `public/media/captions-ko.vtt` | Eight Korean descriptive captions | UTF-8 WebVTT |
@@ -49,3 +50,9 @@ FFmpeg 7.1, distributed in `imageio-ffmpeg` 0.6.0, encoded a constant frame rate
 Verified all 1,050 output frames decode without errors; the output contains one video stream and no audio. Visually checked album, route, board in progress, native completion, and final collected-photo frames. Both caption files use increasing, nonoverlapping timestamps within the video duration. The video stays below the 4 MB budget.
 
 This capture verifies the shown Android preview flow. It does not establish store publication or claim that every device has identical performance.
+
+## WebM alternative — 19 September 2026
+
+The verified MP4 was transcoded to WebM with FFmpeg 7.1, `libvpx-vp9`, CRF 30, zero target bitrate, good deadline, CPU-used 4 and row multithreading. All 1,050 frames decode without errors and the duration remains exactly 35 seconds. The smaller MP4 is offered first; browsers can use the WebM alternative when H.264 is unavailable. Neither format downloads before playback (`preload="none"`).
+
+WebM SHA-256: `3fbf6e8af9d6d625457dcfe567db0b9263c1ed40d03f90eada7bd643fa73f849`.

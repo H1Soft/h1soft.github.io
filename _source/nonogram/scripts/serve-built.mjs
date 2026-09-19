@@ -17,6 +17,7 @@ const types = {
   '.png': 'image/png',
   '.ico': 'image/x-icon',
   '.mp4': 'video/mp4',
+  '.webm': 'video/webm',
   '.vtt': 'text/vtt',
   '.txt': 'text/plain',
 };
