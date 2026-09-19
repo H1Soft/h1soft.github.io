@@ -10,19 +10,20 @@ const CONFIG = {
   SEUKSCAN_APP_STORE_URL: "",
   SEUKSCAN_PLAY_STORE_URL: "",
 
-  // 온글 (data-store-app="ongle") — Android 우선
+  // 온글 (data-store-app="ongle")
+  ONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809517375",
   ONGLE_PLAY_STORE_URL: "",
 
   // 몽글 (data-store-app="mongle")
-  MONGLE_APP_STORE_URL: "",
+  MONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809419426",
   MONGLE_PLAY_STORE_URL: "",
 
   // 스도쿠 보야지 (data-store-app="sudoku")
-  SUDOKU_APP_STORE_URL: "",
+  SUDOKU_APP_STORE_URL: "https://apps.apple.com/app/id6809524435",
   SUDOKU_PLAY_STORE_URL: "",
 
   // 사각사각 (data-store-app="sagak")
-  SAGAK_APP_STORE_URL: "",
+  SAGAK_APP_STORE_URL: "https://apps.apple.com/app/id6809531957",
   SAGAK_PLAY_STORE_URL: "",
 
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
@@ -31,13 +32,35 @@ const CONFIG = {
 const STORE_URLS = {
   qr: { appstore: CONFIG.APP_STORE_URL, playstore: CONFIG.PLAY_STORE_URL },
   seukscan: { appstore: CONFIG.SEUKSCAN_APP_STORE_URL, playstore: CONFIG.SEUKSCAN_PLAY_STORE_URL },
-  ongle: { appstore: "", playstore: CONFIG.ONGLE_PLAY_STORE_URL },
+  ongle: { appstore: CONFIG.ONGLE_APP_STORE_URL, playstore: CONFIG.ONGLE_PLAY_STORE_URL },
   mongle: { appstore: CONFIG.MONGLE_APP_STORE_URL, playstore: CONFIG.MONGLE_PLAY_STORE_URL },
   sudoku: { appstore: CONFIG.SUDOKU_APP_STORE_URL, playstore: CONFIG.SUDOKU_PLAY_STORE_URL },
   sagak: { appstore: CONFIG.SAGAK_APP_STORE_URL, playstore: CONFIG.SAGAK_PLAY_STORE_URL },
 };
 
+const DOWNLOAD_LABELS = {
+  "en": "Download",
+  "ko": "다운로드",
+  "ja": "ダウンロード",
+  "zh-Hans": "下载",
+  "zh-Hant": "下載",
+  "de": "Herunterladen",
+  "fr": "Télécharger",
+  "es": "Descargar",
+  "it": "Scarica",
+  "pt": "Baixar",
+  "ru": "Скачать",
+  "pl": "Pobierz",
+  "nl": "Downloaden",
+  "vi": "Tải xuống",
+  "id": "Unduh",
+  "tr": "İndir",
+  "fa": "دریافت"
+};
+
 document.addEventListener("DOMContentLoaded", () => {
+  const lang = document.documentElement.lang;
+  const downloadLabel = DOWNLOAD_LABELS[lang] || DOWNLOAD_LABELS[lang.split("-")[0]] || DOWNLOAD_LABELS.en;
   let anyReleased = false;
 
   // 스토어 버튼
@@ -49,9 +72,10 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.href = url;
     btn.classList.remove("is-disabled");
     btn.removeAttribute("aria-disabled");
+    btn.removeAttribute("tabindex");
     // 제품별 스타일시트마다 클래스 접두사가 달라서(store-btn / mg-store / sv-store) 둘 다 잡는다
     const sub = btn.querySelector('.store-btn__sub, [class*="store__sub"]');
-    if (sub) sub.textContent = "Download";
+    if (sub) sub.textContent = downloadLabel;
   });
 
   // 출시 안내 문구 제거

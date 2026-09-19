@@ -107,3 +107,14 @@ The home copy, nine-app counter, FAQ/structured product list, and both root site
 Product-specific privacy and terms pages live at `/cleaner/privacy/`, `/cleaner/terms/`, `/cleaner/en/privacy/`, and `/cleaner/en/terms/`. They reuse the landing page header, font and design tokens, with shared `cleaner/legal.css` for readable policy content, desktop section navigation and a collapsible mobile table of contents. Locale switching preserves the policy and section. Both landing-page footers and root sitemaps link to these pages.
 
 The privacy policy separates on-device app processing from GitHub Pages visitor logs and voluntary support emails. It reflects the current release manifest and local data model; the support retention period follows the existing H1Soft privacy policy. Revisit this content before introducing network services, analytics, billing or new permissions.
+
+## iOS 출시 링크 (2026-09-19)
+
+App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결했습니다. 국가 코드가 없는 URL로 방문자의 스토어에 연결하며, 제품별 다국어 페이지의 App Store 버튼에도 정적 링크를 제공합니다.
+
+- ongle: https://apps.apple.com/app/id6809517375
+- mongle: https://apps.apple.com/app/id6809419426
+- sudoku: https://apps.apple.com/app/id6809524435
+- sagak: https://apps.apple.com/app/id6809531957
+
+공통 링크는 `js/config.js`에서 관리합니다. 다운로드 버튼의 언어는 페이지 언어를 따릅니다. 온글의 기존 Android 출시 대기 버튼은 유지합니다.
