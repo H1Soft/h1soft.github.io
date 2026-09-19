@@ -118,3 +118,10 @@ App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결�
 - sagak: https://apps.apple.com/app/id6809531957
 
 공통 링크는 `js/config.js`에서 관리합니다. 다운로드 버튼의 언어는 페이지 언어를 따릅니다. 온글의 기존 Android 출시 대기 버튼은 유지합니다.
+
+## Nonogram Trip
+
+- Website: https://h1soft.github.io/nonogram/ (English) and https://h1soft.github.io/nonogram/ko/ (한국어).
+- Reproducible Astro source: [`_source/nonogram`](./_source/nonogram/README.md).
+- Generated public files: `nonogram/`; deployment uses the existing main/root GitHub Pages configuration.
+- Root navigation, product listings, legal/support navigation and sitemaps include the new product. Store availability is marked coming soon until verified listings are configured.

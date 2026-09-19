@@ -37,6 +37,8 @@
 <span class="nav-col__label">게임</span>
 <a class="nav-item" href="https://h1soft.github.io/sudoku/index.html"><span aria-hidden="true" class="app-mark app-mark--sudoku"><span class="grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">스도쿠 보야지</span><span class="nav-item__type">스도쿠 퍼즐</span></span></a>
 <a class="nav-item" href="https://h1soft.github.io/sagak/index.html"><span aria-hidden="true" class="app-mark app-mark--sagak"><span class="grid"><i></i><i></i><i></i><i></i><i></i></span></span><span><span class="nav-item__name">사각사각</span><span class="nav-item__type">시카쿠 퍼즐</span></span></a>
+
+<a class="nav-item" href="/nonogram/ko/" hreflang="ko" lang="ko" data-h1soft-product="nonogram"><img src="/nonogram/images/app-icon.webp" alt="" width="28" height="28" loading="lazy" /><span><span class="nav-item__name">노노그램 트립</span><span class="nav-item__type">창가에서 푸는 논리 퍼즐</span></span></a>
 </div>
 </div>
 <span aria-hidden="true" class="header-divider"></span>
@@ -53,6 +55,8 @@
 <nav class="legal-end" aria-label="관련 안내"><a href="../privacy/" aria-current="page">개인정보 처리방침</a><a href="../terms/">이용약관</a></nav>
 </div></div>
 </main>
-<footer class="legal-footer"><div class="container"><a href="../">← 앱 소개로 돌아가기</a><p>© 2026 H1Soft. All rights reserved.</p><a href="#top">맨 위로 ↑</a></div></footer>
+<footer class="legal-footer"><div class="container"><a href="../">← 앱 소개로 돌아가기</a><p>© 2026 H1Soft. All rights reserved.</p><a href="#top">맨 위로 ↑</a>
+<a href="/nonogram/ko/" hreflang="ko" lang="ko" data-h1soft-product="nonogram">노노그램 트립</a>
+</div></footer>
 <script src="../header.js" defer></script>
 </body></html>

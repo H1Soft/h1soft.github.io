@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://h1soft.github.io/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
@@ -11,7 +11,7 @@
   </url>
   <url>
     <loc>https://h1soft.github.io/en/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
@@ -1721,5 +1721,77 @@
     <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/cleaner/terms/" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/cleaner/ja/terms/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/cleaner/terms/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/privacy/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/privacy/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/terms/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/terms/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/terms/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/support/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/support/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ko/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ko/privacy/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/privacy/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/privacy/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/privacy/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ko/terms/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/terms/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/terms/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/terms/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ko/support/</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/support/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/support/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/support/" />
   </url>
 </urlset>
