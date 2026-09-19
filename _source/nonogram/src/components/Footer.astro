@@ -1,0 +1,40 @@
+---
+import { home, page, email, type Lang } from '../data/site';
+import Icon from './Icon.astro';
+const { lang = 'en', slug = '' } = Astro.props as { lang: Lang; slug?: string };
+const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
+---
+
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div>
+      <a class="footer-brand" href={home(lang)}>
+        Nonogram Trip <Icon name="plane" />
+      </a>
+      <p>
+        {c('A little logic. A window to somewhere.', '조금의 논리, 새로운 풍경을 향한 창.')}
+        <br />
+        <span class="airdata">WINDOW SEAT PUZZLES</span>
+      </p>
+    </div>
+    <nav aria-label={c('Footer', '하단 메뉴')}>
+      <a href={page(lang, 'privacy')}>{c('Privacy', '개인정보처리방침')}</a>
+      <a href={page(lang, 'terms')}>{c('Terms', '이용약관')}</a>
+      <a href={page(lang, 'support')}>{c('Support', '지원')}</a>
+      <a href={`mailto:${email}`}>{c('Contact', '문의하기')}</a>
+    </nav>
+  </div>
+  <div class="container footer-bottom">
+    <span>
+      © {new Date().getUTCFullYear()} <a href={lang === 'ko' ? '/' : '/en/'}>H1Soft</a>
+    </span>
+    <a
+      href={page(lang === 'ko' ? 'en' : 'ko', slug)}
+      lang={lang === 'ko' ? 'en' : 'ko'}
+      data-language={lang === 'ko' ? 'en' : 'ko'}
+    >
+      {lang === 'ko' ? 'English' : '한국어'}
+    </a>
+    <span class="airdata">ICN → THE WORLD</span>
+  </div>
+</footer>

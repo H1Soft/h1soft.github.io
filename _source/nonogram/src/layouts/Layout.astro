@@ -1,0 +1,107 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { origin, base, page, type Lang } from '../data/site';
+import '../styles/global.css';
+const {
+  lang = 'en',
+  slug = '',
+  title,
+  description,
+  schema = [],
+  noindex = false,
+} = Astro.props as {
+  lang: Lang;
+  slug?: string;
+  title: string;
+  description: string;
+  schema?: object[];
+  noindex?: boolean;
+};
+const canonical = origin + page(lang, slug);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#F1EDE3" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111C24" media="(prefers-color-scheme: dark)" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex,follow" />}
+    <link rel="alternate" hreflang="en" href={origin + page('en', slug)} />
+    <link rel="alternate" hreflang="ko" href={origin + page('ko', slug)} />
+    <link rel="alternate" hreflang="x-default" href={origin + page('en', slug)} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nonogram Trip" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content={lang === 'ko' ? 'ko_KR' : 'en_US'} />
+    <meta property="og:locale:alternate" content={lang === 'ko' ? 'en_US' : 'ko_KR'} />
+    <meta property="og:image" content={`${origin}${base}images/og-${lang}.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content={
+        lang === 'ko'
+          ? '노노그램 트립 — 퍼즐 하나가 다녀왔던 곳이 됩니다.'
+          : 'Nonogram Trip — Every puzzle is a place you’ve been.'
+      }
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={`${origin}${base}images/og-${lang}.png`} />
+    <link rel="icon" href={`${base}favicon.ico`} sizes="48x48" />
+    <link rel="apple-touch-icon" href={`${base}apple-touch-icon.png`} />
+    <link rel="manifest" href={`${base}manifest.webmanifest`} />
+    <!-- Select only the visible system-theme horizon for early loading. -->
+    {!slug && (
+      <>
+        <link
+          rel="preload"
+          as="image"
+          href={`${base}images/city-icn.avif`}
+          media="(prefers-color-scheme: light)"
+          fetchpriority="high"
+        />
+        <link
+          rel="preload"
+          as="image"
+          href={`${base}images/city-kef.avif`}
+          media="(prefers-color-scheme: dark)"
+          fetchpriority="high"
+        />
+      </>
+    )}
+    <link
+      rel="preload"
+      href={`${base}fonts/${lang === 'ko' ? 'pretendard' : 'newsreader'}.woff2`}
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    {schema.map((s) => (
+      <script
+        type="application/ld+json"
+        set:html={JSON.stringify(s).replace(/</g, '\\u003c')}
+      ></script>
+    ))}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      {lang === 'ko' ? '본문으로 건너뛰기' : 'Skip to content'}
+    </a>
+    <Header lang={lang} slug={slug} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer lang={lang} slug={slug} />
+  </body>
+</html>

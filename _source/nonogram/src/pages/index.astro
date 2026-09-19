@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Landing from '../components/Landing.astro';
+import { faqs, origin, base } from '../data/site';
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Nonogram Trip',
+    description:
+      'A free offline nonogram puzzle game with twelve cities, 192 flights and a travel photo album.',
+    applicationCategory: 'GameApplication',
+    operatingSystem: 'Android 8.0+, iOS 15+',
+    inLanguage: ['en', 'ko'],
+    url: origin + base,
+    image: origin + base + 'images/app-icon.webp',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    author: { '@type': 'Organization', name: 'H1Soft', url: origin + '/' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.en.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<Layout
+  lang="en"
+  title="Nonogram Trip — Free Picture Logic, Twelve Cities"
+  description="Play a free nonogram online. Discover 12 cities, 192 logic puzzles and a travel photo album in Nonogram Trip. Android & iOS coming soon."
+  schema={schema}
+>
+  <Landing lang="en" />
+</Layout>

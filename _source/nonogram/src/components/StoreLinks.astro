@@ -1,0 +1,24 @@
+---
+import { stores, type Lang } from '../data/site';
+const { lang = 'en', position = 'hero' } = Astro.props as { lang: Lang; position?: string };
+const list = [
+  { name: 'Google Play', url: stores.google, os: 'android' },
+  { name: 'App Store', url: stores.apple, os: 'ios' },
+];
+---
+
+<div class="store-links" data-position={position}>
+  {list.map((s) =>
+    s.url ? (
+      <a class="store-link" href={s.url} data-store={s.os} rel="noopener">
+        <small>{lang === 'ko' ? '다운로드' : 'Download on'}</small>
+        <strong>{s.name}</strong>
+      </a>
+    ) : (
+      <span class="store-link upcoming" data-store={s.os}>
+        <small>{lang === 'ko' ? '출시 예정' : 'COMING SOON'}</small>
+        <strong>{s.name}</strong>
+      </span>
+    ),
+  )}
+</div>

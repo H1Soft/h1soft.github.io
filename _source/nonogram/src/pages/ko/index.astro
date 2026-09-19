@@ -1,0 +1,38 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Landing from '../../components/Landing.astro';
+import { faqs, origin, base } from '../../data/site';
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: '노노그램 트립 · Nonogram Trip',
+    description: '열두 도시, 192편의 퍼즐을 풀고 여행 사진을 모으는 무료 오프라인 네모로직 게임.',
+    applicationCategory: 'GameApplication',
+    operatingSystem: 'Android 8.0+, iOS 15+',
+    inLanguage: ['en', 'ko'],
+    url: origin + base + 'ko/',
+    image: origin + base + 'images/app-icon.webp',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    author: { '@type': 'Organization', name: 'H1Soft', url: origin + '/' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.ko.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  },
+];
+---
+
+<Layout
+  lang="ko"
+  title="노노그램 트립 — 열두 도시를 여행하는 무료 네모로직"
+  description="퍼즐 하나가 다녀왔던 곳이 됩니다. 12개 도시, 192편의 논리 퍼즐과 사진 앨범. 지금 웹에서 네모로직을 풀어보세요. Android·iOS 출시 예정."
+  schema={schema}
+>
+  <Landing lang="ko" />
+</Layout>

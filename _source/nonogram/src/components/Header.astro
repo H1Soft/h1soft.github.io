@@ -1,0 +1,67 @@
+---
+import { home, page, asset, type Lang } from '../data/site';
+import Icon from './Icon.astro';
+const { lang = 'en', slug = '' } = Astro.props as { lang: Lang; slug?: string };
+const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href={home(lang)} aria-label="Nonogram Trip">
+      <img src={asset('app-icon-small.webp')} width="36" height="36" alt="" />
+      <span>Nonogram Trip</span>
+    </a>
+    <nav class="main-nav" aria-label={c('Main navigation', '주 메뉴')}>
+      {[
+        ['try', c('Try', '체험')],
+        ['route', c('Route', '노선')],
+        ['collect', c('Collect', '수집')],
+        ['faq', 'FAQ'],
+      ].map(([id, label]) => (
+        <a href={`${home(lang)}#${id}`}>{label}</a>
+      ))}
+    </nav>
+    <div class="header-right">
+      <nav class="language" aria-label={c('Language', '언어')}>
+        <a
+          href={page('en', slug)}
+          lang="en"
+          hreflang="en"
+          aria-label="EN · English"
+          data-language="en"
+          aria-current={lang === 'en' ? 'page' : undefined}
+        >
+          EN
+        </a>
+        <a
+          href={page('ko', slug)}
+          lang="ko"
+          hreflang="ko"
+          aria-label="KO · 한국어"
+          data-language="ko"
+          aria-current={lang === 'ko' ? 'page' : undefined}
+        >
+          KO
+        </a>
+      </nav>
+      <a class="header-cta" href={`${home(lang)}#try`}>
+        {c('Take a window seat', '창가에 앉기')}
+        <Icon name="arrow" size={16} />
+      </a>
+    </div>
+  </div>
+</header>
+
+{lang === 'en' && (
+  <div class="locale-banner" data-locale-banner hidden>
+    <a href={page('ko', slug)} lang="ko" data-language="ko">
+      한국어로 보기 →
+    </a>
+    <button type="button" data-dismiss-locale aria-label="언어 안내 닫기">
+      ×
+    </button>
+  </div>
+)}
+<script>
+  import '../scripts/locale';
+</script>

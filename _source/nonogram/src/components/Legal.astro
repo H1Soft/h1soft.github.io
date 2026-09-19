@@ -1,0 +1,59 @@
+---
+import { legal } from '../data/legal';
+import { email, type Lang } from '../data/site';
+const { lang, slug } = Astro.props as { lang: Lang; slug: 'privacy' | 'terms' | 'support' };
+const content = legal[lang][slug];
+---
+
+<div class="legal-header">
+  <div class="container">
+    <p class="airdata accent">NONOGRAM TRIP · {slug.toUpperCase()}</p>
+    <h1>{content.title}</h1>
+    <p>{content.intro}</p>
+  </div>
+</div>
+<div class="container legal-layout">
+  <nav class="legal-toc" aria-label={lang === 'ko' ? '이 페이지 목차' : 'On this page'}>
+    <strong class="airdata">{lang === 'ko' ? '목차' : 'ON THIS PAGE'}</strong>
+    <ol>
+      {content.sections.map((s) => (
+        <li>
+          <a href={`#${s.id}`}>{s.title}</a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+  <div class="legal-content">
+    {content.sections.map((s) => (
+      <section id={s.id}>
+        <h2>{s.title}</h2>
+        {s.paragraphs.map((p) => (
+          <p>{p}</p>
+        ))}
+        {s.items && (
+          <ul>
+            {s.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+        )}
+      </section>
+    ))}
+    {slug === 'privacy' && (
+      <p>
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">
+          {lang === 'ko' ? 'GitHub 개인정보처리방침' : 'GitHub’s privacy statement'}
+        </a>
+      </p>
+    )}
+    <aside class="legal-contact">
+      <strong>H1Soft · Nonogram Trip</strong>
+      <p>
+        <a href={`mailto:${email}`}>{email}</a>
+      </p>
+      <p>
+        {lang === 'ko' ? '마지막 업데이트: 2026년 9월 19일' : 'Last updated: 19 September 2026'}
+      </p>
+    </aside>
+  </div>
+</div>
