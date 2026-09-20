@@ -1,0 +1,8 @@
+---
+import { asset } from '../data/site';
+const { size = 36 } = Astro.props as { size?: number };
+---
+
+<span class="app-icon" style={`--icon-size: ${size}px`} aria-hidden="true">
+  <img src={asset('app-icon-small.webp')} width={size} height={size} alt="" />
+</span>

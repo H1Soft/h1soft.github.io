@@ -1,5 +1,6 @@
 ---
 import Icon from './Icon.astro';
+import AppIcon from './AppIcon.astro';
 import StoreLinks from './StoreLinks.astro';
 import { cities, faqs, asset, type Lang } from '../data/site';
 const { lang = 'en' } = Astro.props as { lang: Lang };
@@ -93,7 +94,7 @@ const comfort = [
 <section class="trust-strip" aria-label={c('App information', '앱 정보')}>
   <div class="container trust-inner">
     <span class="trust-brand">
-      <img src={asset('app-icon-small.webp')} width="34" height="34" alt="" />
+      <AppIcon size={34} />
       {c('Made for a little escape.', '잠깐의 여행을 위해.')}
     </span>
     <span class="airdata">ANDROID 8.0+ · iOS 15+</span>

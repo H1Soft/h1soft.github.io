@@ -1,6 +1,7 @@
 ---
-import { home, page, asset, type Lang } from '../data/site';
+import { home, page, type Lang } from '../data/site';
 import Icon from './Icon.astro';
+import AppIcon from './AppIcon.astro';
 const { lang = 'en', slug = '' } = Astro.props as { lang: Lang; slug?: string };
 const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
 ---
@@ -8,7 +9,7 @@ const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href={home(lang)} aria-label="Nonogram Trip">
-      <img src={asset('app-icon-small.webp')} width="36" height="36" alt="" />
+      <AppIcon />
       <span>Nonogram Trip</span>
     </a>
     <nav class="main-nav" aria-label={c('Main navigation', '주 메뉴')}>

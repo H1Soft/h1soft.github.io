@@ -2,6 +2,14 @@
 
 Updated 20 September 2026. This document distinguishes current verification from historical release evidence, external account configuration and physical-device certification.
 
+## Icon padding correction — 20 September 2026
+
+The website now crops the cream rim from the existing app artwork inside a rounded icon frame. The same visual crop applies to the H1Soft product card and shared product menus; image assets and the hero artwork are unchanged.
+
+- `npm run check` and `npm test` pass with zero errors.
+- Chromium screenshots at 3× density confirm the crop in the Korean mobile dark header, English desktop light header, both app-information strips, H1Soft product card and Cleaner product menu. The menu has no page errors. Evidence: `reports/icon-crop/`.
+- The 36 browser checks below were run for the preceding landing revision; they were not repeated for this isolated CSS correction.
+
 ## Current landing revision — 20 September 2026
 
 The requested revision removes the playable browser demo, departure board and interactive photo flip. The introduction uses `#home`; `#route` and `#collect` remain. The collection section presents three real city illustrations (ICN, HKG and KEF) as a static album gallery.
