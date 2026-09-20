@@ -61,24 +61,13 @@ const canonical = origin + page(lang, slug);
     <link rel="icon" href={`${base}favicon.ico`} sizes="48x48" />
     <link rel="apple-touch-icon" href={`${base}apple-touch-icon.png`} />
     <link rel="manifest" href={`${base}manifest.webmanifest`} />
-    <!-- Select only the visible system-theme horizon for early loading. -->
     {!slug && (
-      <>
-        <link
-          rel="preload"
-          as="image"
-          href={`${base}images/city-icn.avif`}
-          media="(prefers-color-scheme: light)"
-          fetchpriority="high"
-        />
-        <link
-          rel="preload"
-          as="image"
-          href={`${base}images/city-kef.avif`}
-          media="(prefers-color-scheme: dark)"
-          fetchpriority="high"
-        />
-      </>
+      <link
+        rel="preload"
+        as="image"
+        href={`${base}images/hero-icon-art.webp`}
+        fetchpriority="high"
+      />
     )}
     <link
       rel="preload"

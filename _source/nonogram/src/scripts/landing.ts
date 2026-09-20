@@ -68,19 +68,6 @@ if (route) {
   });
   reduced.addEventListener('change', cycle);
 }
-const board = document.querySelector('.departure-board');
-if (board) {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      if (entries[0].isIntersecting) {
-        board.classList.add('revealed');
-        observer.disconnect();
-      }
-    },
-    { threshold: 0.35 },
-  );
-  observer.observe(board);
-}
 const develop = document.querySelector<HTMLElement>('[data-develop]');
 const range = document.querySelector<HTMLInputElement>('#develop-range');
 const output = document.querySelector<HTMLOutputElement>('#develop-value');
@@ -169,20 +156,6 @@ if (hints) {
     });
   });
 }
-document.querySelectorAll<HTMLButtonElement>('.flip-photo').forEach((photo) => {
-  const set = (on: boolean) => {
-    photo.setAttribute('aria-pressed', String(on));
-    photo.querySelector('.photo-front')?.setAttribute('aria-hidden', String(on));
-    photo.querySelector('.photo-back')?.setAttribute('aria-hidden', String(!on));
-  };
-  photo.addEventListener('click', () => set(photo.getAttribute('aria-pressed') !== 'true'));
-  photo.addEventListener('pointerenter', (e) => {
-    if (e.pointerType === 'mouse') set(true);
-  });
-  photo.addEventListener('pointerleave', (e) => {
-    if (e.pointerType === 'mouse') set(false);
-  });
-});
 const sticky = document.querySelector<HTMLElement>('.mobile-sticky');
 const sentinel = document.querySelector('.sticky-sentinel');
 if (sticky && sentinel) {
@@ -193,16 +166,14 @@ if (sticky && sentinel) {
     { threshold: 0 },
   ).observe(sentinel);
 }
-document
-  .querySelectorAll<HTMLAnchorElement>('a[data-store]')
-  .forEach((link) =>
-    link.addEventListener('click', () =>
-      emit('store_click', {
-        store: link.dataset.store,
-        position: link.closest<HTMLElement>('[data-position]')?.dataset.position,
-      }),
-    ),
-  );
+document.querySelectorAll<HTMLAnchorElement>('a[data-store]').forEach((link) =>
+  link.addEventListener('click', () =>
+    emit('store_click', {
+      store: link.dataset.store,
+      position: link.closest<HTMLElement>('[data-position]')?.dataset.position,
+    }),
+  ),
+);
 document.querySelectorAll('.faq-list details').forEach((details, i) =>
   details.addEventListener('toggle', () => {
     if ((details as HTMLDetailsElement).open) emit('faq_open', { question: i + 1 });

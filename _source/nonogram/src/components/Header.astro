@@ -13,8 +13,7 @@ const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
     </a>
     <nav class="main-nav" aria-label={c('Main navigation', '주 메뉴')}>
       {[
-        ['try', c('Try', '체험')],
-        ['route', c('Route', '노선')],
+        ['route', c('Journey', '여정')],
         ['collect', c('Collect', '수집')],
         ['faq', 'FAQ'],
       ].map(([id, label]) => (
@@ -44,8 +43,8 @@ const c = (en: string, ko: string) => (lang === 'ko' ? ko : en);
           KO
         </a>
       </nav>
-      <a class="header-cta" href={`${home(lang)}#try`}>
-        {c('Take a window seat', '창가에 앉기')}
+      <a class="header-cta" href={`${home(lang)}#route`}>
+        {c('Explore the journey', '여정 살펴보기')}
         <Icon name="arrow" size={16} />
       </a>
     </div>

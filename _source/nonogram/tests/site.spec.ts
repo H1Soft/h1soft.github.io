@@ -3,8 +3,9 @@ import AxeBuilder from '@axe-core/playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const base = process.env.SITE_PREVIEW_URL || 'http://127.0.0.1:8766';
+const base = process.env.SITE_PREVIEW_URL || 'http://127.0.0.1:8767';
 const reportDir = path.resolve('reports');
+const revision = 'landing-gallery-2026-09-20';
 const evidence: Record<string, unknown>[] = [];
 const homes = [
   { lang: 'en', route: '/nonogram/' },
@@ -36,15 +37,18 @@ test.afterEach(async ({}, info) => {
     .readFile(file, 'utf8')
     .then(JSON.parse)
     .catch(() => ({ tests: [], evidence: [] }));
-  const tests = new Map((previous.tests || []).map((r: any) => [r.name, r]));
+  const previousTests = previous.revision === revision ? previous.tests || [] : [];
+  const tests = new Map(previousTests.map((r: any) => [r.name, r]));
   tests.set(current.name, current);
-  const merged = new Map((previous.evidence || []).map((r: any) => [r.name, r]));
+  const previousEvidence = previous.revision === revision ? previous.evidence || [] : [];
+  const merged = new Map(previousEvidence.map((r: any) => [r.name, r]));
   for (const row of evidence) merged.set(row.name, row);
   await fs.writeFile(
     file,
     JSON.stringify(
       {
         generatedAt: new Date().toISOString(),
+        revision,
         base,
         tests: [...tests.values()],
         evidence: [...merged.values()],
@@ -84,7 +88,8 @@ for (const { lang, route } of homes) {
     const before = await page.evaluate(() => ({
       body: getComputedStyle(document.body).backgroundColor,
       ink: getComputedStyle(document.documentElement).getPropertyValue('--ink'),
-      grid: document.querySelector('[data-demo-grid]')?.innerHTML,
+      heroInk: getComputedStyle(document.querySelector('#home h1')!).color,
+      albumInk: getComputedStyle(document.querySelector('#collect h2')!).color,
     }));
     await page.locator('#route').scrollIntoViewIfNeeded();
     await page.locator('#tab-icn').focus();
@@ -128,13 +133,14 @@ for (const { lang, route } of homes) {
     const after = await page.evaluate(() => ({
       body: getComputedStyle(document.body).backgroundColor,
       ink: getComputedStyle(document.documentElement).getPropertyValue('--ink'),
-      grid: document.querySelector('[data-demo-grid]')?.innerHTML,
+      heroInk: getComputedStyle(document.querySelector('#home h1')!).color,
+      albumInk: getComputedStyle(document.querySelector('#collect h2')!).color,
     }));
     expect(after).toEqual(before);
     evidence.push({ name: `${lang} city palettes`, palettes });
   });
 
-  test(`${lang}: manual development, three hint stages, FAQ and photo flip work with keys`, async ({
+  test(`${lang}: manual development, three hint stages and FAQ work with keys`, async ({
     page,
   }) => {
     await open(page, route);
@@ -144,7 +150,7 @@ for (const { lang, route } of homes) {
     await page.keyboard.press('ArrowLeft');
     await expect(slider).toHaveValue('99');
     await expect(page.locator('#develop-value')).toHaveText('99%');
-    await page.locator('#try').scrollIntoViewIfNeeded();
+    await page.locator('#home').scrollIntoViewIfNeeded();
     await page.locator('#faq').scrollIntoViewIfNeeded();
     await expect(slider).toHaveValue('99');
     await page.locator('#hint-tab-0').focus();
@@ -159,14 +165,6 @@ for (const { lang, route } of homes) {
     await expect(page.locator('#hint-tab-0')).toBeFocused();
     await page.keyboard.press('End');
     await expect(page.locator('#hint-tab-2')).toBeFocused();
-    const photo = page.locator('.flip-photo');
-    await photo.focus();
-    await page.keyboard.press('Space');
-    await expect(photo).toHaveAttribute('aria-pressed', 'true');
-    await expect(photo.locator('.photo-front')).toHaveAttribute('aria-hidden', 'true');
-    await expect(photo.locator('.photo-back')).toHaveAttribute('aria-hidden', 'false');
-    await page.keyboard.press('Enter');
-    await expect(photo).toHaveAttribute('aria-pressed', 'false');
     const details = page.locator('.faq-list details');
     expect(await details.count()).toBeGreaterThanOrEqual(8);
     for (let i = 0; i < (await details.count()); i++) {
@@ -178,6 +176,51 @@ for (const { lang, route } of homes) {
       await page.keyboard.press('Enter');
       await expect(item).toHaveJSProperty('open', false);
     }
+  });
+
+  test(`${lang}: introduction and three-city album fit narrow and desktop layouts`, async ({
+    page,
+  }) => {
+    await open(page, route);
+    await expect(page.locator('#home h1')).toBeVisible();
+    const heroArt = page.locator('#home .hero-art');
+    await expect(heroArt).toHaveAttribute('aria-hidden', 'true');
+    await expect(heroArt.locator('img')).toHaveAttribute('alt', '');
+    await expect
+      .poll(() =>
+        heroArt
+          .locator('img')
+          .evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0),
+      )
+      .toBe(true);
+    await expect(page.locator('[data-nonogram-demo], #departures, #try, .flip-photo')).toHaveCount(
+      0,
+    );
+    await expect(page.locator('#collect img[src*="city-"]')).toHaveCount(3);
+    await expect(page.locator('#collect figure')).toHaveCount(3);
+    for (const caption of await page.locator('#collect figcaption').allTextContents()) {
+      expect(caption.trim()).not.toBe('');
+    }
+    for (const code of ['icn', 'hkg', 'kef']) {
+      const image = page.locator(`#collect img[src*="city-${code}"]`);
+      await expect(image).toHaveCount(1);
+      await expect(image).toHaveAttribute('alt', /\S/);
+      await image.scrollIntoViewIfNeeded();
+      await expect
+        .poll(() => image.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0))
+        .toBe(true);
+    }
+    const dimensions = [];
+    for (const width of [320, 390, 768, 1440]) {
+      await page.setViewportSize({ width, height: 1000 });
+      const fit = await page.evaluate(() => ({
+        width: innerWidth,
+        documentWidth: document.documentElement.scrollWidth,
+      }));
+      dimensions.push(fit);
+      expect(fit.documentWidth).toBe(fit.width);
+    }
+    evidence.push({ name: `${lang} introduction and static album`, dimensions });
   });
 
   test(`${lang}: reduced motion starts development at fifty and disables automatic city cycling`, async ({
@@ -239,12 +282,18 @@ for (const { lang, route } of homes) {
     });
     evidence.push({ name: `${lang} footer occlusion`, checks: footerFit });
     expect(footerFit.every((x) => x.aboveBar)).toBe(true);
-    await sticky.locator('a').click();
-    await expect(sticky).toBeHidden();
-    await expect(page).toHaveURL(new RegExp('/nonogram/(ko/)?#try$'));
+    const action = sticky.locator('a');
+    const href = await action.getAttribute('href');
+    expect(href).toBeTruthy();
+    const destination = new URL(href!, page.url());
+    expect(destination.hash).not.toBe('#try');
+    expect(destination.hash).toMatch(/^#[a-z][a-z-]*$/);
+    await action.click();
+    await expect(page).toHaveURL(destination.href);
+    await expect(page.locator(destination.hash)).toBeInViewport();
   });
 
-  test(`${lang}: JavaScript-disabled page retains static clues, content and native FAQ`, async ({
+  test(`${lang}: JavaScript-disabled page retains the introduction, photo gallery and native FAQ`, async ({
     browser,
   }) => {
     const context = await browser.newContext({
@@ -253,16 +302,19 @@ for (const { lang, route } of homes) {
     });
     const page = await context.newPage();
     await open(page, route);
-    await expect(page.locator('.demo-columns [data-clue-column]')).toHaveCount(5);
-    await expect(page.locator('.demo-rows [data-clue-row]')).toHaveCount(5);
-    await expect(page.locator('[role=gridcell]')).toHaveCount(25);
-    expect((await page.locator('.demo-columns').textContent())?.trim()).toBeTruthy();
-    await expect(page.locator('[data-demo-tool="fill"]')).toBeDisabled();
+    await expect(page.locator('#home h1')).toBeVisible();
+    await expect(page.locator('[data-nonogram-demo], #departures')).toHaveCount(0);
+    for (const code of ['icn', 'hkg', 'kef']) {
+      const image = page.locator(`#collect img[src*="city-${code}"]`);
+      await expect(image).toHaveCount(1);
+      await expect(image).toHaveAttribute('alt', /\S/);
+      await image.scrollIntoViewIfNeeded();
+      await expect(image).toBeVisible();
+    }
     await expect(page.locator('#city-icn')).toBeVisible();
     const faq = page.locator('.faq-list details').first();
     await faq.locator('summary').click();
     await expect(faq).toHaveJSProperty('open', true);
-    await expect(page.locator('noscript')).not.toHaveCount(0);
     await context.close();
   });
 }

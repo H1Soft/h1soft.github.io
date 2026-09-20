@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { DEMO_5 } from '../src/scripts/demo-engine';
 
 // Uses Playwright's WebKit build on macOS, not a physical iPhone or shipping Safari.
 // SITE_PREVIEW_URL=http://127.0.0.1:8767 npx playwright test tests/compatibility.spec.ts --workers=1
@@ -14,7 +13,7 @@ for (const scenario of [
   { lang: 'en', viewport: { width: 1440, height: 1000 }, colorScheme: 'light', mobile: false },
   { lang: 'ko', viewport: { width: 390, height: 844 }, colorScheme: 'dark', mobile: true },
 ] as const) {
-  test(`WebKit ${scenario.lang}: layout, fonts, puzzle, city, development and legal navigation`, async ({
+  test(`WebKit ${scenario.lang}: layout, fonts, gallery, city, development and legal navigation`, async ({
     browser,
   }) => {
     const context = await browser.newContext({
@@ -38,7 +37,8 @@ for (const scenario of [
     const home = '/nonogram/' + (scenario.lang === 'ko' ? 'ko/' : '');
     const response = await page.goto(base + home, { waitUntil: 'networkidle' });
     expect(response?.status()).toBe(200);
-    await expect(page.locator('[data-nonogram-demo]')).toHaveAttribute('data-ready', 'true');
+    await expect(page.locator('#home h1')).toBeVisible();
+    await expect(page.locator('[data-nonogram-demo], #departures, .flip-photo')).toHaveCount(0);
     const fonts = await page.evaluate(async (lang) => {
       const families = [
         'Newsreader',
@@ -70,16 +70,15 @@ for (const scenario of [
         true,
       );
     await fit();
-    for (const [index, value] of DEMO_5.solution.flat().entries()) {
-      if (!value) continue;
-      await page.locator(`[data-cell="${index}"]`).focus();
-      await page.keyboard.press('Space');
+    await expect(page.locator('#collect img[src*="city-"]')).toHaveCount(3);
+    for (const code of ['icn', 'hkg', 'kef']) {
+      const image = page.locator(`#collect img[src*="city-${code}"]`);
+      await image.scrollIntoViewIfNeeded();
+      await expect(image).toHaveAttribute('alt', /\S/);
+      await expect
+        .poll(() => image.evaluate((img: HTMLImageElement) => img.complete && img.naturalWidth > 0))
+        .toBe(true);
     }
-    await expect(page.locator('[data-nonogram-demo]')).toHaveAttribute('data-phase', 'complete');
-    await expect(page.locator('[data-demo-result-title]')).toHaveText(
-      scenario.lang === 'ko' ? '종이비행기' : 'Paper plane',
-    );
-    await expect(page.locator('[data-demo-result-title]')).toBeFocused();
     await fit();
     await page.locator('#tab-icn').focus();
     await page.keyboard.press('End');

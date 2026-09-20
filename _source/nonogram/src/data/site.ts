@@ -115,7 +115,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'What is a nonogram?',
-      a: 'A nonogram is a picture logic puzzle. Numbers outside the grid tell you the lengths of filled runs in each row and column. Leave at least one empty cell between runs. Try the puzzle at the top of this page.',
+      a: 'A nonogram is a picture logic puzzle. Numbers outside the grid tell you the lengths of filled runs in each row and column. Leave at least one empty cell between runs. Complete the grid to reveal a picture.',
     },
     {
       q: 'Can I play without an internet connection?',
@@ -135,7 +135,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'Does each puzzle have just one solution?',
-      a: 'Yes. The current catalogue and both web puzzles are checked for a unique solution and can be solved with row and column logic. Three-stage hints help explain the next step.',
+      a: 'Yes. Every puzzle in the app’s current catalogue is checked for a unique solution and can be solved with row and column logic. Three-stage hints help explain the next step.',
     },
     {
       q: 'Where can I get help?',
@@ -149,7 +149,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: '노노그램(네모로직)이 무엇인가요?',
-      a: '격자 밖의 숫자를 보고 그림을 완성하는 논리 퍼즐입니다. 숫자는 각 행과 열에서 연속으로 칠할 칸의 수를 뜻합니다. 숫자 덩어리 사이에는 빈칸을 하나 이상 두세요. 페이지 위의 퍼즐로 바로 해볼 수 있습니다.',
+      a: '격자 밖의 숫자를 보고 그림을 완성하는 논리 퍼즐입니다. 숫자는 각 행과 열에서 연속으로 칠할 칸의 수를 뜻합니다. 숫자 덩어리 사이에는 빈칸을 하나 이상 두세요. 격자를 완성하면 그림이 나타납니다.',
     },
     {
       q: '인터넷 없이도 플레이할 수 있나요?',
@@ -169,7 +169,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: '퍼즐의 답은 항상 하나인가요?',
-      a: '네. 현재 앱의 퍼즐과 웹 체험 퍼즐 두 개는 유일한 해답을 가지며, 행과 열의 논리만으로 풀 수 있는지 검증했습니다. 세 단계 힌트가 다음 수를 이해하도록 도와줍니다.',
+      a: '네. 현재 앱에 포함된 모든 퍼즐은 유일한 해답을 가지며, 행과 열의 논리만으로 풀 수 있는지 검증했습니다. 세 단계 힌트가 다음 수를 이해하도록 도와줍니다.',
     },
     {
       q: '문제가 생기면 어디로 문의하나요?',

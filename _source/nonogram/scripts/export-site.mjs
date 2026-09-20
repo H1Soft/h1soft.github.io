@@ -9,6 +9,8 @@ await fs.access(path.join(repo, 'index.html'));
 await fs.access(path.join(source, 'dist', 'index.html'));
 const target = path.join(repo, 'nonogram');
 await fs.mkdir(target, { recursive: true });
+// Hashed bundles belong to this build; retired features must not leave old scripts online.
+await fs.rm(path.join(target, '_astro'), { recursive: true, force: true });
 await fs.cp(path.join(source, 'dist'), target, { recursive: true, force: true });
 await fs.writeFile(path.join(repo, '.nojekyll'), '');
 console.log(

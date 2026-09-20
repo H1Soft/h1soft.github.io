@@ -15,24 +15,24 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
     privacy: {
       title: 'Privacy policy',
       description:
-        'How Nonogram Trip handles website visits, the browser puzzle, local app progress, backups and support messages.',
+        'How Nonogram Trip handles website visits, local app progress, backups and support messages.',
       intro:
-        'A clear account of what stays on your device and what happens when you visit this website or contact H1Soft. Effective and last updated: September 19, 2026.',
+        'A clear account of what stays on your device and what happens when you visit this website or contact H1Soft. Effective: September 19, 2026. Last updated: September 20, 2026.',
       sections: [
         {
           id: 'scope',
           title: '1. Who this notice covers',
           paragraphs: [
             'H1Soft provides the Nonogram Trip website and is preparing the Android and iOS app for release. This notice describes the website as currently published and the app’s current local-data design. Store availability will be shown separately when verified.',
-            'The website, the browser puzzle and the installed app handle information differently. You do not need to create a Nonogram Trip account to browse the site or play.',
+            'The website and the installed app handle information differently. You do not need to create a Nonogram Trip account to browse the site or play in the app.',
           ],
         },
         {
-          id: 'website-demo',
-          title: '2. The website and browser puzzle',
+          id: 'website',
+          title: '2. The website',
           paragraphs: [
-            'The puzzle runs in the memory of the open page. Its cells, undo history and completion state are not uploaded to H1Soft or saved in browser storage. Reloading the page starts a new puzzle, and website progress does not transfer to the app.',
-            'This version of the Nonogram Trip website does not install analytics scripts or set cookies. When you choose a language or dismiss the language suggestion, the site saves only that preference in this browser’s localStorage. Puzzle cells, undo history and completion records are not included. Your browser may also cache ordinary page files as part of loading the site.',
+            'The website introduces the app, its city routes and collections. It does not collect app progress or provide an account-based journey service.',
+            'This version of the Nonogram Trip website does not install analytics scripts or set cookies. When you choose a language or dismiss the language suggestion, the site saves only that preference in this browser’s localStorage. Your browser may also cache ordinary page files as part of loading the site.',
             'The site may read your browser’s language setting to offer a Korean page. It does not automatically redirect you. To remove the saved language and suggestion preferences, clear this website’s site data in your browser.',
           ],
         },
@@ -58,7 +58,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '5. Website hosting',
           paragraphs: [
             'GitHub Pages hosts this website. Delivering a page involves a request to GitHub, which may process technical information such as your IP address, browser information and request time for its service and security purposes. GitHub’s General Privacy Statement describes its processing.',
-            'This hosting activity is separate from the puzzle: the website does not send your puzzle moves or app progress to GitHub. When you follow an external link, the destination’s own privacy practices apply.',
+            'The website does not access your local app progress. When you follow an external link, the destination’s own privacy practices apply.',
           ],
         },
         {
@@ -91,7 +91,8 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
             'If the website or app introduces a different way of handling information, this notice will be updated to explain it. Any relevant store privacy disclosures will also need to reflect the released app. The date above identifies the current notice.',
           ],
           items: [
-            'September 19, 2026 — Initial notice for the pre-release website, memory-only browser puzzle, user-chosen language preferences, local app records, user-chosen backups and support email.',
+            'September 20, 2026 — Updated the website’s scope and support information.',
+            'September 19, 2026 — Initial notice for the pre-release website, user-chosen language preferences, local app records, user-chosen backups and support email.',
           ],
         },
       ],
@@ -99,15 +100,15 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
     terms: {
       title: 'Terms of use',
       description:
-        'Simple terms for using the Nonogram Trip website, browser puzzle and app, including content, backups and support.',
+        'Simple terms for using the Nonogram Trip website and app, including content, backups and support.',
       intro:
-        'These terms explain how you may use Nonogram Trip’s website, browser puzzle and app. Last updated: September 19, 2026.',
+        'These terms explain how you may use Nonogram Trip’s website and app. Last updated: September 20, 2026.',
       sections: [
         {
           id: 'using',
           title: '1. Using Nonogram Trip',
           paragraphs: [
-            'H1Soft offers this website and browser puzzle for you to explore and enjoy. You may use them for personal, lawful purposes. The Android and iOS app is being prepared for release; a preview or product description does not mean an app is already available in either store.',
+            'H1Soft offers this website for you to explore Nonogram Trip. You may use it for personal, lawful purposes. The Android and iOS app is being prepared for release; a preview or product description does not mean an app is already available in either store.',
             'If you obtain the app through a platform store, that store’s applicable terms also govern your download and use of its services.',
           ],
         },
@@ -130,7 +131,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'backups',
           title: '4. Your progress and backups',
           paragraphs: [
-            'The web puzzle is a short browser experience. It does not save progress between page loads or transfer that progress to the app.',
             'The app stores progress on your device. Export a backup before changing devices or removing app data, and keep the original until you have checked the imported journey. Importing a backup replaces the current journey after validation. H1Soft cannot restore a lost local save when no usable backup exists.',
           ],
         },
@@ -147,7 +147,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '6. Questions and updates',
           paragraphs: [
             'For questions about these terms, content reuse or a problem with the service, contact H1Soft at h1.soft.x001@gmail.com.',
-            'Updated terms will be published on this page with a revised date. This first version was published on September 19, 2026.',
+            'Updated terms will be published on this page with a revised date. The first version was published on September 19, 2026.',
           ],
         },
       ],
@@ -163,7 +163,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'release',
           title: 'Where can I get the app?',
           paragraphs: [
-            'The Android and iOS releases are being prepared. Verified store links will be added when they are available. You can already play the browser puzzle on the home page without installing an app.',
+            'The Android and iOS releases are being prepared. Verified store links will be added when they are available. The home page introduces the app’s twelve cities, puzzles and collections.',
             'The app currently targets Android 8.0 or later and iOS 15 or later. Store availability and device compatibility should be checked on the official listing when published.',
           ],
         },
@@ -171,7 +171,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'cost',
           title: 'Do I need to pay to unlock the puzzles?',
           paragraphs: [
-            'Nonogram Trip is designed to make its puzzle routes, difficulty levels, hints and collections available without purchases. Routes open through play. The browser puzzle does not ask for payment or an account.',
+            'Nonogram Trip is designed to make its puzzle routes, difficulty levels, hints and collections available without purchases. Routes open through play.',
           ],
         },
         {
@@ -179,7 +179,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: 'What is a nonogram?',
           paragraphs: [
             'A nonogram is a picture made with logic. The numbers beside each row and column tell you the lengths of its filled runs. A clue of 3 means three connected filled squares. A clue of 1, 2 means one filled square, a gap, then two connected filled squares.',
-            'Try the 5×5 puzzle on the home page. A clue of 5 in a five-square line is a good first move: fill the whole line. You do not need to mark every empty square with an X to finish.',
+            'A clue of 5 in a five-square line is a good first move: fill the whole line. In the app, you do not need to mark every empty square with an X to finish.',
           ],
         },
         {
@@ -188,15 +188,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           paragraphs: [
             'A clue of 0 means the whole line is empty. Use the mark tool to note empty squares. In the app’s colour puzzles, a clue’s colour identifies the ink: runs of different colours can touch, while two runs of the same colour need a gap.',
             'The bundled puzzles are checked for one solution and for a complete solution through row-and-column deductions. Guessing is not needed. An incorrect mark can block the next deduction, so review recent input if you get stuck.',
-          ],
-        },
-        {
-          id: 'browser-controls',
-          title: 'How do I use the browser puzzle?',
-          paragraphs: [
-            'Choose Fill or Mark, then tap or click a square. Applying the same state again clears it. Drag along a row or column to repeat the first square’s action. A short hold temporarily switches the tool. Undo reverses the last move.',
-            'Use Tab to enter the grid, arrow keys to move, Space to fill, X to mark, Backspace to clear and U to undo. An error ring points out a filled square that does not match the picture; it does not erase your move.',
-            'The puzzle has no countdown or failure limit. Its state lasts only while the page remains open. Reloading starts again. After completing the first puzzle, you can choose the 10×10 puzzle.',
           ],
         },
         {
@@ -212,7 +203,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: 'Can I play without an internet connection?',
           paragraphs: [
             'The installed app’s puzzles and local progress work offline. App downloads, this website, email and any cloud destination you choose for a backup or shared image require their own connection.',
-            'The website puzzle runs locally once its files are loaded, but the site is not an installed offline app. Loading another page or the second puzzle may need a connection.',
           ],
         },
         {
@@ -220,7 +210,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: 'Where is my progress? What happens on a replay?',
           paragraphs: [
             'The app saves progress on your device. Reopen a flight to continue, or use Flights in progress in the travel desk. Your completed photo and best record remain in the album while an unfinished replay is kept separately.',
-            'If saving fails, check your device’s available storage. Avoid deleting or reinstalling the app before you have exported a usable backup. A web puzzle and an app journey do not share saved progress.',
+            'If saving fails, check your device’s available storage. Avoid deleting or reinstalling the app before you have exported a usable backup.',
           ],
         },
         {
@@ -246,7 +236,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: 'Can I adjust the display and controls?',
           paragraphs: [
             'The app has light and dark appearance, colour-assistance numbers and patterns, reduced motion and a phone one-handed setting. Sound and haptics can be switched separately. These options are in Preferences.',
-            'The website responds to your system’s reduced-motion preference and provides keyboard controls and spoken grid labels. If text, focus or a spoken description gets in your way, tell us your browser, device and any assistive technology you use.',
+            'The website responds to your system’s reduced-motion preference and supports keyboard navigation. If text, focus or a spoken description gets in your way, tell us your browser, device and any assistive technology you use.',
           ],
         },
         {
@@ -259,7 +249,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           items: [
             'Device model and operating-system version.',
             'App version, or browser name and version for a website issue.',
-            'City and flight ID, or the website page and demo size.',
+            'City and flight ID, or the website page address.',
             'Language, selected mode and the steps leading to the problem.',
             'Any error message shown on screen.',
           ],
@@ -278,24 +268,24 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
     privacy: {
       title: '개인정보처리방침',
       description:
-        '노노그램 트립의 웹사이트 방문, 브라우저 퍼즐, 앱 로컬 기록, 백업과 문의 이메일의 처리 방식을 안내합니다.',
+        '노노그램 트립의 웹사이트 방문, 앱 로컬 기록, 백업과 문의 이메일의 처리 방식을 안내합니다.',
       intro:
-        '기기에 남는 정보와 웹사이트를 방문하거나 H1Soft에 문의할 때 처리되는 정보를 설명합니다. 시행일·최종 수정일: 2026년 9월 19일.',
+        '기기에 남는 정보와 웹사이트를 방문하거나 H1Soft에 문의할 때 처리되는 정보를 설명합니다. 시행일: 2026년 9월 19일. 최종 수정일: 2026년 9월 20일.',
       sections: [
         {
           id: 'scope',
           title: '1. 이 안내의 적용 범위',
           paragraphs: [
             'H1Soft는 노노그램 트립 웹사이트를 제공하고 Android·iOS 앱 출시를 준비하고 있습니다. 이 안내는 현재 공개된 웹사이트와 앱의 현재 로컬 데이터 처리 방식을 설명합니다. 스토어 출시 여부는 확인된 정보로 별도 안내합니다.',
-            '웹사이트, 브라우저 퍼즐, 설치한 앱은 정보를 처리하는 방식이 서로 다릅니다. 웹사이트를 보거나 퍼즐을 풀기 위해 노노그램 트립 계정을 만들 필요는 없습니다.',
+            '웹사이트와 설치한 앱은 정보를 처리하는 방식이 서로 다릅니다. 웹사이트를 보거나 앱에서 퍼즐을 풀기 위해 노노그램 트립 계정을 만들 필요는 없습니다.',
           ],
         },
         {
-          id: 'website-demo',
-          title: '2. 웹사이트와 브라우저 퍼즐',
+          id: 'website',
+          title: '2. 웹사이트',
           paragraphs: [
-            '브라우저 퍼즐은 열려 있는 페이지의 메모리에서 동작합니다. 칸 상태, 되돌리기 이력, 완성 여부를 H1Soft로 전송하거나 브라우저 저장소에 저장하지 않습니다. 페이지를 새로고침하면 다시 시작하며 웹에서 푼 기록은 앱으로 이어지지 않습니다.',
-            '현재 노노그램 트립 웹사이트에는 분석 스크립트가 없으며 쿠키를 설정하지 않습니다. 사용자가 직접 언어를 고르거나 언어 안내를 닫으면 해당 설정만 이 브라우저의 localStorage에 저장합니다. 퍼즐의 칸, 되돌리기 이력과 완료 기록은 포함하지 않습니다. 브라우저가 사이트를 불러오는 과정에서 일반 페이지 파일을 캐시할 수도 있습니다.',
+            '웹사이트는 앱, 도시별 여정과 수집물을 소개합니다. 앱의 진행 기록을 수집하거나 계정 기반의 여행 기록 서비스를 제공하지 않습니다.',
+            '현재 노노그램 트립 웹사이트에는 분석 스크립트가 없으며 쿠키를 설정하지 않습니다. 사용자가 직접 언어를 고르거나 언어 안내를 닫으면 해당 설정만 이 브라우저의 localStorage에 저장합니다. 브라우저가 사이트를 불러오는 과정에서 일반 페이지 파일을 캐시할 수도 있습니다.',
             '한국어 페이지를 제안하기 위해 브라우저의 언어 설정을 읽을 수 있지만 자동으로 페이지를 이동시키지는 않습니다. 저장된 언어 선택과 안내 닫기 설정은 브라우저에서 이 웹사이트의 사이트 데이터를 지워 삭제할 수 있습니다.',
           ],
         },
@@ -321,7 +311,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '5. 웹사이트 호스팅',
           paragraphs: [
             '이 웹사이트는 GitHub Pages에서 제공됩니다. 페이지를 받으려면 GitHub에 요청이 전달되며, GitHub는 서비스 제공과 보안을 위해 IP 주소, 브라우저 정보, 요청 시각 등의 기술 정보를 처리할 수 있습니다. 자세한 처리 방식은 GitHub의 일반 개인정보처리방침에 설명되어 있습니다.',
-            '호스팅 과정과 퍼즐 데이터는 별개입니다. 웹사이트는 퍼즐 입력이나 앱 진행 기록을 GitHub로 보내지 않습니다. 외부 링크를 열면 해당 서비스의 개인정보 처리 방식이 적용됩니다.',
+            '웹사이트는 기기에 있는 앱 진행 기록에 접근하지 않습니다. 외부 링크를 열면 해당 서비스의 개인정보 처리 방식이 적용됩니다.',
           ],
         },
         {
@@ -354,7 +344,8 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
             '웹사이트나 앱이 정보를 처리하는 방식을 바꾸면 이 안내를 갱신해 설명합니다. 관련 스토어 개인정보 공개 내용도 실제 출시 앱에 맞아야 합니다. 위의 날짜로 현재 안내의 버전을 확인할 수 있습니다.',
           ],
           items: [
-            '2026년 9월 19일 — 출시 준비 웹사이트, 메모리에서만 동작하는 브라우저 퍼즐, 사용자가 고른 언어 설정, 앱 로컬 기록, 사용자가 선택하는 백업과 문의 이메일에 관한 최초 안내.',
+            '2026년 9월 20일 — 웹사이트 제공 범위와 지원 안내를 갱신했습니다.',
+            '2026년 9월 19일 — 출시 준비 웹사이트, 사용자가 고른 언어 설정, 앱 로컬 기록, 사용자가 선택하는 백업과 문의 이메일에 관한 최초 안내.',
           ],
         },
       ],
@@ -362,15 +353,15 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
     terms: {
       title: '이용약관',
       description:
-        '노노그램 트립 웹사이트·브라우저 퍼즐·앱의 이용, 콘텐츠, 백업과 문의에 관한 기본 안내입니다.',
+        '노노그램 트립 웹사이트·앱의 이용, 콘텐츠, 백업과 문의에 관한 기본 안내입니다.',
       intro:
-        '노노그램 트립의 웹사이트, 브라우저 퍼즐과 앱을 이용하는 방법을 설명합니다. 최종 수정일: 2026년 9월 19일.',
+        '노노그램 트립의 웹사이트와 앱을 이용하는 방법을 설명합니다. 최종 수정일: 2026년 9월 20일.',
       sections: [
         {
           id: 'using',
           title: '1. 서비스 이용',
           paragraphs: [
-            'H1Soft는 노노그램 트립을 알아보고 즐길 수 있도록 웹사이트와 브라우저 퍼즐을 제공합니다. 개인적이고 적법한 목적으로 이용할 수 있습니다. Android·iOS 앱은 출시 준비 중이며, 미리보기나 제품 설명이 스토어 출시 완료를 뜻하지는 않습니다.',
+            'H1Soft는 노노그램 트립을 알아볼 수 있도록 웹사이트를 제공합니다. 개인적이고 적법한 목적으로 이용할 수 있습니다. Android·iOS 앱은 출시 준비 중이며, 미리보기나 제품 설명이 스토어 출시 완료를 뜻하지는 않습니다.',
             '플랫폼 스토어에서 앱을 받는 경우, 다운로드와 해당 스토어 서비스 이용에는 그 스토어의 적용 가능한 약관도 적용됩니다.',
           ],
         },
@@ -393,7 +384,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'backups',
           title: '4. 진행 기록과 백업',
           paragraphs: [
-            '웹 퍼즐은 브라우저에서 짧게 경험하는 기능입니다. 페이지를 다시 불러온 뒤까지 진행도를 저장하거나 앱으로 옮기지 않습니다.',
             '앱의 진행도는 기기에 저장됩니다. 기기를 바꾸거나 앱 데이터를 지우기 전에 백업을 내보내고, 가져온 기록을 확인할 때까지 원본을 보관해 주세요. 가져오기는 파일 검사 후 현재 여행 기록을 교체합니다. 사용 가능한 백업이 없으면 H1Soft도 잃어버린 로컬 기록을 복구할 수 없습니다.',
           ],
         },
@@ -410,7 +400,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '6. 문의와 약관 변경',
           paragraphs: [
             '약관, 콘텐츠 재사용 또는 서비스 문제에 관한 문의는 H1Soft의 h1.soft.x001@gmail.com으로 보내 주세요.',
-            '약관을 바꾸면 이 페이지에 새 내용과 수정일을 게시합니다. 이 최초 버전은 2026년 9월 19일에 게시했습니다.',
+            '약관을 바꾸면 이 페이지에 새 내용과 수정일을 게시합니다. 최초 버전은 2026년 9월 19일에 게시했습니다.',
           ],
         },
       ],
@@ -425,7 +415,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'release',
           title: '앱은 어디서 받을 수 있나요?',
           paragraphs: [
-            'Android·iOS 출시를 준비하고 있습니다. 이용 가능한 공식 스토어 링크가 확인되면 안내하겠습니다. 그동안 홈 화면의 브라우저 퍼즐은 앱 설치 없이 플레이할 수 있습니다.',
+            'Android·iOS 출시를 준비하고 있습니다. 이용 가능한 공식 스토어 링크가 확인되면 안내하겠습니다. 홈 화면에서 앱의 열두 도시, 퍼즐과 수집물을 살펴볼 수 있습니다.',
             '현재 앱의 지원 기준은 Android 8.0 이상, iOS 15 이상입니다. 실제 출시 여부와 기기 호환성은 공개된 공식 스토어 페이지에서 확인해 주세요.',
           ],
         },
@@ -433,7 +423,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'cost',
           title: '퍼즐을 열려면 결제해야 하나요?',
           paragraphs: [
-            '노노그램 트립은 퍼즐 구역, 난이도, 힌트와 수집물을 결제 없이 이용하도록 설계했습니다. 구역은 플레이하면서 열립니다. 브라우저 퍼즐도 결제나 계정을 요구하지 않습니다.',
+            '노노그램 트립은 퍼즐 구역, 난이도, 힌트와 수집물을 결제 없이 이용하도록 설계했습니다. 구역은 플레이하면서 열립니다.',
           ],
         },
         {
@@ -441,7 +431,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '노노그램은 어떤 퍼즐인가요?',
           paragraphs: [
             '노노그램은 숫자를 읽고 칸을 칠해 그림을 완성하는 논리 퍼즐입니다. 행과 열 옆의 숫자는 이어서 칠할 덩어리의 길이입니다. 3은 세 칸을 이어 칠한다는 뜻이고, 1·2는 한 칸을 칠한 뒤 빈칸을 두고 두 칸을 이어 칠한다는 뜻입니다.',
-            '홈 화면의 5×5 퍼즐부터 해보세요. 다섯 칸짜리 줄에 5가 보이면 그 줄 전체를 칠할 수 있습니다. 빈칸 모두에 X를 표시하지 않아도 칠한 모양이 맞으면 완성됩니다.',
+            '다섯 칸짜리 줄에 5가 보이면 그 줄 전체를 칠할 수 있습니다. 앱에서는 빈칸 모두에 X를 표시하지 않아도 칠한 모양이 맞으면 완성됩니다.',
           ],
         },
         {
@@ -450,15 +440,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           paragraphs: [
             '0은 그 줄이 모두 빈칸이라는 뜻입니다. 빈칸 표시 도구로 메모할 수 있습니다. 앱의 컬러 퍼즐에서는 숫자의 색이 사용할 잉크를 뜻합니다. 색이 다른 덩어리는 붙어도 되지만 같은 색 덩어리 사이에는 빈칸이 필요합니다.',
             '번들 퍼즐은 답이 하나이며 행과 열의 논리 추론으로 끝까지 풀 수 있는지 검사합니다. 추측할 필요는 없습니다. 잘못된 표시가 다음 추론을 막을 수 있으니 막혔을 때는 최근 입력을 다시 살펴보세요.',
-          ],
-        },
-        {
-          id: 'browser-controls',
-          title: '브라우저 퍼즐은 어떻게 조작하나요?',
-          paragraphs: [
-            '칠하기나 빈칸 표시를 선택한 뒤 칸을 누르세요. 같은 상태를 다시 적용하면 지워집니다. 행이나 열을 따라 드래그하면 첫 칸에서 정한 동작이 이어집니다. 잠깐 길게 누르면 도구가 임시로 바뀌고, 되돌리기로 마지막 입력을 취소할 수 있습니다.',
-            '키보드에서는 Tab으로 격자에 들어가 방향키로 이동하고, Space로 칠하기, X로 빈칸 표시, Backspace로 지우기, U로 되돌리기를 사용합니다. 오류 링은 그림과 맞지 않게 칠한 칸을 알려주며 입력을 자동으로 지우지는 않습니다.',
-            '제한 시간이나 실패 횟수 제한은 없습니다. 진행 상태는 페이지가 열려 있는 동안만 유지되고 새로고침하면 다시 시작합니다. 첫 퍼즐을 완성한 뒤에는 10×10 퍼즐을 선택할 수 있습니다.',
           ],
         },
         {
@@ -474,7 +455,6 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '인터넷 없이도 플레이할 수 있나요?',
           paragraphs: [
             '설치한 앱의 퍼즐과 로컬 진행 기록은 오프라인에서 동작합니다. 앱 다운로드, 이 웹사이트, 이메일, 백업이나 사진을 보낼 클라우드 서비스에는 각각 인터넷 연결이 필요할 수 있습니다.',
-            '웹 퍼즐은 필요한 파일을 받은 뒤 브라우저에서 동작하지만, 웹사이트 자체가 설치형 오프라인 앱은 아닙니다. 다른 페이지나 두 번째 퍼즐을 불러올 때는 연결이 필요할 수 있습니다.',
           ],
         },
         {
@@ -482,7 +462,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '진행 기록은 어디에 있나요? 다시 풀면 사진이 바뀌나요?',
           paragraphs: [
             '앱은 진행 기록을 기기에 저장합니다. 같은 항공편을 다시 열거나 여행 데스크의 탑승 중 항공편에서 이어 풀 수 있습니다. 미완료 재도전은 별도로 보관하므로 완성한 사진과 최고 기록은 앨범에 그대로 남습니다.',
-            '저장에 실패하면 기기의 남은 저장 공간을 확인해 주세요. 사용 가능한 백업을 내보내기 전에는 앱을 지우거나 다시 설치하지 않는 것이 좋습니다. 웹 퍼즐과 앱의 여행 기록은 서로 연결되지 않습니다.',
+            '저장에 실패하면 기기의 남은 저장 공간을 확인해 주세요. 사용 가능한 백업을 내보내기 전에는 앱을 지우거나 다시 설치하지 않는 것이 좋습니다.',
           ],
         },
         {
@@ -508,7 +488,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           title: '화면과 조작을 편하게 바꿀 수 있나요?',
           paragraphs: [
             '앱 설정에서 밝은 화면과 야간 비행, 숫자·패턴을 이용한 색 구분 보조, 모션 줄이기와 휴대폰 한 손 모드를 선택할 수 있습니다. 효과음과 햅틱도 각각 켜거나 끌 수 있습니다.',
-            '웹사이트는 시스템의 모션 줄이기 설정을 따르며 키보드 조작과 격자 낭독 정보를 제공합니다. 글자, 포커스나 낭독 설명이 이용을 어렵게 하면 브라우저, 기기와 사용 중인 보조 기술을 알려 주세요.',
+            '웹사이트는 시스템의 모션 줄이기 설정을 따르며 키보드 탐색을 지원합니다. 글자, 포커스나 낭독 설명이 이용을 어렵게 하면 브라우저, 기기와 사용 중인 보조 기술을 알려 주세요.',
           ],
         },
         {
@@ -521,7 +501,7 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           items: [
             '기기 모델과 운영체제 버전.',
             '앱 버전 또는 웹 문제라면 브라우저 이름과 버전.',
-            '도시·항공편 ID 또는 웹사이트 페이지와 데모 크기.',
+            '도시·항공편 ID 또는 웹사이트 페이지 주소.',
             '언어, 선택한 모드와 문제가 발생하기까지의 조작 순서.',
             '화면에 표시된 오류 메시지.',
           ],

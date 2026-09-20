@@ -13,6 +13,7 @@ for name in ['prop_album_open','prop_passport_map','prop_tags_pair','prop_polaro
  im.thumbnail((1000,800))
  im.save(OUT/f'images/{name}.webp',quality=85)
 im=Image.open(ROOT/'iosApp/iosApp/Assets.xcassets/AppIcon.appiconset/AppIcon.png').convert('RGB')
+im.save(OUT/'images/hero-icon-art.webp',quality=88)
 im.resize((512,512)).save(OUT/'images/app-icon.webp',quality=88)
 im.resize((96,96)).save(OUT/'images/app-icon-small.webp',quality=88)
 im.resize((192,192)).save(OUT/'icon-192.png')
