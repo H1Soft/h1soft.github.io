@@ -2,7 +2,18 @@
 
 Updated 20 September 2026. This document distinguishes current verification from historical release evidence, external account configuration and physical-device certification.
 
-## Icon padding correction — 20 September 2026
+## Shared full-bleed icon — 20 September 2026
+
+The website now uses the same full-bleed artwork as the Android and iOS icon packages. Header/app-information icons, H1Soft product links, hero artwork, favicons, Apple touch icons, manifest icons and share images are regenerated from that artwork. The previous CSS enlargement/crop is removed. Versioned image URLs refresh existing browser caches.
+
+`scripts/prepare-icons.mjs` packages the shared `design/generated/icon/nonogram-trip-full-bleed.png` source. `scripts/prepare-assets.py` invokes this packager rather than regenerating icons from the old image.
+
+- Astro checks and the static build audit pass with zero errors.
+- Five Chromium scenarios cover English desktop and Korean mobile product pages, Korean/English H1Soft cards and the Cleaner product menu, with no page errors or horizontal overflow. Icons have no extra scale/crop transform.
+- All seven web icon assets reproduce exactly from the shared master and match the served files. Favicon, Apple touch and both manifest icons decode at their declared sizes. The manifest marks its full-bleed icons as maskable.
+- Evidence: `reports/icon-unified/audit.json` and the accompanying screenshots. Native packaging/build evidence is recorded separately in the app project.
+
+## Previous icon padding correction — 20 September 2026
 
 The website now crops the cream rim from the existing app artwork inside a rounded icon frame. The same visual crop applies to the H1Soft product card and shared product menus; image assets and the hero artwork are unchanged.
 

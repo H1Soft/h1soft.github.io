@@ -17,8 +17,8 @@ for (const lang of ['en', 'ko']) {
     .meta{color:#b5c0c7;font-size:15px;letter-spacing:.6px}.photo{position:absolute;right:70px;top:150px;width:328px;background:#fffcf5;color:#17405c;padding:12px 12px 23px;transform:rotate(5deg);box-shadow:0 18px 38px #0005}
     .photo img{width:304px;height:228px;object-fit:cover}.caption{display:flex;justify-content:space-between;align-items:baseline;margin:18px 7px 0;font-family:Newsreader,Pretendard,Georgia;font-size:23px}.caption small{font:12px Arial;letter-spacing:1px}
     .foot{position:absolute;bottom:40px;left:66px;color:#7fc7e4;font-size:12px;letter-spacing:1px}
-    </style></head><body><img class="backdrop" src="${origin}/nonogram/images/hero-icon-art.webp" alt=""><main>
-    <div class="brand"><img src="${origin}/nonogram/images/app-icon-small.webp" alt="">Nonogram Trip</div>
+    </style></head><body><img class="backdrop" src="${origin}/nonogram/images/hero-icon-art.webp?v=20260920-full-bleed" alt=""><main>
+    <div class="brand"><img src="${origin}/nonogram/images/app-icon-small.webp?v=20260920-full-bleed" alt="">Nonogram Trip</div>
     <h1>${lang === 'ko' ? '퍼즐 하나가<br>다녀왔던 곳이 됩니다.' : 'Every puzzle is a<br>place you’ve been.'}</h1>
     <p class="meta">${lang === 'ko' ? '열두 도시 · 192편의 퍼즐 · 나만의 여행 앨범' : 'Twelve cities · 192 puzzles · Your own travel album'}</p>
     <figure class="photo"><img src="${origin}/nonogram/images/city-hkg.avif" alt=""><figcaption class="caption"><span>${lang === 'ko' ? '홍콩의 기억' : 'A memory of Hong Kong'}</span><small>HKG</small></figcaption></figure>

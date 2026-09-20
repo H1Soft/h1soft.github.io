@@ -274,11 +274,9 @@ html[lang="en"] h1 { font-size:clamp(40px,4.1vw,60px); letter-spacing:-2.3px; }
 html[lang="en"] .hero-actions { gap:18px; }
 @media(max-width:720px){html[lang="en"] h1{font-size:clamp(35px,9vw,55px);letter-spacing:-1.5px}html[lang="en"] .hero-copy{word-break:normal}}
 
-/* Crop the cream rim baked into the Nonogram artwork, preserving its visible size. */
+/* The shared artwork fills the icon; each surface supplies its corner mask. */
 .nav-item[data-h1soft-product="nonogram"] > img,
 .game-card--nonogram .game-card__brand > img {
   border: 0;
-  border-radius: 0;
-  clip-path: inset(4.55% round 22.73%);
-  transform: scale(1.1);
+  border-radius: 25%;
 }
