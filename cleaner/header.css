@@ -277,6 +277,7 @@ html[lang="en"] .hero-actions { gap:18px; }
 /* Crop the cream rim baked into the Nonogram artwork, preserving its visible size. */
 .nav-item[data-h1soft-product="nonogram"] > img,
 .game-card--nonogram .game-card__brand > img {
+  border: 0;
   border-radius: 0;
   clip-path: inset(4.55% round 22.73%);
   transform: scale(1.1);
