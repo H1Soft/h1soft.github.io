@@ -2,6 +2,16 @@
 
 H1Soft 팀 공식 웹사이트 (정적 사이트, GitHub Pages 배포).
 
+## 애착인형 뽑기 (2026-09-27)
+
+`/attachment/`에 12개 섹션의 반응형 랜딩을, `/attachment/play/`에 Flutter Web 테스트를 배포합니다. 한국어·영어 회사 홈의 라이프스타일 카드와 기존 제품 메뉴·푸터에서 연결합니다. 다른 언어 페이지는 한국어 랜딩임을 링크에 표시합니다.
+
+인형 소개 17개, 초대 17개, 궁합 153개 경로는 검색·공유용 HTML과 1200×630 OG 이미지를 제공합니다. 개인 결과가 포함된 공유 URL은 같은 도메인의 웹 앱으로 연결합니다. 정적 OG에는 개인 점수·닉네임을 넣지 않습니다. 기존 루트 sitemap 2개에는 신규 URL만 추가했습니다.
+
+현재 앱은 스토어 출시 준비 중이며 실제 스토어 URL이 없는 버튼·평점·방문 수를 표시하지 않습니다. 웹 테스트를 바로 이용할 수 있습니다. 랜딩의 앱·공유 카드 이미지는 디자인 미리보기라고 표시합니다. 외부 분석 스크립트는 추가하지 않았습니다.
+
+원본은 별도 Flutter `attachment` 프로젝트의 `promo/`, `tools/build_promo.py`, `tools/build_discovery.py`에서 관리합니다. 프로젝트에서 `sh tools/build_site.sh`를 실행하고 `build/site/attachment/`를 이 저장소의 `attachment/`에 동기화한 뒤 `python3 tools/integrate_h1soft.py <이 저장소>`로 메뉴와 sitemap을 갱신합니다. 생성된 공개 파일만 이 저장소에 배포합니다.
+
 ## 구조
 
 ```

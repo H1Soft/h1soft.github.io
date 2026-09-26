@@ -1,0 +1,1376 @@
+[
+  {
+    "id": "P01",
+    "slug": "secure-puppy",
+    "quad": "S",
+    "quadName": "안정형",
+    "cell": {
+      "a": 1,
+      "v": 1
+    },
+    "name": "안정형 강아지",
+    "nick": "믿는 만큼 꼬리 흔드는",
+    "quote": "답장 늦어도 괜찮아. 우리 사이는 그대로니까!",
+    "extras": [
+      "보고 싶었어! 그냥 그렇다고~",
+      "서운한 건 꼬리 말고 말로 할게."
+    ],
+    "tags": [
+      "#답장은_느긋",
+      "#서운하면_말로",
+      "#같이도_혼자도_OK"
+    ],
+    "intro": "가까운 사람을 믿는 게 자연스러운 인형이에요. 연락이 뜸해도 '바쁜가 보다' 하고 넘기고, 서운한 일은 쌓아 두지 않고 말로 풀어요. 곁에 있으면 이상하게 마음이 놓이는 사람이에요.",
+    "charms": [
+      "기분이 태도가 되지 않아요",
+      "고마움도 미안함도 바로 말해요"
+    ],
+    "triggers": [
+      "이유 없는 거리두기엔 갸웃해요",
+      "나만 맞춰 준다 느끼면 지쳐요"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "평범한 다정함으로 자주 세탁"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "서운함은 그날그날 살살 헹굼"
+      },
+      {
+        "icon": "LINE_DRY",
+        "param": null,
+        "text": "산책하며 햇볕에 말리면 뽀송"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "믿음 시험하는 장난 금지"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "오해는 대화 한 번에 쫙 펴져요"
+      }
+    ],
+    "tip": "안정형도 지칠 수 있어요. 늘 이해해 주는 쪽만 맡지 말고, 내가 바라는 것도 먼저 말해 보세요.",
+    "best": {
+      "id": "P06",
+      "why": "흔들리는 토끼에게 한결같은 꼬리는 최고의 안심"
+    },
+    "tricky": {
+      "id": "P10",
+      "why": "기다림이 길어지면 꼬리도 축 처져요"
+    },
+    "rarity": 10.5,
+    "rarityLabel": "스테디셀러",
+    "colors": {
+      "bg": "#FFE8A3",
+      "ribbon": "#F4CF5A",
+      "deep": "#614E04"
+    },
+    "image": {
+      "file": "plush_p01_secure_puppy.png",
+      "path": "assets/dist/plush_p01_secure_puppy_768.webp",
+      "w768": "plush_p01_secure_puppy_768.webp",
+      "w384": "plush_p01_secure_puppy_384.webp",
+      "w192": "plush_p01_secure_puppy_192.webp"
+    }
+  },
+  {
+    "id": "P02",
+    "slug": "secure-penguin",
+    "quad": "S",
+    "quadName": "안정형",
+    "cell": {
+      "a": 2,
+      "v": 1
+    },
+    "name": "안정형 펭귄",
+    "nick": "조약돌 챙겨 주는 다정이",
+    "quote": "너 생각나서 주웠어. 별거 아니야, 헤헤.",
+    "extras": [
+      "옹기종기 붙어 있으면 겨울도 안 추워.",
+      "오늘 어땠어? 하나도 빼먹지 말고 말해 줘!"
+    ],
+    "tags": [
+      "#작은선물_장인",
+      "#애정표현_부자",
+      "#옹기종기_좋아"
+    ],
+    "intro": "마음을 작은 행동으로 자주 보여 주는 인형이에요. 좋아하는 사람과 옹기종기 붙어 있을 때 가장 행복하고, 다퉈도 먼저 손을 내밀어요. 다만 표현이 줄어들면 살짝 시무룩해지는 귀여운 면도 있어요.",
+    "charms": [
+      "사소한 것까지 기억해 챙겨요",
+      "다퉈도 먼저 손 내밀 줄 알아요"
+    ],
+    "triggers": [
+      "내 표현에 반응이 없을 때",
+      "기념일을 나만 기억할 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "40",
+        "text": "따뜻한 리액션으로 자주 세탁"
+      },
+      {
+        "icon": "TUMBLE_LOW",
+        "param": null,
+        "text": "포옹 건조로 뽀송하게"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "받은 선물 까먹기 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "고마움은 말로 한 번 더 헹굼"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "서운함은 미지근한 대화로 펴요"
+      }
+    ],
+    "tip": "주는 기쁨이 큰 만큼 받는 연습도 해 보세요. '나도 이런 게 필요해'라고 말하는 건 부담이 아니라 또 하나의 선물이에요.",
+    "best": {
+      "id": "P03",
+      "why": "다정한 펭귄과 느긋한 카피바라, 온도 차가 딱 좋아요"
+    },
+    "tricky": {
+      "id": "P12",
+      "why": "펭귄이 다가갈수록 거북이는 등껍질로 쏙"
+    },
+    "rarity": 8.3,
+    "rarityLabel": "스테디셀러",
+    "colors": {
+      "bg": "#FEDDB7",
+      "ribbon": "#FFBE71",
+      "deep": "#6F4502"
+    },
+    "image": {
+      "file": "plush_p02_secure_penguin.png",
+      "path": "assets/dist/plush_p02_secure_penguin_768.webp",
+      "w768": "plush_p02_secure_penguin_768.webp",
+      "w384": "plush_p02_secure_penguin_384.webp",
+      "w192": "plush_p02_secure_penguin_192.webp"
+    }
+  },
+  {
+    "id": "P03",
+    "slug": "secure-capybara",
+    "quad": "S",
+    "quadName": "안정형",
+    "cell": {
+      "a": 1,
+      "v": 2
+    },
+    "name": "안정형 카피바라",
+    "nick": "귤 하나 얹고 평온한",
+    "quote": "같이 있어도 좋고, 따로 있어도 좋아. 평온~",
+    "extras": [
+      "급할 거 없어. 우리 천천히 가자.",
+      "화났냐고? 아니~ 온천 생각 중이었어."
+    ],
+    "tags": [
+      "#평온_그자체",
+      "#따로또같이",
+      "#멘탈_온천"
+    ],
+    "intro": "관계에 여유가 있는 인형이에요. 함께하는 시간도 혼자만의 시간도 똑같이 소중하고, 웬만한 일에는 흔들리지 않아요. 누구와도 무난하게 잘 지내서 주변에 사람이 자연스럽게 모여요.",
+    "charms": [
+      "감정 기복 없이 한결같아요",
+      "상대의 개인 시간을 존중해요"
+    ],
+    "triggers": [
+      "속을 모르겠다는 말을 들을 때",
+      "감정 표현을 계속 재촉받을 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "38",
+        "text": "미지근한 온천 온도로 세탁"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "혼자만의 시간엔 그늘 건조"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "빨리빨리 재촉 건조 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "가끔은 먼저 '좋아해' 헹굼"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "무던함 속 서운함도 살짝 펴기"
+      }
+    ],
+    "tip": "평온함이 상대에겐 무관심으로 보일 때가 있어요. 괜찮을 때도 '나 지금 좋아'라고 한 번씩 말로 알려 주세요.",
+    "best": {
+      "id": "P05",
+      "why": "카피바라 등 위는 아기오리의 최애 자리"
+    },
+    "tricky": {
+      "id": "P08",
+      "why": "평온한 얼굴이 호랑이 눈엔 무심해 보여요"
+    },
+    "rarity": 8.3,
+    "rarityLabel": "스테디셀러",
+    "colors": {
+      "bg": "#EEEBAF",
+      "ribbon": "#DBD575",
+      "deep": "#575203"
+    },
+    "image": {
+      "file": "plush_p03_secure_capybara.png",
+      "path": "assets/dist/plush_p03_secure_capybara_768.webp",
+      "w768": "plush_p03_secure_capybara_768.webp",
+      "w384": "plush_p03_secure_capybara_384.webp",
+      "w192": "plush_p03_secure_capybara_192.webp"
+    }
+  },
+  {
+    "id": "P04",
+    "slug": "secure-otter",
+    "quad": "S",
+    "quadName": "안정형",
+    "cell": {
+      "a": 2,
+      "v": 2
+    },
+    "name": "안정형 수달",
+    "nick": "잘 때도 손잡는",
+    "quote": "떠내려가지 않게, 손은 꼭 잡고 있을게.",
+    "extras": [
+      "혼자 조개 까는 시간도 필요해. 금방 올게!",
+      "우리 괜찮지? 응, 괜찮은 거 알아."
+    ],
+    "tags": [
+      "#손은_꼭",
+      "#밸런스_장인",
+      "#혼자도_잘놂"
+    ],
+    "intro": "친밀함과 독립 사이에서 균형을 잘 잡는 인형이에요. 혼자 노는 시간도 즐기지만, 잠들 땐 손을 꼭 잡고 싶어 해요. 가끔 확인이 필요할 때도 있지만 스스로 마음을 잘 다독이는 편이에요.",
+    "charms": [
+      "적당한 거리를 잘 맞춰요",
+      "필요할 땐 솔직하게 기대요"
+    ],
+    "triggers": [
+      "연락 패턴이 갑자기 바뀔 때",
+      "내 혼자 시간을 서운해할 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "하루 한 번 안부로 가볍게 세탁"
+      },
+      {
+        "icon": "LINE_DRY",
+        "param": null,
+        "text": "각자 시간에 바람 쐬면 뽀송"
+      },
+      {
+        "icon": "NO_WRING",
+        "param": null,
+        "text": "손 놓고 떠내려가기 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "불안할 땐 손잡기로 살살 헹굼"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "작은 오해는 그날 바로 펴기"
+      }
+    ],
+    "tip": "스스로를 달래는 힘이 좋은 인형이에요. 그 힘을 믿되 혼자 다 삭이지 말고, 가끔은 '손 한 번 잡아 줘'라고 말해 보세요.",
+    "best": {
+      "id": "P07",
+      "why": "쿨한 척하는 고양이 손도 스르르 잡아 줘요"
+    },
+    "tricky": {
+      "id": "P15",
+      "why": "손 내밀 때 빵빵해지면 수달도 당황해요"
+    },
+    "rarity": 7.4,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#FDDCA9",
+      "ribbon": "#F4C16F",
+      "deep": "#6A4903"
+    },
+    "image": {
+      "file": "plush_p04_secure_otter.png",
+      "path": "assets/dist/plush_p04_secure_otter_768.webp",
+      "w768": "plush_p04_secure_otter_768.webp",
+      "w384": "plush_p04_secure_otter_384.webp",
+      "w192": "plush_p04_secure_otter_192.webp"
+    }
+  },
+  {
+    "id": "P05",
+    "slug": "anxious-duckling",
+    "quad": "N",
+    "quadName": "불안형",
+    "cell": {
+      "a": 3,
+      "v": 1
+    },
+    "name": "불안형 아기오리",
+    "nick": "어디든 졸졸 따라가는",
+    "quote": "어디 가? 나도 갈래! 아니 그냥… 같이 있고 싶어서.",
+    "extras": [
+      "처음 본 순간부터 너만 따라다니기로 했어.",
+      "답장 몇 분 걸렸는지 안 셌어. 진짜야."
+    ],
+    "tags": [
+      "#졸졸_따라감",
+      "#표현_만렙",
+      "#답장_1순위"
+    ],
+    "intro": "마음을 준 사람을 졸졸 따라가는 인형이에요. 좋아하는 마음을 숨기지 못해서 표현도 연락도 먼저 하는 편이에요. 그만큼 상대의 반응이 조금만 식어도 금방 마음이 쓰이고, 확인받고 싶어져요.",
+    "charms": [
+      "마음을 아낌없이 표현해요",
+      "상대의 작은 변화도 알아채요"
+    ],
+    "triggers": [
+      "나만 더 좋아하는 것 같을 때",
+      "답장 텀이 평소보다 길 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "20",
+        "text": "답장은 20분 안에 헹궈 주세요"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "'나도 보고 싶었어'로 세탁"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "갑자기 식은 태도 건조 금지"
+      },
+      {
+        "icon": "NET",
+        "param": null,
+        "text": "낯선 곳에선 안심망 필수"
+      },
+      {
+        "icon": "TUMBLE_LOW",
+        "param": null,
+        "text": "수다는 끝까지 들어 주면 뽀송"
+      }
+    ],
+    "tip": "따라가는 마음이 커질수록 내 발걸음은 작아질 수 있어요. 오늘은 상대 말고 '내가 좋아하는 것' 하나를 먼저 챙겨 보세요.",
+    "best": {
+      "id": "P03",
+      "why": "카피바라 등 위가 오리에겐 제일 편한 자리"
+    },
+    "tricky": {
+      "id": "P09",
+      "why": "판다의 대나무 타임에 오리는 길을 잃어요"
+    },
+    "rarity": 6.8,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#FED1C7",
+      "ribbon": "#FEAF9F",
+      "deep": "#8C2716"
+    },
+    "image": {
+      "file": "plush_p05_anxious_duckling.png",
+      "path": "assets/dist/plush_p05_anxious_duckling_768.webp",
+      "w768": "plush_p05_anxious_duckling_768.webp",
+      "w384": "plush_p05_anxious_duckling_384.webp",
+      "w192": "plush_p05_anxious_duckling_192.webp"
+    }
+  },
+  {
+    "id": "P06",
+    "slug": "anxious-bunny",
+    "quad": "N",
+    "quadName": "불안형",
+    "cell": {
+      "a": 4,
+      "v": 1
+    },
+    "name": "불안형 토끼",
+    "nick": "외로우면 안 되는",
+    "quote": "읽었으면 답장해 줘… 아니 괜찮아… 아니 안 괜찮아.",
+    "extras": [
+      "나 없이도 잘 지내면… 그건 그거대로 서운해.",
+      "좋아한다고 말해 줘. 한 번 더. 아니 세 번."
+    ],
+    "tags": [
+      "#확인_또_확인",
+      "#외로움_취약",
+      "#사랑_과충전"
+    ],
+    "intro": "사랑이 곧 에너지인 인형이에요. 마음이 크고 깊은 만큼 연락이 끊기거나 말투가 조금만 달라져도 마음이 요동쳐요. '나 좋아해?'를 여러 번 묻는 건 의심해서가 아니라, 확인할 때마다 안심되기 때문이에요.",
+    "charms": [
+      "좋아하면 온 마음을 다해요",
+      "상대 감정에 누구보다 민감해요"
+    ],
+    "triggers": [
+      "'1'이 사라지지 않는 긴 시간",
+      "설명 없는 애매한 거리두기"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "10",
+        "text": "답장은 10분 안에, 짧아도 OK"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "'좋아해'는 하루 세 번 헹굼"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "잠수는 절대 건조기 금지"
+      },
+      {
+        "icon": "NET",
+        "param": null,
+        "text": "자리 비울 땐 미리 안심망"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "불안한 밤엔 목소리로 펴 주기"
+      }
+    ],
+    "tip": "불안이 올라오면 확인 메시지를 보내기 전에 10분만 나를 먼저 달래 보세요. 좋아하는 노래, 따뜻한 물 한 잔. 사랑받을 자격은 답장 속도와 상관없어요.",
+    "best": {
+      "id": "P01",
+      "why": "한결같은 꼬리 앞에선 토끼 귀도 편히 내려와요"
+    },
+    "tricky": {
+      "id": "P10",
+      "why": "토끼가 부를수록 올빼미는 먼 가지로 날아가요"
+    },
+    "rarity": 3.3,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#FFC4D6",
+      "ribbon": "#FAA2BF",
+      "deep": "#88234F"
+    },
+    "image": {
+      "file": "plush_p06_anxious_bunny.png",
+      "path": "assets/dist/plush_p06_anxious_bunny_768.webp",
+      "w768": "plush_p06_anxious_bunny_768.webp",
+      "w384": "plush_p06_anxious_bunny_384.webp",
+      "w192": "plush_p06_anxious_bunny_192.webp"
+    }
+  },
+  {
+    "id": "P07",
+    "slug": "anxious-cat",
+    "quad": "N",
+    "quadName": "불안형",
+    "cell": {
+      "a": 3,
+      "v": 2
+    },
+    "name": "불안형 고양이",
+    "nick": "쿨한 척 1분마다 폰 보는",
+    "quote": "답장? 신경 안 써. (방금 새로고침 7번 함)",
+    "extras": [
+      "먼저 연락하면 지는 거야. …근데 보고 싶다.",
+      "괜찮냐고? 응 괜찮아. 안 괜찮은데 괜찮아."
+    ],
+    "tags": [
+      "#쿨한척_장인",
+      "#속으로_새로고침",
+      "#먼저는_못해"
+    ],
+    "intro": "겉으로는 도도하고 쿨해 보이지만, 속으로는 상대의 답장과 표정을 누구보다 세심하게 살피는 인형이에요. 서운해도 티 내기보다 혼자 곱씹는 편이라, 가까운 사람도 속마음을 잘 몰라요.",
+    "charms": [
+      "상대 기분을 귀신같이 알아채요",
+      "좋아하는 사람에겐 은근 다정해요"
+    ],
+    "triggers": [
+      "먼저 연락해야 할 것 같을 때",
+      "한참 뒤에 온 짧은 답장"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "답장은 30분 안에, 이모티콘 추가"
+      },
+      {
+        "icon": "NO_WRING",
+        "param": null,
+        "text": "'왜 그래?' 비틀어 짜기 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "먼저 '보고 싶었어' 헹굼"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "삐졌을 땐 그늘에서 잠깐 대기"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "츤츤 말투 아래 진심을 펴 주기"
+      }
+    ],
+    "tip": "쿨한 척은 마음을 지켜 주지만, 상대가 나를 알 기회도 막아요. 서운함은 '나 이거 좀 서운했어' 한 문장이면 충분해요.",
+    "best": {
+      "id": "P04",
+      "why": "쿨한 척 뒤의 불안까지 손잡아 주는 수달"
+    },
+    "tricky": {
+      "id": "P11",
+      "why": "느긋한 답장에 고양이 속은 새로고침 중"
+    },
+    "rarity": 6.8,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#FFCDD2",
+      "ribbon": "#FEAAB5",
+      "deep": "#8B223C"
+    },
+    "image": {
+      "file": "plush_p07_anxious_cat.png",
+      "path": "assets/dist/plush_p07_anxious_cat_768.webp",
+      "w768": "plush_p07_anxious_cat_768.webp",
+      "w384": "plush_p07_anxious_cat_384.webp",
+      "w192": "plush_p07_anxious_cat_192.webp"
+    }
+  },
+  {
+    "id": "P08",
+    "slug": "anxious-tiger",
+    "quad": "N",
+    "quadName": "불안형",
+    "cell": {
+      "a": 4,
+      "v": 2
+    },
+    "name": "불안형 호랑이",
+    "nick": "불안하면 으르렁대는",
+    "quote": "어흥! …사실 무서워서 그래. 나 두고 가지 마.",
+    "extras": [
+      "화난 거 아니야! 화났어! 아니 서운했어…",
+      "먼저 연락 안 하면 나도 안 해. (하고 싶음)"
+    ],
+    "tags": [
+      "#겉바속촉",
+      "#으르렁은_SOS",
+      "#서운함_폭발"
+    ],
+    "intro": "불안이 커지면 오히려 센 척을 하는 인형이에요. 서운할 때 '괜찮아' 대신 '어흥!'이 먼저 나와서 오해를 사기도 해요. 하지만 그 으르렁은 사실 '나 좀 봐 줘'라는 구조 신호예요.",
+    "charms": [
+      "관계에 누구보다 진심이에요",
+      "화해하고 나면 누구보다 다정해요"
+    ],
+    "triggers": [
+      "대답 없이 대화가 끝날 때",
+      "우선순위에서 밀렸다고 느낄 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "10",
+        "text": "으르렁은 10분 안에 달래 주기"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "'또 왜 그래' 표백 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "센 말 뒤 진심을 살살 헹굼"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "싸운 채 잠수는 건조 금지"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "화해는 따뜻한 포옹으로 다림"
+      }
+    ],
+    "tip": "으르렁하기 전에 딱 3초, '나 지금 불안해'라고 이름 붙여 보세요. 화 대신 불안을 말하면 상대도 발톱 대신 마음을 봐요.",
+    "best": {
+      "id": "P02",
+      "why": "으르렁 뒤의 눈물을 알아채고 조약돌을 건네요"
+    },
+    "tricky": {
+      "id": "P12",
+      "why": "으르렁할수록 거북이는 등껍질 속으로"
+    },
+    "rarity": 4.0,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#F7C5E6",
+      "ribbon": "#EFA4D7",
+      "deep": "#7E2869"
+    },
+    "image": {
+      "file": "plush_p08_anxious_tiger.png",
+      "path": "assets/dist/plush_p08_anxious_tiger_768.webp",
+      "w768": "plush_p08_anxious_tiger_768.webp",
+      "w384": "plush_p08_anxious_tiger_384.webp",
+      "w192": "plush_p08_anxious_tiger_192.webp"
+    }
+  },
+  {
+    "id": "P09",
+    "slug": "avoidant-panda",
+    "quad": "V",
+    "quadName": "회피형",
+    "cell": {
+      "a": 1,
+      "v": 3
+    },
+    "name": "회피형 판다",
+    "nick": "대나무 타임은 혼자 갖는",
+    "quote": "너 좋아해. 근데 지금은 혼자 대나무 먹을래.",
+    "extras": [
+      "연락 안 한 거 싫어서 아니야. 충전 중이야.",
+      "판다는 원래 혼자 사는 동물이래. 진짜야."
+    ],
+    "tags": [
+      "#혼자가_충전",
+      "#내시간_소중",
+      "#연락은_가끔"
+    ],
+    "intro": "사람을 좋아하지만 혼자만의 시간이 있어야 다시 웃을 수 있는 인형이에요. 실제로 야생 판다는 혼자 지내는 동물이래요. 연락이 뜸해도 마음이 식은 게 아니라, 충전이 끝나면 다정하게 돌아와요.",
+    "charms": [
+      "서로의 시간을 존중해 줘요",
+      "함께할 땐 온전히 집중해요"
+    ],
+    "triggers": [
+      "하루 종일 실시간 보고를 원할 때",
+      "혼자 있고 싶은 걸 서운해할 때"
+    ],
+    "care": [
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "대나무 타임엔 그늘 건조 필수"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "'왜 연락 안 해?' 건조 금지"
+      },
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "연락은 미지근하게, 대신 꾸준히"
+      },
+      {
+        "icon": "LINE_DRY",
+        "param": null,
+        "text": "약속은 미리 걸어 두면 편안"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "먼저 온 연락은 크게 칭찬"
+      }
+    ],
+    "tip": "혼자 시간이 필요할 땐 사라지기 전에 '나 충전하고 올게!' 한마디만 남겨 주세요. 그 한마디가 상대에겐 커다란 안심이에요.",
+    "best": {
+      "id": "P04",
+      "why": "각자 놀다가도 잘 땐 손잡는 사이"
+    },
+    "tricky": {
+      "id": "P05",
+      "why": "졸졸 따라오면 대나무 타임이 사라져요"
+    },
+    "rarity": 6.9,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#D7EEC2",
+      "ribbon": "#B8DC98",
+      "deep": "#395C02"
+    },
+    "image": {
+      "file": "plush_p09_avoidant_panda.png",
+      "path": "assets/dist/plush_p09_avoidant_panda_768.webp",
+      "w768": "plush_p09_avoidant_panda_768.webp",
+      "w384": "plush_p09_avoidant_panda_384.webp",
+      "w192": "plush_p09_avoidant_panda_192.webp"
+    }
+  },
+  {
+    "id": "P10",
+    "slug": "avoidant-owl",
+    "quad": "V",
+    "quadName": "회피형",
+    "cell": {
+      "a": 1,
+      "v": 4
+    },
+    "name": "회피형 올빼미",
+    "nick": "혼자가 제일 편한",
+    "quote": "난 혼자서도 괜찮아. …진짜로 괜찮은 편이야.",
+    "extras": [
+      "감정 얘기? 그건 내일의 내가 할게.",
+      "관심 없는 거 아니야. 멀리서 다 보고 있어."
+    ],
+    "tags": [
+      "#독립_만렙",
+      "#감정은_비공개",
+      "#멀리서_관찰"
+    ],
+    "intro": "스스로 모든 걸 해결하는 게 편한 인형이에요. 누군가에게 기대는 것도, 누가 나에게 기대는 것도 조금 부담스러워요. 차가워 보여도 사실은 멀리서 조용히 지켜보며 아끼는 방식을 가졌어요.",
+    "charms": [
+      "위기에도 침착하고 든든해요",
+      "상대를 통제하려 하지 않아요"
+    ],
+    "triggers": [
+      "갑자기 깊은 감정 대화를 원할 때",
+      "'우리 무슨 사이야?' 정의 요구"
+    ],
+    "care": [
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "밤에 혼자 말리는 시간 필수"
+      },
+      {
+        "icon": "NO_WRING",
+        "param": null,
+        "text": "속마음 비틀어 짜기 금지"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "관계 속도 재촉 건조 금지"
+      },
+      {
+        "icon": "WASH",
+        "param": "20",
+        "text": "감정 대화는 20분씩 나눠 세탁"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "칭찬은 담백하게, 저온으로"
+      }
+    ],
+    "tip": "혼자서도 괜찮은 건 멋진 힘이에요. 다만 가까운 사람에게 한 번쯤 '이건 좀 도와줄래?'라고 기대 보세요. 기대는 것도 연습하면 늘어요.",
+    "best": {
+      "id": "P03",
+      "why": "재촉 없는 카피바라 옆에선 올빼미도 낮에 나와요"
+    },
+    "tricky": {
+      "id": "P06",
+      "why": "토끼가 부를수록 더 먼 가지로 날아가게 돼요"
+    },
+    "rarity": 3.8,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#C5EEDB",
+      "ribbon": "#9CDDC0",
+      "deep": "#015F44"
+    },
+    "image": {
+      "file": "plush_p10_avoidant_owl.png",
+      "path": "assets/dist/plush_p10_avoidant_owl_768.webp",
+      "w768": "plush_p10_avoidant_owl_768.webp",
+      "w384": "plush_p10_avoidant_owl_384.webp",
+      "w192": "plush_p10_avoidant_owl_192.webp"
+    }
+  },
+  {
+    "id": "P11",
+    "slug": "avoidant-sloth",
+    "quad": "V",
+    "quadName": "회피형",
+    "cell": {
+      "a": 2,
+      "v": 3
+    },
+    "name": "회피형 나무늘보",
+    "nick": "천천히 스며드는",
+    "quote": "답장 느려서 미안… 근데 3시간 동안 생각한 거야.",
+    "extras": [
+      "마음 여는 데 시간이 좀 걸려. 대신 오래가.",
+      "우리… 천…천…히… 친해지자…"
+    ],
+    "tags": [
+      "#답장은_느림",
+      "#마음은_진심",
+      "#슬로우_스타터"
+    ],
+    "intro": "마음을 여는 데 시간이 걸리는 인형이에요. 답장도 표현도 느린 편이라 오해를 받기도 하지만, 한번 마음을 연 사람에겐 오래오래 매달려 있어요. 빠른 속도에 떠밀리면 오히려 더 멀어지는 타입이에요.",
+    "charms": [
+      "한번 친해지면 오래 곁에 있어요",
+      "말보다 행동이 꾸준해요"
+    ],
+    "triggers": [
+      "빨리 답하라고 재촉받을 때",
+      "관계 속도가 너무 빠를 때"
+    ],
+    "care": [
+      {
+        "icon": "TUMBLE_LOW",
+        "param": null,
+        "text": "저온으로 천천히 건조해 주세요"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "빨리빨리 재촉 건조 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "느린 답장도 진심으로 헹궈 읽기"
+      },
+      {
+        "icon": "LINE_DRY",
+        "param": null,
+        "text": "익숙한 루틴에 걸어 두면 안심"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "서운함은 쌓이기 전에 살짝"
+      }
+    ],
+    "tip": "느린 건 잘못이 아니에요. 다만 답이 늦어질 땐 '생각 중이야, 이따 길게 답할게'라고 먼저 알려 주면 상대의 기다림이 훨씬 편해져요.",
+    "best": {
+      "id": "P04",
+      "why": "천천히 가도 손은 놓지 않는 수달"
+    },
+    "tricky": {
+      "id": "P07",
+      "why": "느긋한 답장이 고양이에겐 새로고침 지옥"
+    },
+    "rarity": 7.1,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#D8E7B7",
+      "ribbon": "#BED488",
+      "deep": "#465801"
+    },
+    "image": {
+      "file": "plush_p11_avoidant_sloth.png",
+      "path": "assets/dist/plush_p11_avoidant_sloth_768.webp",
+      "w768": "plush_p11_avoidant_sloth_768.webp",
+      "w384": "plush_p11_avoidant_sloth_384.webp",
+      "w192": "plush_p11_avoidant_sloth_192.webp"
+    }
+  },
+  {
+    "id": "P12",
+    "slug": "avoidant-turtle",
+    "quad": "V",
+    "quadName": "회피형",
+    "cell": {
+      "a": 2,
+      "v": 4
+    },
+    "name": "회피형 거북이",
+    "nick": "감정이 커지면 등껍질로 쏙",
+    "quote": "잠깐만… 등껍질 안에서 생각 좀 하고 나올게.",
+    "extras": [
+      "싸우기 싫어서 숨은 거야. 네가 싫어서가 아니야.",
+      "나오면 제일 먼저 너한테 갈게."
+    ],
+    "tags": [
+      "#일단_쏙",
+      "#갈등_회피",
+      "#나오면_다정"
+    ],
+    "intro": "감정이 크게 일렁이면 일단 등껍질 속으로 숨는 인형이에요. 싸움이나 진지한 대화 앞에서 입을 닫는 건 상대가 싫어서가 아니라, 마음이 너무 시끄러워서예요. 안전하다고 느끼면 천천히 고개를 내밀어요.",
+    "charms": [
+      "쉽게 화내거나 상처 주지 않아요",
+      "정리한 뒤엔 솔직하게 말해요"
+    ],
+    "triggers": [
+      "언성이 높아지는 대화",
+      "지금 당장 결론 내자고 할 때"
+    ],
+    "care": [
+      {
+        "icon": "NET",
+        "param": null,
+        "text": "다툴 땐 안심망부터 씌우기"
+      },
+      {
+        "icon": "NO_WRING",
+        "param": null,
+        "text": "등껍질 억지로 열기 금지"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "하루쯤 그늘에 두면 나와요"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "나오면 부드러운 말로 헹굼"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "'지금 당장 말해' 건조 금지"
+      }
+    ],
+    "tip": "숨고 싶을 땐 사라지기 전에 '정리할 시간이 필요해, 내일 얘기하자'라고 돌아올 시간을 약속해 주세요. 숨는 것과 약속하고 쉬는 건 달라요.",
+    "best": {
+      "id": "P01",
+      "why": "등껍질에서 나올 때까지 꼬리 흔들며 기다려요"
+    },
+    "tricky": {
+      "id": "P08",
+      "why": "으르렁 소리에 등껍질 문이 쾅 닫혀요"
+    },
+    "rarity": 4.7,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#B3E9F4",
+      "ribbon": "#7FD7E8",
+      "deep": "#015A67"
+    },
+    "image": {
+      "file": "plush_p12_avoidant_turtle.png",
+      "path": "assets/dist/plush_p12_avoidant_turtle_768.webp",
+      "w768": "plush_p12_avoidant_turtle_768.webp",
+      "w384": "plush_p12_avoidant_turtle_384.webp",
+      "w192": "plush_p12_avoidant_turtle_192.webp"
+    }
+  },
+  {
+    "id": "P13",
+    "slug": "fearful-mole",
+    "quad": "F",
+    "quadName": "혼란형",
+    "cell": {
+      "a": 3,
+      "v": 3
+    },
+    "name": "혼란형 두더지",
+    "nick": "쏙 나왔다 쏙 숨는",
+    "quote": "보고 싶어! …아냐, 나 오늘은 좀 숨어 있을게.",
+    "extras": [
+      "다가오면 숨고 싶고, 멀어지면 붙잡고 싶어.",
+      "두더지 게임 아니야… 마음이 그런 거야."
+    ],
+    "tags": [
+      "#밀당아님_진심",
+      "#나왔다_숨었다",
+      "#마음_두더지게임"
+    ],
+    "intro": "가까워지고 싶은 마음과 다칠까 봐 숨고 싶은 마음이 번갈아 고개를 드는 인형이에요. 어제는 먼저 연락했다가 오늘은 조용해져서 밀당으로 오해받지만, 사실은 마음이 두 방향으로 동시에 달리는 중이에요.",
+    "charms": [
+      "진심이 통하면 누구보다 깊어요",
+      "상대의 불안에 공감을 잘해요"
+    ],
+    "triggers": [
+      "관계가 갑자기 가까워질 때",
+      "반대로 멀어진다고 느낄 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "늘 같은 온도로 꾸준히 세탁"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "숨었을 때 뿅망치 금지"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "숨은 날엔 굴 앞에서 기다리기"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "나왔을 땐 '반가워'로 헹굼"
+      },
+      {
+        "icon": "IRON_LOW",
+        "param": null,
+        "text": "들쭉날쭉한 마음은 천천히 펴요"
+      }
+    ],
+    "tip": "마음이 오락가락할 땐 행동 대신 말로 중계해 보세요. '가까워지고 싶은데 좀 무서워'라고 말하면, 상대가 기다리는 법을 알게 돼요.",
+    "best": {
+      "id": "P02",
+      "why": "숨었다 나올 때마다 조약돌을 건네는 한결같음"
+    },
+    "tricky": {
+      "id": "P16",
+      "why": "둘 다 흔들리면 누가 붙잡아 주죠?"
+    },
+    "rarity": 7.2,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#EFCDF7",
+      "ribbon": "#E3AEEF",
+      "deep": "#702F7E"
+    },
+    "image": {
+      "file": "plush_p13_fearful_mole.png",
+      "path": "assets/dist/plush_p13_fearful_mole_768.webp",
+      "w768": "plush_p13_fearful_mole_768.webp",
+      "w384": "plush_p13_fearful_mole_384.webp",
+      "w192": "plush_p13_fearful_mole_192.webp"
+    }
+  },
+  {
+    "id": "P14",
+    "slug": "fearful-hedgehog",
+    "quad": "F",
+    "quadName": "혼란형",
+    "cell": {
+      "a": 4,
+      "v": 3
+    },
+    "name": "혼란형 고슴도치",
+    "nick": "안기고 싶은데 가시가 서는",
+    "quote": "안아 줘. 아, 가까이 오진 마. 아니 안아 줘…",
+    "extras": [
+      "가시가 선 건 무서워서야. 너 찌르려는 거 아니야.",
+      "고슴도치 딜레마? 그거 완전 내 얘기야."
+    ],
+    "tags": [
+      "#고슴도치_딜레마",
+      "#가시는_방어용",
+      "#속은_말랑"
+    ],
+    "intro": "누구보다 사랑받고 싶지만, 가까워질수록 상처받을까 봐 가시가 먼저 서는 인형이에요. 날카로운 말이 튀어나와 후회하는 날도 있어요. 하지만 가시 아래엔 말랑한 배가 있고, 안전하다고 느끼면 가시가 천천히 누워요.",
+    "charms": [
+      "상처의 무게를 누구보다 알아요",
+      "믿게 되면 끝까지 지켜 줘요"
+    ],
+    "triggers": [
+      "예고 없이 훅 다가올 때",
+      "작은 실수에 비난받는다 느낄 때"
+    ],
+    "care": [
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "가시 방향 따라 살살 손세탁"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "지난 상처 표백 금지"
+      },
+      {
+        "icon": "TUMBLE_LOW",
+        "param": null,
+        "text": "다가갈 땐 천천히, 저온으로"
+      },
+      {
+        "icon": "NET",
+        "param": null,
+        "text": "큰 소리 대신 안심망 말투"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "가시 선 날엔 조용히 곁에만"
+      }
+    ],
+    "tip": "가시가 서는 순간을 알아차리는 것만으로도 절반은 성공이에요. '지금 나 방어 중인가 봐'라고 스스로에게 말해 주세요. 버거울 땐 믿을 만한 사람과 나눠도 좋아요.",
+    "best": {
+      "id": "P01",
+      "why": "가시가 서도 강아지 꼬리는 계속 흔들려요"
+    },
+    "tricky": {
+      "id": "P08",
+      "why": "가시와 발톱이 동시에 서요"
+    },
+    "rarity": 4.7,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#E8C8F6",
+      "ribbon": "#DBA9EF",
+      "deep": "#6D3182"
+    },
+    "image": {
+      "file": "plush_p14_fearful_hedgehog.png",
+      "path": "assets/dist/plush_p14_fearful_hedgehog_768.webp",
+      "w768": "plush_p14_fearful_hedgehog_768.webp",
+      "w384": "plush_p14_fearful_hedgehog_384.webp",
+      "w192": "plush_p14_fearful_hedgehog_192.webp"
+    }
+  },
+  {
+    "id": "P15",
+    "slug": "fearful-pufferfish",
+    "quad": "F",
+    "quadName": "혼란형",
+    "cell": {
+      "a": 3,
+      "v": 4
+    },
+    "name": "혼란형 복어",
+    "nick": "상처받으면 빵빵해지는",
+    "quote": "나 화 안 났어. (빵빵) 진짜 안 났다고. (빵빵빵)",
+    "extras": [
+      "빵빵해진 건 나를 지키는 방법이야.",
+      "바람 빠지면 먼저 말할게. 조금만 기다려."
+    ],
+    "tags": [
+      "#빵빵_방어모드",
+      "#괜찮은척_1등",
+      "#바람빼는_중"
+    ],
+    "intro": "마음이 다치면 몸을 빵빵하게 부풀려 스스로를 지키는 인형이에요. 서운한 순간엔 '괜찮아'라며 거리를 두지만, 사실은 누군가 먼저 알아봐 주길 바라요. 바람이 빠지면 그제야 진짜 마음을 꺼내요.",
+    "charms": [
+      "혼자서도 버티는 힘이 있어요",
+      "진심을 꺼내면 누구보다 솔직해요"
+    ],
+    "triggers": [
+      "농담처럼 던진 가시 돋친 말",
+      "내 마음을 멋대로 단정할 때"
+    ],
+    "care": [
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "빵빵할 땐 조용히 바람 빼는 시간"
+      },
+      {
+        "icon": "NO_WRING",
+        "param": null,
+        "text": "억지로 꾹 누르기 금지"
+      },
+      {
+        "icon": "WASH",
+        "param": "30",
+        "text": "30분 뒤 '괜찮아?' 한 번 더"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "'예민하다'는 말 표백 금지"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "바람 빠지면 살살 안아 주기"
+      }
+    ],
+    "tip": "'괜찮아'가 습관이 되면 진짜 괜찮은 때를 놓쳐요. 부풀기 시작할 때 '나 지금 조금 상처받았어'라고 짧게라도 말해 보세요.",
+    "best": {
+      "id": "P03",
+      "why": "빵빵해져도 카피바라는 그냥 옆에 있어 줘요"
+    },
+    "tricky": {
+      "id": "P06",
+      "why": "토끼가 확인할수록 복어는 더 빵빵"
+    },
+    "rarity": 5.3,
+    "rarityLabel": "인기템",
+    "colors": {
+      "bg": "#D0D7FE",
+      "ribbon": "#B4BEFE",
+      "deep": "#40429A"
+    },
+    "image": {
+      "file": "plush_p15_fearful_pufferfish.png",
+      "path": "assets/dist/plush_p15_fearful_pufferfish_768.webp",
+      "w768": "plush_p15_fearful_pufferfish_768.webp",
+      "w384": "plush_p15_fearful_pufferfish_384.webp",
+      "w192": "plush_p15_fearful_pufferfish_192.webp"
+    }
+  },
+  {
+    "id": "P16",
+    "slug": "fearful-jellyfish",
+    "quad": "F",
+    "quadName": "혼란형",
+    "cell": {
+      "a": 4,
+      "v": 4
+    },
+    "name": "혼란형 해파리",
+    "nick": "마음이 파도를 타는",
+    "quote": "가까이 와 줘… 근데 너무 가까우면 찌릿할지도.",
+    "extras": [
+      "파도가 데려가는 대로 흔들리는 중이야.",
+      "투명해서 다 보일 것 같지? 나도 내 맘 몰라."
+    ],
+    "tags": [
+      "#감정_파도타기",
+      "#투명한_진심",
+      "#찌릿_주의"
+    ],
+    "intro": "사랑받고 싶은 마음과 상처받기 싫은 마음이 파도처럼 번갈아 밀려오는 인형이에요. 가까워졌다 멀어졌다를 반복해 스스로도 지칠 때가 있어요. 하지만 누구보다 섬세하게 사람을 느끼는, 반짝이는 마음을 가졌어요.",
+    "charms": [
+      "감정을 섬세하게 읽어 내요",
+      "믿게 되면 온 마음으로 빛나요"
+    ],
+    "triggers": [
+      "예측할 수 없는 상대의 태도",
+      "떠날 것 같은 작은 신호"
+    ],
+    "care": [
+      {
+        "icon": "NET",
+        "param": null,
+        "text": "늘 같은 온도의 안심망 필수"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "촉수는 살살, 손세탁만"
+      },
+      {
+        "icon": "NO_TUMBLE",
+        "param": null,
+        "text": "갑작스러운 태도 변화 금지"
+      },
+      {
+        "icon": "SHADE_DRY",
+        "param": null,
+        "text": "찌릿한 날엔 잔잔한 물에서 쉬기"
+      },
+      {
+        "icon": "DRYCLEAN",
+        "param": null,
+        "text": "마음이 무거우면 전문가 케어 OK"
+      }
+    ],
+    "tip": "마음의 파도는 약함이 아니라 섬세함이에요. 흔들릴 때 붙잡을 나만의 닻(산책, 일기, 믿는 사람)을 정해 두세요. 너무 버거우면 전문가에게 도움을 청하는 것도 용기예요.",
+    "best": {
+      "id": "P04",
+      "why": "떠내려가지 않게 손 꼭 잡아 주는 수달"
+    },
+    "tricky": {
+      "id": "P13",
+      "why": "둘 다 파도를 타면 멀미가 두 배"
+    },
+    "rarity": 4.0,
+    "rarityLabel": "레어",
+    "colors": {
+      "bg": "#D9CCFF",
+      "ribbon": "#C5B0FD",
+      "deep": "#593992"
+    },
+    "image": {
+      "file": "plush_p16_fearful_jellyfish.png",
+      "path": "assets/dist/plush_p16_fearful_jellyfish_768.webp",
+      "w768": "plush_p16_fearful_jellyfish_768.webp",
+      "w384": "plush_p16_fearful_jellyfish_384.webp",
+      "w192": "plush_p16_fearful_jellyfish_192.webp"
+    }
+  },
+  {
+    "id": "P17",
+    "slug": "secret-teddy",
+    "quad": "B",
+    "quadName": "시크릿",
+    "cell": null,
+    "name": "시크릿 테디베어",
+    "nick": "모든 애착인형의 원조",
+    "quote": "네 마음 다 알아. 나도 조금씩 다 닮았거든.",
+    "extras": [
+      "시크릿 뽑은 거 축하해! 인증샷 필수.",
+      "만나는 사람마다 내 모양이 조금씩 달라져."
+    ],
+    "tags": [
+      "#시크릿",
+      "#원조_애착인형",
+      "#밸런스_끝판왕"
+    ],
+    "intro": "불안도 회피도 딱 한가운데, 네 가지 마음을 조금씩 다 가진 인형이에요. 그래서 누구를 만나느냐에 따라 모양이 달라지고, 어떤 인형의 마음도 이해할 수 있어요. 모든 애착인형의 시작, 테디베어가 당신을 골랐어요.",
+    "charms": [
+      "어떤 유형과도 말이 통해요",
+      "상황에 맞게 유연하게 변해요"
+    ],
+    "triggers": [
+      "모두에게 맞추다 나를 잃을 때",
+      "나도 내 마음을 모를 때"
+    ],
+    "care": [
+      {
+        "icon": "WASH",
+        "param": "36.5",
+        "text": "체온 36.5°로 세탁 권장"
+      },
+      {
+        "icon": "HANDWASH",
+        "param": null,
+        "text": "맞춰 주느라 닳은 곳 수선"
+      },
+      {
+        "icon": "LINE_DRY",
+        "param": null,
+        "text": "가끔은 나만 보는 곳에 걸기"
+      },
+      {
+        "icon": "NO_BLEACH",
+        "param": null,
+        "text": "내 색깔 빼기 금지"
+      },
+      {
+        "icon": "DRYCLEAN",
+        "param": null,
+        "text": "레어템이니 정성껏 보관"
+      }
+    ],
+    "tip": "균형 잡힌 마음은 큰 장점이지만, 관계마다 모양을 바꾸다 보면 '진짜 나'를 잊기 쉬워요. 오늘 하루 내가 가장 편했던 순간을 기록해 보세요.",
+    "best": {
+      "id": "P01",
+      "why": "원조 애착인형과 원조 댕댕이의 만남"
+    },
+    "tricky": {
+      "id": null,
+      "why": "조심할 인형은 없어요. 대신 다 맞춰 주다 지친 나 자신!"
+    },
+    "rarity": 1.1,
+    "rarityLabel": "시크릿",
+    "colors": {
+      "bg": "#FFF1CC",
+      "ribbon": "#E9C77B",
+      "deep": "#6A4B00"
+    },
+    "image": {
+      "file": "plush_p17_secret_teddy.png",
+      "path": "assets/dist/plush_p17_secret_teddy_768.webp",
+      "w768": "plush_p17_secret_teddy_768.webp",
+      "w384": "plush_p17_secret_teddy_384.webp",
+      "w192": "plush_p17_secret_teddy_192.webp"
+    }
+  }
+]
