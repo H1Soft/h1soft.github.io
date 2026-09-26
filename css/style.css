@@ -1779,3 +1779,5 @@ details p {
 
 /* Attachment Plush: uses the established lifestyle card layout. */
 .life-card--attachment{background:#FFF9F1;border-color:#EADFD6;color:#2E2430}.life-card--attachment .life-card__badge{background:#FFCDD2;color:#8B223C}.life-card--attachment>img{object-fit:contain}.life-card--attachment .life-card__head{color:#2E2430}
+
+.life-card--attachment .life-card__attachment-art{display:block;width:clamp(144px,16vw,160px);height:auto;aspect-ratio:1;object-fit:contain;flex:none;align-self:flex-start}
