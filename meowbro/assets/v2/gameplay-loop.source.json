@@ -1,0 +1,23 @@
+{
+	"content_version": "nyangbro-0.15.2",
+	"engine": {
+		"build": "official",
+		"hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+		"hex": 263938,
+		"major": 4,
+		"minor": 7,
+		"patch": 2,
+		"status": "stable",
+		"string": "4.7.2-stable (official)",
+		"timestamp": 0
+	},
+	"final_boss_hp": 14242.0,
+	"final_hp": 14.1666666666667,
+	"fixture": "Attainable LV.4 sniper branch, LV.3 armor/boots, LV.2 turret, LV.18 hero. Real EncounterDirector frost boss 5. Reachable initial position and real icicle attack index selected for a repeatable opening. Movement supplied as joystick input; continuous real simulation, damage and normal boss behavior thereafter. No fake projectiles, stat overrides, health resets or visual compositing.",
+	"frames": 240,
+	"platform": "macOS",
+	"production_code_modified": false,
+	"render": "Direct 540x960 SubViewport; 60 simulation frames/sec, every second rendered frame saved for 30fps output",
+	"save_root": "/private/tmp/nyangbro-landing-v2/isolated-save",
+	"source": "Production main.tscn, GameWorld, WorldRenderer, CatRig and HUD"
+}
