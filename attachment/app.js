@@ -46,8 +46,7 @@
   };
   if (shuffle) {
     shuffle.addEventListener('click', () => showPlush((current + 1 + Math.floor(Math.random() * (data.types.length - 1))) % data.types.length, true));
-    // The server-rendered doll remains visible without JS. Randomize only after the initial render.
-    window.addEventListener('load', () => showPlush(Math.floor(Math.random() * data.types.length), false), { once: true });
+    // Keep the featured cat on first load; show other plushies only when tapped.
   }
   const filters = [...document.querySelectorAll('[data-filter]')];
   filters.forEach(button => button.addEventListener('click', () => {
