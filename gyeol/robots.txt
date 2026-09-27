@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /gyeol/
+Sitemap: https://h1soft.github.io/gyeol/sitemap.xml
