@@ -1,1 +1,4 @@
-{"backend":"https://h1soft-metrics-api.h1soft-metrics.workers.dev"}
+{
+  "backend": "https://h1soft-metrics-api.h1soft-metrics.workers.dev",
+  "publicRead": true
+}
