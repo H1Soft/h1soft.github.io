@@ -11,6 +11,18 @@ const controller=new AdminController(new AdminApi(config),{onChange:render});
 function clearPhoto(){if(photoUrl)URL.revokeObjectURL(photoUrl);photoUrl=undefined;photoBlob=undefined;photoReady=false;$('photo').removeAttribute('src');$('photo').hidden=true;}
 function text(id,value){$(id).textContent=value;}
 function render(state){
+  $('operations-refresh').disabled=state.busy||!state.operator?.authorized;
+  const ops=state.operations;
+  $('operations-result').replaceChildren();
+  if(ops){
+    const lines=[`조회: ${format(ops.observedAt)}`,`예약 실행: ${ops.lastTickAt?format(ops.lastTickAt):'아직 실행되지 않음'}`,
+      `사진 정리 ${ops.cleanup?'사용':'대기'} · 푸시 발송 ${ops.push?'사용':'연결 대기'} · 외부 장애 알림 ${ops.alerts?'사용':'연결 대기'}`,
+      `현재 장애 ${ops.incidents.length}건 · 전달 대기 알림 ${ops.pendingAlerts}건`];
+    const labels={push:'푸시 발송',photo_cleanup:'사진 정리',location_expiry:'만료 위치 정리',monitor:'상태 점검',alerts:'외부 장애 알림'};
+    for(const job of ops.jobs)lines.push(`${labels[job.name]}: 최근 성공 ${job.lastSuccessAt?format(job.lastSuccessAt):'없음'} · 연속 실패 ${job.failures}회`);
+    for(const incident of ops.incidents)lines.push(`장애 ${incident.code} · ${format(incident.openedAt)}`);
+    $('operations-result').replaceChildren(...lines.map(line=>{const p=document.createElement('p');p.textContent=line;return p;}));
+  }
   $('unconfigured').hidden=Boolean(config);$('login-panel').hidden=!config||Boolean(state.operator);
   $('operator').hidden=!state.operator;$('workspace').hidden=!state.operator?.authorized||state.suspended;
   $('mfa-panel').hidden=!state.operator||state.operator.authorized||state.suspended;
@@ -87,6 +99,7 @@ for(const kind of ['photos','reports','support'])$(`tab-${kind}`).addEventListen
 $('more').addEventListener('click',()=>controller.more());
 $('photo-index').addEventListener('change',()=>controller.select(controller.state.selected?.id,Number($('photo-index').value)));
 $('photo-retry').addEventListener('click',()=>controller.select(controller.state.selected?.id,controller.state.photoIndex));
+$('operations-refresh').addEventListener('click',()=>controller.loadOperations());
 $('enroll').addEventListener('click',()=>controller.enroll());
 $('enrollment-cancel').addEventListener('click',()=>controller.cancelEnrollment());
 $('mfa-form').addEventListener('submit',event=>{event.preventDefault();void controller.verify(controller.state.mfa?.enrollment?.id??$('factor').value,$('mfa-code').value);});

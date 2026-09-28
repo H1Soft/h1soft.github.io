@@ -47,6 +47,7 @@
     <section id="workspace" hidden aria-label="사진 검수 목록과 상세">
       <nav class="tabs" aria-label="운영 업무"><button id="tab-photos" type="button" aria-current="page">사진 검수</button><button id="tab-reports" type="button">신고 처리</button><button id="tab-support" type="button">고객 문의</button></nav>
       <div class="toolbar"><label id="filter-label" for="filter">검수 상태</label><select id="filter"><option value="pending">대기</option><option value="approved">승인</option><option value="rejected">반려</option></select><button id="refresh" type="button">새로고침</button></div>
+      <section class="card" aria-labelledby="operations-heading"><h2 id="operations-heading">운영 작업과 장애 현황</h2><p class="muted">예약 작업의 실행 시각과 처리 중인 장애를 확인합니다.</p><button id="operations-refresh" type="button">운영 현황 확인</button><div id="operations-result" role="status" aria-live="polite"></div></section>
       <div class="workspace-grid">
         <section class="card queue" aria-labelledby="queue-heading"><h2 id="queue-heading">검수 요청</h2><p id="queue-help" class="muted">사진은 요청을 선택한 뒤에만 불러옵니다.</p><p id="empty" hidden>이 상태의 요청이 없습니다.</p><ul id="queue-list"></ul><button id="more" type="button" hidden>더 불러오기</button></section>
         <section class="card detail" aria-labelledby="detail-heading"><h2 id="detail-heading" tabindex="-1">요청 상세</h2><p id="selection-empty">왼쪽 목록에서 요청을 선택해 주세요.</p>

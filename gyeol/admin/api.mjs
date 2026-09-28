@@ -4,6 +4,25 @@ export class AdminError extends Error {
     super(message); this.code = code;
   }
 }
+export function operationsValue(value) {
+  const date=v=>typeof v==='string'&&Number.isFinite(Date.parse(v));
+  const config=value?.configuration;
+  if(value?.version!==1 || !date(value.observedAt) || !config ||
+    ['cleanup_enabled','push_enabled','alerts_enabled'].some(k=>typeof config[k]!=='boolean') ||
+    (config.last_tick_at!==null&&!date(config.last_tick_at)) || !Array.isArray(value.activeIncidents)||value.activeIncidents.length>100 ||
+    !Array.isArray(value.jobs)||value.jobs.length!==5 || !Number.isSafeInteger(value.pendingAlerts)||value.pendingAlerts<0)throw new AdminError('response');
+  const names=['push','photo_cleanup','location_expiry','monitor','alerts'];
+  const jobs=value.jobs.map(j=>{
+    if(!names.includes(j.name)||!Number.isInteger(j.failures)||j.failures<0||j.failures>10||!date(j.next_run_at)||(j.last_success_at!==null&&!date(j.last_success_at)))throw new AdminError('response');
+    return {name:j.name,failures:j.failures,lastSuccessAt:j.last_success_at,nextRunAt:j.next_run_at};
+  });
+  if(new Set(jobs.map(j=>j.name)).size!==5)throw new AdminError('response');
+  const incidents=value.activeIncidents.map(i=>{
+    if(!/^[a-z_]{3,80}$/.test(i.code??'')||!date(i.openedAt))throw new AdminError('response');
+    return {code:i.code,openedAt:i.openedAt};
+  });
+  return {observedAt:value.observedAt,cleanup:config.cleanup_enabled,push:config.push_enabled,alerts:config.alerts_enabled,lastTickAt:config.last_tick_at,pendingAlerts:value.pendingAlerts,jobs,incidents};
+}
 export function configuration(value, origin = '') {
   try {
     const url = new URL(value?.supabaseUrl);
@@ -123,6 +142,7 @@ export class AdminApi {
   login(email,password,signal){return this.request('/auth/v1/token?grant_type=password',{body:{email,password},signal});}
   logout(token){return this.request('/auth/v1/logout?scope=local',{token});}
   operator(token,signal){return this.rpc(token,'gyeol_admin_session',{},signal);}
+  operations(token,signal){return this.rpc(token,'gyeol_admin_operations_status',{},signal);}
   rpc(token,name,body,signal){return this.request(`/rest/v1/rpc/${name}`,{token,body,signal});}
   user(token,signal){return this.request('/auth/v1/user',{token,method:'GET',signal});}
   enroll(token,signal){return this.request('/auth/v1/factors',{token,body:{factor_type:'totp',friendly_name:`결 운영 ${new Date().toISOString()}`},signal});}

@@ -1,4 +1,4 @@
-import {AdminError,sessionValue,operatorValue,photoValue,pageValue,supportValue,reportValue,inboxValue} from './api.mjs';
+import {AdminError,sessionValue,operatorValue,photoValue,pageValue,supportValue,reportValue,inboxValue,operationsValue} from './api.mjs';
 const uuid=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 const messages={unauthorized:'로그인 시간이 끝났습니다. 다시 로그인해 주세요.',forbidden:'이 계정의 운영 권한을 확인할 수 없습니다.',
   invalid_credentials:'이메일과 비밀번호를 확인해 주세요.',mfa_verification_failed:'인증 앱의 최신 6자리 코드를 확인해 주세요.',
@@ -6,7 +6,7 @@ const messages={unauthorized:'로그인 시간이 끝났습니다. 다시 로그
   photoVersionChanged:'회원이 사진을 변경했습니다. 목록을 새로고침하고 현재 요청을 확인해 주세요.',
   conflict:'내용이 변경되었습니다. 목록을 새로고침한 뒤 다시 확인해 주세요.',invalidInput:'입력 내용을 확인해 주세요.',response:'서버 응답을 확인하지 못했습니다. 다시 시도해 주세요.'};
 const empty=()=>({operator:null,mfa:null,items:[],cursor:null,selected:null,photo:null,photoIndex:0,photoError:false,
-  kind:'photos',status:'pending',busy:false,error:'',notice:'',suspended:false});
+  kind:'photos',status:'pending',busy:false,error:'',notice:'',suspended:false,operations:null});
 
 export class AdminController {
   #session; #epoch=0; #active; #expiry; #newFactor;
@@ -87,6 +87,12 @@ export class AdminController {
     await this.#queue(signal,current);
   });}
   more(){if(!this.state.cursor)return Promise.resolve(false);return this.#run((signal,current)=>this.#queue(signal,current,true));}
+  loadOperations(){return this.#run(async(signal,current)=>{
+    if(!this.state.operator?.authorized)throw new AdminError('forbidden');
+    this.state.operations=null;this.emit();
+    const value=operationsValue(await this.api.operations(this.#token(),signal));
+    if(current())this.state.operations=value;
+  });}
   switchKind(kind){return this.#run(async(signal,current)=>{
     if(!['photos','reports','support'].includes(kind))throw new AdminError('invalidInput');
     this.state.kind=kind;this.state.items=[];this.state.cursor=null;this.state.selected=null;this.state.photo=null;this.emit();await this.#queue(signal,current);
@@ -128,7 +134,7 @@ export class AdminController {
     if(saved.id!==item.id||saved.status!==(close?'closed':'answered')||saved.reply!==reply||saved.revision<item.revision)throw new AdminError('response');
     this.state.items=this.state.items.map(row=>row.id===item.id?saved:row);this.state.selected=null;this.state.notice='문의 답변을 저장했습니다.';
   });}
-  suspend(){this.#epoch++;this.#active?.abort();this.#active=null;this.state.busy=false;this.state.suspended=true;this.state.items=[];this.state.cursor=null;this.state.selected=null;this.state.photo=null;this.state.error='';this.state.notice='화면을 다시 열면 운영 권한과 목록을 확인합니다.';if(this.state.mfa?.enrollment)this.state.mfa.enrollment.secret='';this.emit();}
+  suspend(){this.#epoch++;this.#active?.abort();this.#active=null;this.state.busy=false;this.state.suspended=true;this.state.items=[];this.state.cursor=null;this.state.selected=null;this.state.photo=null;this.state.operations=null;this.state.error='';this.state.notice='화면을 다시 열면 운영 권한과 목록을 확인합니다.';if(this.state.mfa?.enrollment)this.state.mfa.enrollment.secret='';this.emit();}
   resume(){if(!this.state.suspended)return Promise.resolve(false);this.state.suspended=false;if(!this.#session){this.emit();return Promise.resolve(false);}return this.#run(async(signal,current)=>{
     const operator=operatorValue(await this.api.operator(this.#token(),signal),this.#session.id);if(!current())return;
     this.state.operator=operator;if(operator.authorized)await this.#queue(signal,current);else {if(this.#newFactor){await this.api.unenroll(this.#token(),this.#newFactor,signal);if(!current())return;this.#newFactor=null;}await this.#mfa(signal,current);}
