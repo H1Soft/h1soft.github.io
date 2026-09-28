@@ -3,7 +3,7 @@ export function parseRequest(fragment) {
   const p=new URLSearchParams(fragment.replace(/^#/,''));
   if(p.size!==3 || !/^store-[0-9a-f-]{36}$/i.test(p.get('storeId')??'') ||
     !/^channel-key-[0-9a-f-]{36}$/i.test(p.get('channelKey')??'') ||
-    !/^gyeol-[0-9a-f-]{36}$/i.test(p.get('identityVerificationId')??'')) return null;
+    !/^gyeol(?:[0-9a-f]{32}|-[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})$/.test(p.get('identityVerificationId')??'')) return null;
   return {storeId:p.get('storeId'),channelKey:p.get('channelKey'),identityVerificationId:p.get('identityVerificationId'),
     redirectUrl:'https://h1soft.github.io/gyeol/identity/?returned=1',forceRedirect:true};
 }
