@@ -140,7 +140,8 @@ def render(code, kind):
                 else: path = '/cleaner/' + tail
                 path = re.sub(r'(app-icon|favicon)-[0-9]{8}(?:-[a-z0-9]+)?\.(webp|png)',rf'\1-{REV}.\2',path)
                 # Stable CSS/JS URLs are versioned to prevent mixed old/new interactions.
-                query = ('?v=20260928-vertical' if path.endswith(('/styles.css', '/app.js'))
+                query = ('?v=20260928-stores' if path.endswith('/styles.css')
+                         else '?v=20260928-vertical' if path.endswith('/app.js')
                          else '?v=20260915-i18n' if path.endswith(('.css', '.js')) else '')
                 tag[attr] = path + query + ('#'+resolved.fragment if resolved.fragment else '')
             elif path.startswith('/en/') and code not in ('en','ko'):

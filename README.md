@@ -137,6 +137,14 @@ App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결�
 
 공통 링크는 `js/config.js`에서 관리합니다. 다운로드 버튼의 언어는 페이지 언어를 따릅니다. 온글의 기존 Android 출시 대기 버튼은 유지합니다.
 
+## 스토어 링크 언어
+
+공개 스토어 링크는 페이지의 `html lang`을 따릅니다. App Store는 해당 언어를 지원하는 국가 경로와 `l`, Google Play는 `hl`을 사용합니다. 공통 규칙은 `js/store-links.mjs`에 있으며, 정적 페이지를 생성한 뒤 `node tools/localize-store-links.mjs`를 실행하고 `--check`로 검증합니다. 기존 캠페인 매개변수는 보존합니다. Apple이 지원하지 않는 페르시아어는 미국 스토어의 영어로 연결됩니다.
+
+`js/config.js`와 노노그램의 `StoreLinks.astro`도 같은 규칙을 사용합니다. `/metrics/`의 동적 링크는 `js/store-link-observer.mjs`가 처리하며, 대시보드 원본 `pages/index.html`에도 이 스크립트가 포함되어 있습니다. 별도 사이트인 `/skinping/`, `/lol.dating/`에는 현재 공개 스토어 링크가 없습니다.
+
+노노그램 트립은 App Store ID `6814582503`으로 연결됩니다. 클리너의 스토어 버튼은 공식 출시 URL을 확인하기 전까지 출시 예정이며, `js/config.js`의 `CLEANER_*_URL`에 주소를 추가하면 활성화됩니다.
+
 ## Nonogram Trip
 
 - Website: https://h1soft.github.io/nonogram/ (English) and https://h1soft.github.io/nonogram/ko/ (한국어).

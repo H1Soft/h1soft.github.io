@@ -4,7 +4,7 @@ export const base = '/nonogram/';
 export const email = 'h1.soft.x001@gmail.com';
 export const stores: { google: string | null; apple: string | null } = {
   google: null,
-  apple: null,
+  apple: 'https://apps.apple.com/us/app/nonogram-trip-logic-puzzles/id6814582503',
 };
 export const home = (lang: Lang) => `${base}${lang === 'ko' ? 'ko/' : ''}`;
 export const page = (lang: Lang, slug = '') => `${home(lang)}${slug ? `${slug}/` : ''}`;
@@ -119,11 +119,11 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'Can I play without an internet connection?',
-      a: 'Yes. The app’s puzzles, hints and collections work offline. Download the app first when it becomes available. This website needs a connection to load.',
+      a: 'Yes. The app’s puzzles, hints and collections work offline. Download the app first. This website needs a connection to load.',
     },
     {
       q: 'Which phones and tablets are supported?',
-      a: 'Nonogram Trip is built for Android 8.0 or later and iOS 15 or later, including tablets. Store releases are being prepared; this page will link to the listings when they are available.',
+      a: 'Nonogram Trip is built for Android 8.0 or later and iOS 15 or later, including tablets. It is available on the App Store; the Google Play release is being prepared.',
     },
     {
       q: 'Can I move my progress to another device?',
@@ -153,11 +153,11 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: '인터넷 없이도 플레이할 수 있나요?',
-      a: '네. 앱의 퍼즐, 힌트, 수집 기능은 오프라인에서 동작합니다. 출시 후 앱을 먼저 내려받아 주세요. 이 웹사이트를 처음 불러올 때는 인터넷 연결이 필요합니다.',
+      a: '네. 앱의 퍼즐, 힌트, 수집 기능은 오프라인에서 동작합니다. 앱을 먼저 내려받아 주세요. 이 웹사이트를 처음 불러올 때는 인터넷 연결이 필요합니다.',
     },
     {
       q: '어떤 휴대전화와 태블릿을 지원하나요?',
-      a: 'Android 8.0 이상, iOS 15 이상의 휴대전화와 태블릿을 지원하도록 제작했습니다. 스토어 출시를 준비 중이며, 공개되면 이 페이지에서 다운로드할 수 있습니다.',
+      a: 'Android 8.0 이상, iOS 15 이상의 휴대전화와 태블릿을 지원하도록 제작했습니다. App Store에서 다운로드할 수 있으며, Google Play 출시를 준비 중입니다.',
     },
     {
       q: '기기를 바꾸면 기록을 옮길 수 있나요?',

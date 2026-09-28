@@ -26,6 +26,10 @@ const CONFIG = {
   SAGAK_APP_STORE_URL: "https://apps.apple.com/app/id6809531957",
   SAGAK_PLAY_STORE_URL: "",
 
+  // 폰 클리너: 공식 출시 URL이 확인되면 입력합니다.
+  CLEANER_APP_STORE_URL: "",
+  CLEANER_PLAY_STORE_URL: "",
+
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",
 };
 
@@ -36,6 +40,7 @@ const STORE_URLS = {
   mongle: { appstore: CONFIG.MONGLE_APP_STORE_URL, playstore: CONFIG.MONGLE_PLAY_STORE_URL },
   sudoku: { appstore: CONFIG.SUDOKU_APP_STORE_URL, playstore: CONFIG.SUDOKU_PLAY_STORE_URL },
   sagak: { appstore: CONFIG.SAGAK_APP_STORE_URL, playstore: CONFIG.SAGAK_PLAY_STORE_URL },
+  cleaner: { appstore: CONFIG.CLEANER_APP_STORE_URL, playstore: CONFIG.CLEANER_PLAY_STORE_URL },
 };
 
 const DOWNLOAD_LABELS = {
@@ -58,7 +63,8 @@ const DOWNLOAD_LABELS = {
   "fa": "دریافت"
 };
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const { localizeStoreUrl } = await import('./store-links.mjs?v=20260928');
   const lang = document.documentElement.lang;
   const downloadLabel = DOWNLOAD_LABELS[lang] || DOWNLOAD_LABELS[lang.split("-")[0]] || DOWNLOAD_LABELS.en;
   let anyReleased = false;
@@ -69,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const url = app[btn.dataset.store];
     if (!url) return;
     anyReleased = true;
-    btn.href = url;
+    btn.href = localizeStoreUrl(url, lang);
     btn.classList.remove("is-disabled");
     btn.removeAttribute("aria-disabled");
     btn.removeAttribute("tabindex");

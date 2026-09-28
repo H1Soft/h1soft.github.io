@@ -39,7 +39,7 @@ The hosting root must contain `.nojekyll` so `_astro` bundles are served. Domain
 
 - The introduction at `#home` presents the app with its illustrated background. `#route` explores twelve cities; `#collect` presents a static ICN/HKG/KEF photo gallery. The website does not include a playable puzzle, departure board or interactive photo flip.
 - Language choice and a dismissed language suggestion are the only localStorage preferences.
-- Store availability is centralized in `src/data/site.ts`. Both listings are **coming soon** until verified store URLs are supplied. Add official store badge assets and reviewed campaign links when activating the listings.
+- Store availability is centralized in `src/data/site.ts`. App Store ID `6814582503` is live; Google Play remains coming soon. `StoreLinks.astro` uses the shared `js/store-links.mjs` helper to select the English or Korean storefront and language.
 - No visitor analytics is enabled. Local `nonogram:event` hooks cover the remaining city, video, FAQ and store interactions. Connecting a provider requires real account configuration and a matching privacy notice.
 - Legal/support content is in `src/data/legal.ts`; official contact is `h1.soft.x001@gmail.com`.
 - Prepared AVIF/WebP assets and WOFF2 font subsets are included. Font licenses are in `public/fonts/licenses/`. No paid design service or third-party CDN is needed to render the site.

@@ -18,6 +18,15 @@
 .footer-bottom>div{flex-wrap:wrap;gap:8px 24px}.footer-bottom a{display:inline-flex;align-items:center;min-height:44px}
 
 /* Screens follow the vertical, alternating showcase used by Ongle. */
+.store-buttons{display:flex;flex-wrap:wrap;gap:12px;width:100%}
+.store-btn{display:flex;align-items:center;gap:11px;min-width:150px;padding:12px 18px;border-radius:14px;background:var(--ink);color:#fff;text-decoration:none}
+.store-btn__icon{flex:none}
+.store-btn__text{display:flex;flex-direction:column;gap:3px;text-align:start}
+.store-btn__sub{font-size:11px;line-height:1.4}
+.store-btn__label{font-size:17px;font-weight:700;line-height:1.3}
+.store-btn:hover{background:#333d4b}
+.store-btn.is-disabled{background:#636d79;cursor:default;pointer-events:none}
+@media(max-width:720px){.store-buttons{justify-content:center}.hero-actions{gap:18px}}
 .screens-section{--muted:#566170;padding-bottom:96px}
 .section-heading{margin-bottom:64px}
 .gallery{display:flex;flex-direction:column;gap:96px}
