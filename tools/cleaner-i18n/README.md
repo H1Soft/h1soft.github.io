@@ -21,7 +21,10 @@ both root sitemaps. It does not use automatic language redirects or JavaScript
 translation. The language picker works without JavaScript.
 
 `cleaner/i18n.css` adds logical RTL layout and locally hosted subset fonts.
-`cleaner/app.js` handles RTL gallery scrolling and arrow keys. Images under
+`cleaner/app.js` handles screenshot enlargement and RTL-aware arrow keys.
+The five screenshots form a vertical showcase with alternating image/text rows
+on desktop and stacked rows on mobile, matching Ongle. The standalone privacy
+marketing section is removed; localized footer policy links remain available. Images under
 `cleaner/assets/screens/{locale}/` reuse the approved localized campaign and
 actual localized app captures in the original Galaxy S23 frame. The app-project
 script `tool/export_website_locale_assets.py` exports those assets and fonts.
@@ -38,5 +41,5 @@ References:
 Run `verify.py` for complete keys, 51 unique titles, all internal product links,
 CSS assets/fonts, localized screenshots, legal section coverage, language
 menus, canonical/hreflang, structured data, and sitemap coverage. A browser pass
-must also check narrow/wide layouts and RTL gallery/policy navigation before
+must also check narrow/wide layouts and RTL showcase/lightbox and policy navigation before
 deployment; static checks alone do not establish visual correctness.

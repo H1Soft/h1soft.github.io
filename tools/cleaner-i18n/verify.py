@@ -39,7 +39,7 @@ def main():
                     target=BeautifulSoup(dest.read_text(),'html.parser')
                     assert target.find(id=url.fragment),(path,'broken section',value)
                 if n.name in ('img','script') or n.get('rel')==['stylesheet']:assets.add(url.path)
-            for n in s.select('img[src*="app-icon"],link[rel="icon"]'):
+            for n in s.select('img[src^="/cleaner/assets/app-icon"],link[rel="icon"]'):
                 assert REV in n.get('src',n.get('href')),(path,'stale icon')
             desc=s.select_one('meta[name="description"]')['content']
             assert desc and s.select_one('meta[property="og:description"]')['content']==desc
