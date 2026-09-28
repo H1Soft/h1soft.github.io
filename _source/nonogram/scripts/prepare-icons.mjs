@@ -6,7 +6,7 @@ import { fileURLToPath } from 'node:url';
 const source =
   process.argv[2] ||
   fileURLToPath(
-    new URL('../../design/generated/icon/nonogram-trip-full-bleed.png', import.meta.url),
+    new URL('../design/store-icon.png', import.meta.url),
   );
 const out = fileURLToPath(new URL('../public/', import.meta.url));
 const icon = sharp(source).removeAlpha();

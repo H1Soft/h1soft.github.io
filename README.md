@@ -2,6 +2,14 @@
 
 H1Soft 팀 공식 웹사이트 (정적 사이트, GitHub Pages 배포).
 
+## 공식 앱 아이콘과 제품 목록 (2026-09-28)
+
+QR Scanner, 슥캔, 온글, 몽글, 폰 클리너, 스도쿠 보야지, 사각사각, 노노그램 트립, 냥브로 아이콘은 2026-09-27 Play Console 앱 목록의 512px 등록 이미지로 갱신했습니다. 애착은 사용자가 제공한 고양이 아이콘(`attachment/assets/app-icon.png`)을 사용합니다. 피부핑은 해당 Play Console 목록에 없어 기존 표시를 유지합니다. 결은 목록에서 기본 임시 아이콘으로 표시되어 기존 사이트 아이콘을 유지합니다.
+
+한국어·영어 홈의 라이프스타일과 게임은 유틸리티와 동일한 `tool-grid tool-grid--four` / `tool-card` 컴포넌트를 사용합니다. 냥브로는 공통 제품 카드·Products 메뉴·푸터·ItemList에서 `/meowbro/`로 연결하며, 한국어 제품 페이지임을 영문 링크에 표시합니다. 홈의 앱 수는 11개(도구 4 / 라이프스타일 3 / 게임 4)입니다.
+
+기존 각 앱의 아이콘 파일 경로를 유지하고 `?v=icons-20260928`로 캐시를 갱신했습니다. 별도 앱 프로젝트에서 사이트를 다시 내보낼 때 이 아이콘과 실제 이미지 기반의 메뉴 표시를 유지해야 합니다. 노노그램의 저장소 내 원본 이미지와 Cleaner 템플릿도 함께 수정했습니다.
+
 ## 애착인형 뽑기 (2026-09-27)
 
 `/attachment/`에 12개 섹션의 반응형 랜딩을, `/attachment/play/`에 Flutter Web 테스트를 배포합니다. 한국어·영어 회사 홈의 라이프스타일 카드와 기존 제품 메뉴·푸터에서 연결합니다. 다른 언어 페이지는 한국어 랜딩임을 링크에 표시합니다.
@@ -40,16 +48,16 @@ robots.txt, sitemap.xml     sitemap 은 `scratchpad/build_sitemap.py` 로 생성
 | --- | --- | --- |
 | `h1soft-logo.png` (512, 투명) | H1Soft 로고 — JSON-LD `logo` | 원본 `h1.png` 트리밍 |
 | `favicon-32.png`, `favicon-48.png`, `apple-touch-icon.png` (180), `h1soft-appicon.png` (512), 루트 `favicon.ico` | H1Soft 파비콘·앱 아이콘 | 흰색 계열 라운드 칩 + 헤어라인 + 로고 (`scratchpad/build_brand.py`) |
-| `app_icon.png` (512) | QR Scanner 앱 아이콘 | Google Play 스토어 등록본 (2026-09-04 새 아이콘으로 교체). `QR_icon.png` 은 그 이전 아이콘 원본이고 페이지에서는 쓰지 않습니다 |
-| `seukscan-icon.png` (512) | 슥캔 아이콘 | Claude Design 프로젝트 `uploads/app-icon.png` |
-| `ongle-icon.png` (512) | 온글 아이콘 | 원본 1254px 리사이즈 |
+| `app_icon.png` (512) | QR Scanner 앱 아이콘 | Google Play Console 등록본 (2026-09-27 확인). `QR_icon.png` 은 그 이전 아이콘 원본이고 페이지에서는 쓰지 않습니다 |
+| `seukscan-icon.png` (512) | 슥캔 아이콘 | Google Play Console 등록본 (2026-09-27 확인) |
+| `ongle-icon.png` (512) | 온글 아이콘 | Google Play Console 등록본 (2026-09-27 확인) |
 | `seukscan/{ko,en}/0X.webp` (640w) | 슥캔 스크린샷 | 원본 PNG 리사이즈+webp |
 | `ongle/{ko,en}/0X.webp` (640w) | 온글 스크린샷 | hwp 저장소 `store-screenshots/public/screenshots` 리사이즈+webp |
 | `og-h1soft-ko.png` / `og-h1soft-en.png` (1200×630) | 루트 회사 OG | 로고 + 'IT 기술 스타트업' HTML → Chrome 헤드리스 (`scratchpad/build_og_brand.py`) |
 | `og-image-ko.jpg` / `og-image-en.jpg` | QR Scanner OG | feature-graphic 1024×500 jpg 변환 |
 | `mongle-og.png` / `mongle-og-en.png` (1200×630) | 몽글 OG | 시안 B-6 HTML → Chrome 헤드리스 캡처 |
 | `sudoku-og.png` / `sudoku-og-en.png` (1200×630) | 스도쿠 보야지 OG | 시안 W8 HTML → Chrome 헤드리스 캡처 |
-| `sagak-icon.png` (512) | 사각사각 앱 아이콘 | 제공받은 우표 원본을 정사각 크롭 + 256색 |
+| `sagak-icon.png` (512) | 사각사각 앱 아이콘 | Google Play Console 등록본 (2026-09-27 확인) |
 | `sagak/0X-*.webp` (640w) | 사각사각 인앱 화면 | Claude Design `SAGAK 주요 화면 / 전체 화면.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
 | `sagak-og-{ko,en,ja}.png` (1200×630) | 사각사각 OG | 아이콘 + 표제 HTML → Chrome 헤드리스 (`scratchpad/build_sagak_og.py`) |
 | `sudoku/0X-*.webp` (640w), `sudoku/map.webp` | 스도쿠 보야지 인앱 화면 | Claude Design `Sudoku Voyage 디자인.dc.html` 을 DC 런타임으로 렌더 후 캡처 |
