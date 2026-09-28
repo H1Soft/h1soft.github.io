@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#FBF8F2">
+  <title>공유한 만남 일정 — 결</title>
+  <meta name="description" content="지인이 공유한 만남 일정과 공개 장소를 확인하세요.">
+  <link rel="canonical" href="https://h1soft.github.io/gyeol/share/">
+  <meta property="og:title" content="공유한 만남 일정 — 결">
+  <meta property="og:description" content="일정은 유효한 링크를 가진 사람만 확인할 수 있어요.">
+  <meta property="og:image" content="https://h1soft.github.io/gyeol/assets/og.png">
+  <meta name="twitter:image" content="https://h1soft.github.io/gyeol/assets/icon-512.png">
+  <link rel="stylesheet" href="share.css">
+  <script src="../config.js" defer></script>
+  <script src="share.js" defer></script>
+</head>
+<body>
+  <main>
+    <a class="brand" href="../" aria-label="결 홈으로">결</a>
+    <h1>공유한 만남 일정</h1>
+    <p class="intro">지인이 알려 준 일정과 공개 장소를 확인해 주세요.</p>
+    <p id="share-status" role="status" aria-live="polite">일정을 확인하고 있어요.</p>
+    <dl id="share-details" hidden>
+      <dt>만나는 시간</dt><dd id="share-time"></dd>
+      <dt>공개 장소</dt><dd id="share-venue"></dd>
+      <dt>링크 만료</dt><dd id="share-expiry"></dd>
+    </dl>
+    <button id="share-retry" type="button" hidden>다시 확인하기</button>
+    <p class="privacy">이 링크를 가진 사람은 일정과 장소를 볼 수 있어요. 다른 사람에게 전달할 때 주의해 주세요. 이름·사진·연락처·대화 내용은 표시하지 않아요.</p>
+    <p class="privacy">일정이 변경되거나 취소되면 이 링크는 사용할 수 없어요. 이미 확인한 정보를 되돌릴 수는 없어요.</p>
+    <noscript>일정을 확인하려면 브라우저의 JavaScript를 켜고 링크를 다시 열어 주세요.</noscript>
+  </main>
+</body>
+</html>

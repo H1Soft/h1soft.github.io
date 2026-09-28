@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="theme-color" content="#FBF8F2">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src blob:; connect-src 'self' https:; base-uri 'none'; form-action 'none'; object-src 'none'">
+  <title>사진 검수 — 결 운영</title>
+  <meta name="description" content="승인된 운영자 전용 사진 검수 페이지입니다.">
+  <link rel="canonical" href="https://h1soft.github.io/gyeol/admin/">
+  <meta property="og:title" content="결 운영">
+  <meta property="og:image" content="https://h1soft.github.io/gyeol/assets/og.png">
+  <meta name="twitter:image" content="https://h1soft.github.io/gyeol/assets/icon-512.png">
+  <link rel="stylesheet" href="admin.css">
+  <script src="config.js" defer></script>
+  <script src="admin.js" type="module"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 이동</a>
+  <header>
+    <a href="../" class="brand" aria-label="결 홈으로">결 <span>운영</span></a>
+    <div id="operator" hidden><span id="operator-label">운영자</span><button id="logout" type="button">로그아웃</button></div>
+  </header>
+  <main id="main">
+    <div class="heading"><p class="eyebrow">운영자 전용</p><h1 id="page-title">사진 검수</h1><p id="page-description">회원이 등록한 사진을 확인하고 검수 결과를 남깁니다.</p></div>
+    <p id="status" role="status" aria-live="polite">운영 설정을 확인하고 있습니다.</p>
+    <p id="error" role="alert" hidden></p>
+    <section id="unconfigured" class="card" hidden><h2>운영 연결 대기</h2><p>이 배포에는 관리자 서버 설정이 없습니다. 운영 설정을 마친 뒤 다시 접속해 주세요.</p></section>
+    <section id="login-panel" class="card login" hidden>
+      <h2>운영자 로그인</h2><p>서버에 등록된 운영자 계정으로 로그인해 주세요.</p>
+      <form id="login-form">
+        <label for="email">이메일</label><input id="email" name="email" type="email" autocomplete="username" required maxlength="254">
+        <label for="password">비밀번호</label><input id="password" name="password" type="password" autocomplete="current-password" required maxlength="256">
+        <button id="login" class="primary" type="submit">로그인</button>
+      </form>
+      <p class="muted">이 페이지는 로그인 상태를 기기에 저장하지 않습니다. 새로고침하면 다시 로그인해야 합니다.</p>
+    </section>
+    <section id="mfa-panel" class="card login" hidden>
+      <h2>2단계 인증</h2><p>인증 앱의 6자리 코드를 확인해 주세요.</p>
+      <label for="factor">인증 수단</label><select id="factor"></select>
+      <button id="enroll" type="button">인증 앱 등록</button>
+      <div id="enrollment" hidden><p>인증 앱에서 시간 기반 일회용 비밀번호를 선택하고 아래 등록 키를 직접 입력해 주세요.</p><label for="enrollment-secret">등록 키</label><input id="enrollment-secret" type="text" readonly autocomplete="off" spellcheck="false"><p class="muted">등록 키를 다른 사람에게 보내지 마세요. 인증을 마치면 이 화면에서 지웁니다.</p><button id="enrollment-cancel" type="button">등록 취소</button></div>
+      <form id="mfa-form"><label for="mfa-code">6자리 인증 코드</label><input id="mfa-code" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" required><button id="mfa-verify" type="submit" class="primary">인증하고 계속</button></form>
+    </section>
+    <section id="workspace" hidden aria-label="사진 검수 목록과 상세">
+      <nav class="tabs" aria-label="운영 업무"><button id="tab-photos" type="button" aria-current="page">사진 검수</button><button id="tab-reports" type="button">신고 처리</button><button id="tab-support" type="button">고객 문의</button></nav>
+      <div class="toolbar"><label id="filter-label" for="filter">검수 상태</label><select id="filter"><option value="pending">대기</option><option value="approved">승인</option><option value="rejected">반려</option></select><button id="refresh" type="button">새로고침</button></div>
+      <div class="workspace-grid">
+        <section class="card queue" aria-labelledby="queue-heading"><h2 id="queue-heading">검수 요청</h2><p id="queue-help" class="muted">사진은 요청을 선택한 뒤에만 불러옵니다.</p><p id="empty" hidden>이 상태의 요청이 없습니다.</p><ul id="queue-list"></ul><button id="more" type="button" hidden>더 불러오기</button></section>
+        <section class="card detail" aria-labelledby="detail-heading"><h2 id="detail-heading" tabindex="-1">요청 상세</h2><p id="selection-empty">왼쪽 목록에서 요청을 선택해 주세요.</p>
+          <div id="selection" hidden><dl><dt>요청 번호</dt><dd id="photo-id"></dd><dt>등록 시각</dt><dd id="photo-date"></dd><dt>검수 상태</dt><dd id="photo-state"></dd></dl><p id="existing-reason" hidden></p>
+            <label for="photo-index">확인할 사진</label><select id="photo-index"></select><div id="photo-frame"><p id="photo-status">사진을 불러오고 있습니다.</p><img id="photo" alt="선택한 검수 요청의 사진" width="640" height="480" hidden></div>
+            <button id="photo-retry" type="button" hidden>사진 다시 불러오기</button>
+            <form id="review-form" hidden><label for="reason">검수 사유</label><textarea id="reason" maxlength="500" rows="4" aria-describedby="reason-help"></textarea><p id="reason-help" class="muted">반려할 때에는 회원에게 안내할 사유를 입력해 주세요.</p><div class="actions"><button id="approve" class="primary" type="button">승인</button><button id="reject" class="danger" type="button">반려</button></div></form>
+          </div>
+          <div id="report-detail" hidden><dl><dt>신고 번호</dt><dd id="report-id"></dd><dt>접수 시각</dt><dd id="report-date"></dd><dt>상태</dt><dd id="report-state"></dd><dt>사유</dt><dd id="report-reason"></dd></dl><p id="report-body"></p><pre id="report-evidence"></pre><label for="report-status">처리 상태</label><select id="report-status"><option value="reviewing">검토 중</option><option value="resolved">처리 완료</option><option value="dismissed">종결</option></select><label for="report-note">운영 메모</label><textarea id="report-note" maxlength="2000" rows="4"></textarea><button id="report-save" class="primary" type="button">처리 결과 저장</button></div>
+          <div id="support-detail" hidden><h3 id="support-subject"></h3><dl><dt>문의 번호</dt><dd id="support-id"></dd><dt>접수 시각</dt><dd id="support-date"></dd><dt>상태</dt><dd id="support-state"></dd></dl><p id="support-body"></p><div id="support-existing" hidden><h3>저장된 답변</h3><p id="support-reply"></p></div><label for="support-input">회원에게 보낼 답변</label><textarea id="support-input" maxlength="4000" rows="6"></textarea><div class="actions"><button id="support-save" class="primary" type="button">답변 저장</button><button id="support-close" type="button">답변하고 종료</button></div></div>
+        </section>
+      </div>
+    </section>
+    <p class="privacy">운영 목적으로만 사진을 확인해 주세요. 다른 탭으로 이동하거나 로그아웃하면 표시 중인 사진을 닫습니다.</p>
+    <noscript>관리자 화면을 이용하려면 JavaScript를 켜 주세요.</noscript>
+  </main>
+  <dialog id="confirm"><form method="dialog"><h2 id="confirm-title">검수 결과를 저장할까요?</h2><p id="confirm-description"></p><div class="actions"><button id="confirm-cancel" value="cancel" autofocus>취소</button><button id="confirm-save" class="primary" value="save">저장</button></div></form></dialog>
+</body>
+</html>

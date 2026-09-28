@@ -4,4 +4,6 @@ window.GYEOL_CONFIG = Object.freeze({
   kakaoKey: '',
   analyticsEndpoint: '',
   policiesReady: false,
+  // Public API target; deployment/reachability must be verified separately.
+  meetingShareEndpoint: "https://qgspngljhasecuquhcvt.supabase.co/functions/v1/gyeol-share",
 });
