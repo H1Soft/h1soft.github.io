@@ -29,6 +29,7 @@ for url,(path,s) in pages.items():
     require(len(s.select('h1'))==1,f'{rel}: expected one H1')
     for a in s.select('a[href]'):
         target=normalize(urljoin(url,a['href']))
+        require(not re.search(r'/(?:skinping|lol[.]dating)(?:/|$)',urlsplit(target).path),f'{rel}: excluded product link {target}')
         if target.startswith(BASE+'/'):
             refs[target].add(url);graph[url].add(target)
             require(urlsplit(target).path not in ALIASES,f'{rel}: link to noncanonical alias {target}')
@@ -55,13 +56,13 @@ for url,(path,s) in pages.items():
 
 for lang,path in [('ko','index.html'),('en','en/index.html')]:
     text=(ROOT/path).read_text();s=BeautifulSoup(text,'html.parser');cards=s.select('.tool-card')
-    require(len(cards)==12,f'{path}: expected 12 product cards')
-    require(s.select_one('[data-count]')['data-count']=='12',f'{path}: old product count')
-    require('12개의 앱' in text if lang=='ko' else 'Twelve apps' in text,f'{path}: stale metadata count')
+    require(len(cards)==11,f'{path}: expected 11 product cards')
+    require(s.select_one('[data-count]')['data-count']=='11',f'{path}: old product count')
+    require('11개의 앱' in text if lang=='ko' else 'Eleven apps' in text,f'{path}: stale metadata count')
     require(s.select_one('.tool-card[href="/gyeol/"]') is not None,f'{path}: missing Gyeol card')
     for script in s.select('script[type="application/ld+json"]'):
         obj=json.loads(script.string)
-        if obj.get('@type')=='ItemList':require(obj['numberOfItems']==len(obj['itemListElement'])==12,f'{path}: schema product count')
+        if obj.get('@type')=='ItemList':require(obj['numberOfItems']==len(obj['itemListElement'])==11,f'{path}: schema product count')
     for c in cards:
         if c.get('href','').startswith(('/nonogram/','/cleaner/')):
             require('App Store' in c.select_one('.tool-card__badge').get_text(),f'{path}: stale release badge')

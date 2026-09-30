@@ -146,7 +146,7 @@ def enrich_pages(root,changed):
     catalog=json.loads((HERE/'store-facts.json').read_text())
     facts=catalog['apps']
     for path in public_pages(root):
-        text=path.read_text();doc=soup(text);url=url_for(path,root);lang=doc.html.get('lang','en');rel=path.relative_to(root)
+        text=path.read_text();text=re.sub(r'<a\b(?=[^>]*\bhref=["\'][^"\']*/(?:skinping|lol[.]dating)(?:/|["\']))[^>]*>[\s\S]*?</a>', '', text, flags=re.I);doc=soup(text);url=url_for(path,root);lang=doc.html.get('lang','en');rel=path.relative_to(root)
         canon=doc.select_one('link[rel="canonical"]');canonical=canon['href'] if canon else url
         title=doc.title.get_text(' ',strip=True) if doc.title else ''
         desc=doc.select_one('meta[name="description"]');desc=desc.get('content','') if desc else ''

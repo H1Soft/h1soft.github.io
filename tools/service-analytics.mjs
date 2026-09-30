@@ -2,9 +2,9 @@
 // CI uses the default read-only check to catch new pages or rebuilt sites without tracking.
 import {execFileSync} from 'node:child_process';
 import {readFileSync,writeFileSync} from 'node:fs';
-const services=['qr-scanner','seukscan','ongle','cleaner','attachment','mongle','nonogram','sudoku','sagak','meowbro'];
+const services=['qr-scanner','seukscan','ongle','cleaner','attachment','mongle','nonogram','sudoku','sagak','meowbro','gyeol'];
 const match=new RegExp(`^(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?/)?(${services.join('|')})(?:/|$)`);
-const files=execFileSync('git',['ls-files','-z','*.html'],{encoding:'utf8'}).split('\0').filter(p=>match.test(p));
+const files=execFileSync('git',['ls-files','-z','*.html'],{encoding:'utf8'}).split('\0').filter(p=>match.test(p)&&!/^gyeol\/(?:admin|identity|delete|share)(?:\/|$)/.test(p));
 const tag='<script defer src="/js/analytics.js?v=services-20260930"></script>';
 const missing=[],counts={};let redirects=0;
 for(const file of files){

@@ -7,6 +7,7 @@ English/Korean source layouts and all other H1Soft products remain independent.
 from pathlib import Path
 from urllib.parse import urlsplit, urljoin
 import json
+import subprocess
 import re
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup, Comment
@@ -192,5 +193,6 @@ def sitemaps(paths):
 if __name__ == '__main__':
     paths=[(code,kind,render(code,kind)) for code in LANGUAGES for kind in ('home','privacy','terms')]
     sitemaps(paths)
+    subprocess.run(['node', str(ROOT / 'tools/localize-store-links.mjs')], cwd=ROOT, check=True)
     (HERE/'pages.json').write_text(json.dumps([p for _,_,p in paths],indent=2)+'\n')
     print(f'Built {len(paths)} pages in {len(LANGUAGES)} languages; updated both sitemaps.')

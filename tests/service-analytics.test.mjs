@@ -17,5 +17,5 @@ test('new and declining visitors never load Google; allowing starts once with sa
  const config=context.dataLayer.find(row=>row[0]==='config')[2];assert.equal(config.page_location,'https://h1soft.github.io/attachment/play/');assert.equal(config.page_referrer,'https://example.com/from');assert.equal(config.allow_google_signals,false);
 });
 test('Metrics and excluded skin service never load analytics or show consent UI',()=>{
- for(const path of ['/metrics/','/skinping/','/pibuping/']){const {head,body}=visit('yes',path);assert.equal(head.length,0);assert.equal(body.length,0);}
+ for(const path of ['/metrics/','/skinping/','/pibuping/','/lol.dating/','/ko/skinping/','/en/lol.dating/','/gyeol/admin/','/gyeol/identity/','/gyeol/delete/','/gyeol/share/']){const {head,body}=visit('yes',path);assert.equal(head.length,0);assert.equal(body.length,0);}
 });

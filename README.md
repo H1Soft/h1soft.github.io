@@ -82,7 +82,7 @@ sips -s format jpeg -s formatOptions 85 ko-feature-graphic-1024x500.png --out as
 
 `/sagak/` 는 사각사각(SAGAK) 시카쿠 퍼즐 앱 랜딩입니다. 앱 PRD(`Sagak/docs/PRD.md` v4.4)와 그로부터 파생한 `Sagak/docs/WEBSITE_PRD.md` 를 근거로 만들었고, 시안은 Claude Design 캔버스(데스크탑·모바일·밤 종이)로 먼저 그렸습니다. 한국어 · 영어 · 일본어 3개 언어이며 hreflang 으로 상호 연결합니다(약관·개인정보는 KO/EN 만 — 일본어 페이지는 영문 약관으로 연결). 인앱 화면은 스크린샷이 아니라 Claude Design 의 화면 시안을 DC 런타임으로 렌더해 캡처한 것입니다 (`scratchpad/sagak/shots2.py`). 재료 규칙(종이·연필·잉크·도장)에 따라 그라디언트 버튼·네온·이모지·파티클을 쓰지 않고, 색은 Flexoki 팔레트를 그대로 씁니다. ⚠️ 카피에 "무료 · 광고 없음 · calm/relaxing/zen · 니콜리"를 쓰지 않습니다 — 앱 PRD §1.4 · §3.2 의 금지 사항입니다.
 
-라이프스타일 라인(피부핑 `/skinping/`, 롤개팅 `/lol.dating/`)은 별도 저장소에서 같은 도메인 하위 경로로 배포되며, 각자의 약관 페이지도 해당 저장소에 있습니다.
+피부핑 `/skinping/`, 롤개팅 `/lol.dating/`은 공식 홈페이지의 제품 노출·공통 메뉴·Metrics 수집에서 제외합니다. 라이프스타일에는 애착인형 뽑기·몽글·결을 표시합니다. 별도 저장소의 기존 서비스 주소는 삭제하지 않습니다.
 
 브랜딩: 루트 페이지는 특정 제품이 아니라 **IT 기술 스타트업**으로 포지셔닝합니다. 사용자에게 보이는 문구에는 Kotlin Multiplatform·Compose Multiplatform·Rust 같은 기술 용어를 쓰지 않습니다 — "아이폰과 안드로이드에서 똑같이", "내 폰 안에서 처리"처럼 풀어 씁니다 (JSON-LD `knowsAbout` 은 검색엔진용 구조화 데이터라 기술명을 유지). 제품 분야는 **매일 쓰는 도구 / 라이프스타일 / 게임** 세 가지로 부르고, 히어로 칩도 이 세 묶음으로 나눕니다. 파비콘·앱 아이콘·루트 OG·JSON-LD `logo` 는 전부 H1Soft 로고를 쓰고, QR Scanner 에셋은 `/qr-scanner/` 안에서만 씁니다 (예전에는 사이트 전역이 QR 아이콘이라 구글이 H1Soft = QR 앱으로 인식했습니다).
 
