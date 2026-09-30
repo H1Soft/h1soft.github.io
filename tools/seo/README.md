@@ -8,6 +8,7 @@ python3 tools/seo/enrich.py
 node tools/localize-store-links.mjs
 python3 tools/seo/enrich.py
 python3 tools/seo/check.py
+python3 tools/seo/favicons.py --check
 node tools/localize-store-links.mjs --check
 ```
 
@@ -24,3 +25,11 @@ node tools/localize-store-links.mjs --check
 회사 홈의 제품 수·메뉴·카드·FAQ는 제품 추가 시 직접 함께 갱신합니다. 현재 한국어/영어 홈은 11개(도구 4, 라이프스타일 3, 게임 4)이며, 검사가 카드와 JSON-LD 개수 불일치를 잡습니다. `/skinping/`, `/lol.dating/`는 홈페이지와 공통 제품 메뉴에서 제외합니다. 해당 링크가 다시 들어오면 검사가 실패합니다.
 
 `check.py`는 헤드 필수 정보, JSON-LD, 가격, 홈 제품 목록, 고유 궁합 콘텐츠, 홈에서의 도달 가능성, sitemap의 canonical/noindex 일치를 검사합니다. 검색엔진의 실제 색인·순위나 리치 결과 채택 여부를 검증하는 도구는 아닙니다.
+
+## 파비콘과 Google 검색 아이콘
+
+회사 페이지는 `/assets/h1soft-appicon.png`, 온글·몽글·슥캔·QR Scanner·스도쿠·사각사각은 각 서비스의 승인된 512px PNG를 파비콘과 Apple 터치 아이콘으로 사용합니다. 이미 자체 아이콘을 사용하는 나머지 서비스의 설정은 유지합니다. 공통 파일 `favicon-32.png`/`favicon-48.png`에 제품별 아이콘을 덮어쓰지 않습니다.
+
+`python3 tools/seo/favicons.py`로 아이콘 설정만 재적용할 수 있으며 `enrich.py`에도 포함되어 있습니다. 모든 번역·지원·정책 페이지가 대상입니다. 이 작업은 정책 내용이나 검색 허용 여부를 바꾸지 않습니다.
+
+[Google은 호스트당 검색 파비콘 하나만 지원](https://developers.google.com/search/docs/appearance/favicon-in-search)합니다. `h1soft.github.io/ongle/`처럼 하위 경로만 다른 서비스에 검색 파비콘을 따로 지정할 수는 없습니다. 현재 도메인의 검색 대표 아이콘은 H1Soft이며, 서비스별 아이콘은 브라우저 탭·북마크 등에 사용됩니다. 검색에서 서비스별 아이콘을 분리하려면 별도 도메인/서브도메인과 사이트 이전 작업이 필요합니다. Google의 기존 아이콘은 홈페이지 재수집 후 갱신될 수 있으며 즉시 갱신이나 노출은 보장되지 않습니다. 아이콘 URL은 향후에도 안정적으로 유지합니다.

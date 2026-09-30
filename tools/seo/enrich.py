@@ -7,6 +7,7 @@ from urllib.parse import urljoin, urlsplit
 from html import escape
 import argparse, json, re, xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
+from favicons import apply as apply_favicons
 
 HERE = Path(__file__).resolve().parent
 BASE = 'https://h1soft.github.io'
@@ -271,6 +272,7 @@ def sitemaps(root,changed):
 
 def run(root):
     changed=set();attachment(root,changed);enrich_pages(root,changed);sitemaps(root,changed)
+    changed.update(root / path for path in apply_favicons(root)['changed'])
     print(json.dumps({'changed':len(changed),'files':[str(p.relative_to(root)) for p in sorted(changed)]},ensure_ascii=False))
 
 if __name__=='__main__':
