@@ -1,0 +1,25 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "2LHU79BDF4.com.h1soft.attachment"
+        ],
+        "components": [
+          {
+            "/": "/attachment/t/*"
+          },
+          {
+            "/": "/attachment/with/*"
+          },
+          {
+            "/": "/attachment/pair/*"
+          },
+          {
+            "/": "/attachment/play/*"
+          }
+        ]
+      }
+    ]
+  }
+}
