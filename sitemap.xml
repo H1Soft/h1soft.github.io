@@ -1905,91 +1905,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://h1soft.github.io/attachment/with/secure-puppy/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/secure-penguin/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/secure-capybara/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/secure-otter/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/anxious-duckling/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/anxious-bunny/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/anxious-cat/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/anxious-tiger/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/avoidant-panda/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/avoidant-owl/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/avoidant-sloth/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/avoidant-turtle/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/fearful-mole/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/fearful-hedgehog/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/fearful-pufferfish/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/fearful-jellyfish/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/with/secret-teddy/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://h1soft.github.io/attachment/pair/anxious-bunny-anxious-bunny/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2759,5 +2674,13 @@
     <lastmod>2026-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/gyeol/</loc>
+    <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/pair/</loc>
+    <lastmod>2026-09-30</lastmod>
   </url>
 </urlset>

@@ -26,8 +26,8 @@ const CONFIG = {
   SAGAK_APP_STORE_URL: "https://apps.apple.com/app/id6809531957",
   SAGAK_PLAY_STORE_URL: "",
 
-  // 폰 클리너: 공식 출시 URL이 확인되면 입력합니다.
-  CLEANER_APP_STORE_URL: "",
+  // 폰 클리너: iOS 공개 출시 확인 (2026-09-30), Android 출시 준비 중.
+  CLEANER_APP_STORE_URL: "https://apps.apple.com/app/id6815222629",
   CLEANER_PLAY_STORE_URL: "",
 
   CONTACT_EMAIL: "h1.soft.x001@gmail.com",

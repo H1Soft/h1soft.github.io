@@ -1,0 +1,178 @@
+{
+  "checked_on": "2026-09-30",
+  "apps": {
+    "ongle": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6809517375,
+      "url": "https://apps.apple.com/app/id6809517375",
+      "source": "https://itunes.apple.com/lookup?id=6809517375&country=kr",
+      "rating_count": 0
+    },
+    "mongle": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6809419426,
+      "url": "https://apps.apple.com/app/id6809419426",
+      "source": "https://itunes.apple.com/lookup?id=6809419426&country=kr",
+      "rating_count": 0
+    },
+    "sudoku": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6809524435,
+      "url": "https://apps.apple.com/app/id6809524435",
+      "source": "https://itunes.apple.com/lookup?id=6809524435&country=kr",
+      "rating_count": 0
+    },
+    "sagak": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6809531957,
+      "url": "https://apps.apple.com/app/id6809531957",
+      "source": "https://itunes.apple.com/lookup?id=6809531957&country=kr",
+      "rating_count": 0
+    },
+    "nonogram": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6814582503,
+      "url": "https://apps.apple.com/app/id6814582503",
+      "source": "https://itunes.apple.com/lookup?id=6814582503&country=kr",
+      "rating_count": 0
+    },
+    "cleaner": {
+      "price": 0,
+      "currency": "KRW",
+      "apple_id": 6815222629,
+      "url": "https://apps.apple.com/app/id6815222629",
+      "source": "https://itunes.apple.com/lookup?id=6815222629&country=kr",
+      "rating_count": 0
+    },
+    "qr-scanner": {
+      "price": 0,
+      "currency": "USD",
+      "package": "com.h1soft.codescanner",
+      "url": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner",
+      "source": "https://play.google.com/store/apps/details?id=com.h1soft.codescanner&hl=en_US&gl=US",
+      "rating_count": 0
+    },
+    "seukscan": {
+      "price": null,
+      "url": "",
+      "status": "No public listing found; Google Play returned 404 in both KR and US. Do not invent a price or rating."
+    }
+  },
+  "download_labels": {
+    "ko": "다운로드",
+    "en": "Download",
+    "ja": "ダウンロード",
+    "zh-Hans": "下载",
+    "zh-Hant": "下載",
+    "zh-CN": "下载",
+    "zh-TW": "下載",
+    "de": "Herunterladen",
+    "fr": "Télécharger",
+    "es": "Descargar",
+    "it": "Scarica",
+    "pt": "Baixar",
+    "ru": "Скачать",
+    "pl": "Pobierz",
+    "nl": "Downloaden",
+    "vi": "Tải xuống",
+    "id": "Unduh",
+    "tr": "İndir",
+    "fa": "دریافت"
+  },
+  "pending_labels": {
+    "ko": "출시 준비 중",
+    "en": "Coming soon",
+    "ja": "近日公開",
+    "zh-Hans": "即将推出",
+    "zh-Hant": "即將推出",
+    "zh-CN": "即将推出",
+    "zh-TW": "即將推出",
+    "de": "Demnächst",
+    "fr": "Bientôt disponible",
+    "es": "Próximamente",
+    "it": "Prossimamente",
+    "pt": "Em breve",
+    "ru": "Скоро",
+    "pl": "Wkrótce",
+    "nl": "Binnenkort",
+    "vi": "Sắp ra mắt",
+    "id": "Segera hadir",
+    "tr": "Yakında",
+    "fa": "به‌زودی"
+  },
+  "cleaner_release": {
+    "ko": [
+      "중복 사진을 비교하고 큰 사진·동영상 용량을 기기 안에서 줄여요. 폰클리너는 iOS에서 다운로드할 수 있으며 Android 출시는 준비 중이에요.",
+      "iOS 16 이상은 App Store에서 받을 수 있어요. 여기에서 소개하는 앱·파일 정리 기능은 Android 기준이며, Google Play 출시는 준비 중이에요."
+    ],
+    "en": [
+      "Compare duplicate photos and reduce large photos and videos on your device. Phone Cleaner is available for iOS; the Android release is coming soon.",
+      "Available on the App Store for iOS 16+. The app and file cleanup features shown here are for Android; the Google Play release is coming soon."
+    ],
+    "ja": [
+      "重複写真を比較し、大きな写真や動画を端末内で圧縮。Phone CleanerはiOSで配信中。Android版は準備中です。",
+      "iOS 16以降はApp Storeからダウンロードできます。紹介しているアプリ・ファイル整理機能はAndroid向けです。Google Playでの公開は準備中です。"
+    ],
+    "zh-CN": [
+      "在设备上比较重复照片，缩小大照片和视频。Phone Cleaner已在iOS上线，Android版本即将推出。",
+      "支持iOS 16及以上版本，可从App Store下载。此处介绍的应用和文件清理功能适用于Android，Google Play版本正在准备中。"
+    ],
+    "zh-TW": [
+      "在裝置上比較重複照片，縮小大型照片和影片。Phone Cleaner已在iOS推出，Android版本準備中。",
+      "支援iOS 16以上版本，可從App Store下載。此處介紹的應用程式及檔案清理功能適用於Android，Google Play版本準備中。"
+    ],
+    "de": [
+      "Vergleiche doppelte Fotos und verkleinere große Fotos und Videos direkt auf deinem Gerät. Phone Cleaner ist für iOS verfügbar; Android folgt.",
+      "Im App Store für iOS 16 oder neuer verfügbar. Die hier gezeigte App- und Dateibereinigung gilt für Android; die Veröffentlichung bei Google Play wird vorbereitet."
+    ],
+    "fr": [
+      "Comparez les photos en double et réduisez les photos et vidéos volumineuses sur votre appareil. Phone Cleaner est disponible sur iOS ; Android arrive bientôt.",
+      "Disponible sur l’App Store à partir d’iOS 16. Le nettoyage des applications et fichiers présenté ici concerne Android ; la sortie sur Google Play est en préparation."
+    ],
+    "es": [
+      "Compara fotos duplicadas y reduce fotos y vídeos grandes en tu dispositivo. Phone Cleaner ya está disponible para iOS; Android llegará próximamente.",
+      "Disponible en App Store para iOS 16 o posterior. La limpieza de aplicaciones y archivos mostrada aquí corresponde a Android; el lanzamiento en Google Play está en preparación."
+    ],
+    "it": [
+      "Confronta foto duplicate e riduci foto e video di grandi dimensioni sul dispositivo. Phone Cleaner è disponibile su iOS; Android è in arrivo.",
+      "Disponibile su App Store per iOS 16 o successivo. La pulizia di app e file mostrata qui riguarda Android; il lancio su Google Play è in preparazione."
+    ],
+    "pt": [
+      "Compare fotos duplicadas e reduza fotos e vídeos grandes no dispositivo. O Phone Cleaner está disponível para iOS; a versão Android está em preparação.",
+      "Disponível na App Store para iOS 16 ou posterior. A limpeza de apps e arquivos apresentada aqui é para Android; o lançamento no Google Play está em preparação."
+    ],
+    "ru": [
+      "Сравнивайте дубликаты фото и уменьшайте большие фотографии и видео на устройстве. Phone Cleaner доступен для iOS; версия для Android готовится к выпуску.",
+      "Доступно в App Store для iOS 16 и новее. Показанная здесь очистка приложений и файлов относится к Android; выпуск в Google Play готовится."
+    ],
+    "pl": [
+      "Porównuj duplikaty zdjęć i zmniejszaj duże zdjęcia oraz filmy na urządzeniu. Phone Cleaner jest dostępny na iOS; wersja na Androida jest w przygotowaniu.",
+      "Dostępny w App Store dla iOS 16 i nowszych. Przedstawione tu porządkowanie aplikacji i plików dotyczy Androida; premiera w Google Play jest w przygotowaniu."
+    ],
+    "nl": [
+      "Vergelijk dubbele foto’s en verklein grote foto’s en video’s op je apparaat. Phone Cleaner is beschikbaar voor iOS; de Android-versie volgt.",
+      "Beschikbaar in de App Store voor iOS 16 en nieuwer. De getoonde functies voor het opruimen van apps en bestanden zijn voor Android; de Google Play-release is in voorbereiding."
+    ],
+    "vi": [
+      "So sánh ảnh trùng lặp và giảm dung lượng ảnh, video lớn ngay trên thiết bị. Phone Cleaner đã có trên iOS; phiên bản Android đang được chuẩn bị.",
+      "Có trên App Store cho iOS 16 trở lên. Các tính năng dọn ứng dụng và tệp được giới thiệu ở đây dành cho Android; bản phát hành Google Play đang được chuẩn bị."
+    ],
+    "id": [
+      "Bandingkan foto duplikat dan perkecil foto serta video besar di perangkat. Phone Cleaner tersedia untuk iOS; versi Android sedang disiapkan.",
+      "Tersedia di App Store untuk iOS 16 atau lebih baru. Fitur pembersihan aplikasi dan file yang ditampilkan di sini untuk Android; rilis Google Play sedang disiapkan."
+    ],
+    "tr": [
+      "Yinelenen fotoğrafları karşılaştırın, büyük fotoğraf ve videoları cihazınızda küçültün. Phone Cleaner iOS için yayında; Android sürümü hazırlanıyor.",
+      "iOS 16 ve sonrası için App Store’da mevcut. Burada gösterilen uygulama ve dosya temizleme özellikleri Android içindir; Google Play sürümü hazırlanıyor."
+    ],
+    "fa": [
+      "عکس‌های تکراری را مقایسه کنید و حجم عکس‌ها و ویدیوهای بزرگ را روی دستگاه کاهش دهید. Phone Cleaner برای iOS عرضه شده و نسخهٔ Android در دست آماده‌سازی است.",
+      "برای iOS 16 و بالاتر در App Store در دسترس است. قابلیت‌های پاک‌سازی برنامه و فایل که اینجا معرفی شده‌اند برای Android هستند؛ انتشار در Google Play در دست آماده‌سازی است."
+    ]
+  }
+}

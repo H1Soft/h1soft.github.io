@@ -6,7 +6,7 @@ H1Soft 팀 공식 웹사이트 (정적 사이트, GitHub Pages 배포).
 
 QR Scanner, 슥캔, 온글, 몽글, 폰 클리너, 스도쿠 보야지, 사각사각, 노노그램 트립, 냥브로 아이콘은 2026-09-27 Play Console 앱 목록의 512px 등록 이미지로 갱신했습니다. 애착은 사용자가 제공한 고양이 아이콘(`attachment/assets/app-icon.png`)을 사용합니다. 피부핑은 해당 Play Console 목록에 없어 기존 표시를 유지합니다. 결은 목록에서 기본 임시 아이콘으로 표시되어 기존 사이트 아이콘을 유지합니다.
 
-한국어·영어 홈의 라이프스타일과 게임은 유틸리티와 동일한 `tool-grid tool-grid--four` / `tool-card` 컴포넌트를 사용합니다. 냥브로는 공통 제품 카드·Products 메뉴·푸터·ItemList에서 `/meowbro/`로 연결하며, 한국어 제품 페이지임을 영문 링크에 표시합니다. 홈의 앱 수는 11개(도구 4 / 라이프스타일 3 / 게임 4)입니다.
+한국어·영어 홈의 라이프스타일과 게임은 유틸리티와 동일한 `tool-grid tool-grid--four` / `tool-card` 컴포넌트를 사용합니다. 냥브로는 공통 제품 카드·Products 메뉴·푸터·ItemList에서 `/meowbro/`로 연결하며, 한국어 제품 페이지임을 영문 링크에 표시합니다. 결도 같은 컴포넌트와 메뉴·푸터·ItemList에서 연결합니다. 홈의 앱 수는 12개(도구 4 / 라이프스타일 4 / 게임 4)입니다.
 
 기존 각 앱의 아이콘 파일 경로를 유지하고 `?v=icons-20260928`로 캐시를 갱신했습니다. 별도 앱 프로젝트에서 사이트를 다시 내보낼 때 이 아이콘과 실제 이미지 기반의 메뉴 표시를 유지해야 합니다. 노노그램의 저장소 내 원본 이미지와 Cleaner 템플릿도 함께 수정했습니다.
 
@@ -14,11 +14,11 @@ QR Scanner, 슥캔, 온글, 몽글, 폰 클리너, 스도쿠 보야지, 사각�
 
 `/attachment/`에 12개 섹션의 반응형 랜딩을, `/attachment/play/`에 Flutter Web 테스트를 배포합니다. 한국어·영어 회사 홈의 라이프스타일 카드와 기존 제품 메뉴·푸터에서 연결합니다. 다른 언어 페이지는 한국어 랜딩임을 링크에 표시합니다.
 
-인형 소개 17개, 초대 17개, 궁합 153개 경로는 검색·공유용 HTML과 1200×630 OG 이미지를 제공합니다. 개인 결과가 포함된 공유 URL은 같은 도메인의 웹 앱으로 연결합니다. 정적 OG에는 개인 점수·닉네임을 넣지 않습니다. 기존 루트 sitemap 2개에는 신규 URL만 추가했습니다.
+인형 소개 17개, 초대 17개, 궁합 153개 경로는 HTML과 1200×630 OG 이미지를 제공합니다. 초대는 공유용으로만 사용하고, 검색에는 인형 소개·고유 궁합 가이드·궁합 목록을 노출합니다. 개인 결과가 포함된 공유 URL은 같은 도메인의 웹 앱으로 연결합니다. 정적 OG에는 개인 점수·닉네임을 넣지 않습니다. 기존 루트 sitemap 2개에는 신규 URL만 추가했습니다.
 
 현재 앱은 스토어 출시 준비 중이며 실제 스토어 URL이 없는 버튼·평점·방문 수를 표시하지 않습니다. 웹 테스트를 바로 이용할 수 있습니다. 랜딩의 앱·공유 카드 이미지는 디자인 미리보기라고 표시합니다. 외부 분석 스크립트는 추가하지 않았습니다.
 
-원본은 별도 Flutter `attachment` 프로젝트의 `promo/`, `tools/build_promo.py`, `tools/build_discovery.py`에서 관리합니다. 프로젝트에서 `sh tools/build_site.sh`를 실행하고 `build/site/attachment/`를 이 저장소의 `attachment/`에 동기화한 뒤 `python3 tools/integrate_h1soft.py <이 저장소>`로 메뉴와 sitemap을 갱신합니다. 생성된 공개 파일만 이 저장소에 배포합니다.
+원본은 별도 Flutter `attachment` 프로젝트의 `promo/`, `tools/build_promo.py`, `tools/build_discovery.py`에서 관리합니다. 프로젝트에서 `sh tools/build_site.sh`를 실행하고 `build/site/attachment/`를 이 저장소의 `attachment/`에 동기화한 뒤 `python3 tools/integrate_h1soft.py <이 저장소>`로 메뉴와 sitemap을 갱신합니다. 생성된 공개 파일만 이 저장소에 배포합니다. 동기화 후에는 아래 SEO 재적용 절차를 반드시 실행합니다.
 
 ## 구조
 
@@ -118,7 +118,7 @@ user/org 이름과 같은 `<이름>.github.io` 저장소는 main 푸시만으로
 
 The new entry uses existing `.tool-card`, `.nav-item`, and `.more-card` components. The four home utility cards use `.tool-grid--four`: two columns above 680px, one below, retaining existing spacing, typography, borders, and hover states. Product menus scroll within the viewport on short screens. Brand-specific pages without a cross-product list keep their existing navigation.
 
-The home copy, nine-app counter, FAQ/structured product list, and both root sitemaps include Phone Cleaner. It is marked Android / coming soon; no store download link is fabricated.
+The home copy, product counter, FAQ/structured product list, and root sitemaps include Phone Cleaner. As of 2026-09-30 it is available on iOS (App Store ID 6815222629); Android remains coming soon.
 
 ## Phone Cleaner policy pages (2026-09-12)
 
@@ -128,7 +128,7 @@ The privacy policy separates on-device app processing from GitHub Pages visitor 
 
 ## iOS 출시 링크 (2026-09-19)
 
-App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결했습니다. 국가 코드가 없는 URL로 방문자의 스토어에 연결하며, 제품별 다국어 페이지의 App Store 버튼에도 정적 링크를 제공합니다.
+App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결했습니다. 페이지 언어에 맞는 국가 경로와 언어 매개변수로 연결하며, 제품별 다국어 페이지의 App Store 버튼에도 정적 링크를 제공합니다.
 
 - ongle: https://apps.apple.com/app/id6809517375
 - mongle: https://apps.apple.com/app/id6809419426
@@ -143,11 +143,15 @@ App Store Connect 배포 상태와 공개 제품 페이지를 확인해 연결�
 
 `js/config.js`와 노노그램의 `StoreLinks.astro`도 같은 규칙을 사용합니다. `/metrics/`의 동적 링크는 `js/store-link-observer.mjs`가 처리하며, 대시보드 원본 `pages/index.html`에도 이 스크립트가 포함되어 있습니다. 별도 사이트인 `/skinping/`, `/lol.dating/`에는 현재 공개 스토어 링크가 없습니다.
 
-노노그램 트립은 App Store ID `6814582503`으로 연결됩니다. 클리너의 스토어 버튼은 공식 출시 URL을 확인하기 전까지 출시 예정이며, `js/config.js`의 `CLEANER_*_URL`에 주소를 추가하면 활성화됩니다.
+노노그램 트립은 App Store ID `6814582503`으로 연결됩니다. 폰 클리너는 공개 출시를 확인한 App Store ID `6815222629`로 연결되며, Android는 출시 예정입니다. iOS의 사진·동영상 정리와 Android의 앱·파일 정리 기능 범위를 구분해 안내합니다.
 
 ## Nonogram Trip
 
 - Website: https://h1soft.github.io/nonogram/ (English) and https://h1soft.github.io/nonogram/ko/ (한국어).
 - Reproducible Astro source: [`_source/nonogram`](./_source/nonogram/README.md).
 - Generated public files: `nonogram/`; deployment uses the existing main/root GitHub Pages configuration.
-- Root navigation, product listings, legal/support navigation and sitemaps include the new product. Store availability is marked coming soon until verified listings are configured.
+- Root navigation, product listings, legal/support navigation and sitemaps include the new product. App Store ID 6814582503 is live; Google Play remains coming soon.
+
+## SEO 재적용 및 검증 (2026-09-30)
+
+정적 사이트를 내보내거나 sitemap을 다시 만든 후 [tools/seo/README.md](tools/seo/README.md)의 명령을 실행합니다. 지원 페이지 미리보기, 궁합 고유 콘텐츠와 내부 링크, 구조화 데이터, 실제 가격 및 검색 제외 규칙을 유지합니다. CI가 필수 정보 누락과 스토어 링크 언어를 검사합니다. 공개 평점이 없는 앱에는 리뷰를 생성하지 않습니다.

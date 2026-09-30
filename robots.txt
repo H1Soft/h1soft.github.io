@@ -21,3 +21,5 @@ Sitemap: https://h1soft.github.io/sagak/sitemap.xml
 
 Sitemap: https://h1soft.github.io/qr-scanner/sitemap.xml
 Sitemap: https://h1soft.github.io/nonogram/sitemap.xml
+Sitemap: https://h1soft.github.io/gyeol/sitemap.xml
+Sitemap: https://h1soft.github.io/attachment/sitemap.xml
