@@ -1,6 +1,6 @@
 // Shared marketing pages use one consent-gated analytics loader.
 const analyticsLoader = document.createElement('script');
-analyticsLoader.src = '/js/analytics.js';
+analyticsLoader.src = '/js/analytics.js?v=services-20260930';
 analyticsLoader.defer = true;
 document.head.append(analyticsLoader);
 // ── 공통 인터랙션: Products 드롭다운, 스크롤 등장, 숫자 카운트 ──

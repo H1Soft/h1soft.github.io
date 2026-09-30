@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="header.css">
 <link rel="alternate" hreflang="ko" href="https://h1soft.github.io/cleaner/">
 <link rel="alternate" hreflang="en" href="https://h1soft.github.io/cleaner/en/">
+<script defer src="/js/analytics.js?v=services-20260930"></script>
 </head>
 <body class="qr-page">
 <a class="skip" href="#main">본문으로 건너뛰기</a>

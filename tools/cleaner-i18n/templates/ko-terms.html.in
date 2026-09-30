@@ -8,6 +8,7 @@
 <link rel="preload" href="../assets/Pretendard.ttf" as="font" type="font/ttf" crossorigin>
 <link rel="stylesheet" href="../styles.css"><link rel="stylesheet" href="../header.css"><link rel="stylesheet" href="../legal.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "이용약관 | 폰 클리너", "url": "https://h1soft.github.io/cleaner/terms/", "inLanguage": "ko", "dateModified": "2026-09-12", "publisher": {"@type": "Organization", "name": "H1Soft", "url": "https://h1soft.github.io/"}}</script>
+<script defer src="/js/analytics.js?v=services-20260930"></script>
 </head><body class="qr-page legal-page" id="top">
 <a class="skip" href="#main">본문으로 건너뛰기</a>
 <header class="site-header" id="h1soft-header">

@@ -169,7 +169,7 @@
   "s168": "les médias déplacés sont gérés par la corbeille du système Android pendant la durée de conservation affichée. L’app utilise une durée de 30 jours ; la suppression définitive ou l’expiration du délai met fin à la possibilité de restauration. Vérifiez le temps restant dans la corbeille.",
   "s169": "Sauvegardes et synchronisation :",
   "s170": "la sauvegarde Android, le transfert entre appareils ou la synchronisation de la photothèque peuvent créer des copies distinctes selon vos réglages et la politique du prestataire concerné. Il s’agit de fonctions de la plateforme ou du service photo, et non d’un service d’envoi de fichiers exploité par Phone Cleaner.",
-  "s171": "Ce site web de présentation ne propose ni inscription, ni paiement, ni envoi de fichiers. H1Soft n’a ajouté aucun traceur publicitaire, outil d’analyse des visites ou cookie de suivi. Les pages de Phone Cleaner chargent leurs polices et images depuis le même site web.",
+  "s171": "Ce site ne propose ni inscription, ni paiement, ni téléversement de fichiers. Depuis le 30 septembre 2026, Google Analytics collecte les visites, les informations sur l’appareil et les cookies statistiques uniquement avec votre accord. Vous pouvez refuser ou retirer votre accord dans Analytics settings. La personnalisation publicitaire est désactivée. Le traitement local dans Phone Cleaner reste inchangé.",
   "s172": "GitHub, notre hébergeur, indique consigner et stocker les adresses IP des visiteurs à des fins de sécurité. Ces journaux d’accès sont distincts des médias analysés dans l’app et de l’historique de nettoyage. Consultez la",
   "s173": "collecte de données de GitHub Pages",
   "s174": "et la",

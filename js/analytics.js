@@ -1,6 +1,7 @@
 // Load visit analytics only after the visitor opts in. No advertising tags.
 (() => {
-  if (location.hostname !== 'h1soft.github.io' || location.pathname.startsWith('/metrics')) return;
+  if (location.hostname !== 'h1soft.github.io' || /^\/(?:metrics|skinping|pibuping)(?:\/|$)/.test(location.pathname) || window.__h1softAnalyticsLoaded) return;
+  window.__h1softAnalyticsLoaded = true;
   const id = 'G-X522MQ0TMG', key = 'h1soft.analytics.v1';
   const ko = document.documentElement.lang.startsWith('ko');
   let choice = null, started = false;

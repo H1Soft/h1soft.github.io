@@ -1,0 +1,14 @@
+name: Validate service analytics coverage
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.0.0
+        with:
+          node-version: '24'
+      - run: node tools/service-analytics.mjs
+      - run: node --test tests/service-analytics.test.mjs
