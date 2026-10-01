@@ -1,0 +1,1284 @@
+{
+  "products": {
+    "qr-scanner": {
+      "labels": {
+        "ko": {
+          "name": "QR Scanner",
+          "description": "QR 스캔·생성"
+        },
+        "en": {
+          "name": "QR Scanner",
+          "description": "QR scan & create"
+        },
+        "de": {
+          "name": "QR Scanner",
+          "description": "QR-Codes scannen und erstellen"
+        },
+        "es": {
+          "name": "QR Scanner",
+          "description": "Lector y generador de códigos QR"
+        },
+        "fa": {
+          "name": "QR Scanner",
+          "description": "اسکن و ساخت کد QR"
+        },
+        "fr": {
+          "name": "QR Scanner",
+          "description": "Lecteur et générateur de codes QR"
+        },
+        "id": {
+          "name": "QR Scanner",
+          "description": "Pemindai dan pembuat kode QR"
+        },
+        "it": {
+          "name": "QR Scanner",
+          "description": "Lettore e generatore di codici QR"
+        },
+        "ja": {
+          "name": "QR Scanner",
+          "description": "QR コードの読み取り・作成"
+        },
+        "nl": {
+          "name": "QR Scanner",
+          "description": "QR-codes scannen en maken"
+        },
+        "pl": {
+          "name": "QR Scanner",
+          "description": "Skaner i generator kodów QR"
+        },
+        "pt": {
+          "name": "QR Scanner",
+          "description": "Leitor e gerador de códigos QR"
+        },
+        "ru": {
+          "name": "QR Scanner",
+          "description": "Сканер и генератор QR-кодов"
+        },
+        "tr": {
+          "name": "QR Scanner",
+          "description": "QR kod tarayıcı ve oluşturucu"
+        },
+        "vi": {
+          "name": "QR Scanner",
+          "description": "Quét và tạo mã QR"
+        },
+        "zh-hans": {
+          "name": "QR Scanner",
+          "description": "二维码扫描与生成"
+        },
+        "zh-hant": {
+          "name": "QR Scanner",
+          "description": "QR Code 掃描與產生"
+        }
+      },
+      "icon": "/assets/app_icon.png"
+    },
+    "seukscan": {
+      "labels": {
+        "ko": {
+          "name": "슥캔",
+          "description": "문서 스캐너·OCR"
+        },
+        "en": {
+          "name": "Seukscan",
+          "description": "Doc scanner · OCR"
+        },
+        "ar": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "de": {
+          "name": "Seukscan",
+          "description": "Dokumentenscanner · OCR"
+        },
+        "es": {
+          "name": "Seukscan",
+          "description": "Escáner de documentos · OCR"
+        },
+        "fa": {
+          "name": "Seukscan",
+          "description": "اسکن اسناد · تشخیص متن (OCR)"
+        },
+        "fr": {
+          "name": "Seukscan",
+          "description": "Scanner de documents · OCR"
+        },
+        "id": {
+          "name": "Seukscan",
+          "description": "Pemindai dokumen · OCR"
+        },
+        "it": {
+          "name": "Seukscan",
+          "description": "Scanner di documenti · OCR"
+        },
+        "ja": {
+          "name": "Seukscan",
+          "description": "書類スキャン・OCR"
+        },
+        "nl": {
+          "name": "Seukscan",
+          "description": "Documenten scannen · OCR"
+        },
+        "pl": {
+          "name": "Seukscan",
+          "description": "Skaner dokumentów · OCR"
+        },
+        "pt": {
+          "name": "Seukscan",
+          "description": "Scanner de documentos · OCR"
+        },
+        "ru": {
+          "name": "Seukscan",
+          "description": "Сканер документов · OCR"
+        },
+        "tr": {
+          "name": "Seukscan",
+          "description": "Belge tarayıcı · OCR"
+        },
+        "vi": {
+          "name": "Seukscan",
+          "description": "Quét tài liệu · OCR"
+        },
+        "zh-hans": {
+          "name": "Seukscan",
+          "description": "文档扫描 · OCR"
+        },
+        "zh-hant": {
+          "name": "Seukscan",
+          "description": "文件掃描 · OCR"
+        },
+        "cs": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "da": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "el": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "fi": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "he": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "hi": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "hu": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "ms": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "nb": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "ro": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "sv": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "th": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        },
+        "uk": {
+          "name": "Seukscan",
+          "description": "Seukscan"
+        }
+      },
+      "icon": "/assets/seukscan-icon.png"
+    },
+    "ongle": {
+      "labels": {
+        "ko": {
+          "name": "온글",
+          "description": "hwp·hwpx 뷰어"
+        },
+        "en": {
+          "name": "Ongle",
+          "description": "hwp·hwpx viewer"
+        },
+        "ar": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "de": {
+          "name": "Ongle",
+          "description": "HWP·HWPX-Dateien anzeigen"
+        },
+        "es": {
+          "name": "Ongle",
+          "description": "Visor de HWP·HWPX"
+        },
+        "fa": {
+          "name": "Ongle",
+          "description": "نمایشگر فایل‌های HWP و HWPX"
+        },
+        "fr": {
+          "name": "Ongle",
+          "description": "Lecteur de fichiers HWP·HWPX"
+        },
+        "id": {
+          "name": "Ongle",
+          "description": "Penampil HWP·HWPX"
+        },
+        "it": {
+          "name": "Ongle",
+          "description": "Visualizzatore HWP·HWPX"
+        },
+        "ja": {
+          "name": "Ongle",
+          "description": "HWP・HWPX ビューア"
+        },
+        "nl": {
+          "name": "Ongle",
+          "description": "HWP·HWPX-viewer"
+        },
+        "pl": {
+          "name": "Ongle",
+          "description": "Przeglądarka plików HWP·HWPX"
+        },
+        "pt": {
+          "name": "Ongle",
+          "description": "Visualizador de HWP·HWPX"
+        },
+        "ru": {
+          "name": "Ongle",
+          "description": "Просмотр файлов HWP·HWPX"
+        },
+        "tr": {
+          "name": "Ongle",
+          "description": "HWP·HWPX görüntüleyici"
+        },
+        "vi": {
+          "name": "Ongle",
+          "description": "Trình xem HWP·HWPX"
+        },
+        "zh-hans": {
+          "name": "Ongle",
+          "description": "HWP·HWPX 查看器"
+        },
+        "zh-hant": {
+          "name": "Ongle",
+          "description": "HWP·HWPX 檢視器"
+        },
+        "cs": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "da": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "el": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "fi": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "he": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "hi": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "hu": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "ms": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "nb": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "ro": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "sv": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "th": {
+          "name": "Ongle",
+          "description": "Ongle"
+        },
+        "uk": {
+          "name": "Ongle",
+          "description": "Ongle"
+        }
+      },
+      "icon": "/assets/ongle-icon.png"
+    },
+    "cleaner": {
+      "labels": {
+        "ko": {
+          "name": "폰 클리너",
+          "description": "사진·저장 공간 정리"
+        },
+        "en": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "ar": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "de": {
+          "name": "Phone Cleaner",
+          "description": "Fotos · Speicher aufräumen"
+        },
+        "es": {
+          "name": "Phone Cleaner",
+          "description": "Fotos · limpieza del almacenamiento"
+        },
+        "fa": {
+          "name": "Phone Cleaner",
+          "description": "عکس‌ها · مرتب‌سازی فضای ذخیره‌سازی"
+        },
+        "fr": {
+          "name": "Phone Cleaner",
+          "description": "Photos · nettoyage du stockage"
+        },
+        "id": {
+          "name": "Phone Cleaner",
+          "description": "Foto · rapikan penyimpanan"
+        },
+        "it": {
+          "name": "Phone Cleaner",
+          "description": "Foto · pulizia dello spazio di archiviazione"
+        },
+        "ja": {
+          "name": "Phone Cleaner",
+          "description": "写真・ストレージの整理"
+        },
+        "nl": {
+          "name": "Phone Cleaner",
+          "description": "Foto’s · opslag opruimen"
+        },
+        "pl": {
+          "name": "Phone Cleaner",
+          "description": "Zdjęcia · porządkowanie pamięci"
+        },
+        "pt": {
+          "name": "Phone Cleaner",
+          "description": "Fotos · limpeza do armazenamento"
+        },
+        "ru": {
+          "name": "Phone Cleaner",
+          "description": "Фото · очистка хранилища"
+        },
+        "tr": {
+          "name": "Phone Cleaner",
+          "description": "Fotoğraflar · depolama alanı temizliği"
+        },
+        "vi": {
+          "name": "Phone Cleaner",
+          "description": "Ảnh · dọn dẹp bộ nhớ"
+        },
+        "zh-hans": {
+          "name": "Phone Cleaner",
+          "description": "照片整理 · 存储空间清理"
+        },
+        "zh-hant": {
+          "name": "Phone Cleaner",
+          "description": "照片整理 · 儲存空間清理"
+        },
+        "cs": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "da": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "el": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "fi": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "he": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "hi": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "hu": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "ms": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "nb": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "ro": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "sv": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "th": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        },
+        "uk": {
+          "name": "Phone Cleaner",
+          "description": "Photos · storage cleanup"
+        }
+      },
+      "icon": "/cleaner/assets/app-icon-20260917-bca163c928.webp"
+    },
+    "attachment": {
+      "labels": {
+        "ko": {
+          "name": "애착인형 뽑기",
+          "description": "애착 유형 테스트"
+        },
+        "en": {
+          "name": "Attachment Plush",
+          "description": "Attachment style test"
+        },
+        "ar": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "de": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "es": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "fa": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "fr": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "id": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "it": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "ja": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "nl": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "pl": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "pt": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "ru": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "tr": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "vi": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "zh-hans": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "zh-hant": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "cs": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "da": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "el": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "fi": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "he": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "hi": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "hu": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "ms": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "nb": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "ro": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "sv": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "th": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        },
+        "uk": {
+          "name": "Attachment Plush",
+          "description": "Meet your attachment-style plush"
+        }
+      },
+      "icon": "/attachment/assets/app-icon.png"
+    },
+    "mongle": {
+      "labels": {
+        "ko": {
+          "name": "몽글",
+          "description": "성격 테스트"
+        },
+        "en": {
+          "name": "Mongle",
+          "description": "Personality test"
+        },
+        "ar": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "de": {
+          "name": "Mongle",
+          "description": "Persönlichkeitstest"
+        },
+        "es": {
+          "name": "Mongle",
+          "description": "Test de personalidad"
+        },
+        "fa": {
+          "name": "Mongle",
+          "description": "آزمون شخصیت"
+        },
+        "fr": {
+          "name": "Mongle",
+          "description": "Test de personnalité"
+        },
+        "id": {
+          "name": "Mongle",
+          "description": "Tes kepribadian"
+        },
+        "it": {
+          "name": "Mongle",
+          "description": "Test della personalità"
+        },
+        "ja": {
+          "name": "Mongle",
+          "description": "性格診断"
+        },
+        "nl": {
+          "name": "Mongle",
+          "description": "Persoonlijkheidstest"
+        },
+        "pl": {
+          "name": "Mongle",
+          "description": "Test osobowości"
+        },
+        "pt": {
+          "name": "Mongle",
+          "description": "Teste de personalidade"
+        },
+        "ru": {
+          "name": "Mongle",
+          "description": "Тест личности"
+        },
+        "tr": {
+          "name": "Mongle",
+          "description": "Kişilik testi"
+        },
+        "vi": {
+          "name": "Mongle",
+          "description": "Trắc nghiệm tính cách"
+        },
+        "zh-hans": {
+          "name": "Mongle",
+          "description": "性格测试"
+        },
+        "zh-hant": {
+          "name": "Mongle",
+          "description": "性格測驗"
+        },
+        "cs": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "da": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "el": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "fi": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "he": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "hi": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "hu": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "ms": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "nb": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "ro": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "sv": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "th": {
+          "name": "Mongle",
+          "description": "Mongle"
+        },
+        "uk": {
+          "name": "Mongle",
+          "description": "Mongle"
+        }
+      },
+      "icon": "/assets/mongle/icon.png"
+    },
+    "gyeol": {
+      "labels": {
+        "ko": {
+          "name": "결",
+          "description": "가치관 소개팅"
+        },
+        "en": {
+          "name": "Gyeol",
+          "description": "Values-first dating"
+        }
+      },
+      "icon": "/gyeol/assets/apple-touch-icon.png"
+    },
+    "nonogram": {
+      "labels": {
+        "ko": {
+          "name": "노노그램 트립",
+          "description": "노노그램 퍼즐"
+        },
+        "en": {
+          "name": "Nonogram Trip",
+          "description": "Nonogram puzzles"
+        },
+        "ar": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "de": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "es": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "fa": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "fr": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "id": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "it": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "ja": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "nl": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "pl": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "pt": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "ru": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "tr": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "vi": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "zh-hans": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "zh-hant": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "cs": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "da": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "el": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "fi": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "he": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "hi": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "hu": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "ms": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "nb": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "ro": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "sv": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "th": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        },
+        "uk": {
+          "name": "Nonogram Trip",
+          "description": "Window-seat logic puzzles"
+        }
+      },
+      "icon": "/nonogram/images/app-icon.webp"
+    },
+    "sudoku": {
+      "labels": {
+        "ko": {
+          "name": "스도쿠 보야지",
+          "description": "스도쿠 퍼즐"
+        },
+        "en": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku puzzles"
+        },
+        "ar": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "de": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku-Rätsel"
+        },
+        "es": {
+          "name": "Sudoku Voyage",
+          "description": "Rompecabezas de Sudoku"
+        },
+        "fa": {
+          "name": "Sudoku Voyage",
+          "description": "معمای سودوکو"
+        },
+        "fr": {
+          "name": "Sudoku Voyage",
+          "description": "Grilles de Sudoku"
+        },
+        "id": {
+          "name": "Sudoku Voyage",
+          "description": "Teka-teki Sudoku"
+        },
+        "it": {
+          "name": "Sudoku Voyage",
+          "description": "Rompicapo Sudoku"
+        },
+        "ja": {
+          "name": "Sudoku Voyage",
+          "description": "数独パズル"
+        },
+        "nl": {
+          "name": "Sudoku Voyage",
+          "description": "Sudokupuzzel"
+        },
+        "pl": {
+          "name": "Sudoku Voyage",
+          "description": "Łamigłówka sudoku"
+        },
+        "pt": {
+          "name": "Sudoku Voyage",
+          "description": "Quebra-cabeça Sudoku"
+        },
+        "ru": {
+          "name": "Sudoku Voyage",
+          "description": "Головоломка судоку"
+        },
+        "tr": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku bulmacası"
+        },
+        "vi": {
+          "name": "Sudoku Voyage",
+          "description": "Giải đố Sudoku"
+        },
+        "zh-hans": {
+          "name": "Sudoku Voyage",
+          "description": "数独谜题"
+        },
+        "zh-hant": {
+          "name": "Sudoku Voyage",
+          "description": "數獨謎題"
+        },
+        "cs": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "da": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "el": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "fi": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "he": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "hi": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "hu": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "ms": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "nb": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "ro": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "sv": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "th": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        },
+        "uk": {
+          "name": "Sudoku Voyage",
+          "description": "Sudoku Voyage"
+        }
+      },
+      "icon": "/assets/sudoku-release/icon.png"
+    },
+    "sagak": {
+      "labels": {
+        "ko": {
+          "name": "사각사각",
+          "description": "시카쿠 퍼즐"
+        },
+        "en": {
+          "name": "SAGAK",
+          "description": "Shikaku puzzles"
+        },
+        "ar": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "de": {
+          "name": "SAGAK",
+          "description": "Shikaku-Rätsel"
+        },
+        "es": {
+          "name": "SAGAK",
+          "description": "Rompecabezas de Shikaku"
+        },
+        "fa": {
+          "name": "SAGAK",
+          "description": "معمای شیکاکو"
+        },
+        "fr": {
+          "name": "SAGAK",
+          "description": "Grilles de Shikaku"
+        },
+        "id": {
+          "name": "SAGAK",
+          "description": "Teka-teki Shikaku"
+        },
+        "it": {
+          "name": "SAGAK",
+          "description": "Rompicapo Shikaku"
+        },
+        "ja": {
+          "name": "SAGAK",
+          "description": "四角に切れパズル"
+        },
+        "nl": {
+          "name": "SAGAK",
+          "description": "Shikakupuzzel"
+        },
+        "pl": {
+          "name": "SAGAK",
+          "description": "Łamigłówka shikaku"
+        },
+        "pt": {
+          "name": "SAGAK",
+          "description": "Quebra-cabeça Shikaku"
+        },
+        "ru": {
+          "name": "SAGAK",
+          "description": "Головоломка сикаку"
+        },
+        "tr": {
+          "name": "SAGAK",
+          "description": "Shikaku bulmacası"
+        },
+        "vi": {
+          "name": "SAGAK",
+          "description": "Giải đố Shikaku"
+        },
+        "zh-hans": {
+          "name": "SAGAK",
+          "description": "四角分割谜题"
+        },
+        "zh-hant": {
+          "name": "SAGAK",
+          "description": "四角分割謎題"
+        },
+        "cs": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "da": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "el": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "fi": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "he": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "hi": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "hu": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "ms": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "nb": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "ro": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "sv": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "th": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        },
+        "uk": {
+          "name": "SAGAK",
+          "description": "SAGAK"
+        }
+      },
+      "icon": "/assets/sagak-icon.png"
+    },
+    "meowbro": {
+      "labels": {
+        "ko": {
+          "name": "냥브로",
+          "description": "고양이 액션 로그라이크"
+        },
+        "en": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike"
+        },
+        "ar": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "de": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "es": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "fa": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "fr": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "id": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "it": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "ja": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "nl": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "pl": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "pt": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "ru": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "tr": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "vi": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "zh-hans": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "zh-hant": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "cs": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "da": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "el": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "fi": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "he": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "hi": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "hu": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "ms": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "nb": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "ro": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "sv": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "th": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        },
+        "uk": {
+          "name": "Meowbro",
+          "description": "Cat action roguelike · Korean site"
+        }
+      },
+      "icon": "/meowbro/assets/app-icon.webp"
+    }
+  },
+  "headings": {
+    "de": "Weitere Apps von H1Soft",
+    "en": "More apps from H1Soft",
+    "es": "Más apps de H1Soft",
+    "fa": "برنامه‌های دیگر H1Soft",
+    "fr": "Autres apps H1Soft",
+    "id": "Aplikasi lain dari H1Soft",
+    "it": "Altre app di H1Soft",
+    "ja": "H1Softのほかのアプリ",
+    "ko": "H1Soft의 다른 앱",
+    "nl": "Meer apps van H1Soft",
+    "pl": "Więcej aplikacji H1Soft",
+    "pt": "Mais apps da H1Soft",
+    "ru": "Другие приложения H1Soft",
+    "tr": "H1Soft’un diğer uygulamaları",
+    "vi": "Ứng dụng khác của H1Soft",
+    "zh-hans": "H1Soft的其他应用",
+    "zh-hant": "H1Soft 的其他 App",
+    "ar": "المزيد من تطبيقات H1Soft",
+    "cs": "Další aplikace od H1Soft",
+    "da": "Flere apps fra H1Soft",
+    "el": "Περισσότερες εφαρμογές από την H1Soft",
+    "fi": "Lisää H1Soft-sovelluksia",
+    "he": "אפליקציות נוספות של H1Soft",
+    "hi": "H1Soft के और ऐप्स",
+    "hu": "További H1Soft-alkalmazások",
+    "ms": "Lagi aplikasi daripada H1Soft",
+    "nb": "Flere apper fra H1Soft",
+    "ro": "Mai multe aplicații H1Soft",
+    "sv": "Fler appar från H1Soft",
+    "th": "แอปอื่น ๆ จาก H1Soft",
+    "uk": "Інші застосунки H1Soft"
+  }
+}

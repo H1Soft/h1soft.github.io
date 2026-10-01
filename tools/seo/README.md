@@ -9,6 +9,8 @@ node tools/localize-store-links.mjs
 python3 tools/seo/enrich.py
 python3 tools/seo/check.py
 python3 tools/seo/favicons.py --check
+python3 tools/seo/product_links.py --check
+python3 tools/seo/check_product_links.py
 node tools/localize-store-links.mjs --check
 ```
 
@@ -25,6 +27,14 @@ node tools/localize-store-links.mjs --check
 회사 홈의 제품 수·메뉴·카드·FAQ는 제품 추가 시 직접 함께 갱신합니다. 현재 한국어/영어 홈은 11개(도구 4, 라이프스타일 3, 게임 4)이며, 검사가 카드와 JSON-LD 개수 불일치를 잡습니다. `/skinping/`, `/lol.dating/`는 홈페이지와 공통 제품 메뉴에서 제외합니다. 해당 링크가 다시 들어오면 검사가 실패합니다.
 
 `check.py`는 헤드 필수 정보, JSON-LD, 가격, 홈 제품 목록, 고유 궁합 콘텐츠, 홈에서의 도달 가능성, sitemap의 canonical/noindex 일치를 검사합니다. 검색엔진의 실제 색인·순위나 리치 결과 채택 여부를 검증하는 도구는 아닙니다.
+
+## 다른 앱 연결
+
+`products.json`은 현재 회사 홈에 공개된 11개 제품의 순서·아이콘·기존 번역 이름/설명을 관리합니다. 제품 추가 시 회사 홈과 이 목록을 함께 갱신합니다. `product_links.py`는 실제 HTML의 언어와 canonical에서 목적지를 찾으며, 같은 언어가 없으면 영어, 영어도 없으면 한국어로 연결하고 언어를 표시합니다. 중국어 간체/번체와 지역 언어 코드를 구별합니다.
+
+`python3 tools/seo/product_links.py`는 제품 메뉴와 기존 ‘다른 앱’ 카드를 완성하고, 다른 제품 소개 페이지에는 카드 목록을, 지원·정책·콘텐츠 페이지에는 간단한 링크 목록을 적용합니다. 자기 앱·중복·제외된 제품은 목록에 넣지 않습니다. 실행 화면, 관리·본인확인·심사·공유 흐름 및 noindex 페이지는 제외합니다. 생성 HTML에는 실제 `<a href>` 링크가 들어가므로 JavaScript 없이도 동작합니다. 기존 디자인 영역을 보존하고 추가 영역은 `css/product-links.css`에 한정합니다.
+
+사이트 재생성 후 `enrich.py`가 이 작업도 실행합니다. CI는 목록 완전성, 실제 파일과 조각 주소의 존재, 언어별 목적지, 메뉴·카드 아이콘과 자기 링크를 검사합니다. 정책 본문은 수정하지 않습니다.
 
 ## 파비콘과 Google 검색 아이콘
 

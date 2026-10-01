@@ -22,4 +22,6 @@ jobs:
       - run: python -m pip install -r tools/seo/requirements.txt
       - run: python tools/seo/check.py
       - run: python tools/seo/favicons.py --check
+      - run: python tools/seo/product_links.py --check
+      - run: python tools/seo/check_product_links.py
       - run: node tools/localize-store-links.mjs --check
