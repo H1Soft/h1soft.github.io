@@ -40,7 +40,9 @@ for path,(s,text,key,lang,is_primary) in pages.items():
         if u.netloc!='h1soft.github.io':continue
         links+=1
         require(not any(x in u.path.split('/') for x in ['skinping','lol.dating']),f'{rel}: retired app link {u.path}')
-        target=ROOT/unquote(u.path.lstrip('/'));target=target/'index.html' if not target.suffix else target
+        target=ROOT/unquote(u.path.lstrip('/'))
+        # A checkout directory can have a suffix (for example h1soft.github.io).
+        if target.is_dir() or not target.suffix:target=target/'index.html'
         require(target.is_file(),f'{rel}: broken URL {a["href"]}')
         if target.is_file() and target.suffix=='.html' and u.fragment and not u.fragment.startswith(':~:'):
             d=doc(target);anchor=unquote(u.fragment)
