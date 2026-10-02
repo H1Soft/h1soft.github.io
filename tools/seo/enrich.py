@@ -190,16 +190,18 @@ def enrich_pages(root,changed):
                 label=catalog['download_labels'].get(lang,catalog['download_labels'].get(lang.split('-')[0],'Download'))
                 return re.sub(r'(<span class="store-btn__sub">)[\s\S]*?(</span>)',lambda n:n[1]+label+n[2],fragment)
             text=re.sub(r'<a\b[^>]*data-store-app="cleaner"[\s\S]*?</a>',enable_cleaner,text)
-        if product=='seukscan' and 'support' not in rel.parts:
-            def pending_scanner(m):
+        if product and facts[product].get('play_url') and 'support' not in rel.parts:
+            def enable_play(m):
                 fragment=m[0]
-                if 'com.h1soft.scanner' not in fragment:return fragment
-                fragment=re.sub(r'\s+href="[^"]*"','',fragment,count=1)
-                fragment=fragment.replace('<a ', '<a aria-disabled="true" role="link" tabindex="-1" ',1)
-                fragment=fragment.replace('class="store-btn','class="store-btn is-disabled',1)
-                label=catalog['pending_labels'].get(lang,catalog['pending_labels'].get(lang.split('-')[0],'Coming soon'))
-                return re.sub(r'(<span class="store-btn__sub">)[\s\S]*?(</span>)',lambda n:n[1]+label+n[2],fragment)
-            text=re.sub(r'<a\b[^>]*>[\s\S]*?</a>',pending_scanner,text)
+                if 'Google Play' not in fragment:return fragment
+                existing=soup(fragment).a.get('href','')
+                store_url=existing if facts[product]['play_url'] in existing else facts[product]['play_url']
+                fragment=fragment.replace(' is-disabled','')
+                fragment=re.sub(r'\s+(?:aria-disabled|tabindex|role|href)="[^"]*"','',fragment)
+                fragment=fragment.replace('<a ',f'<a href="{escape(store_url,quote=True)}" ',1)
+                label=catalog['download_labels'].get(lang,catalog['download_labels'].get(lang.split('-')[0],'Download'))
+                return re.sub(r'(<span class="(?:store-btn|mg-store)__sub">)[\s\S]*?(</span>)',lambda n:n[1]+label+n[2],fragment)
+            text=re.sub(r'<a\b[^>]*>[\s\S]*?</a>',enable_play,text)
         if product and facts[product].get('price') is not None and 'support' not in rel.parts:
             fact=facts[product]
             platform='App Store' if fact.get('apple_id') else 'Google Play'

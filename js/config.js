@@ -8,7 +8,7 @@ const CONFIG = {
 
   // 슥캔 (data-store-app="seukscan")
   SEUKSCAN_APP_STORE_URL: "",
-  SEUKSCAN_PLAY_STORE_URL: "",
+  SEUKSCAN_PLAY_STORE_URL: "https://play.google.com/store/apps/details?id=com.h1soft.scanner",
 
   // 온글 (data-store-app="ongle")
   ONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809517375",
@@ -16,7 +16,7 @@ const CONFIG = {
 
   // 몽글 (data-store-app="mongle")
   MONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809419426",
-  MONGLE_PLAY_STORE_URL: "",
+  MONGLE_PLAY_STORE_URL: "https://play.google.com/store/apps/details?id=com.h1soft.mbti",
 
   // 스도쿠 보야지 (data-store-app="sudoku")
   SUDOKU_APP_STORE_URL: "https://apps.apple.com/app/id6809524435",
