@@ -33,7 +33,9 @@
       "apple_id": 6809531957,
       "url": "https://apps.apple.com/app/id6809531957",
       "source": "https://itunes.apple.com/lookup?id=6809531957&country=kr",
-      "rating_count": 0
+      "rating_count": 0,
+      "play_url": "https://play.google.com/store/apps/details?id=com.h1soft.sagak",
+      "play_checked_on": "2026-10-05"
     },
     "nonogram": {
       "price": 0,

@@ -200,7 +200,7 @@ def enrich_pages(root,changed):
                 fragment=re.sub(r'\s+(?:aria-disabled|tabindex|role|href)="[^"]*"','',fragment)
                 fragment=fragment.replace('<a ',f'<a href="{escape(store_url,quote=True)}" ',1)
                 label=catalog['download_labels'].get(lang,catalog['download_labels'].get(lang.split('-')[0],'Download'))
-                return re.sub(r'(<span class="(?:store-btn|mg-store)__sub">)[\s\S]*?(</span>)',lambda n:n[1]+label+n[2],fragment)
+                return re.sub(r'(<span class="(?:store-btn|mg-store|sg-store)__sub">)[\s\S]*?(</span>)',lambda n:n[1]+label+n[2],fragment)
             text=re.sub(r'<a\b[^>]*>[\s\S]*?</a>',enable_play,text)
         if product and facts[product].get('price') is not None and 'support' not in rel.parts:
             fact=facts[product]
