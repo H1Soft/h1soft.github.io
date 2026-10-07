@@ -8,6 +8,7 @@ import json,re,sys
 from pathlib import Path
 from urllib.parse import urljoin,urlsplit,urlunsplit,parse_qsl,urlencode
 from bs4 import BeautifulSoup,Comment,Doctype
+from seo import optimize
 HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 BASE='https://h1soft.github.io'
@@ -196,6 +197,7 @@ def build(page,lang,copy):
   elif '/meowbro/script.js' in el['src']:el['src']='/meowbro/script.js?v=20261007-i18n'
   elif '/attachment/app.js' in el['src']:el['src']='/attachment/app.js?v=20261007-i18n'
  s.body.append(s.new_tag('script',type='module',src='/js/public-i18n.mjs?v=20261007-seukscan4'))
+ optimize(s,page,lang)
  path=ROOT/route(page,lang).lstrip('/')/'index.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(str(s).rstrip()+'\n')
  return str(path.relative_to(ROOT))
 

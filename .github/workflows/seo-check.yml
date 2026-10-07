@@ -27,4 +27,5 @@ jobs:
       - run: node tools/localize-store-links.mjs --check
       - run: python tools/seo/check_mongle.py
       - run: python tools/public-i18n/check.py
+      - run: python tools/public-i18n/check_seo.py
       - run: node --test tools/public-i18n/store-links.test.mjs

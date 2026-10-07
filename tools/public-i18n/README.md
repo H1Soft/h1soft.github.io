@@ -19,6 +19,7 @@ node tools/public-i18n/sitewide.mjs
 python3 tools/seo/favicons.py
 python3 tools/public-i18n/sitemap.py
 python3 tools/public-i18n/check.py
+python3 tools/public-i18n/check_seo.py
 python3 tools/seo/check.py
 python3 tools/seo/product_links.py --check
 python3 tools/seo/check_product_links.py
@@ -69,3 +70,5 @@ Checks cover all 68 language pages, assets and internal destinations, reciprocal
 hreflang, canonical URLs, sitemap inclusion, RTL, missing copy, substitution
 variables, and store URL behavior. Existing SEO, favicon, product-link and
 analytics checks remain in use.
+
+`seo-copy.json` contains per-language search titles and descriptions. `seo.py` applies them to search/social metadata and adds a matching WebPage or CollectionPage identity. The main builder calls this automatically; for a metadata-only update run `python3 tools/public-i18n/seo.py` followed by `sitewide.mjs` and the sitemap/check commands above. Visible body copy and the restored design are not edited by this step. App language support remains separate from the landing page language.
