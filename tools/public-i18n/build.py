@@ -63,7 +63,6 @@ def dictionary(lang):
  editorial=json.loads((HERE/'attachment-editorial.json').read_text())[lang]
  out['애착인형 뽑기 — 애착유형 테스트, 인형으로 뽑고 궁합까지']=appname+' — '+editorial[0]
  out['16문항 3분이면 나를 닮은 애착인형이 나와요. 16종 + 시크릿 1종, 친구와 빨간 실 궁합, 인형 도감까지. 무료로 뽑아 보세요.']=editorial[1]
- out['__attachmentHero']=target['ui.heroTitle'].replace('\\n','\n')
  if lang=='fa':
   out['H1Soft — an IT technology startup building mobile apps']='H1Soft — استارتاپ فناوری و سازندهٔ برنامه‌های موبایل'
   out['쏟아지는 탄막. 끝없는 선택.']='رگبار گلوله‌ها. انتخاب‌های بی‌پایان.'
@@ -101,11 +100,6 @@ def build(page,lang,copy):
    for attr in ['alt','aria-label','title','placeholder']:
     if node.get(attr):node[attr]=tr(node[attr])
    if node.name=='meta' and (node.get('name') in ['description','twitter:title','twitter:description','twitter:image:alt'] or node.get('property') in ['og:title','og:description','og:site_name','og:image:alt']):node['content']=tr(node.get('content',''))
- if page=='attachment' and lang!='ko':
-  hero=s.select_one('.hero-head');hero.clear()
-  for i,line in enumerate(copy['__attachmentHero'].split('\n')):
-   if i:hero.append(s.new_tag('br'))
-   piece=s.new_tag('mark') if i else s.new_tag('span');piece.string=line;hero.append(piece)
  if page=='home':
   editorial=json.loads((HERE/'home-editorial.json').read_text())[lang]
   # Preserve the original hero's noun-only highlights and description emphasis.
@@ -165,20 +159,25 @@ def build(page,lang,copy):
   if isinstance(x,str) and (x==source or x.startswith(source+'#')):return canonical+x[len(source):]
   return x
  for el in s.select('script[type="application/ld+json"]'):el.string=json.dumps(localized_schema(json.loads(el.string)),ensure_ascii=False,separators=(',',':'))
- # A native details menu remains usable without JavaScript or hover.
- chooser=s.new_tag('details',attrs={'class':'site-languages'})
- summary=s.new_tag('summary');summary.string='◎ '+NAMES[lang];chooser.append(summary)
- nav=s.new_tag('nav',attrs={'aria-label':tr('Languages'),'class':'site-language-list'})
- for code in LANGS:
-  a=s.new_tag('a',href=route(page,code),hreflang=code,lang=code,dir='rtl' if code=='fa' else 'ltr')
-  a.string=NAMES[code]
-  if code==lang:a['aria-current']='page'
-  nav.append(a)
- chooser.append(nav)
+ # Reuse Seukscan's language picker markup and keyboard behavior.
+ chooser=BeautifulSoup((HERE/'templates/language-picker.html.template').read_text(),'html.parser').details
+ chooser['class']=['locale-switch','site-languages']
+ chooser.summary['aria-label']=tr('Languages')
+ chooser.select_one('.is-active').string=NAMES[lang]
+ chooser.select_one('.nav-col__label').string=tr('Languages')
+ nav=chooser.select_one('.locale-switch__options');nav['aria-label']=tr('Languages')
+ nav['class'].append('site-language-list')
+ for a in nav.select('a'):
+  code=a['lang'];a['href']=route(page,code);a.attrs.pop('aria-current',None)
+  for icon in a.select('svg'):icon.decompose()
+  if code==lang:
+   a['aria-current']='page'
+   a.append(BeautifulSoup('<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m4 10 4 4 8-8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>','html.parser').svg)
  header=s.select_one('header')
  if header:(header.select_one('.site-header__inner,.nav-inner,.header-right') or header).append(chooser)
  else:s.body.insert(0,chooser)
- s.head.append(s.new_tag('link',rel='stylesheet',href='/css/public-i18n.css'+('?v=20261007-hero' if page=='home' else '')))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/assets/seukscan/locales.css'))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/css/public-i18n.css?v=20261007-seukscan4'))
  if page in ['attachment','meowbro']:
   if page=='attachment':
    el=s.select_one('#promo-data');data=json.loads(el.string)
@@ -196,7 +195,7 @@ def build(page,lang,copy):
   if '/nonogram/_astro/Header.' in el['src']:el.decompose()
   elif '/meowbro/script.js' in el['src']:el['src']='/meowbro/script.js?v=20261007-i18n'
   elif '/attachment/app.js' in el['src']:el['src']='/attachment/app.js?v=20261007-i18n'
- s.body.append(s.new_tag('script',type='module',src='/js/public-i18n.mjs'))
+ s.body.append(s.new_tag('script',type='module',src='/js/public-i18n.mjs?v=20261007-seukscan4'))
  path=ROOT/route(page,lang).lstrip('/')/'index.html';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(str(s).rstrip()+'\n')
  return str(path.relative_to(ROOT))
 
