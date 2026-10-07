@@ -1,5 +1,5 @@
 // Add verified product URLs after store registration. Empty values remain unavailable.
-const STORE_URLS = { appStore: '', googlePlay: '' };
+const STORE_URLS = { appStore: 'https://apps.apple.com/kr/app/id6819049763?l=ko', googlePlay: '' };
 
 const sceneData = {
   combat: { word: 'DODGE!', title: '공격은 자동. 생존은 실력.', text: '적의 공격을 읽고, 닿기 직전에 대시.\n아슬아슬한 회피 한 번으로\n전투의 흐름을 바꿔보세요.', image: 'assets/v2/gameplay-combat.webp', alt: '냥브로가 몬스터의 공격을 피해 싸우는 실제 전투 화면' },

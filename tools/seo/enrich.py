@@ -243,7 +243,7 @@ def enrich_pages(root,changed):
                 {'@type':'WebPage','@id':url+'#webpage','url':url,'name':title,'description':desc,'inLanguage':'ko','mainEntity':{'@id':url+'#app'}},
                 {'@type':'MobileApplication','@id':url+'#app','name':appname,'url':url,'description':desc,'applicationCategory':category,'operatingSystem':'iOS, Android','inLanguage':'ko','image':image,'publisher':{'@type':'Organization','name':'H1Soft','url':BASE+'/'}},
                 {'@type':'BreadcrumbList','itemListElement':[{'@type':'ListItem','position':1,'name':'H1Soft','item':BASE+'/'},{'@type':'ListItem','position':2,'name':appname,'item':url}]}]}
-            text=schema_block(text,obj)
+            text=schema_block(text,update_node(obj))
         write(path,text,changed)
 
 def sitemaps(root,changed):
