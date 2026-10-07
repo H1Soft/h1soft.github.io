@@ -1,0 +1,266 @@
+{
+  "ko": {
+    "title": "MBTI 스타일 무료 성격 테스트 · 12·40문항 | 몽글",
+    "description": "12문항 빠른 테스트 또는 40문항 전체 테스트로 나의 성격 성향을 알아보세요. 몽글의 16가지 캐릭터, 4가지 성격 지표와 결과 공유를 웹에서 무료로 즐겨 보세요.",
+    "eyebrow": "무료 MBTI 스타일 성격 테스트",
+    "introTitle": "몽글의 MBTI 스타일 테스트란?",
+    "introText": "몽글은 일상 속 선택으로 나의 성향을 살펴보는 자체 제작 16유형 성격 테스트예요. 모바일 앱의 몽글 캐릭터를 웹에서도 만나 보세요. 설치나 회원가입 없이 무료로 시작할 수 있어요.",
+    "details": [
+      {
+        "title": "12문항 또는 40문항, 나에게 맞게",
+        "text": "가볍게 시작하고 싶다면 12문항 스피드 테스트, 더 다양한 상황을 살펴보고 싶다면 40문항 전체 테스트를 골라 보세요. 진행 상황은 이 브라우저에 자동 저장돼요."
+      },
+      {
+        "title": "4가지 성격 지표와 16유형",
+        "text": "E–I, S–N, T–F, J–P 네 가지 축에 대한 답변을 바탕으로 성향을 살펴봐요. 결과에서는 각 지표와 함께 나의 유형에 해당하는 몽글 캐릭터를 만날 수 있어요."
+      },
+      {
+        "title": "내 캐릭터를 보고 친구와 공유해요",
+        "text": "결과의 캐릭터와 성향 설명을 읽고, 결과 링크를 공유하거나 이미지를 저장해 보세요. 몽글은 공식 MBTI 검사가 아니며 심리 진단을 제공하지 않아요. 재미로 나를 돌아보는 데 활용해 주세요."
+      }
+    ],
+    "learnMore": "몽글 앱 더 알아보기",
+    "languageLinks": "다른 언어로 테스트하기",
+    "noscript": "테스트를 시작하고 결과를 확인하려면 브라우저에서 JavaScript를 켜 주세요."
+  },
+  "en": {
+    "title": "MBTI-style Free Personality Test · 12 or 40 Questions | Mongle",
+    "description": "Explore your personality with a free 12- or 40-question test. Meet one of Mongle's 16 characters, view four personality dimensions, and share your result online.",
+    "eyebrow": "Free MBTI-style personality test",
+    "introTitle": "What is Mongle's MBTI-style test?",
+    "introText": "Mongle is an independently created 16-type personality test that explores your preferences through everyday choices. Meet the characters from the mobile app in your browser. It's free, with no download or account needed.",
+    "details": [
+      {
+        "title": "Choose 12 or 40 questions",
+        "text": "Try the 12-question speed test for a quick introduction, or choose the 40-question full test to explore more situations. Your progress saves automatically in this browser."
+      },
+      {
+        "title": "Four dimensions, 16 personality types",
+        "text": "Your answers explore four preference pairs: E–I, S–N, T–F, and J–P. Your result shows each dimension alongside the Mongle character for your type."
+      },
+      {
+        "title": "Meet your character and share your result",
+        "text": "Read your character's personality description, share a result link, or save an image. Mongle is not the official MBTI assessment and does not provide a psychological diagnosis. Enjoy it as a playful way to reflect on yourself."
+      }
+    ],
+    "learnMore": "Explore the Mongle app",
+    "languageLinks": "Take the test in another language",
+    "noscript": "Enable JavaScript in your browser to take the test and see your result."
+  },
+  "ja": {
+    "title": "MBTI風の無料性格テスト · 12問・40問 | モングル",
+    "description": "12問のスピードテスト、または40問のフルテストで自分の性格傾向をチェック。モングルの16タイプのキャラクター、4つの指標、結果のシェアをブラウザで無料で楽しめます。",
+    "eyebrow": "MBTI風の無料性格テスト",
+    "introTitle": "モングルのMBTI風テストとは？",
+    "introText": "モングルは、日常の選択から自分の傾向を振り返る、独自制作の16タイプ性格テストです。モバイルアプリのキャラクターに、ブラウザでも出会えます。インストールも会員登録も不要で、無料で始められます。",
+    "details": [
+      {
+        "title": "12問と40問から選べます",
+        "text": "気軽に試すなら12問のスピードテスト、さまざまな場面を振り返るなら40問のフルテストを選んでみましょう。進み具合はこのブラウザに自動保存されます。"
+      },
+      {
+        "title": "4つの指標と16タイプ",
+        "text": "E–I、S–N、T–F、J–Pという4つの軸への回答から、性格の傾向を見ていきます。結果では各指標と、自分のタイプに対応するモングルのキャラクターを確認できます。"
+      },
+      {
+        "title": "キャラクターを見つけて結果をシェア",
+        "text": "キャラクターの性格紹介を読んで、結果のリンクを共有したり、画像を保存したりできます。モングルは公式のMBTI検査ではなく、心理学的な診断も行いません。自分を振り返る遊びとしてお楽しみください。"
+      }
+    ],
+    "learnMore": "モングルのアプリを詳しく見る",
+    "languageLinks": "ほかの言語でテストする",
+    "noscript": "テストを受けて結果を見るには、ブラウザのJavaScriptを有効にしてください。"
+  },
+  "zh": {
+    "title": "MBTI 风格免费性格测试 · 12题或40题 | 蒙格",
+    "description": "选择12题快速测试或40题完整测试，了解自己的性格倾向。免费在浏览器中认识蒙格的16型角色，查看四个性格维度，并分享测试结果。",
+    "eyebrow": "MBTI 风格免费性格测试",
+    "introTitle": "什么是蒙格的 MBTI 风格测试？",
+    "introText": "蒙格是一款原创16型性格测试，通过日常生活中的选择，帮你探索自己的偏好。在浏览器里也能遇见手机应用中的蒙格角色，无需安装或注册，即可免费开始。",
+    "details": [
+      {
+        "title": "12题或40题，由你选择",
+        "text": "想轻松体验，可以选12题快速测试；想看看更多生活情境，可以选40题完整测试。答题进度会自动保存在当前浏览器中。"
+      },
+      {
+        "title": "四个维度，16种性格类型",
+        "text": "根据你对 E–I、S–N、T–F、J–P 四个维度相关问题的回答，探索自己的性格倾向。结果中可以查看各项指标，以及与你的类型对应的蒙格角色。"
+      },
+      {
+        "title": "认识你的角色，分享测试结果",
+        "text": "阅读角色的性格介绍，分享结果链接，或保存结果图片。蒙格并非官方 MBTI 测评，也不提供心理诊断。请把它当作一种轻松认识自己的方式。"
+      }
+    ],
+    "learnMore": "了解蒙格应用",
+    "languageLinks": "用其他语言测试",
+    "noscript": "请在浏览器中启用 JavaScript，以进行测试并查看结果。"
+  },
+  "zh-Hant": {
+    "title": "MBTI 風格免費性格測驗 · 12題或40題 | 蒙格",
+    "description": "選擇12題快速測驗或40題完整測驗，探索自己的性格傾向。免費在瀏覽器中認識蒙格的16型角色，查看四個性格向度，並分享測驗結果。",
+    "eyebrow": "MBTI 風格免費性格測驗",
+    "introTitle": "什麼是蒙格的 MBTI 風格測驗？",
+    "introText": "蒙格是原創的16型性格測驗，透過日常生活中的選擇，幫你探索自己的偏好。在瀏覽器裡也能遇見手機 App 中的蒙格角色，免安裝、免註冊，即可免費開始。",
+    "details": [
+      {
+        "title": "12題或40題，依喜好選擇",
+        "text": "想輕鬆體驗，可以選12題快速測驗；想看看更多生活情境，可以選40題完整測驗。作答進度會自動儲存在目前的瀏覽器中。"
+      },
+      {
+        "title": "四個向度，16種性格類型",
+        "text": "根據你對 E–I、S–N、T–F、J–P 四個向度相關問題的回答，探索自己的性格傾向。結果中可以查看各項指標，以及與你的類型對應的蒙格角色。"
+      },
+      {
+        "title": "認識你的角色，分享測驗結果",
+        "text": "閱讀角色的性格介紹，分享結果連結，或儲存結果圖片。蒙格並非官方 MBTI 測評，也不提供心理診斷。請把它當作一種輕鬆認識自己的方式。"
+      }
+    ],
+    "learnMore": "認識蒙格 App",
+    "languageLinks": "使用其他語言測驗",
+    "noscript": "請在瀏覽器中啟用 JavaScript，以進行測驗並查看結果。"
+  },
+  "es": {
+    "title": "Test de personalidad gratis al estilo MBTI · 12 o 40 preguntas | Mongle",
+    "description": "Explora tu personalidad con un test gratuito de 12 o 40 preguntas. Descubre uno de los 16 personajes de Mongle, consulta cuatro dimensiones y comparte tu resultado.",
+    "eyebrow": "Test gratuito de personalidad al estilo MBTI",
+    "introTitle": "¿Qué es el test de Mongle al estilo MBTI?",
+    "introText": "Mongle es un test de personalidad de 16 tipos creado de forma independiente, con preguntas sobre decisiones cotidianas. Conoce a los personajes de la app móvil desde tu navegador. Es gratis y no requiere descargas ni registro.",
+    "details": [
+      {
+        "title": "Elige entre 12 y 40 preguntas",
+        "text": "Prueba el test rápido de 12 preguntas para empezar, o el test completo de 40 para explorar más situaciones. Tu progreso se guarda automáticamente en este navegador."
+      },
+      {
+        "title": "Cuatro dimensiones y 16 tipos",
+        "text": "Tus respuestas exploran cuatro pares de preferencias: E–I, S–N, T–F y J–P. El resultado muestra cada dimensión y el personaje de Mongle que corresponde a tu tipo."
+      },
+      {
+        "title": "Descubre tu personaje y comparte el resultado",
+        "text": "Lee la descripción de su personalidad, comparte un enlace al resultado o guarda una imagen. Mongle no es la evaluación oficial MBTI ni ofrece un diagnóstico psicológico. Disfrútalo como una forma divertida de reflexionar sobre ti."
+      }
+    ],
+    "learnMore": "Conoce la app de Mongle",
+    "languageLinks": "Haz el test en otro idioma",
+    "noscript": "Activa JavaScript en tu navegador para hacer el test y ver el resultado."
+  },
+  "fr": {
+    "title": "Test de personnalité gratuit de type MBTI · 12 ou 40 questions | Mongle",
+    "description": "Explore ta personnalité avec un test gratuit de 12 ou 40 questions. Découvre l'un des 16 personnages de Mongle, quatre dimensions et un résultat à partager.",
+    "eyebrow": "Test de personnalité gratuit de type MBTI",
+    "introTitle": "Qu'est-ce que le test de type MBTI de Mongle ?",
+    "introText": "Mongle est un test de personnalité à 16 types, créé de manière indépendante, qui explore tes préférences à travers des choix du quotidien. Retrouve les personnages de l'application mobile dans ton navigateur. C'est gratuit, sans téléchargement ni inscription.",
+    "details": [
+      {
+        "title": "Choisis entre 12 et 40 questions",
+        "text": "Essaie le test rapide de 12 questions pour commencer, ou le test complet de 40 questions pour explorer davantage de situations. Ta progression est enregistrée automatiquement dans ce navigateur."
+      },
+      {
+        "title": "Quatre dimensions et 16 types",
+        "text": "Tes réponses explorent quatre paires de préférences : E–I, S–N, T–F et J–P. Ton résultat présente chaque dimension ainsi que le personnage Mongle correspondant à ton type."
+      },
+      {
+        "title": "Découvre ton personnage et partage ton résultat",
+        "text": "Lis la description de sa personnalité, partage le lien de ton résultat ou enregistre une image. Mongle n'est pas l'évaluation MBTI officielle et ne fournit aucun diagnostic psychologique. Prends-le comme une façon ludique de réfléchir à qui tu es."
+      }
+    ],
+    "learnMore": "Découvrir l'application Mongle",
+    "languageLinks": "Faire le test dans une autre langue",
+    "noscript": "Active JavaScript dans ton navigateur pour faire le test et voir ton résultat."
+  },
+  "de": {
+    "title": "MBTI-Stil: Kostenloser Persönlichkeitstest mit 12 oder 40 Fragen | Mongle",
+    "description": "Entdecke deine Persönlichkeit mit 12 oder 40 Fragen. Lerne eine von 16 Mongle-Figuren kennen, sieh dir vier Dimensionen an und teile dein Ergebnis – kostenlos online.",
+    "eyebrow": "Kostenloser Persönlichkeitstest im MBTI-Stil",
+    "introTitle": "Was ist Mongles Test im MBTI-Stil?",
+    "introText": "Mongle ist ein unabhängig entwickelter Persönlichkeitstest mit 16 Typen, der deine Vorlieben anhand alltäglicher Entscheidungen erkundet. Die Figuren aus der mobilen App erwarten dich auch im Browser. Kostenlos, ohne Download oder Registrierung.",
+    "details": [
+      {
+        "title": "Wähle 12 oder 40 Fragen",
+        "text": "Für einen schnellen Einstieg gibt es den Schnelltest mit 12 Fragen. Im vollständigen Test mit 40 Fragen erkundest du mehr Situationen. Dein Fortschritt wird automatisch in diesem Browser gespeichert."
+      },
+      {
+        "title": "Vier Dimensionen, 16 Persönlichkeitstypen",
+        "text": "Deine Antworten beziehen sich auf vier Präferenzpaare: E–I, S–N, T–F und J–P. Dein Ergebnis zeigt die einzelnen Dimensionen und die Mongle-Figur, die zu deinem Typ gehört."
+      },
+      {
+        "title": "Entdecke deine Figur und teile dein Ergebnis",
+        "text": "Lies die Persönlichkeitsbeschreibung, teile den Ergebnislink oder speichere ein Bild. Mongle ist kein offizieller MBTI-Test und stellt keine psychologische Diagnose. Nutze ihn als spielerischen Anlass, über dich selbst nachzudenken."
+      }
+    ],
+    "learnMore": "Die Mongle-App entdecken",
+    "languageLinks": "Den Test in einer anderen Sprache machen",
+    "noscript": "Aktiviere JavaScript in deinem Browser, um den Test zu machen und dein Ergebnis zu sehen."
+  },
+  "pt": {
+    "title": "Teste de personalidade grátis no estilo MBTI · 12 ou 40 perguntas | Mongle",
+    "description": "Explore sua personalidade com um teste grátis de 12 ou 40 perguntas. Conheça um dos 16 personagens do Mongle, veja quatro dimensões e compartilhe seu resultado.",
+    "eyebrow": "Teste de personalidade grátis no estilo MBTI",
+    "introTitle": "O que é o teste do Mongle no estilo MBTI?",
+    "introText": "O Mongle é um teste de personalidade de 16 tipos, criado de forma independente, que explora suas preferências por meio de escolhas do dia a dia. Conheça os personagens do app móvel no navegador. É grátis, sem precisar baixar nada ou criar uma conta.",
+    "details": [
+      {
+        "title": "Escolha entre 12 e 40 perguntas",
+        "text": "Experimente o teste rápido de 12 perguntas para começar, ou escolha o teste completo de 40 para explorar mais situações. Seu progresso é salvo automaticamente neste navegador."
+      },
+      {
+        "title": "Quatro dimensões e 16 tipos",
+        "text": "Suas respostas exploram quatro pares de preferências: E–I, S–N, T–F e J–P. O resultado mostra cada dimensão e o personagem do Mongle que corresponde ao seu tipo."
+      },
+      {
+        "title": "Descubra seu personagem e compartilhe o resultado",
+        "text": "Leia a descrição da personalidade, compartilhe o link do resultado ou salve uma imagem. O Mongle não é a avaliação oficial MBTI e não oferece diagnóstico psicológico. Aproveite como uma maneira divertida de refletir sobre você."
+      }
+    ],
+    "learnMore": "Conheça o app Mongle",
+    "languageLinks": "Faça o teste em outro idioma",
+    "noscript": "Ative o JavaScript no navegador para fazer o teste e ver seu resultado."
+  },
+  "id": {
+    "title": "Tes kepribadian gratis bergaya MBTI · 12 atau 40 soal | Mongle",
+    "description": "Kenali kepribadianmu lewat tes gratis berisi 12 atau 40 soal. Temukan satu dari 16 karakter Mongle, lihat empat dimensi kepribadian, dan bagikan hasilmu.",
+    "eyebrow": "Tes kepribadian gratis bergaya MBTI",
+    "introTitle": "Apa itu tes Mongle bergaya MBTI?",
+    "introText": "Mongle adalah tes kepribadian 16 tipe yang dibuat secara independen untuk menjelajahi kecenderunganmu lewat pilihan sehari-hari. Temui karakter dari aplikasi seluler langsung di browser. Gratis, tanpa unduhan atau pendaftaran akun.",
+    "details": [
+      {
+        "title": "Pilih 12 atau 40 soal",
+        "text": "Coba tes cepat berisi 12 soal untuk mulai mengenal diri, atau pilih tes lengkap 40 soal untuk menjelajahi lebih banyak situasi. Kemajuanmu tersimpan otomatis di browser ini."
+      },
+      {
+        "title": "Empat dimensi dan 16 tipe",
+        "text": "Jawabanmu menggambarkan empat pasangan preferensi: E–I, S–N, T–F, dan J–P. Hasil tes menampilkan setiap dimensi beserta karakter Mongle yang sesuai dengan tipemu."
+      },
+      {
+        "title": "Temukan karaktermu dan bagikan hasilnya",
+        "text": "Baca deskripsi kepribadian karaktermu, bagikan tautan hasil, atau simpan gambarnya. Mongle bukan asesmen MBTI resmi dan tidak memberikan diagnosis psikologis. Nikmati sebagai cara santai untuk mengenal diri sendiri."
+      }
+    ],
+    "learnMore": "Kenali aplikasi Mongle",
+    "languageLinks": "Ikuti tes dalam bahasa lain",
+    "noscript": "Aktifkan JavaScript di browser untuk mengikuti tes dan melihat hasilmu."
+  },
+  "vi": {
+    "title": "Trắc nghiệm kiểu MBTI miễn phí · 12 hoặc 40 câu | Mongle",
+    "description": "Khám phá tính cách với bài trắc nghiệm miễn phí gồm 12 hoặc 40 câu. Gặp một trong 16 nhân vật Mongle, xem bốn chiều tính cách và chia sẻ kết quả của bạn.",
+    "eyebrow": "Trắc nghiệm tính cách miễn phí theo phong cách MBTI",
+    "introTitle": "Bài trắc nghiệm theo phong cách MBTI của Mongle là gì?",
+    "introText": "Mongle là bài trắc nghiệm 16 nhóm tính cách được phát triển độc lập, giúp bạn tìm hiểu xu hướng của mình qua những lựa chọn hằng ngày. Gặp các nhân vật từ ứng dụng di động ngay trên trình duyệt. Miễn phí, không cần tải ứng dụng hay đăng ký tài khoản.",
+    "details": [
+      {
+        "title": "Chọn 12 hoặc 40 câu hỏi",
+        "text": "Thử bài trắc nghiệm nhanh 12 câu để bắt đầu, hoặc chọn bài đầy đủ 40 câu để khám phá nhiều tình huống hơn. Tiến độ được tự động lưu trong trình duyệt này."
+      },
+      {
+        "title": "Bốn chiều tính cách và 16 nhóm",
+        "text": "Câu trả lời của bạn thể hiện bốn cặp xu hướng: E–I, S–N, T–F và J–P. Kết quả hiển thị từng chiều cùng nhân vật Mongle tương ứng với nhóm của bạn."
+      },
+      {
+        "title": "Gặp nhân vật của bạn và chia sẻ kết quả",
+        "text": "Đọc phần mô tả tính cách, chia sẻ liên kết kết quả hoặc lưu hình ảnh. Mongle không phải bài đánh giá MBTI chính thức và không đưa ra chẩn đoán tâm lý. Hãy xem đây là một cách vui vẻ để hiểu thêm về bản thân."
+      }
+    ],
+    "learnMore": "Khám phá ứng dụng Mongle",
+    "languageLinks": "Làm bài trắc nghiệm bằng ngôn ngữ khác",
+    "noscript": "Bật JavaScript trong trình duyệt để làm bài trắc nghiệm và xem kết quả."
+  }
+}

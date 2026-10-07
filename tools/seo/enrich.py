@@ -148,6 +148,10 @@ def enrich_pages(root,changed):
     catalog=json.loads((HERE/'store-facts.json').read_text())
     facts=catalog['apps']
     for path in public_pages(root):
+        # This builder owns the web test's localized metadata and free web offer.
+        # Keep it in public_pages for crawlability and sitemap validation.
+        if path.relative_to(root).parts[:2] == ('mongle', 'play'):
+            continue
         text=path.read_text();text=re.sub(r'<a\b(?=[^>]*\bhref=["\'][^"\']*/(?:skinping|lol[.]dating)(?:/|["\']))[^>]*>[\s\S]*?</a>', '', text, flags=re.I);doc=soup(text);url=url_for(path,root);lang=doc.html.get('lang','en');rel=path.relative_to(root)
         canon=doc.select_one('link[rel="canonical"]');canonical=canon['href'] if canon else url
         title=doc.title.get_text(' ',strip=True) if doc.title else ''

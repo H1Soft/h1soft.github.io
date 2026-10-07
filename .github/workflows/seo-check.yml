@@ -25,3 +25,4 @@ jobs:
       - run: python tools/seo/product_links.py --check
       - run: python tools/seo/check_product_links.py
       - run: node tools/localize-store-links.mjs --check
+      - run: python tools/seo/check_mongle.py
