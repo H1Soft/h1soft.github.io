@@ -1,0 +1,95 @@
+/* The browser test is the first step; native store links stay close at hand. */
+.mg-play-entry {
+  margin-top: 28px;
+}
+
+.mg-play-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 58px;
+  max-width: 100%;
+  padding: 16px 24px;
+  border: 1px solid var(--mg-deep);
+  border-radius: 18px;
+  background: var(--mg-deep);
+  box-shadow: 0 5px 0 #d9ceec, 0 10px 24px rgba(59, 46, 110, 0.12);
+  color: var(--mg-cream);
+  font-size: 17px;
+  font-weight: 750;
+  line-height: 1.4;
+  text-align: center;
+  text-wrap: balance;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.mg-play-button svg {
+  flex: none;
+}
+
+.mg-play-button:hover {
+  transform: translateY(-2px);
+  background: #4b3989;
+  color: var(--mg-cream);
+  box-shadow: 0 7px 0 #d9ceec, 0 12px 26px rgba(59, 46, 110, 0.14);
+}
+
+.mg-play-button:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 #d9ceec;
+}
+
+.mg-play-entry__note {
+  max-width: 440px;
+  margin-top: 16px;
+  color: var(--mg-ink70);
+  font-size: 13px;
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.mg-play-entry + .mg-stores {
+  margin-top: 22px;
+}
+
+.mg-nav__links .mg-nav-play {
+  color: var(--mg-deep);
+  font-weight: 750;
+  text-decoration: underline;
+  text-decoration-color: #c3b1ef;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+  white-space: nowrap;
+}
+
+.mg-play-entry--final {
+  margin-top: 28px;
+}
+
+@media (min-width: 681px) and (max-width: 1040px) {
+  .mg-nav__links a:not(.mg-nav-play) {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .mg-play-entry__note {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .mg-play-button {
+    width: 100%;
+    gap: 12px;
+    padding-inline: 18px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mg-play-button:hover,
+  .mg-play-button:active {
+    transform: none;
+  }
+}
