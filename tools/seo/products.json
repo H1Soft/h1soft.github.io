@@ -467,7 +467,7 @@
           "description": "애착 유형 테스트"
         },
         "en": {
-          "name": "Attachment Plush",
+          "name": "Aechak Plush",
           "description": "Attachment style test"
         },
         "ar": {
@@ -475,64 +475,64 @@
           "description": "Meet your attachment-style plush"
         },
         "de": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Bindungsstil-Test"
         },
         "es": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Test de estilos de apego"
         },
         "fa": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "عروسک دلبستگی",
+          "description": "تست سبک دلبستگی"
         },
         "fr": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Test de styles d’attachement"
         },
         "id": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Tes gaya kelekatan"
         },
         "it": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Test sugli stili di attaccamento"
         },
         "ja": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "愛着ぬいぐるみ",
+          "description": "愛着スタイル診断"
         },
         "nl": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Hechtingsstijltest"
         },
         "pl": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Test stylu przywiązania"
         },
         "pt": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Teste de estilos de apego"
         },
         "ru": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Тест на стиль привязанности"
         },
         "tr": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Aechak Plush",
+          "description": "Bağlanma stili testi"
         },
         "vi": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "Thú bông Gắn bó",
+          "description": "Trắc nghiệm kiểu gắn bó"
         },
         "zh-hans": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "依恋小玩偶",
+          "description": "依恋类型测试"
         },
         "zh-hant": {
-          "name": "Attachment Plush",
-          "description": "Meet your attachment-style plush"
+          "name": "依戀小玩偶",
+          "description": "依戀類型測驗"
         },
         "cs": {
           "name": "Attachment Plush",
@@ -747,63 +747,63 @@
         },
         "de": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Nonogramm-Rätsel"
         },
         "es": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Puzles de nonogramas"
         },
         "fa": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "پازل‌های نونوگرام"
         },
         "fr": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Puzzles de nonogrammes"
         },
         "id": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Teka-teki nonogram"
         },
         "it": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Puzzle nonogram"
         },
         "ja": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "ノノグラムパズル"
         },
         "nl": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Nonogram-puzzels"
         },
         "pl": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Łamigłówki nonogram"
         },
         "pt": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Quebra-cabeças de nonogramas"
         },
         "ru": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Японские кроссворды"
         },
         "tr": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Nonogram bulmacaları"
         },
         "vi": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "Câu đố nonogram"
         },
         "zh-hans": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "数织逻辑拼图"
         },
         "zh-hant": {
           "name": "Nonogram Trip",
-          "description": "Window-seat logic puzzles"
+          "description": "數織邏輯拼圖"
         },
         "cs": {
           "name": "Nonogram Trip",
@@ -1130,119 +1130,119 @@
         },
         "ar": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "de": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Action-Roguelike mit einer Katze"
         },
         "es": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Roguelike de acción con un gato"
         },
         "fa": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "روگ‌لایک اکشن با یک گربه"
         },
         "fr": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Roguelike d’action avec un chat"
         },
         "id": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Roguelike aksi dengan kucing"
         },
         "it": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Roguelike d’azione con un gatto"
         },
         "ja": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "猫のアクションローグライク"
         },
         "nl": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Actie-roguelike met een kat"
         },
         "pl": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Gra akcji roguelike z kotem"
         },
         "pt": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Roguelike de ação com um gato"
         },
         "ru": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Экшен-рогалик с котом"
         },
         "tr": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Kedi temalı aksiyon roguelike"
         },
         "vi": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Game hành động roguelike với mèo"
         },
         "zh-hans": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "猫咪动作肉鸽游戏"
         },
         "zh-hant": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "貓咪動作 Roguelike 遊戲"
         },
         "cs": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "da": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "el": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "fi": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "he": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "hi": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "hu": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "ms": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "nb": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "ro": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "sv": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "th": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         },
         "uk": {
           "name": "Meowbro",
-          "description": "Cat action roguelike · Korean site"
+          "description": "Cat action roguelike"
         }
       },
       "icon": "/meowbro/assets/app-icon.webp"

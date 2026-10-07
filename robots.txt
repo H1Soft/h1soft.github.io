@@ -1,16 +1,19 @@
 User-agent: *
 Allow: /
 Disallow: /_source/
+Disallow: /tools/
 
 # 네이버 검색 (서치어드바이저)
 User-agent: Yeti
 Allow: /
 Disallow: /_source/
+Disallow: /tools/
 
 # 다음 검색
 User-agent: Daum
 Allow: /
 Disallow: /_source/
+Disallow: /tools/
 
 Sitemap: https://h1soft.github.io/sitemap.xml
 Sitemap: https://h1soft.github.io/sitemap-1.xml

@@ -1,24 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://h1soft.github.io/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
-  </url>
-  <url>
     <loc>https://h1soft.github.io/ongle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1522,11 +1504,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/cleaner/terms/" />
   </url>
   <url>
-    <loc>https://h1soft.github.io/attachment/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://h1soft.github.io/attachment/privacy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2395,11 +2372,5 @@
     <loc>https://h1soft.github.io/attachment/pair/secure-puppy-secure-puppy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/meowbro/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>

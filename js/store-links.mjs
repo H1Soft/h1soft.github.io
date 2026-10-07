@@ -17,7 +17,8 @@ const appleLocales = {
 /** @param {string} href @param {string} lang */
 export function localizeStoreUrl(href, lang) {
   const url = new URL(href);
-  const locale = lang.toLowerCase().replaceAll('_', '-');
+  const normalized = (lang || 'en').toLowerCase().replaceAll('_', '-');
+  const locale = { in: 'id', 'zh-rcn': 'zh-cn', 'zh-rtw': 'zh-tw' }[normalized] || normalized;
   const base = locale.split('-')[0];
   if (url.hostname === 'apps.apple.com' || url.hostname === 'itunes.apple.com') {
     const [country, language] = appleLocales[locale] || appleLocales[base] || appleLocales.en;

@@ -3,6 +3,7 @@
   const dataNode = document.getElementById('promo-data');
   const data = dataNode ? JSON.parse(dataNode.textContent) : null;
   if (!data) return;
+  const tr = (text, vars = {}) => (data.copy?.[text] || text).replace(/\{(\w+)\}/g, (_, key) => vars[key] ?? `{${key}}`);
   // Keep previously shared links functional after the promotional site moves to /attachment/.
   if (/^#\/(?:t|with|pair)\//.test(location.hash)) {
     location.replace(data.playPath + location.search + location.hash);
@@ -26,12 +27,12 @@
     nextImage.onload = () => {
       const previous = data.types[current];
       image.src = nextImage.src;
-      image.alt = `${type.name} 인형 — ${type.nick}`;
-      shuffle.setAttribute('aria-label', `다른 인형 구경하기. 현재 ${type.name}`);
+      image.alt = tr('{name} 인형 — {nick}', {name: type.name, nick: type.nick});
+      shuffle.setAttribute('aria-label', tr('다른 인형 구경하기. 현재 {name}', {name: type.name}));
       shuffle.classList.remove('changing');
       void shuffle.offsetWidth;
       shuffle.classList.add('changing');
-      if (announce) hint.textContent = `${type.name}! 톡 누르면 다른 친구가 나와요`;
+      if (announce) hint.textContent = tr('{name}! 톡 누르면 다른 친구가 나와요', {name: type.name});
       current = index;
       changing = false;
       shuffle.removeAttribute('aria-busy');
@@ -40,7 +41,7 @@
     nextImage.onerror = () => {
       changing = false;
       shuffle.removeAttribute('aria-busy');
-      if (announce) hint.textContent = '인형을 불러오지 못했어요. 한 번 더 톡 눌러 주세요';
+      if (announce) hint.textContent = tr('인형을 불러오지 못했어요. 한 번 더 톡 눌러 주세요');
     };
     nextImage.src = data.basePath + 'assets/' + type.image;
   };
@@ -61,7 +62,7 @@
       tile.hidden = selected !== 'all' && tile.dataset.quad !== selected;
       if (!tile.hidden) count++;
     });
-    document.getElementById('filter-status').textContent = `${button.textContent.trim()} 인형 ${count}종을 보고 있어요`;
+    document.getElementById('filter-status').textContent = tr('{filter} 인형 {count}종을 보고 있어요', {filter: button.textContent.trim(), count});
   }));
   document.querySelectorAll('[data-cta]').forEach(link => link.addEventListener('click', () => event('promo_cta_click', { target: 'web_test', position: link.dataset.cta })));
   document.querySelectorAll('[data-slug]').forEach(link => link.addEventListener('click', () => event('promo_type_open', { slug: link.dataset.slug })));

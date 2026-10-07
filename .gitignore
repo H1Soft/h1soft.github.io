@@ -1,1 +1,5 @@
 .DS_Store
+
+/tools/public-i18n/drafts/
+/tools/public-i18n/*batches.json
+/tools/public-i18n/__pycache__/

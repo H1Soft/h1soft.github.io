@@ -6,7 +6,7 @@ import { localizeStoreUrl } from '../js/store-links.mjs';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const check = process.argv.includes('--check');
-const ignored = new Set(['.git', '_source', 'node_modules', 'metrics']);
+const ignored = new Set(['.git', '_source', 'node_modules', 'metrics', 'tools']);
 const report = { pagesScanned: 0, storeLinks: 0, pagesChanged: [], languages: new Set(), appleFallbacks: [] };
 
 async function visit(dir) {

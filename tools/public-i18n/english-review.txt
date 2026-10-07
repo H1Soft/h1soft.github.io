@@ -1,0 +1,211 @@
+T0151 Attachment Plush
+T0169 Attachment Plush
+T0174 Attachment Plush — Find your attachment style and explore compatibility
+T0176 The plushies
+T0177 Result cards
+T0181 Try it on the web
+T0182 Meet your plush
+T0185 Meet your attachment style.
+T0186 As a plush.
+T0187 Answer 16 questions in about 3 minutes to meet your virtual plush keyring in a capsule. Discover 16 characters and one secret.
+T0191 Try it in your browser
+T0196 Your attachment style, as a plush character
+T0197 Your attachment plush
+T0201 Tap the plush to meet another friend
+T0203 Play on the web today
+T0204 An app for keeping your plush close is on the way.
+T0205 Ready to meet the plush that matches you?
+T0206 Find my plush
+T0207 Scan with your phone camera
+T0208 to start the test
+T0209 No installation · No sign-in
+T0210 Scroll down to meet the plushies
+T0212 Attachment Plush · SERIES 01 · 16 characters + 1 secret · Attachment Plush · SERIES 01 · 16 characters + 1 secret · Attachment Plush · SERIES 01 · 16 characters + 1 secret · Attachment Plush · SERIES 01 · 16 characters + 1 secret ·
+T0215 A little fun on your commute
+T0217 Start without signing in
+T0218 We don't ask for your name or contact details
+T0219 16 characters + 1 secret
+T0220 Meet the plush that matches you
+T0222 Just for fun, not a diagnosis
+T0223 A playful way to understand yourself
+T0225 Meet your plush in 3 minutes
+T0226 Answer everyday relationship questions, then watch the claw lift your capsule
+T0228 They usually send you a flood of emojis.
+T0229 Today, all they reply is “ok.”
+T0230 They're probably tired. I'll check in with them later.
+T0231 It bothers me a little, but I soon forget about it.
+T0232 Did I do something wrong? I scroll back through our chat.
+T0233 I'm sure they've lost interest in me, and I feel hurt.
+T0234 Insert a virtual coin. Answer 16 questions.
+T0235 Choose romance mode or friendship mode
+T0236 The claw lifts your capsule
+T0237 Your answers determine the result.
+T0238 The claw animation makes the reveal more exciting
+T0242 Your plush comes with a tag
+T0243 A name, nickname and grade on the tag
+T0244 plus its own care label
+T0246 16 characters + 1 secret.
+T0247 Which one matches you?
+T0248 Every meeting point of the anxiety and avoidance scales has its own plush character
+T0250 Secure
+T0251 Anxious
+T0252 Avoidant
+T0253 Disorganized
+T0254 Showing all 17 plush characters
+T0285 Secret plush
+T0286 What if both scores are right in the middle?
+T0288 Meet your plush →
+T0290 Share your result in a few taps
+T0291 Four 1080×1920 card designs, ready for your stories
+T0296 Design preview · Your real card will show your result
+T0297 Create my card
+T0299 Follow the red thread to a friend
+T0300 Send a link. When your friend takes the test,
+T0301 discover your compatibility and a little guide to caring for your relationship
+T0302 Ppojjagi
+T0303 points
+T0304 Mongle
+T0305 ♡ A perfect knot
+T0307 Sample compatibility result
+T0308 Send a link
+T0309 Your friend meets their plush
+T0310 Explore compatibility and grow your collection
+T0311 Find my plush first →
+T0312 Browse plush compatibility →
+T0314 Your friends' plushies join your collection
+T0315 One new space with every compatibility check. Who has the secret plush?
+T0316 5 of 17 characters collected
+T0318 Not discovered yet
+T0319 Choco
+T0320 MY · My plush
+T0321 Dubu
+T0322 Haru
+T0324 Sample collection · Your real collection begins with your own plush
+T0326 Keep your plush close
+T0327 Want your plush by your side?
+T0328 Here's what we're planning for the app
+T0329 My plush room
+T0330 A new message from your plush every day
+T0331 Friends map
+T0332 Your group's attachment styles on a map
+T0333 Lock screen wallpaper
+T0334 Your plush with a matching color pattern
+T0335 Home screen widget
+T0336 Your plush and scores on your home screen
+T0337 These are design previews of planned app features. The app release date has not been announced.
+T0340 Yes. The web test, compatibility results and collection are free. The app is still in development.
+T0342 You can take the test and meet your plush on the web now. A plush room, friends map, lock screen wallpapers and home screen widgets are planned for the app. App screens shown here are design previews.
+T0344 No. This is a playful self-reflection test, not a substitute for a medical or psychological diagnosis.
+T0346 Attachment styles can change with your relationship experiences. Different results in romance and friendship modes are natural.
+T0348 No sign-in is required, and we don't ask for your name or contact details. Test results and collections are stored on your device. Shared links may contain a nickname and result information, so check before posting them publicly.
+T0349 How do I meet the secret plush?
+T0350 It appears when both your raw anxiety and avoidance scores are either 10 or 11. Your answers determine the result; it isn't random. The roughly 1.1% figure is a simulation estimate, not a measured rate among real users.
+T0351 Still curious? Contact
+T0353 One virtual coin is all it takes
+T0354 Meet the plush that matches you in 3 minutes
+T0355 Free · No sign-in · App coming soon
+T0359 About attachment styles
+T0360 A playful self-reflection test. Not a medical or psychological diagnosis.
+T0361 All plush characters and artwork are original.
+T0362 © 2026 H1Soft · Attachment Plush
+T0363 Discover your attachment plush in 16 questions and about 3 minutes. Meet 16 characters and one secret, explore compatibility with friends and build your plush collection. Try it free.
+T0364 Your attachment style, as a plush.
+T0365 16 questions. About 3 minutes. Meet the virtual plush keyring that matches you.
+T0366 Attachment Plush home
+T0368 Meet another plush. Currently showing Anxious Cat
+T0370 QR code for the mobile web test
+T0371 A pastel-colored virtual claw machine
+T0373 Filter plush characters by attachment style
+T0392 Sample collection: not discovered yet
+T0393 Sample collection: Mongle
+T0394 Sample collection: Choco
+T0395 Sample collection: MY · My plush
+T0396 Sample collection: Dubu
+T0397 Sample collection: Haru
+T0398 Design preview of the planned plush room
+T0399 Design preview of the planned friends map
+T0400 Design preview of the planned lock screen wallpaper
+T0401 Design preview of the planned home screen widget
+T0403 {name} plush — {nick}
+T0404 Meet another plush. Currently showing {name}
+T0405 {name}! Tap to meet another friend.
+T0406 Couldn't load the plush. Please tap to try again.
+T0407 Showing {count} plush characters: {filter}
+T0408 MEOWBRO — Cute face. Fearless adventure.
+T0410 Meowbro
+T0417 Meowbro.
+T0418 Cute face.
+T0419 Fearless adventure.
+T0420 A storm of bullets. Endless choices.
+T0421 One little cat turns the tide
+T0422 in this action roguelike.
+T0423 Watch the gameplay
+T0426 Cat action roguelike
+T0427 OUT NOW ON THE APP STORE · ANDROID COMING SOON
+T0428 One more run.
+T0429 A different adventure.
+T0430 Your path. Your weapons. Your way to survive.
+T0431 New choices on every run
+T0432 make the adventure yours.
+T0435 Development build v0.15.2
+T0436 Dodge.
+T0437 Choose.
+T0438 Grow stronger.
+T0439 Attacks are automatic. Survival takes skill.
+T0440 Read enemy attacks. Dash just before they hit.
+T0441 One perfectly timed dodge
+T0442 can turn the battle around.
+T0443 Game screens may vary
+T0444 depending on the version.
+T0445 Gear up your way.
+T0446 Survive to the end.
+T0447 Gun. Blade. Staff.
+T0448 Three beginnings. Nine legends.
+T0449 Combine weapons and relics to build your own fighting style.
+T0451 Let the bullets fly.
+T0452 Keep your distance. Unleash a bullet storm.
+T0454 Dive into the fray.
+T0455 Find an opening. Cut through everything.
+T0457 Sweep them all away.
+T0458 Cast your magic. Call down a meteor shower.
+T0459 On this map,
+T0460 there is no perfect path.
+T0461 Play it safe, or take a risk?
+T0462 Three acts. New crossroads on every run.
+T0463 Your next step is your choice.
+T0468 Ruins wrapped in green
+T0469 Every adventure begins with one small pawprint.
+T0470 Another adventure.
+T0471 Coming along, human?
+T0472 Meowbro's first adventure is here.
+T0473 Find it now on the App Store.
+T0475 Download
+T0479 A solo adventure you can count on.
+T0480 Play freely, even offline.
+T0481 A few things you might be wondering.
+T0483 Meowbro is a single-player action roguelike played in portrait mode. Move your automatically attacking cat to dodge enemies, choose paths and rewards, and explore three acts.
+T0485 Yes. Meowbro works offline. Your progress and settings are stored on the device you play on.
+T0487 The iOS version is available on the App Store. Android is in development; a Google Play link will be added after release.
+T0490 Meowbro · A little hero among the ruins
+T0493 Cute face. Fearless adventure. Dodge, choose and survive in Meowbro, a cat action roguelike. Watch real gameplay and download on the App Store. Android is coming soon.
+T0494 Meowbro
+T0495 Meowbro — Cute face. Fearless adventure.
+T0496 Dodge, choose and survive in a little cat's action roguelike. Available on the iOS App Store. Android is coming soon.
+T0497 Meowbro home
+T0501 Actual boss fight footage from a Meowbro development build
+T0511 Download Meowbro on the App Store
+T0516 Actual development build screenshot
+T0517 Read enemy attacks and dash just before they hit. One perfectly timed dodge can turn the battle around.
+T0518 Actual gameplay showing Meowbro dodging monster attacks
+T0520 The next room is your choice.
+T0521 Battles, shops and unexpected events. Take a safe break or chase a reward. A new choice awaits at every crossroads.
+T0522 Meowbro's expedition map with battles, events and shops
+T0524 Same weapon. Entirely new possibilities.
+T0525 Upgrade your weapon and choose its path. Add relics to shape your fighting style. Build this run's legend yourself.
+T0526 Actual gameplay showing weapon upgrades and legendary evolution
+T0527 Secrets beyond the sand
+T0528 One more step across the burning sand.
+T0529 A desert path through hot sand and broken ruins
+T0530 The final frozen path
+T0531 Brave the cold wind. See it through.
+T0532 A snowfield path through icy rocks and ruins

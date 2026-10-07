@@ -1,5 +1,5 @@
-// Add verified product URLs after store registration. Empty values remain unavailable.
-const STORE_URLS = { appStore: 'https://apps.apple.com/kr/app/id6819049763?l=ko', googlePlay: '' };
+const pageCopy = JSON.parse(document.getElementById('page-copy')?.textContent || '{}');
+const tr = text => pageCopy[text.replace(/\s+/g, ' ').trim()] || text;
 
 const sceneData = {
   combat: { word: 'DODGE!', title: '공격은 자동. 생존은 실력.', text: '적의 공격을 읽고, 닿기 직전에 대시.\n아슬아슬한 회피 한 번으로\n전투의 흐름을 바꿔보세요.', image: 'assets/v2/gameplay-combat.webp', alt: '냥브로가 몬스터의 공격을 피해 싸우는 실제 전투 화면' },
@@ -11,6 +11,10 @@ const worldData = {
   desert: { act: 'ACT II', name: '모래 너머의 비밀', text: '뜨거운 모래 위로, 한 걸음 더.', image: 'assets/world-desert-v2.webp', alt: '뜨거운 모래와 부서진 유적 사이로 이어지는 사막의 길', index: '02 / 03' },
   snow: { act: 'ACT III', name: '얼어붙은 마지막 길', text: '차가운 바람 앞에서도, 끝까지.', image: 'assets/world-snow-v2.webp', alt: '눈과 얼음이 덮인 바위와 폐허 사이의 설원 길', index: '03 / 03' },
 };
+for (const entry of [...Object.values(sceneData), ...Object.values(worldData)]) {
+  for (const key of ['word', 'title', 'text', 'name', 'alt']) if (entry[key]) entry[key] = tr(entry[key]);
+  entry.image = '/meowbro/' + entry.image;
+}
 const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
 const video = document.getElementById('gameplay-video');
 const still = document.getElementById('gameplay-image');
@@ -23,7 +27,7 @@ let evidenceVisible = false;
 
 function updateVideoControl() {
   const paused = video.paused;
-  videoToggle.setAttribute('aria-label', paused ? '플레이 영상 재생' : '플레이 영상 일시정지');
+  videoToggle.setAttribute('aria-label', paused ? tr('플레이 영상 재생') : tr('플레이 영상 일시정지'));
   videoToggle.querySelector('use').setAttribute('href', paused ? '#play' : '#pause');
 }
 function playIfAllowed() {
@@ -103,9 +107,9 @@ let videoWasPlaying = false;
 document.getElementById('capture-expand').addEventListener('click', () => {
   const scene = sceneData[activeScene];
   const picture = document.getElementById('dialog-image');
-  picture.src = activeScene === 'combat' ? 'assets/v2/gameplay-poster.webp' : scene.image;
+  picture.src = activeScene === 'combat' ? '/meowbro/assets/v2/gameplay-poster.webp' : scene.image;
   picture.alt = scene.alt;
-  document.getElementById('dialog-caption').textContent = `${scene.title} — 실제 개발 빌드 화면`;
+  document.getElementById('dialog-caption').textContent = `${scene.title} — ${tr('실제 개발 빌드 화면')}`;
   videoWasPlaying = !video.paused;
   video.pause();
   dialog.showModal();
@@ -130,20 +134,3 @@ poster.addEventListener('pointermove', event => {
   frame = requestAnimationFrame(() => { character.style.transform = `translate(${x * 12}px, ${y * 9}px) rotate(${x * -1.2}deg)`; });
 });
 poster.addEventListener('pointerleave', () => { cancelAnimationFrame(frame); character.style.transform = ''; });
-
-for (const button of document.querySelectorAll('[data-store]')) {
-  const key = button.dataset.store;
-  if (!STORE_URLS[key]) continue;
-  let url;
-  try { url = new URL(STORE_URLS[key]); } catch { continue; }
-  const valid = url.protocol === 'https:' && (key === 'appStore'
-    ? url.hostname === 'apps.apple.com' && /\/id\d+/.test(url.pathname)
-    : url.hostname === 'play.google.com' && url.pathname === '/store/apps/details' && Boolean(url.searchParams.get('id')));
-  if (!valid) continue;
-  const link = document.createElement('a');
-  link.href = url.href; link.target = '_blank'; link.rel = 'noopener noreferrer';
-  link.innerHTML = button.innerHTML;
-  link.querySelector('small').textContent = '다운로드하기';
-  link.setAttribute('aria-label', `${key === 'appStore' ? 'App Store' : 'Google Play'}에서 냥브로 다운로드`);
-  button.replaceWith(link);
-}

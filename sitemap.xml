@@ -1,24 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://h1soft.github.io/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/en/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/" />
-  </url>
-  <url>
     <loc>https://h1soft.github.io/ongle/</loc>
     <lastmod>2026-09-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1723,15 +1705,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/cleaner/terms/" />
   </url>
   <url>
-    <loc>https://h1soft.github.io/nonogram/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
-  </url>
-  <url>
     <loc>https://h1soft.github.io/nonogram/privacy/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -1759,15 +1732,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/support/" />
   </url>
   <url>
-    <loc>https://h1soft.github.io/nonogram/ko/</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
-    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
-  </url>
-  <url>
     <loc>https://h1soft.github.io/nonogram/ko/privacy/</loc>
     <lastmod>2026-09-17</lastmod>
     <changefreq>monthly</changefreq>
@@ -1793,11 +1757,6 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/support/" />
     <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/support/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/support/" />
-  </url>
-  <url>
-    <loc>https://h1soft.github.io/attachment/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://h1soft.github.io/attachment/privacy/</loc>
@@ -2670,17 +2629,1507 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://h1soft.github.io/meowbro/</loc>
-    <lastmod>2026-09-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://h1soft.github.io/gyeol/</loc>
     <lastmod>2026-09-30</lastmod>
   </url>
   <url>
     <loc>https://h1soft.github.io/attachment/pair/</loc>
     <lastmod>2026-09-30</lastmod>
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/de/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/de/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/de/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/de/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/en/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/en/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/en/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/es/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/es/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/es/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/es/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fa/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/fa/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/fa/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/fa/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/fr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/fr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/fr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/fr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/id/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/id/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/id/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/id/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/it/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/it/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/it/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/it/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/nl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/nl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/nl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/pl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/pl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/pl/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/pt/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/pt/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/pt/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/pt/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ru/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/ru/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/ru/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ru/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/tr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/tr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/tr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/tr/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/vi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/vi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/vi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/vi/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-CN/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/zh-CN/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/zh-CN/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/zh-CN/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/zh-TW/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/zh-TW/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/zh-TW/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/zh-TW/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ko/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/ja/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/attachment/ja/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/attachment/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/attachment/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/attachment/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/attachment/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/attachment/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/attachment/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/attachment/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/attachment/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/attachment/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/attachment/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/attachment/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/attachment/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/attachment/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/attachment/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/attachment/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/attachment/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/attachment/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/attachment/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/meowbro/ja/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/meowbro/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/meowbro/en/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/meowbro/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/meowbro/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/meowbro/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/meowbro/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/meowbro/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/meowbro/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/meowbro/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/meowbro/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/meowbro/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/meowbro/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/meowbro/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/meowbro/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/meowbro/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/meowbro/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/meowbro/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/meowbro/en/" />
+  </url>
+  <url>
+    <loc>https://h1soft.github.io/nonogram/ja/</loc>
+    <lastmod>2026-10-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="de" href="https://h1soft.github.io/nonogram/de/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://h1soft.github.io/nonogram/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://h1soft.github.io/nonogram/es/" />
+    <xhtml:link rel="alternate" hreflang="fa" href="https://h1soft.github.io/nonogram/fa/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://h1soft.github.io/nonogram/fr/" />
+    <xhtml:link rel="alternate" hreflang="id" href="https://h1soft.github.io/nonogram/id/" />
+    <xhtml:link rel="alternate" hreflang="it" href="https://h1soft.github.io/nonogram/it/" />
+    <xhtml:link rel="alternate" hreflang="nl" href="https://h1soft.github.io/nonogram/nl/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://h1soft.github.io/nonogram/pl/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://h1soft.github.io/nonogram/pt/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://h1soft.github.io/nonogram/ru/" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://h1soft.github.io/nonogram/tr/" />
+    <xhtml:link rel="alternate" hreflang="vi" href="https://h1soft.github.io/nonogram/vi/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://h1soft.github.io/nonogram/zh-CN/" />
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://h1soft.github.io/nonogram/zh-TW/" />
+    <xhtml:link rel="alternate" hreflang="ko" href="https://h1soft.github.io/nonogram/ko/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://h1soft.github.io/nonogram/ja/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://h1soft.github.io/nonogram/" />
   </url>
 </urlset>

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f36a43">
+  <title>냥브로 MEOWBRO — 귀여운 건, 얼굴뿐.</title>
+  <meta name="description" content="귀여운 건, 얼굴뿐. 피하고, 고르고, 살아남는 고양이 액션 로그라이크 냥브로. 실제 플레이를 만나보세요. App Store에서 다운로드하세요. Android 출시는 준비 중입니다.">
+  <link rel="canonical" href="https://h1soft.github.io/meowbro/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:site_name" content="냥브로 MEOWBRO">
+  <meta property="og:title" content="냥브로 — 귀여운 건, 얼굴뿐.">
+  <meta property="og:description" content="피하고, 고르고, 살아남아라. 작은 고양이의 액션 로그라이크. iOS App Store 출시. Android 출시는 준비 중입니다.">
+  <meta property="og:url" content="https://h1soft.github.io/meowbro/">
+  <meta property="og:image" content="https://h1soft.github.io/meowbro/assets/v2/store-art.webp">
+  <meta property="og:image:width" content="1024">
+  <meta property="og:image:height" content="1024">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/webp" href="assets/app-icon.webp?v=icons-20260928">
+  <link rel="preload" href="fonts/lilita-one.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="fonts/black-han-sans.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="assets/v2/cat-gun.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <script src="script.js?v=20261007-release" defer></script>
+<script defer src="/js/analytics.js?v=services-20260930"></script>
+<!-- seo:structured-data -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://h1soft.github.io/meowbro/#webpage","url":"https://h1soft.github.io/meowbro/","name":"냥브로 MEOWBRO — 귀여운 건, 얼굴뿐.","description":"귀여운 건, 얼굴뿐. 피하고, 고르고, 살아남는 고양이 액션 로그라이크 냥브로. 실제 플레이를 만나보세요. App Store에서 다운로드하세요. Android 출시는 준비 중입니다.","inLanguage":"ko","mainEntity":{"@id":"https://h1soft.github.io/meowbro/#app"}},{"@type":"MobileApplication","@id":"https://h1soft.github.io/meowbro/#app","name":"냥브로 MEOWBRO","url":"https://h1soft.github.io/meowbro/","description":"귀여운 건, 얼굴뿐. 피하고, 고르고, 살아남는 고양이 액션 로그라이크 냥브로. 실제 플레이를 만나보세요. App Store에서 다운로드하세요. Android 출시는 준비 중입니다.","applicationCategory":"GameApplication","operatingSystem":"iOS, Android","inLanguage":"ko","image":"https://h1soft.github.io/meowbro/assets/v2/store-art.webp","publisher":{"@type":"Organization","name":"H1Soft","url":"https://h1soft.github.io/"},"offers":{"@type":"Offer","price":"0","priceCurrency":"KRW","url":"https://apps.apple.com/kr/app/id6819049763?l=ko"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"H1Soft","item":"https://h1soft.github.io/"},{"@type":"ListItem","position":2,"name":"냥브로 MEOWBRO","item":"https://h1soft.github.io/meowbro/"}]}]}</script>
+<!-- /seo:structured-data -->
+<link rel="stylesheet" href="/css/product-links.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/></symbol>
+    <symbol id="diagonal" viewBox="0 0 24 24"><path d="M5 5h14v14M5 19 19 5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7Z" fill="currentColor"/></symbol>
+    <symbol id="pause" viewBox="0 0 24 24"><path d="M7 5h4v14H7zm7 0h4v14h-4z" fill="currentColor"/></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m5 5 14 14M5 19 19 5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="expand" viewBox="0 0 24 24"><path d="M14 4h6v6M4 14v6h6m10-16-7 7m-9 9 7-7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="apple" viewBox="0 0 24 24"><path fill="currentColor" d="M16.7 12.8c0-2.1 1.7-3.1 1.8-3.2-1-1.5-2.6-1.7-3.2-1.7-1.4-.2-2.7.8-3.4.8-.7 0-1.8-.8-3-.7-1.6 0-3.1.9-3.9 2.3-1.7 2.8-.4 7 1.2 9.3.8 1.1 1.6 2.3 2.8 2.2 1.1 0 1.6-.7 3-.7s1.8.7 3 .7 2-1.1 2.7-2.2c.9-1.3 1.3-2.5 1.3-2.6-.1 0-2.3-.9-2.3-4.2ZM14.4 6.4c.6-.8 1.1-1.9 1-3-1 .1-2.2.7-2.9 1.5-.6.7-1.2 1.9-1 3 1.1.1 2.2-.6 2.9-1.5Z"/></symbol>
+    <symbol id="googleplay" viewBox="0 0 24 24"><path d="m5 3 14 9L5 21V3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m5 3 9 13m-9 5 9-13" stroke="currentColor" stroke-width="1.3"/></symbol>
+  </defs></svg>
+
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="냥브로 처음으로">냥브로<span>MEOWBRO</span></a>
+    <nav aria-label="주요 메뉴"><a href="#playground">플레이</a><a href="#expedition">모험</a><a href="#release">다운로드 <svg><use href="#diagonal"/></svg></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="poster" aria-labelledby="poster-heading">
+      <div class="poster-topline"><span>폐허의 작은 영웅</span><span>A LITTLE CAT. A BIG ADVENTURE.</span></div>
+      <div class="giant-wordmark" aria-hidden="true">MEOWBRO</div>
+      <div class="poster-body">
+        <div class="poster-copy">
+          <h1 id="poster-heading"><span class="sr-only">냥브로.</span>귀여운 건,<br>얼굴뿐.</h1>
+          <p>쏟아지는 탄막. 끝없는 선택.<br>작은 고양이가 판을 뒤집는<br> 액션 로그라이크.</p>
+          <a class="solid-link" href="#playground">플레이 먼저 보기 <svg><use href="#arrow"/></svg></a>
+        </div>
+        <div class="hero-character"><img src="assets/v2/cat-gun.webp" alt="붉은 머리띠와 초록 의상을 입고 블래스터를 쏘는 냥브로" width="1254" height="1254" fetchpriority="high"></div>
+        <span class="hero-side-note">SMALL PAWS.<br>BIG TROUBLE.</span>
+      </div>
+      <div class="poster-bottomline"><span>고양이 액션 로그라이크</span><span>iOS APP STORE 출시 · ANDROID 준비 중</span><a href="#playground" aria-label="실제 플레이 보기"><svg><use href="#arrow"/></svg></a></div>
+    </section>
+
+    <section id="playground" class="playground section-pad" aria-labelledby="playground-heading">
+      <div class="section-intro">
+        <h2 id="playground-heading">한 번만 더.<br><span>이번엔 다르게.</span></h2>
+        <p>길도, 무기도, 살아남는 방법도.<br>매번 달라지는 선택이<br> 당신만의 원정을 만듭니다.</p>
+      </div>
+      <div class="gameplay-spread">
+        <div class="evidence" data-scene="combat">
+          <span class="evidence-word" aria-hidden="true">DODGE!</span>
+          <div class="capture" id="gameplay-panel" role="tabpanel" aria-labelledby="scene-combat">
+            <video id="gameplay-video" muted loop playsinline preload="metadata" poster="assets/v2/gameplay-poster.webp" aria-label="냥브로 개발 빌드 실제 보스 전투 영상"><source src="assets/v2/gameplay-loop.mp4" type="video/mp4"></video>
+            <img id="gameplay-image" src="assets/v2/gameplay-combat.webp" alt="냥브로 실제 전투 화면" width="720" height="1280" hidden>
+            <div class="capture-controls"><button id="video-toggle" class="icon-button" type="button" aria-label="플레이 영상 재생"><svg><use href="#play"/></svg></button><button id="capture-expand" class="icon-button" type="button" aria-label="현재 게임 화면 크게 보기"><svg><use href="#expand"/></svg></button></div>
+          </div>
+          <div class="capture-caption"><span>실제 게임 플레이</span><span>개발 빌드 v0.15.2</span></div>
+        </div>
+        <div class="play-guide">
+          <div class="scene-tabs" role="tablist" aria-label="원정의 흐름" aria-orientation="vertical">
+            <button id="scene-combat" type="button" role="tab" aria-selected="true" aria-controls="gameplay-panel" data-scene="combat"><span class="scene-number">01</span><span class="scene-label">피하고.</span><svg><use href="#arrow"/></svg></button>
+            <button id="scene-map" type="button" role="tab" aria-selected="false" aria-controls="gameplay-panel" tabindex="-1" data-scene="map"><span class="scene-number">02</span><span class="scene-label">고르고.</span><svg><use href="#arrow"/></svg></button>
+            <button id="scene-upgrade" type="button" role="tab" aria-selected="false" aria-controls="gameplay-panel" tabindex="-1" data-scene="upgrade"><span class="scene-number">03</span><span class="scene-label">강해지고.</span><svg><use href="#arrow"/></svg></button>
+          </div>
+          <div class="scene-description" aria-live="polite"><h3 id="scene-title">공격은 자동. 생존은 실력.</h3><p id="scene-description">적의 공격을 읽고, 닿기 직전에 대시.<br>아슬아슬한 회피 한 번으로<br>전투의 흐름을 바꿔보세요.</p></div>
+          <p class="scene-footnote">게임 화면은 버전에 따라<br>일부 내용이 달라질 수 있습니다.</p>
+          <img class="guide-slime" src="assets/v2/slime.webp" alt="" width="200" height="200" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="loadout" aria-labelledby="loadout-heading">
+      <div class="loadout-lead"><h2 id="loadout-heading">취향대로 무장.<br>끝까지 생존.</h2><p>총, 검, 지팡이.<br>세 가지 시작, 아홉 가지 전설.<br>무기에 유물을 더해 나만의 조합을 만드세요.</p></div>
+      <div class="weapon-lineup">
+        <article class="weapon-entry"><span class="weapon-english" aria-hidden="true">GUN</span><img src="assets/v2/cat-gun.webp" alt="블래스터를 든 냥브로" width="1254" height="1254" loading="lazy"><div><h3>시원하게 쏟아붓고.</h3><p>거리를 벌리고, 탄막 폭풍.</p></div></article>
+        <article class="weapon-entry"><span class="weapon-english" aria-hidden="true">BLADE</span><img src="assets/v2/cat-sword.webp" alt="빛나는 검을 어깨에 얹은 냥브로" width="1254" height="1254" loading="lazy"><div><h3>거침없이 파고들고.</h3><p>빈틈을 노리고, 천지 가르기.</p></div></article>
+        <article class="weapon-entry"><span class="weapon-english" aria-hidden="true">MAGIC</span><img src="assets/v2/cat-magic.webp" alt="마법 지팡이를 든 냥브로" width="1254" height="1254" loading="lazy"><div><h3>전부 쓸어버리고.</h3><p>마법을 펼치고, 유성우.</p></div></article>
+      </div>
+    </section>
+
+    <section id="expedition" class="expedition section-pad" aria-labelledby="expedition-heading">
+      <div class="section-intro"><h2 id="expedition-heading">지도에<br><span>정답은 없다.</span></h2><div class="expedition-intro"><p>안전한 길로 갈까, 위험을 감수할까.<br>세 개의 막, 매번 달라지는 갈림길.<br>다음 발자국은 당신의 선택.</p><div class="world-tabs" role="tablist" aria-label="탐험 지역"><button id="world-forest" type="button" role="tab" aria-selected="true" aria-controls="world-panel" data-world="forest">숲</button><button id="world-desert" type="button" role="tab" aria-selected="false" aria-controls="world-panel" tabindex="-1" data-world="desert">사막</button><button id="world-snow" type="button" role="tab" aria-selected="false" aria-controls="world-panel" tabindex="-1" data-world="snow">설원</button></div></div></div>
+      <div id="world-panel" class="world-stage" role="tabpanel" aria-labelledby="world-forest" tabindex="0"><img id="world-image" src="assets/world-forest-v2.webp" alt="오래된 석조 폐허와 초록 나무 사이로 이어지는 숲의 길" width="1024" height="1536" loading="lazy"><div class="world-shade"></div><div class="world-title"><span id="world-act">ACT I</span><h3 id="world-name">초록에 잠긴 폐허</h3><p id="world-description">모험은, 작은 발자국 하나에서.</p></div><span class="world-index" id="world-index" aria-hidden="true">01 / 03</span></div>
+    </section>
+
+    <section id="release" class="release" aria-labelledby="release-heading">
+      <div class="release-main"><h2 id="release-heading">다음 모험,<br>같이 갈 거냥?</h2><div class="release-info"><p>냥브로가 첫 출격을 시작했어요.<br>App Store에서 지금 만나보세요.</p><div class="store-links"><a href="https://apps.apple.com/kr/app/id6819049763?l=ko" target="_blank" rel="noopener noreferrer" data-store="appStore" aria-label="App Store에서 냥브로 다운로드"><svg><use href="#apple"/></svg><span>App Store<small>다운로드하기</small></span></a><button type="button" data-store="googlePlay" disabled aria-label="Google Play 출시 준비 중"><svg><use href="#googleplay"/></svg><span>Google Play<small>출시 준비 중</small></span></button></div><span class="release-note">iOS 15 이상 · Android 출시 준비 중</span></div></div>
+      <div class="release-bottom"><span>혼자서도 든든하게.<br>인터넷 없이도 자유롭게.</span><a href="#main" aria-label="맨 위로"><svg><use href="#arrow"/></svg></a></div>
+    </section>
+
+    <section class="questions section-pad" aria-labelledby="questions-heading"><h2 id="questions-heading">잠깐, 궁금한 게 있다면.</h2><div><details><summary>어떤 게임인가요?<span aria-hidden="true">+</span></summary><p>냥브로는 세로 화면으로 즐기는 싱글 플레이 액션 로그라이크입니다. 자동으로 공격하는 고양이를 움직여 적의 공격을 피하고, 갈림길과 보상을 선택하며 세 개의 막을 탐험합니다.</p></details><details><summary>인터넷 없이도 할 수 있나요?<span aria-hidden="true">+</span></summary><p>네. 냥브로는 오프라인으로 플레이할 수 있습니다. 진행 상황과 설정은 플레이하는 기기에 저장됩니다.</p></details><details><summary>어디서 다운로드하나요?<span aria-hidden="true">+</span></summary><p>iOS는 App Store에서 다운로드할 수 있습니다. Android는 출시를 준비하고 있으며, 정식 출시 후 Google Play 링크를 안내할 예정입니다.</p></details></div></section>
+  <!-- seo:store-price -->
+<p class="seo-store-price" style="text-align:center;margin:24px auto;font-size:0.875rem"><a href="https://apps.apple.com/kr/app/id6819049763?l=ko" rel="noopener">App Store · ₩0</a></p>
+<!-- /seo:store-price -->
+</main>
+
+  <aside class="h1soft-apps" data-h1soft-related="cards" aria-labelledby="h1soft-apps-title"><div class="h1soft-apps-inner"><h2 id="h1soft-apps-title">H1Soft의 다른 앱</h2><nav class="h1soft-app-grid" aria-label="H1Soft의 다른 앱">
+<a class="h1soft-app-link" href="/qr-scanner/" hreflang="ko" lang="ko" data-h1soft-product="qr-scanner"><img src="/assets/app_icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">QR Scanner</span><span class="h1soft-app-description">QR 스캔·생성</span></span></a>
+<a class="h1soft-app-link" href="/ko/seukscan/" hreflang="ko" lang="ko" data-h1soft-product="seukscan"><img src="/assets/seukscan-icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">슥캔</span><span class="h1soft-app-description">문서 스캐너·OCR</span></span></a>
+<a class="h1soft-app-link" href="/ongle/" hreflang="ko" lang="ko" data-h1soft-product="ongle"><img src="/assets/ongle-icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">온글</span><span class="h1soft-app-description">hwp·hwpx 뷰어</span></span></a>
+<a class="h1soft-app-link" href="/cleaner/" hreflang="ko" lang="ko" data-h1soft-product="cleaner"><img src="/cleaner/assets/app-icon-20260917-bca163c928.webp" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">폰 클리너</span><span class="h1soft-app-description">사진·저장 공간 정리</span></span></a>
+<a class="h1soft-app-link" href="/attachment/" hreflang="ko" lang="ko" data-h1soft-product="attachment"><img src="/attachment/assets/app-icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">애착인형 뽑기</span><span class="h1soft-app-description">애착 유형 테스트</span></span></a>
+<a class="h1soft-app-link" href="/ko/mongle/" hreflang="ko" lang="ko" data-h1soft-product="mongle"><img src="/assets/mongle/icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">몽글</span><span class="h1soft-app-description">성격 테스트</span></span></a>
+<a class="h1soft-app-link" href="/gyeol/" hreflang="ko" lang="ko" data-h1soft-product="gyeol"><img src="/gyeol/assets/apple-touch-icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">결</span><span class="h1soft-app-description">가치관 소개팅</span></span></a>
+<a class="h1soft-app-link" href="/nonogram/ko/" hreflang="ko" lang="ko" data-h1soft-product="nonogram"><img src="/nonogram/images/app-icon.webp" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">노노그램 트립</span><span class="h1soft-app-description">노노그램 퍼즐</span></span></a>
+<a class="h1soft-app-link" href="/ko/sudoku/" hreflang="ko" lang="ko" data-h1soft-product="sudoku"><img src="/assets/sudoku-release/icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">스도쿠 보야지</span><span class="h1soft-app-description">스도쿠 퍼즐</span></span></a>
+<a class="h1soft-app-link" href="/sagak/" hreflang="ko" lang="ko" data-h1soft-product="sagak"><img src="/assets/sagak-icon.png" alt="" width="40" height="40" loading="lazy"><span class="h1soft-app-text"><span class="h1soft-app-name">사각사각</span><span class="h1soft-app-description">시카쿠 퍼즐</span></span></a>
+</nav></div></aside>
+<footer class="site-footer"><div class="footer-wordmark" aria-hidden="true">MEOWBRO<svg><use href="#diagonal"/></svg></div><div class="footer-line"><span>© 2026 H1Soft</span><span>냥브로 · 폐허의 작은 영웅</span><a href="privacy.html">개인정보 처리방침</a><a href="https://h1soft.github.io/" target="_blank" rel="noopener noreferrer">H1Soft <svg><use href="#diagonal"/></svg></a></div></footer>
+  <dialog class="screenshot-dialog" aria-labelledby="dialog-caption"><button class="dialog-close" type="button" aria-label="크게 보기 닫기"><svg><use href="#close"/></svg></button><img id="dialog-image" src="assets/v2/gameplay-combat.webp" loading="lazy" alt=""><p id="dialog-caption">냥브로 실제 게임 화면</p></dialog>
+</body>
+</html>

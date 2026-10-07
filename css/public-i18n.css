@@ -1,0 +1,28 @@
+/* Shared, keyboard-accessible language navigation. No locale redirects. */
+.site-languages{position:relative;z-index:90;flex:none;margin-inline:12px;color:inherit;font-family:system-ui,sans-serif;font-size:14px;font-weight:600;line-height:1.5;letter-spacing:normal;text-transform:none}
+.site-languages summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid currentColor;border-radius:12px;list-style:none;white-space:nowrap;background:transparent}
+.site-languages summary::-webkit-details-marker{display:none}.site-languages summary::after{content:'⌄'}
+.site-language-list{position:absolute!important;display:grid!important;grid-template-columns:repeat(2,minmax(120px,1fr))!important;gap:2px!important;inset-inline-end:0;top:calc(100% + 8px);max-height:min(70vh,580px);overflow:auto;width:max-content;max-width:calc(100vw - 32px);padding:10px!important;background:#fff;color:#242127;border:1px solid #ddd;border-radius:16px;box-shadow:0 10px 30px #0002}
+.site-language-list a{display:block!important;padding:10px 12px!important;min-height:44px;text-decoration:none!important;border-radius:8px;white-space:normal!important;color:inherit!important;font:500 14px/1.5 system-ui,sans-serif!important;letter-spacing:normal!important}
+.site-language-list a:hover,.site-language-list a[aria-current=page]{background:#eee9f4}.site-languages :focus-visible{outline:3px solid #7361ae;outline-offset:2px}
+html[dir=rtl] body{font-family:Tahoma,system-ui,sans-serif}html[dir=rtl] h1,html[dir=rtl] h2,html[dir=rtl] h3{font-family:Tahoma,system-ui,sans-serif;letter-spacing:normal}
+html[dir=rtl] .giant-wordmark,html[dir=rtl] .evidence-word,html[dir=rtl] .airdata{direction:ltr}
+html[data-public-i18n] h1,html[data-public-i18n] h2,html[data-public-i18n] h3{overflow-wrap:break-word;text-wrap:balance}
+html[data-public-i18n] .poster-copy h1{font-size:clamp(44px,6vw,90px)}
+html[data-public-i18n] .site-header{flex-wrap:wrap;gap:12px}
+.store-language-note{font:14px/1.7 system-ui,sans-serif;max-width:65ch;margin:20px auto;padding-inline:20px}
+@media(max-width:760px){.site-languages{margin-inline-start:auto;margin-inline-end:0}.site-languages summary{padding:6px 10px;font-size:13px}.site-language-list{grid-template-columns:repeat(2,minmax(100px,1fr))!important}html[data-public-i18n] .site-header{height:auto;min-height:64px}.site-languages{max-width:100%}}
+.site-languages{display:inline-block;width:auto}
+html[data-public-i18n=attachment] .nav{height:auto;min-height:72px}
+html[data-public-i18n=attachment] .nav-inner{min-height:72px;gap:14px;flex-wrap:wrap;padding-block:8px}
+html[data-public-i18n=attachment] .nav-inner>nav{gap:14px;flex-wrap:wrap}
+html[data-public-i18n=attachment] .nav-test{display:none}
+html[data-public-i18n=attachment] .nav-inner>nav a{font-size:13px}
+html[data-public-i18n=attachment] .nav-inner>.site-languages{margin-inline-start:auto}
+@media(max-width:760px){html[data-public-i18n=attachment] .nav-inner{width:calc(100% - 32px);gap:8px}html[data-public-i18n=attachment] .nav-inner>.button{display:none}html[data-public-i18n=attachment] .nav-inner>.brand{font-size:20px}html[data-public-i18n=home] .site-header__inner{flex-wrap:wrap;height:auto;min-height:70px;padding-block:8px;gap:8px}html[data-public-i18n=home] .site-nav{order:3;width:100%;justify-content:center}}
+html[data-public-i18n=attachment] .shuffle-hint{left:0;right:0;margin-inline:auto;max-width:100%;padding-inline:12px;font-size:clamp(14px,1.45vw,18px);overflow-wrap:anywhere}
+html[dir=rtl] .shuffle-hint{font-family:Tahoma,system-ui,sans-serif;letter-spacing:normal}
+.reference-language{display:inline-block;font:11px/1.4 system-ui,sans-serif;margin-inline-start:6px;padding:1px 5px;border:1px solid currentColor;border-radius:5px;vertical-align:middle;opacity:.75}
+html[data-public-i18n=meowbro] .site-header{padding-block:12px}
+@media(max-width:760px){html[data-public-i18n=meowbro] .site-header>.brand{order:1}html[data-public-i18n=meowbro] .site-header>.site-languages{order:2;margin-inline-start:auto}html[data-public-i18n=meowbro] .site-header>nav{order:3;flex-basis:100%;justify-content:space-between}}
+@media(max-width:760px){html[data-public-i18n=meowbro] .scene-tabs>button{min-width:0;padding-inline:6px}html[data-public-i18n=meowbro] .scene-label{white-space:normal;font-size:clamp(18px,5vw,22px);line-height:1.25;overflow-wrap:anywhere}}

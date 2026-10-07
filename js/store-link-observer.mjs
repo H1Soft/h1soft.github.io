@@ -1,5 +1,5 @@
 // Metrics renders its outbound links after fetching data and opening dialogs.
-import { localizeStoreUrl } from './store-links.mjs?v=20260928';
+import { localizeStoreUrl } from './store-links.mjs?v=20261007';
 
 const selector = 'a[href^="https://apps.apple.com/"],a[href^="https://itunes.apple.com/"],a[href^="https://play.google.com/store/"]';
 function localize(root) {
