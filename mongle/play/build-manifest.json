@@ -1,5 +1,5 @@
 {
-  "revision": "a9745b43121c",
+  "revision": "86eb62d05d6b",
   "locales": {
     "de": "./locales/de.ee5c1177d1a7.json",
     "en": "./locales/en.2ee181644f4d.json",
@@ -13,7 +13,7 @@
     "zh-Hant": "./locales/zh-Hant.5937467cd31e.json",
     "zh": "./locales/zh.35288eb1ef53.json"
   },
-  "app": "./app.6e34ae33895a.js",
+  "app": "./app.5aef00c63086.js",
   "style": "./style.623981e00d85.css",
   "characters": "./characters.93ef7e095d58.js",
   "core": "./core.10facb612c64.js",
@@ -25,7 +25,7 @@
     "pretendard_semibold.subset.woff2": "./assets/fonts/pretendard_semibold.subset.81ea3c4a8b4d.woff2"
   },
   "files": [
-    "app.6e34ae33895a.js",
+    "app.5aef00c63086.js",
     "assets/fonts/cafe24_ssurround.subset.7f61aa010331.woff2",
     "assets/fonts/gaegu_bold.subset.ca4e69890a9f.woff2",
     "assets/fonts/pretendard_bold.subset.be7727bf8a36.woff2",

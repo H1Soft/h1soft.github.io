@@ -1,6 +1,6 @@
-import {score,encodeResult,decodeResult,validProgress} from './core.js';
-import CHARACTERS from './characters.js';
-const LOCALE_URLS=__LOCALE_URLS__;
+import {score,encodeResult,decodeResult,validProgress} from "./core.10facb612c64.js";
+import CHARACTERS from "./characters.93ef7e095d58.js";
+const LOCALE_URLS={"de":"./locales/de.ee5c1177d1a7.json","en":"./locales/en.2ee181644f4d.json","es":"./locales/es.deec967875e5.json","fr":"./locales/fr.4c4d89065f6e.json","id":"./locales/id.73243e3bc3da.json","ja":"./locales/ja.c4c1dab32339.json","ko":"./locales/ko.46381f03f222.json","pt":"./locales/pt.cbcc6e93c43e.json","vi":"./locales/vi.00ece61adb5d.json","zh-Hant":"./locales/zh-Hant.5937467cd31e.json","zh":"./locales/zh.35288eb1ef53.json"};
 const LANGUAGES={ko:'한국어',en:'English',ja:'日本語',zh:'简体中文','zh-Hant':'繁體中文',es:'Español',fr:'Français',de:'Deutsch',pt:'Português',id:'Bahasa Indonesia',vi:'Tiếng Việt'};
 const app=document.querySelector('#app'),modal=document.querySelector('#modal'),selector=document.querySelector('#language');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));

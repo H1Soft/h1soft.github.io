@@ -9,6 +9,12 @@ const tag='<script defer src="/js/analytics.js?v=services-20260930"></script>';
 const missing=[],counts={};let redirects=0;
 for(const file of files){
  const html=readFileSync(file,'utf8'),key=file.match(match)[1];
+ // The client-only personality test keeps answers and result titles out of visit analytics.
+ // Keep this explicit exception checked so future generators cannot silently add a tracker.
+ if(file==='mongle/play/index.html'){
+  if(/<script\b[^>]*src=["'][^"']*(?:\/js\/analytics\.js|googletagmanager\.com|google-analytics\.com)/i.test(html))throw Error(`Private test includes analytics: ${file}`);
+  continue;
+ }
  // Redirect stubs do not represent a second visit; the destination is tracked.
  if(/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html)){redirects++;continue;}
  counts[key]=(counts[key]??0)+1;
