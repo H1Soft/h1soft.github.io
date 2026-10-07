@@ -20,7 +20,7 @@ html[data-public-i18n=attachment] .nav-test{display:none}
 html[data-public-i18n=attachment] .nav-inner>nav a{font-size:13px}
 html[data-public-i18n=attachment] .nav-inner>.site-languages{margin-inline-start:auto}
 @media(max-width:760px){html[data-public-i18n=attachment] .nav-inner{width:calc(100% - 32px);gap:8px}html[data-public-i18n=attachment] .nav-inner>.button{display:none}html[data-public-i18n=attachment] .nav-inner>.brand{font-size:20px}html[data-public-i18n=home] .site-header__inner{flex-wrap:wrap;height:auto;min-height:70px;padding-block:8px;gap:8px}html[data-public-i18n=home] .site-nav{order:3;width:100%;justify-content:center}}
-html[data-public-i18n=attachment] .shuffle-hint{left:0;right:0;margin-inline:auto;max-width:100%;padding-inline:12px;font-size:clamp(14px,1.45vw,18px);overflow-wrap:anywhere}
+html[data-public-i18n=attachment] .shuffle-hint{left:0;right:0;margin-inline:auto;max-width:100%;padding-inline:28px;font-size:clamp(14px,1.45vw,18px);overflow-wrap:anywhere}
 html[dir=rtl] .shuffle-hint{font-family:Tahoma,system-ui,sans-serif;letter-spacing:normal}
 .reference-language{display:inline-block;font:11px/1.4 system-ui,sans-serif;margin-inline-start:6px;padding:1px 5px;border:1px solid currentColor;border-radius:5px;vertical-align:middle;opacity:.75}
 html[data-public-i18n=meowbro] .site-header{padding-block:12px}
