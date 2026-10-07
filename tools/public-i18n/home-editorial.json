@@ -1,19 +1,70 @@
 {
- "de": ["Alltagstools.|Apps mit Charakter.|Für dein Smartphone.", "H1Soft entwickelt praktische Alltagstools, Lifestyle-Apps und Spiele für iPhone und Android. Entdecke unsere elf Apps und erfahre auf den Produktseiten, welche Versionen bereits verfügbar sind."],
- "en": ["Everyday tools.|Apps with character.|At home on your phone.", "H1Soft builds everyday tools, lifestyle apps and games for iPhone and Android. Explore our eleven apps and visit each product page for current availability."],
- "es": ["Herramientas para cada día.|Apps con personalidad.|Siempre en tu móvil.", "H1Soft crea herramientas prácticas, aplicaciones de estilo de vida y juegos para iPhone y Android. Descubre nuestras once apps y consulta su disponibilidad en cada página de producto."],
- "fa": ["ابزارهای روزمره.|برنامه‌هایی با هویت خاص.|همراه شما در گوشی‌تان.", "H1Soft ابزارهای کاربردی روزمره، برنامه‌های سبک زندگی و بازی‌هایی برای آیفون و اندروید می‌سازد. با یازده برنامهٔ ما آشنا شوید و وضعیت انتشار هرکدام را در صفحهٔ همان محصول ببینید."],
- "fr": ["Des outils au quotidien.|Des apps de caractère.|Toujours dans votre poche.", "H1Soft crée des outils pratiques, des applications lifestyle et des jeux pour iPhone et Android. Découvrez nos onze apps et consultez leur disponibilité sur chaque page produit."],
- "id": ["Alat untuk keseharian.|Aplikasi berkarakter.|Hadir di ponselmu.", "H1Soft membuat alat praktis, aplikasi gaya hidup, dan game untuk iPhone dan Android. Jelajahi sebelas aplikasi kami dan lihat ketersediaan terbarunya di halaman masing-masing produk."],
- "it": ["Strumenti per ogni giorno.|App con personalità.|Sempre sul tuo telefono.", "H1Soft crea strumenti pratici, app per lo stile di vita e giochi per iPhone e Android. Scopri le nostre undici app e consulta la disponibilità nella pagina di ciascun prodotto."],
- "nl": ["Handige tools voor elke dag.|Apps met karakter.|Thuis op je telefoon.", "H1Soft maakt praktische tools, lifestyle-apps en games voor iPhone en Android. Ontdek onze elf apps en bekijk op elke productpagina welke versies beschikbaar zijn."],
- "pl": ["Narzędzia na co dzień.|Aplikacje z charakterem.|Zawsze w Twoim telefonie.", "H1Soft tworzy praktyczne narzędzia, aplikacje lifestyle i gry na iPhone’a oraz Androida. Poznaj naszych jedenaście aplikacji i sprawdź ich dostępność na stronach poszczególnych produktów."],
- "pt": ["Ferramentas para o dia a dia.|Apps com personalidade.|Sempre no seu celular.", "A H1Soft cria ferramentas práticas, aplicativos de estilo de vida e jogos para iPhone e Android. Conheça nossos onze apps e confira a disponibilidade na página de cada produto."],
- "ru": ["Инструменты на каждый день.|Приложения с характером.|Всегда в вашем телефоне.", "H1Soft создаёт полезные инструменты, приложения для повседневной жизни и игры для iPhone и Android. Познакомьтесь с нашими одиннадцатью приложениями и узнайте о доступных версиях на страницах продуктов."],
- "tr": ["Günlük hayat için araçlar.|Kendine özgü uygulamalar.|Her zaman telefonunda.", "H1Soft, iPhone ve Android için günlük araçlar, yaşam tarzı uygulamaları ve oyunlar geliştirir. On bir uygulamamızı keşfedin ve güncel yayın durumunu her ürünün kendi sayfasından öğrenin."],
- "vi": ["Tiện ích cho mỗi ngày.|Ứng dụng đầy cá tính.|Luôn bên bạn trên điện thoại.", "H1Soft phát triển các tiện ích hằng ngày, ứng dụng phong cách sống và trò chơi cho iPhone và Android. Khám phá mười một ứng dụng của chúng tôi và xem tình trạng phát hành trên từng trang sản phẩm."],
- "zh-CN": ["日常实用工具。|各具特色的应用。|尽在你的手机中。", "H1Soft 为 iPhone 和 Android 开发实用工具、生活方式应用和游戏。探索我们的 11 款应用，并在各产品页面查看最新上架情况。"],
- "zh-TW": ["日常實用工具。|各具特色的應用。|盡在你的手機中。", "H1Soft 為 iPhone 和 Android 開發實用工具、生活風格應用程式與遊戲。探索我們的 11 款應用程式，並在各產品頁面查看最新上架資訊。"],
- "ko": ["일상을 편하게 하는 도구.|개성이 살아 있는 앱.|언제나 내 폰 안에.", "H1Soft는 iPhone과 Android를 위한 생활 도구, 라이프스타일 앱과 게임을 만듭니다. 11개 앱을 살펴보고 각 제품 페이지에서 최신 출시 현황을 확인하세요."],
- "ja": ["毎日に役立つツール。|個性あふれるアプリ。|いつも、あなたのスマホに。", "H1Softは、iPhoneとAndroid向けの便利なツール、ライフスタイルアプリ、ゲームを開発しています。11のアプリを見つけて、各製品ページで最新の配信状況をご確認ください。"]
+  "de": [
+    "Von <span class=\"hl hl--blue\">Werkzeugen</span> für jeden Tag<br/>bis zu langlebigen <span class=\"hl hl--warm\">Marken</span> —<br/>auf jedem Smartphone gleich.",
+    "H1Soft ist ein <strong>IT-Technologie-Startup</strong>, das Apps entwickelt, die auf iPhone und Android gleich funktionieren. Wir entwickeln vier Alltagswerkzeuge, drei Lifestyle-Apps mit einer eigenen Welt und vier Spiele."
+  ],
+  "es": [
+    "Desde <span class=\"hl hl--blue\">herramientas</span> de uso diario<br/>hasta <span class=\"hl hl--warm\">marcas</span> que perduran,<br/>igual en cualquier móvil.",
+    "H1Soft es una <strong>startup tecnológica</strong> que crea aplicaciones que funcionan igual en iPhone y Android. Desarrollamos cuatro herramientas de uso diario, tres apps de estilo de vida con un universo propio y cuatro juegos."
+  ],
+  "fa": [
+    "از <span class=\"hl hl--blue\">ابزارهای</span> روزمره<br/>تا <span class=\"hl hl--warm\">برندهایی</span> ماندگار،<br/>یکسان در هر گوشی.",
+    "H1Soft یک <strong>استارتاپ فناوری اطلاعات</strong> است که برنامه‌هایی می‌سازد که در آیفون و اندروید یکسان کار می‌کنند. ما چهار ابزار روزمره، سه برنامهٔ سبک زندگی با دنیای خاص خود و چهار بازی می‌سازیم."
+  ],
+  "fr": [
+    "Des <span class=\"hl hl--blue\">outils</span> du quotidien<br/>aux <span class=\"hl hl--warm\">marques</span> qui durent —<br/>la même expérience sur chaque téléphone.",
+    "H1Soft est une <strong>startup technologique</strong> qui crée des applications fonctionnant de la même manière sur iPhone et Android. Nous développons quatre outils du quotidien, trois applications lifestyle avec leur propre univers et quatre jeux."
+  ],
+  "id": [
+    "Dari <span class=\"hl hl--blue\">alat</span> sehari-hari<br/>hingga <span class=\"hl hl--warm\">merek</span> yang bertahan lama,<br/>sama di setiap ponsel.",
+    "H1Soft adalah <strong>startup teknologi informasi</strong> yang membuat aplikasi dengan pengalaman yang sama di iPhone dan Android. Kami mengembangkan empat alat sehari-hari, tiga aplikasi gaya hidup dengan dunianya sendiri, dan empat game."
+  ],
+  "it": [
+    "Dagli <span class=\"hl hl--blue\">strumenti</span> di ogni giorno<br/>ai <span class=\"hl hl--warm\">marchi</span> che durano nel tempo —<br/>la stessa esperienza su ogni telefono.",
+    "H1Soft è una <strong>startup tecnologica</strong> che crea app che funzionano allo stesso modo su iPhone e Android. Sviluppiamo quattro strumenti quotidiani, tre app lifestyle con un universo tutto loro e quattro giochi."
+  ],
+  "nl": [
+    "Van dagelijkse <span class=\"hl hl--blue\">tools</span><br/>tot blijvende <span class=\"hl hl--warm\">merken</span> —<br/>hetzelfde op elke telefoon.",
+    "H1Soft is een <strong>IT-startup</strong> die apps maakt die hetzelfde werken op iPhone en Android. We ontwikkelen vier dagelijkse tools, drie lifestyle-apps met een eigen wereld en vier games."
+  ],
+  "pl": [
+    "Od codziennych <span class=\"hl hl--blue\">narzędzi</span><br/>po <span class=\"hl hl--warm\">marki</span>, które zostają na lata —<br/>tak samo na każdym telefonie.",
+    "H1Soft to <strong>startup technologiczny</strong> tworzący aplikacje, które działają tak samo na iPhonie i Androidzie. Tworzymy cztery narzędzia do codziennego użytku, trzy aplikacje lifestyle z własnym światem i cztery gry."
+  ],
+  "pt": [
+    "De <span class=\"hl hl--blue\">ferramentas</span> do dia a dia<br/>a <span class=\"hl hl--warm\">marcas</span> que duram —<br/>igual em qualquer celular.",
+    "A H1Soft é uma <strong>startup de tecnologia</strong> que cria aplicativos que funcionam da mesma forma no iPhone e no Android. Desenvolvemos quatro ferramentas para o dia a dia, três aplicativos de estilo de vida com universos próprios e quatro jogos."
+  ],
+  "ru": [
+    "От повседневных <span class=\"hl hl--blue\">инструментов</span><br/>до <span class=\"hl hl--warm\">брендов</span>, которые с вами надолго —<br/>одинаково на любом телефоне.",
+    "H1Soft — <strong>IT-стартап</strong>, создающий приложения, которые одинаково работают на iPhone и Android. Мы разрабатываем четыре повседневных инструмента, три лайфстайл-приложения с собственными мирами и четыре игры."
+  ],
+  "tr": [
+    "Günlük <span class=\"hl hl--blue\">araçlardan</span><br/>uzun yıllar size eşlik eden <span class=\"hl hl--warm\">markalara</span>,<br/>her telefonda aynı deneyim.",
+    "H1Soft, iPhone ve Android’de aynı şekilde çalışan uygulamalar geliştiren bir <strong>bilgi teknolojileri girişimidir</strong>. Dört günlük araç, kendine ait dünyaları olan üç yaşam tarzı uygulaması ve dört oyun geliştiriyoruz."
+  ],
+  "vi": [
+    "Từ <span class=\"hl hl--blue\">công cụ</span> dùng hằng ngày<br/>đến <span class=\"hl hl--warm\">thương hiệu</span> đồng hành lâu dài,<br/>như nhau trên mọi điện thoại.",
+    "H1Soft là một <strong>công ty khởi nghiệp công nghệ thông tin</strong>, phát triển các ứng dụng hoạt động như nhau trên iPhone và Android. Chúng tôi xây dựng bốn công cụ hằng ngày, ba ứng dụng phong cách sống với thế giới riêng và bốn trò chơi."
+  ],
+  "zh-CN": [
+    "从每天使用的<span class=\"hl hl--blue\">工具</span><br/>到长久相伴的<span class=\"hl hl--warm\">品牌</span>，<br/>在任何手机上都一样。",
+    "H1Soft 是一家<strong>信息技术初创公司</strong>，开发在 iPhone 和 Android 上同样好用的应用。我们正在打造 4 款日常工具、3 款各有独特世界的生活方式应用，以及 4 款游戏。"
+  ],
+  "zh-TW": [
+    "從每天使用的<span class=\"hl hl--blue\">工具</span><br/>到長久相伴的<span class=\"hl hl--warm\">品牌</span>，<br/>在任何手機上都一樣。",
+    "H1Soft 是一家<strong>資訊科技新創公司</strong>，開發在 iPhone 和 Android 上同樣好用的應用程式。我們正在打造 4 款日常工具、3 款各有獨特世界的生活風格應用程式，以及 4 款遊戲。"
+  ],
+  "ja": [
+    "毎日使う<span class=\"hl hl--blue\">ツール</span>から<br/>長く寄り添う<span class=\"hl hl--warm\">ブランド</span>まで、<br/>どのスマホでも同じ。",
+    "H1Softは、iPhoneとAndroidで同じように使えるアプリを作る<strong>ITスタートアップ</strong>です。毎日使うツール4種、それぞれ独自の世界観を持つライフスタイルアプリ3種、そしてゲーム4種を開発しています。"
+  ],
+  "ko": [
+    "매일 쓰는 <span class=\"hl hl--blue\">도구</span>부터<br/>오래 함께할 <span class=\"hl hl--warm\">브랜드</span>까지,<br/>어떤 폰에서든 똑같이.",
+    "H1Soft는 아이폰과 안드로이드에서 똑같이 쓸 수 있는 앱을 만드는 <strong>IT 기술 스타트업</strong>입니다. 매일 쓰는 도구 4종, 각자의 세계관을 가진 라이프스타일 앱 3종, 그리고 게임 4종을 만들고 있습니다."
+  ],
+  "en": [
+    "From everyday <span class=\"hl hl--blue\">tools</span><br/>to long-run <span class=\"hl hl--warm\">brands</span> —<br/>the same on any phone.",
+    "H1Soft is an <strong>IT technology startup</strong> making apps that work the same on iPhone and Android. We make four everyday tools, three lifestyle apps with a world of their own, and four games."
+  ]
 }

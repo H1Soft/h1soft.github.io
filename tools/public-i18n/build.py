@@ -108,12 +108,10 @@ def build(page,lang,copy):
    piece=s.new_tag('mark') if i else s.new_tag('span');piece.string=line;hero.append(piece)
  if page=='home':
   editorial=json.loads((HERE/'home-editorial.json').read_text())[lang]
-  s.h1.clear()
-  for i,line in enumerate(editorial[0].split('|')):
-   if i:s.h1.append(s.new_tag('br'))
-   span=s.new_tag('span',attrs={'class':'hl '+('hl--blue' if i==0 else 'hl--warm')}) if i<2 else s.new_tag('span')
-   span.string=line;s.h1.append(span)
-  s.select_one('.hero__sub').string=editorial[1]
+  # Preserve the original hero's noun-only highlights and description emphasis.
+  for node,markup in [(s.h1,editorial[0]),(s.select_one('.hero__sub'),editorial[1])]:
+   node.clear()
+   for child in list(BeautifulSoup(markup,'html.parser').contents):node.append(child)
  s.html['lang']=lang;s.html['dir']='rtl' if lang=='fa' else 'ltr';s.html['data-public-i18n']=page
  # Resolve all resources against their original page, including relative scripts/fonts.
  for node in s.find_all(True):
@@ -180,7 +178,7 @@ def build(page,lang,copy):
  header=s.select_one('header')
  if header:(header.select_one('.site-header__inner,.nav-inner,.header-right') or header).append(chooser)
  else:s.body.insert(0,chooser)
- s.head.append(s.new_tag('link',rel='stylesheet',href='/css/public-i18n.css'))
+ s.head.append(s.new_tag('link',rel='stylesheet',href='/css/public-i18n.css'+('?v=20261007-hero' if page=='home' else '')))
  if page in ['attachment','meowbro']:
   if page=='attachment':
    el=s.select_one('#promo-data');data=json.loads(el.string)

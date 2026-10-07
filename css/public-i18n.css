@@ -26,3 +26,4 @@ html[dir=rtl] .shuffle-hint{font-family:Tahoma,system-ui,sans-serif;letter-spaci
 html[data-public-i18n=meowbro] .site-header{padding-block:12px}
 @media(max-width:760px){html[data-public-i18n=meowbro] .site-header>.brand{order:1}html[data-public-i18n=meowbro] .site-header>.site-languages{order:2;margin-inline-start:auto}html[data-public-i18n=meowbro] .site-header>nav{order:3;flex-basis:100%;justify-content:space-between}}
 @media(max-width:760px){html[data-public-i18n=meowbro] .scene-tabs>button{min-width:0;padding-inline:6px}html[data-public-i18n=meowbro] .scene-label{white-space:normal;font-size:clamp(18px,5vw,22px);line-height:1.25;overflow-wrap:anywhere}}
+html[data-public-i18n=home] .hero h1{max-width:100%}
