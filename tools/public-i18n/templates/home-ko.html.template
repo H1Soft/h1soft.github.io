@@ -535,7 +535,7 @@
             <img src="assets/ongle-icon.png?v=icons-20260928" alt="" width="46" height="46" />
             <span class="tool-card__title"><span class="tool-card__name">온글</span><span class="tool-card__type">hwp·hwpx 뷰어</span></span>
           </div>
-          <span class="tool-card__badge badge--muted">App Store 출시</span>
+          <span class="tool-card__badge">App Store · Google Play</span>
           <span class="tool-card__one">hwp가 폰에서 그냥 열립니다</span>
           <ul class="tool-card__feats">
             <li>원본 조판 그대로 열람·검색</li>

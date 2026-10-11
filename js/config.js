@@ -12,7 +12,7 @@ const CONFIG = {
 
   // 온글 (data-store-app="ongle")
   ONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809517375",
-  ONGLE_PLAY_STORE_URL: "",
+  ONGLE_PLAY_STORE_URL: "https://play.google.com/store/apps/details?id=com.h1soft.hwp",
 
   // 몽글 (data-store-app="mongle")
   MONGLE_APP_STORE_URL: "https://apps.apple.com/app/id6809419426",

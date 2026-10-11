@@ -530,7 +530,7 @@
             <img src="../assets/ongle-icon.png?v=icons-20260928" alt="" width="46" height="46" />
             <span class="tool-card__title"><span class="tool-card__name">Ongle</span><span class="tool-card__type">hwp·hwpx viewer</span></span>
           </div>
-          <span class="tool-card__badge badge--muted">Available on the App Store</span>
+          <span class="tool-card__badge">App Store · Google Play</span>
           <span class="tool-card__one">hwp on your phone — it just opens</span>
           <ul class="tool-card__feats">
             <li>Original layout, search included</li>
