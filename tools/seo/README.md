@@ -38,8 +38,8 @@ node tools/localize-store-links.mjs --check
 
 ## 파비콘과 Google 검색 아이콘
 
-회사 페이지는 `/assets/h1soft-appicon.png`, 온글·몽글·슥캔·QR Scanner·스도쿠·사각사각은 각 서비스의 승인된 512px PNG를 파비콘과 Apple 터치 아이콘으로 사용합니다. 이미 자체 아이콘을 사용하는 나머지 서비스의 설정은 유지합니다. 공통 파일 `favicon-32.png`/`favicon-48.png`에 제품별 아이콘을 덮어쓰지 않습니다.
+회사와 공개 서비스 페이지는 `/assets/h1soft-appicon.png`의 H1Soft 512px PNG를 공통 파비콘과 Apple 터치 아이콘으로 사용합니다. 같은 호스트에서 검색 아이콘 신호가 섞이지 않도록 QR Scanner·냥브로 등 서비스별 소개·콘텐츠·지원·정책 페이지에도 적용합니다. 페이지 본문의 앱 아이콘과 공유 이미지는 각 제품의 것을 유지합니다.
 
-`python3 tools/seo/favicons.py`로 아이콘 설정만 재적용할 수 있으며 `enrich.py`에도 포함되어 있습니다. 모든 번역·지원·정책 페이지가 대상입니다. 이 작업은 정책 내용이나 검색 허용 여부를 바꾸지 않습니다.
+`python3 tools/seo/favicons.py`로 아이콘 설정만 재적용할 수 있으며 `enrich.py`에도 포함되어 있습니다. `product_links.py`와 같은 공개 페이지 범위를 사용하며 모든 번역을 포함합니다. 실행 앱·관리·본인확인·공유·리디렉션 등 비공개/noindex 흐름은 제외하고 설치 매니페스트도 수정하지 않습니다. 이 작업은 정책 내용이나 검색 허용 여부를 바꾸지 않습니다. CI에서 공통 아이콘 설정을 검사하므로 사이트 재생성 후에도 이 스크립트를 실행해야 합니다.
 
-[Google은 호스트당 검색 파비콘 하나만 지원](https://developers.google.com/search/docs/appearance/favicon-in-search)합니다. `h1soft.github.io/ongle/`처럼 하위 경로만 다른 서비스에 검색 파비콘을 따로 지정할 수는 없습니다. 현재 도메인의 검색 대표 아이콘은 H1Soft이며, 서비스별 아이콘은 브라우저 탭·북마크 등에 사용됩니다. 검색에서 서비스별 아이콘을 분리하려면 별도 도메인/서브도메인과 사이트 이전 작업이 필요합니다. Google의 기존 아이콘은 홈페이지 재수집 후 갱신될 수 있으며 즉시 갱신이나 노출은 보장되지 않습니다. 아이콘 URL은 향후에도 안정적으로 유지합니다.
+[Google은 호스트당 검색 파비콘 하나만 지원](https://developers.google.com/search/docs/appearance/favicon-in-search)합니다. `h1soft.github.io/ongle/`처럼 하위 경로만 다른 서비스에 검색 파비콘을 따로 지정할 수는 없습니다. 현재 도메인의 검색 대표 아이콘과 공개 페이지의 브라우저 탭 아이콘은 H1Soft입니다. 검색에서 서비스별 아이콘을 분리하려면 별도 도메인/서브도메인과 사이트 이전 작업이 필요합니다. Google의 기존 아이콘은 홈페이지 재수집 후 갱신될 수 있으며 수일~수주가 걸릴 수 있습니다. 즉시 갱신이나 노출은 보장되지 않습니다. 아이콘 URL은 향후에도 안정적으로 유지합니다.

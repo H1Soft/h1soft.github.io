@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Keep service tab icons distinct from the hostname's H1Soft search favicon."""
+"""Use one H1Soft favicon across the hostname's public marketing pages."""
 from pathlib import Path
 from collections import Counter
 import argparse
@@ -7,19 +7,10 @@ import json
 import re
 import struct
 from bs4 import BeautifulSoup
+from product_links import inventory
 
 ROOT = Path(__file__).resolve().parents[2]
 COMPANY_ICON = '/assets/h1soft-appicon.png'
-SERVICE_ICONS = {
-    'qr-scanner': '/assets/app_icon.png',
-    'seukscan': '/assets/seukscan-icon.png',
-    'ongle': '/assets/ongle-icon.png',
-    'mongle': '/assets/mongle/icon.png',
-    'sudoku': '/assets/sudoku-release/icon.png',
-    'sagak': '/assets/sagak-icon.png',
-}
-COMPANY_PAGES = {'index.html', 'en/index.html', '404.html', 'privacy/index.html',
-                 'terms/index.html', 'analytics-privacy/index.html'}
 ICON_RELS = {'icon', 'shortcut', 'apple-touch-icon', 'apple-touch-icon-precomposed'}
 
 
@@ -48,23 +39,18 @@ def normalize(text, href):
 
 
 def apply(root=ROOT, check=False):
-    # These are existing approved 512px PNG assets, not newly drawn icons.
-    for href in {COMPANY_ICON, *SERVICE_ICONS.values()}:
-        raw = (root / href.lstrip('/')).read_bytes()
-        assert raw[:8] == b'\x89PNG\r\n\x1a\n', href
-        assert struct.unpack('>II', raw[16:24]) == (512, 512), href
+    # Keep the established URL and approved asset so crawlers can refresh it.
+    raw = (root / COMPANY_ICON.lstrip('/')).read_bytes()
+    assert raw[:8] == b'\x89PNG\r\n\x1a\n', COMPANY_ICON
+    assert struct.unpack('>II', raw[16:24]) == (512, 512), COMPANY_ICON
     counts = Counter()
     changed = []
-    for path in sorted(root.rglob('*.html')):
+    # Reuse the public-page boundary: exported apps, private flows and noindex
+    # routes retain their own installation icons and manifests.
+    pages, _, _ = inventory(root)
+    for path, (_, text, product, _, _) in pages.items():
         rel = path.relative_to(root)
-        if any(p.startswith('.') or p in {'_source', 'node_modules', 'tools'} for p in rel.parts):
-            continue
-        product = next((p for p in rel.parts if p in SERVICE_ICONS), None)
-        if not product and rel.as_posix() not in COMPANY_PAGES:
-            continue
-        href = SERVICE_ICONS[product] if product else COMPANY_ICON
-        text = path.read_text()
-        result = normalize(text, href)
+        result = normalize(text, COMPANY_ICON)
         counts[product or 'h1soft'] += 1
         if result != text:
             changed.append(rel.as_posix())
