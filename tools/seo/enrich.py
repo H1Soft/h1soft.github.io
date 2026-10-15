@@ -150,7 +150,9 @@ def enrich_pages(root,changed):
     for path in public_pages(root):
         # This builder owns the web test's localized metadata and free web offer.
         # Keep it in public_pages for crawlability and sitemap validation.
-        if path.relative_to(root).parts[:2] == ('mongle', 'play'):
+        # The Sagak web build ships its own metadata and offer from the app repository
+        # (Sagak: shared/src/wasmJsMain/resources/index.html) in the same way.
+        if path.relative_to(root).parts[:2] in {('mongle', 'play'), ('sagak', 'play')}:
             continue
         text=path.read_text();text=re.sub(r'<a\b(?=[^>]*\bhref=["\'][^"\']*/(?:skinping|lol[.]dating)(?:/|["\']))[^>]*>[\s\S]*?</a>', '', text, flags=re.I);doc=soup(text);url=url_for(path,root);lang=doc.html.get('lang','en');rel=path.relative_to(root)
         canon=doc.select_one('link[rel="canonical"]');canonical=canon['href'] if canon else url

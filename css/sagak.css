@@ -131,6 +131,24 @@ img { max-width: 100%; display: block; }
 .sg-store__sub { font-size: 10.5px; font-weight: 500; letter-spacing: 0.03em; color: var(--pg-card); opacity: 0.72; }
 .sg-store__label { font-size: 15px; font-weight: 700; color: var(--pg-card); }
 .sg-store svg { flex: none; }
+
+/* 웹판 링크 — 스토어 버튼과 같은 크기의 빈 테두리 (Claude Design: SAGAK 소개 페이지 · 웹 링크) */
+.sg-web {
+  display: flex; align-items: center; gap: 11px; padding: 11px 20px; border-radius: 12px;
+  border: 1px solid var(--rule-strong); min-width: 150px; text-decoration: none;
+}
+.sg-web:hover { text-decoration: none; background: var(--pg-card); }
+.sg-web > span:last-child { display: flex; flex-direction: column; gap: 1px; }
+.sg-web__glyph { flex: none; width: 18px; height: 15px; border: 1.5px solid var(--ink); border-top-width: 4px; border-radius: 3px; }
+.sg-web__sub { font-size: 10.5px; font-weight: 500; letter-spacing: 0.03em; color: var(--ink-muted); }
+.sg-web__label { font-size: 15px; font-weight: 700; color: var(--ink); }
+.sg-nav a.sg-nav__web { padding: 5px 12px; border: 1px solid var(--rule-strong); border-radius: 999px; color: var(--ink); }
+.sg-web-note a { color: var(--ink); border-bottom: 1px dashed var(--ink-faint); }
+.sg-web-note a:hover { text-decoration: none; border-bottom-style: solid; }
+@media (max-width: 480px) {
+  .sg-stores .sg-store { flex: 1 1 0; }
+  .sg-stores .sg-web { flex: 1 1 100%; justify-content: center; }
+}
 .sg-note { font-size: 13px; color: var(--ink-faint); }
 
 .sg-chips { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -147,7 +165,7 @@ img { max-width: 100%; display: block; }
 .sg-rule { display: flex; gap: 16px; align-items: flex-start; }
 .sg-rule__n { font-family: var(--num); font-size: 13px; font-weight: 600; color: var(--seal); padding-top: 2px; }
 .sg-rule__t { display: block; font-size: 16px; font-weight: 700; color: var(--ink); margin-bottom: 5px; }
-.sg-boards { flex: none; display: flex; align-items: center; gap: clamp(14px, 2.4vw, 26px); flex-wrap: wrap; justify-content: center; }
+.sg-boards { flex: none; max-width: 100%; display: flex; align-items: center; gap: clamp(14px, 2.4vw, 26px); flex-wrap: wrap; justify-content: center; }
 .sg-board-wrap { display: flex; flex-direction: column; align-items: center; gap: 12px; }
 .sg-board-cap { font-size: 12.5px; color: var(--ink-muted); }
 .sg-arrow { font-family: var(--serif); font-size: 22px; color: var(--ink-faint); }
