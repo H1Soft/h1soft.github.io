@@ -6,10 +6,10 @@ HERE=Path(__file__).resolve().parent
 ROOT=HERE.parents[1]
 EXTRA={
 'attachment':['{name} 인형 — {nick}','다른 인형 구경하기. 현재 {name}','{name}! 톡 누르면 다른 친구가 나와요','인형을 불러오지 못했어요. 한 번 더 톡 눌러 주세요','{filter} 인형 {count}종을 보고 있어요'],
-'meowbro':['플레이 영상 재생','플레이 영상 일시정지','실제 개발 빌드 화면','다운로드하기','App Store에서 냥브로 다운로드'],
+'meowbro':['다운로드하기'],
 'home':[], 'nonogram':[]}
 # Include the copy shown after interacting with gameplay and world tabs.
-js=(ROOT/'meowbro/script.js').read_text()
+js=(ROOT/'meowbro/v4.js').read_text()
 EXTRA['meowbro']+= [s.replace('\\n','\n') for s in re.findall(r"(?:word|title|text|name|alt): '([^']*)'",js)]
 EXTRA['home']+=['Languages','App Store opens in English because Persian is not supported by Apple.','Learn more →']
 EXISTING=json.loads((HERE/'inventory.json').read_text())['strings'] if (HERE/'inventory.json').exists() else {}
