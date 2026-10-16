@@ -43,7 +43,7 @@ function fx(parent, cls, x, y, life, text) {
   for (let i = 0; i < count; i++) {
     const el = document.createElement('img');
     el.className = 'slime';
-    el.src = 'assets/mob-slime.webp';
+    el.src = '/meowbro/assets/v4/mob-slime.webp';
     el.alt = '';
     field.appendChild(el);
     const s = { el, phase: i * 2.1, y: 0 };
