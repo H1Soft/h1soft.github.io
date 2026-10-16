@@ -3,6 +3,7 @@
   if (location.hostname !== 'h1soft.github.io' || /^\/(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?\/)?(?:metrics|skinping|pibuping|lol[.]dating|gyeol\/(?:admin|identity|delete|share))(?:\/|$)/i.test(location.pathname) || window.__h1softAnalyticsLoaded) return;
   window.__h1softAnalyticsLoaded = true;
   const id = 'G-X522MQ0TMG', key = 'h1soft.analytics.v1';
+  const monglePlay = /^\/(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?\/)?mongle\/play(?:\/|$)/.test(location.pathname);
   const ko = document.documentElement.lang.startsWith('ko');
   let choice = null, started = false;
   try { choice = localStorage.getItem(key); } catch {}
@@ -16,7 +17,7 @@
     gtag('js', new Date());
     let referrer = '';
     try { const u = new URL(document.referrer); referrer = u.origin + u.pathname; } catch {}
-    gtag('config', id, {allow_google_signals:false, allow_ad_personalization_signals:false, cookie_expires:15552000, cookie_update:false, page_location:location.origin + location.pathname, page_referrer:referrer});
+    gtag('config', id, {allow_google_signals:false, allow_ad_personalization_signals:false, cookie_expires:15552000, cookie_update:false, page_location:location.origin + location.pathname, page_referrer:referrer, ...(monglePlay ? {page_title:'Mongle web personality test'} : {})});
     const tag = document.createElement('script');
     tag.async = true; tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
     document.head.append(tag);

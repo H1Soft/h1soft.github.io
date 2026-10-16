@@ -63,6 +63,16 @@ for(const [locale,pack] of Object.entries(packs)){
  const aboutValues={LANG:values.LANG,BRAND_FONT:values.BRAND_FONT,TITLE:esc(aboutTitle),DESCRIPTION:esc(pack.seo.introText),CANONICAL:aboutURL,OG_LOCALE:pack.seo.ogLocale,IMAGE:pack.seo.image,HEAD_ASSETS:aboutHead,SCHEMA:json(aboutSchema),TEST:PAGE_PATHS[locale],BRAND:esc(pack.ui.brand),ABOUT:renderAbout(pack,{lang:locale})};
  put(ABOUT_PATHS[locale].slice(ROOT.length)+'index.html',aboutTemplate.replace(/__([A-Z_]+)__/g,(_,key)=>{if(!(key in aboutValues))throw Error('Unknown about key '+key);return aboutValues[key];}));
 }
+// Keep the requested Korean entry URL usable without creating a duplicate indexable test.
+const alias=path.resolve(source,'../../ko/mongle/play/index.html');
+fs.mkdirSync(path.dirname(alias),{recursive:true});
+fs.writeFileSync(alias,`<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>${esc(packs.ko.seo.title)}</title><meta name="description" content="${esc(packs.ko.seo.description)}">
+<link rel="canonical" href="${ORIGIN+PAGE_PATHS.ko}"><meta http-equiv="refresh" content="0;url=${PAGE_PATHS.ko}">
+<meta property="og:title" content="${esc(packs.ko.seo.title)}"><meta property="og:description" content="${esc(packs.ko.seo.description)}"><meta property="og:url" content="${ORIGIN+PAGE_PATHS.ko}"><meta property="og:image" content="${packs.ko.seo.image}"><meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/png" sizes="512x512" href="/assets/h1soft-appicon.png"><link rel="apple-touch-icon" sizes="512x512" href="/assets/h1soft-appicon.png">
+<script>location.replace('${PAGE_PATHS.ko}'+location.search+location.hash);</script></head><body><h1>몽글 무료 성격 테스트</h1><p><a href="${PAGE_PATHS.ko}">한국어 테스트로 이동</a></p></body></html>\n`);
 const xmlLinks=paths=>Object.entries(paths).map(([locale,url])=>'<xhtml:link rel="alternate" hreflang="'+htmlLang(locale)+'" href="'+ORIGIN+url+'"/>').join('')+'<xhtml:link rel="alternate" hreflang="x-default" href="'+ORIGIN+paths.en+'"/>';
 const sitemapURLs=(paths,lastmod)=>Object.values(paths).map(url=>'<url><loc>'+ORIGIN+url+'</loc><lastmod>'+lastmod+'</lastmod>'+xmlLinks(paths)+'</url>');
 put('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+[...sitemapURLs(pages,'2026-10-16'),...sitemapURLs(ABOUT_PATHS,'2026-10-16')].join('\n')+'\n</urlset>\n');

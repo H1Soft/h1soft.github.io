@@ -6,7 +6,7 @@ const code=readFileSync(new URL('../js/analytics.js',import.meta.url),'utf8');
 function visit(choice,pathname='/attachment/play/'){
  const head=[],body=[];
  function element(){return {style:{},children:[],setAttribute(){},append(...nodes){this.children.push(...nodes)}}}
- const context={location:{hostname:'h1soft.github.io',origin:'https://h1soft.github.io',pathname,search:'?answer=private',hash:'#private'},document:{documentElement:{lang:'ko'},referrer:'https://example.com/from?secret=yes#private',head:{append:(...n)=>head.push(...n)},body:{append:(...n)=>body.push(...n)},createElement:element},localStorage:{getItem:()=>choice,setItem(){}},URL};
+ const context={location:{hostname:'h1soft.github.io',origin:'https://h1soft.github.io',pathname,search:'?answer=private',hash:'#private'},document:{title:'PRIVATE result and answers',documentElement:{lang:'ko'},referrer:'https://example.com/from?secret=yes#private',head:{append:(...n)=>head.push(...n)},body:{append:(...n)=>body.push(...n)},createElement:element},localStorage:{getItem:()=>choice,setItem(){}},URL};
  context.window=context;
  runInNewContext(code,context);
  return {head,body,context};
@@ -18,4 +18,12 @@ test('new and declining visitors never load Google; allowing starts once with sa
 });
 test('Metrics and excluded skin service never load analytics or show consent UI',()=>{
  for(const path of ['/metrics/','/skinping/','/pibuping/','/lol.dating/','/ko/skinping/','/en/lol.dating/','/gyeol/admin/','/gyeol/identity/','/gyeol/delete/','/gyeol/share/']){const {head,body}=visit('yes',path);assert.equal(head.length,0);assert.equal(body.length,0);}
+});
+
+test('Mongle test visits use a neutral title and omit result fragments and query strings',()=>{
+ for(const path of ['/mongle/play/ko/','/mongle/play/ja/about/']){
+  const {context}=visit('yes',path),config=context.dataLayer.find(row=>row[0]==='config')[2];
+  assert.equal(config.page_title,'Mongle web personality test');assert.equal(config.page_location,'https://h1soft.github.io'+path);
+  assert.ok(!JSON.stringify(context.dataLayer).includes('PRIVATE'));assert.ok(!JSON.stringify(context.dataLayer).includes('answer'));
+ }
 });

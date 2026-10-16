@@ -78,12 +78,18 @@ for lang, route in PAGES.items():
         require(start is not None and start.get('href') == route + '#test/speed', f'{lang}: about start link')
     require({b['data-start'] for b in soup.select('#app button[data-start]')} == {'speed', 'precise'},
             f'{lang}: both test modes in HTML')
+    require(soup.select_one('script[src^="/js/analytics.js"]') is not None, f'{lang}: missing consent-gated visits')
     require(not soup.select('meta[name="robots"][content*="noindex"]'), f'{lang}: noindex')
     for element in soup.select('script[src], link[href], meta[property="og:image"], meta[name="twitter:image"]'):
         url = urljoin(canonical, element.get('src') or element.get('href') or element.get('content'))
         if urlsplit(url).netloc == 'h1soft.github.io':
             require(local_file(url).is_file(), f'{lang}: missing asset or alternate {url}')
     require(local_file(manifest['locales'][lang]).is_file(), f'{lang}: missing locale JSON')
+
+alias = BeautifulSoup((ROOT / 'ko/mongle/play/index.html').read_text(), 'html.parser')
+require(alias.select_one('link[rel="canonical"]')['href'] == BASE + PAGES['ko'], 'Korean alias canonical')
+require(alias.select_one('meta[http-equiv="refresh"]')['content'] == '0;url=' + PAGES['ko'], 'Korean alias redirect')
+require(not alias.select('script[src*="analytics"]'), 'redirect must not double count visits')
 
 entries = ET.fromstring((OUT / 'sitemap.xml').read_text()).findall('{*}url')
 require(len(entries) == 22 and {e.find('{*}loc').text for e in entries} == {BASE+p for p in [*PAGES.values(), *ABOUT.values()]},
