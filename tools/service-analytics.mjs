@@ -10,8 +10,9 @@ const missing=[],counts={};let redirects=0;
 for(const file of files){
  const html=readFileSync(file,'utf8'),key=file.match(match)[1];
  // The client-only personality test keeps answers and result titles out of visit analytics.
+ // Its /about/ guide pages belong to the same tracker-free section.
  // Keep this explicit exception checked so future generators cannot silently add a tracker.
- if(/^mongle\/play\/(?:[^/]+\/)?index\.html$/.test(file)){
+ if(/^mongle\/play\/(?:[^/]+\/)?(?:about\/)?index\.html$/.test(file)){
   if(/<script\b[^>]*src=["'][^"']*(?:\/js\/analytics\.js|googletagmanager\.com|google-analytics\.com)/i.test(html))throw Error(`Private test includes analytics: ${file}`);
   continue;
  }

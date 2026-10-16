@@ -3,7 +3,7 @@
 The eleven service families `qr-scanner`, `seukscan`, `ongle`, `cleaner`,
 `attachment`, `mongle`, `nonogram`, `sudoku`, `sagak`, `meowbro`, and `gyeol` use the
 existing H1Soft GA4 tag. Both `/ko/service/…` and `/service/en/…` routes belong
-to the same service, including `/attachment/play/`. Skinping and LoL Dating are excluded from tracking and published menus.
+to the same service, including `/attachment/play/`. Skinping and LoL Dating are excluded from tracking and published menus. The client-only Mongle web test (`/mongle/play/`, including its `/about/` guide pages) stays tracker-free.
 Metrics and Gyeol admin, identity, account-deletion and credential-based sharing pages are excluded. Gyeol tracks only its public landing and legal pages.
 
 Visitors must opt in. The existing choice applies across this hostname; the
