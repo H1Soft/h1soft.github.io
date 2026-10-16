@@ -28,8 +28,11 @@ ul{padding:0;list-style:none}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 
 /* top bar: quiet; its store button only appears after the hero button scrolls away */
-.topbar{position:fixed;z-index:60;top:0;left:0;right:0;display:flex;align-items:center;gap:20px;padding:12px clamp(16px,4vw,48px);transition:background .25s}
-.topbar.solid{background:rgba(31,22,17,.92);backdrop-filter:blur(6px)}
+.topbar{position:fixed;z-index:60;top:0;left:0;right:0;display:flex;align-items:center;gap:20px;padding:12px clamp(16px,4vw,48px)}
+/* The blurred bar lives on ::before: backdrop-filter on .topbar itself would make it the
+   containing block for the fixed language screen inside it and clip that screen. */
+.topbar::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(31,22,17,.92);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);opacity:0;transition:opacity .25s;pointer-events:none}
+.topbar.solid::before{opacity:1}
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:var(--disp);font-weight:var(--disp-w);font-size:20px;color:var(--cream)}
 .brand img{width:34px;height:34px;border-radius:9px}
 .links{display:flex;gap:2px;margin-inline-start:auto}
