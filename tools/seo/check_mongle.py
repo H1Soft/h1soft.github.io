@@ -14,6 +14,9 @@ PAGES = {lang: '/mongle/play/' + ('' if lang == 'en' else lang + '/') for lang i
 LANG = {lang: 'zh-Hans' if lang == 'zh' else lang for lang in LOCALES}
 ALTERNATES = {LANG[lang]: BASE + route for lang, route in PAGES.items()}
 ALTERNATES['x-default'] = BASE + '/mongle/play/'
+ABOUT = {lang: route + 'about/' for lang, route in PAGES.items()}
+ABOUT_ALTERNATES = {LANG[lang]: BASE + route for lang, route in ABOUT.items()}
+ABOUT_ALTERNATES['x-default'] = BASE + '/mongle/play/about/'
 errors = []
 
 def require(condition, message):
@@ -55,12 +58,26 @@ for lang, route in PAGES.items():
     app = soup.select_one('#app')
     require(app is not None and len(app.select('h1')) == 1 and 'MBTI' in app.h1.get_text(),
             f'{lang}: static MBTI heading')
-    guide = soup.select_one('#app .test-guide')
-    copy = [seo['introTitle'], seo['introText']] + [item[key] for item in seo['details'] for key in ('title', 'text')]
-    require(guide is not None and all(text in guide.get_text() for text in copy), f'{lang}: static localized guide')
+    # 설명은 첫 화면이 아니라 /about/ 페이지에 — 첫 화면에는 크롤 가능한 링크만
+    require(soup.select_one('#app .test-guide') is None, f'{lang}: guide must live on the about page')
+    link = soup.select_one('#app a.guide-link')
+    require(link is not None and link.get('href') == ABOUT[lang], f'{lang}: link to about page')
+    about = local_file(ABOUT[lang])
+    require(about.is_file(), f'{lang}: missing about page')
+    if about.is_file():
+        page_about = BeautifulSoup(about.read_text(), 'html.parser')
+        guide = page_about.select_one('main .test-guide')
+        copy = [seo['introTitle'], seo['introText']] + [item[key] for item in seo['details'] for key in ('title', 'text')]
+        require(guide is not None and all(text in guide.get_text() for text in copy), f'{lang}: static localized guide')
+        require(page_about.html.get('lang') == LANG[lang], f'{lang}: about HTML language')
+        canon = page_about.select_one('link[rel="canonical"]')
+        require(canon is not None and canon.get('href') == BASE + ABOUT[lang], f'{lang}: about canonical')
+        alt = page_about.select('link[rel="alternate"][hreflang]')
+        require({a['hreflang']: a['href'] for a in alt} == ABOUT_ALTERNATES, f'{lang}: about hreflang links')
+        start = page_about.select_one('a.about-start')
+        require(start is not None and start.get('href') == route + '#test/speed', f'{lang}: about start link')
     require({b['data-start'] for b in soup.select('#app button[data-start]')} == {'speed', 'precise'},
             f'{lang}: both test modes in HTML')
-    require(len(soup.select('#app .test-languages a[href]')) == 11, f'{lang}: crawlable language links')
     require(not soup.select('meta[name="robots"][content*="noindex"]'), f'{lang}: noindex')
     for element in soup.select('script[src], link[href], meta[property="og:image"], meta[name="twitter:image"]'):
         url = urljoin(canonical, element.get('src') or element.get('href') or element.get('content'))
@@ -69,11 +86,12 @@ for lang, route in PAGES.items():
     require(local_file(manifest['locales'][lang]).is_file(), f'{lang}: missing locale JSON')
 
 entries = ET.fromstring((OUT / 'sitemap.xml').read_text()).findall('{*}url')
-require(len(entries) == 11 and {e.find('{*}loc').text for e in entries} == {BASE+p for p in PAGES.values()},
-        'sitemap must contain exactly the 11 canonical test pages')
+require(len(entries) == 22 and {e.find('{*}loc').text for e in entries} == {BASE+p for p in [*PAGES.values(), *ABOUT.values()]},
+        'sitemap must contain exactly the 11 test pages and 11 about pages')
 for entry in entries:
     links = entry.findall('{*}link')
-    require(len(links) == 12 and {a.attrib['hreflang']: a.attrib['href'] for a in links} == ALTERNATES,
+    expected = ABOUT_ALTERNATES if entry.find('{*}loc').text.endswith('/about/') else ALTERNATES
+    require(len(links) == 12 and {a.attrib['hreflang']: a.attrib['href'] for a in links} == expected,
             'sitemap reciprocal language links')
 require('Sitemap: ' + BASE + '/mongle/play/sitemap.xml' in (ROOT / 'robots.txt').read_text(),
         'robots.txt must declare the test sitemap')

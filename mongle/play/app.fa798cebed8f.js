@@ -1,13 +1,15 @@
-import {score,encodeResult,decodeResult,validProgress} from "./core.10facb612c64.js";
-import CHARACTERS from "./characters.93ef7e095d58.js";
-const LOCALE_URLS={"de":"./locales/de.ee5c1177d1a7.json","en":"./locales/en.2ee181644f4d.json","es":"./locales/es.deec967875e5.json","fr":"./locales/fr.4c4d89065f6e.json","id":"./locales/id.73243e3bc3da.json","ja":"./locales/ja.c4c1dab32339.json","ko":"./locales/ko.46381f03f222.json","pt":"./locales/pt.cbcc6e93c43e.json","vi":"./locales/vi.00ece61adb5d.json","zh-Hant":"./locales/zh-Hant.5937467cd31e.json","zh":"./locales/zh.35288eb1ef53.json"};
-const LANGUAGES={ko:'한국어',en:'English',ja:'日本語',zh:'简体中文','zh-Hant':'繁體中文',es:'Español',fr:'Français',de:'Deutsch',pt:'Português',id:'Bahasa Indonesia',vi:'Tiếng Việt'};
+import {score,encodeResult,decodeResult,validProgress} from "/mongle/play/core.10facb612c64.js";
+import CHARACTERS from "/mongle/play/characters.b4f8f38a82a5.js";
+import {renderHome,LANGUAGES,PAGE_PATHS,htmlLang,landingPath} from "/mongle/play/home.6de5c15c767f.js";
+const LOCALE_URLS={"ko":"/mongle/play/locales/ko.11c7fe693297.json","en":"/mongle/play/locales/en.6f9aab64c990.json","ja":"/mongle/play/locales/ja.6935c14de498.json","zh":"/mongle/play/locales/zh.a66b155cbc3b.json","zh-Hant":"/mongle/play/locales/zh-Hant.087f70a2c5be.json","es":"/mongle/play/locales/es.3d0b1f786a7a.json","fr":"/mongle/play/locales/fr.7fcdb90f0e9e.json","de":"/mongle/play/locales/de.b79d3dad0ed4.json","pt":"/mongle/play/locales/pt.b7a8650b2e78.json","id":"/mongle/play/locales/id.7868ab0a5c24.json","vi":"/mongle/play/locales/vi.36e466e0226d.json"};
 const app=document.querySelector('#app'),modal=document.querySelector('#modal'),selector=document.querySelector('#language');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const nl=s=>esc(s).replace(/\n/g,'<br>');
 let data,lang='en',view='home',mode='speed',answers=[],locked=false,result=null,revealTimer,toastTimer;
 let storageWorks=true,navigationVersion=0,languageBusy=false;
 const localeCache=new Map();
+const initialPack=document.querySelector('#initial-locale');
+if(initialPack){try{localeCache.set(initialPack.dataset.locale,JSON.parse(initialPack.textContent));}catch{}}
 const tr=(key,args={})=>(data?.ui[key]??key).replace(/\{(\w+)\}/g,(_,k)=>String(args[k]??''));
 const tx=(key,args)=>esc(tr(key,args));
 const lines=(key,args)=>nl(tr(key,args));
@@ -31,15 +33,9 @@ function setup(html,kind,focus=true){
 function modeTitle(m){return tr(m==='precise'?'preciseTitle':'speedTitle');}
 function goHome(){navigationVersion++;clearTimeout(revealTimer);locked=false;modal.close();history.pushState(null,'',location.pathname+location.search);home();}
 function home(){
- document.title=tr('pageTitle');
+ document.title=data.seo.title;
  const p=progress(),saved=read('result'),last=saved?decodeResult(encodeResult(saved)):null;
- setup('<header class="home-header"><span class="wordmark">'+tx('brand')+'<span class="wordmark-dot">.</span></span><span class="small">'+tx('playground')+'</span></header>'+
- '<section class="home-intro"><div><h1>'+lines('homeTitle')+'</h1><p>'+tx('homeSubtitle')+'</p></div>'+char('ENFP','happy','home-mascot')+'</section>'+
- '<section class="test-menu" aria-label="'+tx('testSelection')+'"><article class="mode-card detailed"><div class="mode-copy"><span class="pill">'+tx('preciseMeta')+'</span><h2>'+tx('preciseTitle')+'</h2><p>'+lines('preciseDescription')+'</p><button class="primary purple" data-start="precise">'+tx('start')+'</button></div>'+char('INTJ','calm','mode-mascot')+'</article>'+
- '<button class="speed-card" data-start="speed"><span class="speed-icon" aria-hidden="true">ϟ</span><span><strong>'+tx('speedTitle')+'</strong><small>'+tx('speedMeta')+'</small></span>'+char('ESFP','happy','speed-mascot')+'</button></section>'+
- (p?'<button class="resume-row" data-action="resume"><span>'+tx('resumeTest')+'</span><span>'+p.answers.length+' / '+data.questions[p.mode].length+'</span></button>':'')+
- (last?'<button class="last-result" data-action="last">'+char(last.type)+'<span>'+tx('lastResult')+'<strong>'+last.type+' · '+esc(data.types[last.type].dexName)+'</strong></span></button>':'')+
- '<p class="privacy-note">'+tx('privacyNote')+'</p><p class="fineprint">'+tx('disclaimer')+'</p>','home',false);
+ setup(renderHome(data,CHARACTERS,{lang,progress:p,last}),'home',false);
 }
 function start(newMode){
  if(!['speed','precise'].includes(newMode))throw Error(tr('invalidTest'));
@@ -93,7 +89,7 @@ function renderResult(r){
  '<div class="result-actions"><button class="primary full" data-action="share">'+tx('shareResult')+'</button>'+(r.mode==='speed'?'<button class="soft-button full" data-start="precise">'+tx('preciseCta')+'</button>':'')+'<button class="ghost full" data-action="home">'+tx('retake')+'</button><p class="fineprint">'+tx('disclaimer')+'</p></div>','result');
 }
 function match(title,type,note,cls){return '<article class="match-card '+cls+'"><h2>'+esc(title)+'</h2>'+char(type)+'<strong>'+type+'</strong><p>'+esc(note)+'</p></article>';}
-function shareURL(){const url=new URL(location.pathname,location.origin);url.searchParams.set('lang',lang);url.hash=encodeResult(result);return url.href;}
+function shareURL(){const url=new URL(PAGE_PATHS[lang],location.origin);url.hash=encodeResult(result);return url.href;}
 function shareDialog(){
  if(!result)return;const t=data.types[result.type];
  modal.innerHTML='<form method="dialog"><button class="icon-button modal-close" aria-label="'+tx('close')+'">'+icon('close')+'</button></form><h2 id="share-title">'+tx('shareTitle')+'</h2><div class="share-preview" style="--family-soft:'+t.familySoft+';--type-deep:'+t.deep+'">'+char(result.type)+'<strong>'+result.type+'</strong><h3>'+esc(t.nickname)+'</h3><p class="quote">“'+esc(t.tagline)+'”</p></div><button class="primary full" data-action="native-share">'+icon('share')+' '+tx('shareAction')+'</button><div class="share-tools"><button class="soft-button" data-action="copy">'+icon('link')+' '+tx('copyLink')+'</button><button class="soft-button" data-action="download">'+icon('download')+' '+tx('saveImage')+'</button></div><p class="fineprint">'+tx('sharedLinkNote')+'</p><label class="copy-fallback" hidden>'+tx('resultLink')+'<input readonly aria-label="'+tx('resultLinkLabel')+'" value="'+esc(shareURL())+'"></label>';
@@ -155,7 +151,7 @@ document.addEventListener('keydown',e=>{
  if(e.key==='Escape'&&view==='test')goHome();
  if(view==='reveal'&&['Enter',' ','Escape'].includes(e.key)){e.preventDefault();renderResult(result);}
 });
-window.addEventListener('popstate',()=>{if(data&&!languageBusy)route();});
+window.addEventListener('popstate',()=>{if(data&&!languageBusy){const next=preferredLocale();next===lang?route():setLanguage(next);}});
 function route(){
  navigationVersion++;clearTimeout(revealTimer);locked=false;if(modal.open)modal.close();
  const shared=decodeResult(location.hash);if(shared){renderResult(shared);return;}
@@ -167,7 +163,7 @@ function normalizeLocale(value){
  if(tag==='zh-hant'||/^zh-(tw|hk|mo)/.test(tag))return 'zh-Hant';
  if(tag.startsWith('zh'))return 'zh';const prefix=tag.split('-')[0];return Object.hasOwn(LANGUAGES,prefix)?prefix:'en';
 }
-function preferredLocale(){return normalizeLocale(new URLSearchParams(location.search).get('lang')||read('language')||navigator.languages?.[0]||navigator.language);}
+function preferredLocale(){return normalizeLocale(new URLSearchParams(location.search).get('lang')||Object.keys(PAGE_PATHS).find(key=>PAGE_PATHS[key]===location.pathname.replace(/index\.html$/,''))||'en');}
 async function setLanguage(target,initial=false){
  if(languageBusy)return;const next=normalizeLocale(target);const current={view,mode,answers:[...answers],hash:location.hash};languageBusy=true;selector.disabled=true;
  const restore=()=>{if(current.view==='test'&&current.hash===location.hash&&current.answers.length<data.questions[current.mode].length){mode=current.mode;answers=current.answers;locked=false;if(modal.open)modal.close();question();}else route();};
@@ -177,16 +173,24 @@ async function setLanguage(target,initial=false){
   let pack=localeCache.get(next);
   if(!pack){const response=await fetch(LOCALE_URLS[next]);if(!response.ok)throw Error('locale');pack=await response.json();localeCache.set(next,pack);}
   data=pack;lang=next;write('language',lang);selector.value=lang;
-  document.documentElement.lang=lang==='zh'?'zh-Hans':lang;
+  document.documentElement.lang=htmlLang(lang);
   document.documentElement.dataset.brandFont=['ja','zh','zh-Hant','vi'].includes(lang)?'system':'brand';
   document.querySelector('#language-label').textContent=tr('language');selector.setAttribute('aria-label',tr('language'));
-  document.querySelector('meta[name="description"]').content=tr('pageDescription');
-  document.querySelector('#back-to-mongle').href=lang==='en'?'/en/mongle/':'/'+(lang==='zh'?'zh-Hans':lang)+'/mongle/';
-  const url=new URL(location.href);url.searchParams.set('lang',lang);history.replaceState(null,'',url);
+  document.querySelector('#back-to-mongle').href=landingPath(lang);
+  const url=new URL(location.href);url.pathname=PAGE_PATHS[lang];url.searchParams.delete('lang');history.replaceState(null,'',url);
+  const canonical=location.origin+PAGE_PATHS[lang];
+  document.querySelector('link[rel="canonical"]').href=canonical;
+  for(const selector of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]'])document.querySelector(selector).content=data.seo.description;
+  for(const selector of ['meta[property="og:title"]','meta[name="twitter:title"]'])document.querySelector(selector).content=data.seo.title;
+  document.querySelector('meta[property="og:url"]').content=canonical;
+  document.querySelector('meta[property="og:locale"]').content=data.seo.ogLocale;
+  for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]'])document.querySelector(selector).content=data.seo.image;
+  document.querySelector('#page-schema').textContent=JSON.stringify(data.schema);
+  document.title=data.seo.title;
   languageBusy=false;restore();
  }catch{
   if(data){selector.value=lang;toast(tr('languageError'));languageBusy=false;restore();}
-  else{document.querySelector('#boot-error').hidden=false;document.querySelector('#boot-loading').hidden=true;}
+  else{const error=document.querySelector('#boot-error');if(error)error.hidden=false;}
  }finally{languageBusy=false;selector.disabled=false;}
 }
 selector.innerHTML=Object.entries(LANGUAGES).map(([value,name])=>'<option value="'+value+'">'+name+'</option>').join('');
@@ -202,4 +206,4 @@ function webTools(){
  window.addEventListener('pagehide',()=>controller.abort(),{once:true});
 }
 await setLanguage(preferredLocale(),true);if(data)webTools();
-if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'}).catch(()=>{}),{once:true});if(document.readyState==='complete')navigator.serviceWorker.register('./sw.js',{scope:'./',updateViaCache:'none'}).catch(()=>{});}
+if('serviceWorker'in navigator){window.addEventListener('load',()=>navigator.serviceWorker.register('/mongle/play/sw.js',{scope:'/mongle/play/',updateViaCache:'none'}).catch(()=>{}),{once:true});if(document.readyState==='complete')navigator.serviceWorker.register('/mongle/play/sw.js',{scope:'/mongle/play/',updateViaCache:'none'}).catch(()=>{});}

@@ -12,4 +12,4 @@ Static, client-only adaptation of the Mongle mobile test. Build with `node _sour
 
 The source is under `_source/mongle-play`; do not hand-edit the generated `/mongle/play` output.
 
-SEO copy is in `seo.json`. The shared `home.js` renderer keeps static and interactive content identical. The builder creates canonical/hreflang metadata, WebPage/WebApplication JSON-LD, visible language links, and `/mongle/play/sitemap.xml`. Run `python3 tools/seo/check_mongle.py` after building. The site-wide enricher must not overwrite these builder-owned pages.
+SEO copy is in `seo.json`. The shared `home.js` renderer keeps static and interactive content identical. The test home stays focused on the two test cards; the explanatory SEO guide lives on separate `/mongle/play/<lang>/about/` pages (`renderAbout`, `about.html`) linked by one small text link, and language choice is the top selector only. The builder creates canonical/hreflang metadata for both page sets, WebPage/WebApplication JSON-LD, and `/mongle/play/sitemap.xml` (11 test + 11 about pages). Run `python3 tools/seo/check_mongle.py` after building. The site-wide enricher must not overwrite these builder-owned pages.

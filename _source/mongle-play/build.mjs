@@ -3,7 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {renderHome,LANGUAGES,PAGE_PATHS,htmlLang,landingPath,escapeHTML as esc} from './home.js';
+import {renderHome,renderAbout,LANGUAGES,PAGE_PATHS,ABOUT_PATHS,htmlLang,landingPath,escapeHTML as esc} from './home.js';
 const source=path.dirname(fileURLToPath(import.meta.url)),out=path.resolve(source,'../../mongle/play');
 const ORIGIN='https://h1soft.github.io',ROOT='/mongle/play/';
 const hash=bytes=>crypto.createHash('sha256').update(bytes).digest('hex').slice(0,12);
@@ -48,16 +48,24 @@ const appURL=asset('app.js',app);
 let css=fs.readFileSync(path.join(source,'style.css'),'utf8');
 for(const [name,url]of Object.entries(fontURLs))css=css.replaceAll('./assets/fonts/'+name,url);
 const cssURL=asset('style.css',css);
-const alternates=Object.entries(PAGE_PATHS).map(([locale,url])=>'<link rel="alternate" hreflang="'+htmlLang(locale)+'" href="'+ORIGIN+url+'">').join('')+'<link rel="alternate" hreflang="x-default" href="'+ORIGIN+ROOT+'">';
-const head='<link rel="stylesheet" href="'+cssURL+'">'+[charURL,coreURL,homeURL,appURL].map(href=>'<link rel="modulepreload" href="'+href+'">').join('')+
-'<link rel="preload" as="font" type="font/woff2" crossorigin href="'+fontURLs['pretendard_regular.subset.woff2']+'">'+alternates;
+const alternatesOf=paths=>Object.entries(paths).map(([locale,url])=>'<link rel="alternate" hreflang="'+htmlLang(locale)+'" href="'+ORIGIN+url+'">').join('')+'<link rel="alternate" hreflang="x-default" href="'+ORIGIN+paths.en+'">';
+const fontPreload='<link rel="preload" as="font" type="font/woff2" crossorigin href="'+fontURLs['pretendard_regular.subset.woff2']+'">';
+const head='<link rel="stylesheet" href="'+cssURL+'">'+[charURL,coreURL,homeURL,appURL].map(href=>'<link rel="modulepreload" href="'+href+'">').join('')+fontPreload+alternatesOf(PAGE_PATHS);
+const aboutHead='<link rel="stylesheet" href="'+cssURL+'">'+fontPreload+alternatesOf(ABOUT_PATHS);
+const aboutTemplate=fs.readFileSync(path.join(source,'about.html'),'utf8');
 const template=fs.readFileSync(path.join(source,'index.html'),'utf8');
 for(const [locale,pack] of Object.entries(packs)){
  const values={LANG:htmlLang(locale),BRAND_FONT:['ja','zh','zh-Hant','vi'].includes(locale)?'system':'brand',TITLE:esc(pack.seo.title),DESCRIPTION:esc(pack.seo.description),CANONICAL:ORIGIN+PAGE_PATHS[locale],OG_LOCALE:pack.seo.ogLocale,IMAGE:pack.seo.image,HEAD_ASSETS:head,SCHEMA:json(pack.schema),LANDING:landingPath(locale),LANGUAGE_LABEL:esc(pack.ui.language),LANGUAGE_OPTIONS:Object.entries(LANGUAGES).map(([value,name])=>'<option value="'+value+'"'+(value===locale?' selected':'')+'>'+esc(name)+'</option>').join(''),HOME:renderHome(pack,chars,{lang:locale}),NOSCRIPT:esc(pack.seo.noscript),LOCALE:locale,INITIAL_LOCALE:json(pack),APP_URL:appURL};
  put(PAGE_PATHS[locale].slice(ROOT.length)+'index.html',template.replace(/__([A-Z_]+)__/g,(_,key)=>{if(!(key in values))throw Error('Unknown template key '+key);return values[key];}));
+ // 테스트 소개 페이지 — 첫 화면에서 뺀 검색용 설명
+ const aboutURL=ORIGIN+ABOUT_PATHS[locale],aboutTitle=pack.seo.introTitle+' | '+pack.ui.brand;
+ const aboutSchema={'@context':'https://schema.org','@type':'WebPage','@id':aboutURL+'#webpage',url:aboutURL,name:aboutTitle,description:pack.seo.introText,inLanguage:htmlLang(locale),about:{'@id':ORIGIN+PAGE_PATHS[locale]+'#app'}};
+ const aboutValues={LANG:values.LANG,BRAND_FONT:values.BRAND_FONT,TITLE:esc(aboutTitle),DESCRIPTION:esc(pack.seo.introText),CANONICAL:aboutURL,OG_LOCALE:pack.seo.ogLocale,IMAGE:pack.seo.image,HEAD_ASSETS:aboutHead,SCHEMA:json(aboutSchema),TEST:PAGE_PATHS[locale],BRAND:esc(pack.ui.brand),ABOUT:renderAbout(pack,{lang:locale})};
+ put(ABOUT_PATHS[locale].slice(ROOT.length)+'index.html',aboutTemplate.replace(/__([A-Z_]+)__/g,(_,key)=>{if(!(key in aboutValues))throw Error('Unknown about key '+key);return aboutValues[key];}));
 }
-const xmlLinks=Object.entries(pages).map(([locale,url])=>'<xhtml:link rel="alternate" hreflang="'+htmlLang(locale)+'" href="'+ORIGIN+url+'"/>').join('')+'<xhtml:link rel="alternate" hreflang="x-default" href="'+ORIGIN+ROOT+'"/>';
-put('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+Object.values(pages).map(url=>'<url><loc>'+ORIGIN+url+'</loc><lastmod>2026-10-07</lastmod>'+xmlLinks+'</url>').join('\n')+'\n</urlset>\n');
+const xmlLinks=paths=>Object.entries(paths).map(([locale,url])=>'<xhtml:link rel="alternate" hreflang="'+htmlLang(locale)+'" href="'+ORIGIN+url+'"/>').join('')+'<xhtml:link rel="alternate" hreflang="x-default" href="'+ORIGIN+paths.en+'"/>';
+const sitemapURLs=(paths,lastmod)=>Object.values(paths).map(url=>'<url><loc>'+ORIGIN+url+'</loc><lastmod>'+lastmod+'</lastmod>'+xmlLinks(paths)+'</url>');
+put('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'+[...sitemapURLs(pages,'2026-10-16'),...sitemapURLs(ABOUT_PATHS,'2026-10-16')].join('\n')+'\n</urlset>\n');
 const files=[...written].filter(f=>!f.includes('licenses/')&&f!=='sitemap.xml').sort();
 const revision=hash(files.map(f=>f+':'+hash(fs.readFileSync(path.join(out,f)))).join('\n'));
 put('sw.js',`const CACHE='mongle-play-${revision}';
