@@ -2,6 +2,9 @@
 (() => {
   if (location.hostname !== 'h1soft.github.io' || /^\/(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?\/)?(?:metrics|skinping|pibuping|lol[.]dating|gyeol\/(?:admin|identity|delete|share))(?:\/|$)/i.test(location.pathname) || window.__h1softAnalyticsLoaded) return;
   window.__h1softAnalyticsLoaded = true;
+  // Cookieless visit count for every visitor, whatever the analytics choice below: only the path is posted.
+  // No cookie, storage, identifier or referrer is sent; the server keeps a short-lived salted hash to tell visitors apart.
+  try { fetch('https://h1soft-metrics-api.h1soft-metrics.workers.dev/api/public/hit', {method:'POST', body:location.pathname, keepalive:true, credentials:'omit', referrerPolicy:'no-referrer'}).catch(() => {}); } catch {}
   const id = 'G-X522MQ0TMG', key = 'h1soft.analytics.v1';
   const monglePlay = /^\/(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?\/)?mongle\/play(?:\/|$)/.test(location.pathname);
   const ko = document.documentElement.lang.startsWith('ko');

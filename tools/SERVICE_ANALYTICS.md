@@ -6,7 +6,11 @@ existing H1Soft GA4 tag. Both `/ko/service/…` and `/service/en/…` routes bel
 to the same service, including `/attachment/play/`. Skinping and LoL Dating are excluded from tracking and published menus. The client-only Mongle web test (`/mongle/play/`, including its `/about/` guide pages) stays tracker-free.
 Metrics and Gyeol admin, identity, account-deletion and credential-based sharing pages are excluded. Gyeol tracks only its public landing and legal pages.
 
-Visitors must opt in. The existing choice applies across this hostname; the
+Every visit, consent or not, also sends only its page path to the H1 Metrics
+collector (`POST /api/public/hit`, no cookie or storage); the Metrics website
+counts are built from that cookieless count. GA4 below is consent-only.
+
+Visitors must opt in to GA4. The existing choice applies across this hostname; the
 settings button allows withdrawal. `js/analytics.js` guards duplicate loads,
 removes URL queries/fragments from page/referrer fields, and disables advertising
 personalization. The detailed visitor notice lives at `/analytics-privacy/`.
