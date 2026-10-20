@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>QR Scanner 개인정보처리방침 | H1Soft</title>
-  <meta name="description" content="QR Scanner 개인정보처리방침 — 모든 처리는 기기 안에서 이루어지며 스캔·생성 기록은 서버로 전송되지 않습니다." />
+  <meta name="description" content="QR Scanner 개인정보처리방침 — QR 내용은 기기에서 처리됩니다. Android ML Kit의 진단정보 전송은 본문에서 안내합니다." />
   <link rel="canonical" href="https://h1soft.github.io/qr-scanner/privacy/" />
   <link rel="icon" type="image/png" sizes="512x512" href="/assets/h1soft-appicon.png">
   <link rel="apple-touch-icon" sizes="512x512" href="/assets/h1soft-appicon.png">
@@ -30,7 +30,7 @@
   <main class="policy">
     <div class="policy__head">
       <h1>QR Scanner 개인정보처리방침</h1>
-      <span class="policy__date">시행일: 2026년 8월 24일</span>
+      <span class="policy__date">시행일: 2026년 8월 24일 · 안내 정정: 2026년 10월 20일</span>
     </div>
 
     <section>
@@ -40,17 +40,17 @@
 
     <section>
       <h2>2. 처리 원칙 — 온디바이스</h2>
-      <p>앱의 모든 기능은 이용자의 기기 안에서 처리됩니다. 스캔·생성한 QR 데이터와 히스토리는 서버로 전송되지 않으며, 팀은 이에 접근할 수 없습니다. 앱은 네트워크 연결 없이도 정상 동작합니다.</p>
+      <p>QR 인식·생성은 기기에서 처리되며, H1Soft는 QR 내용이나 히스토리를 서버로 수집하지 않습니다. 이용자가 공유·내보내기 또는 QR 링크 열기를 선택하면 지정한 앱이나 사이트로 내용이 전달될 수 있습니다. Android의 SDK 진단정보 처리는 제6항을 참고해 주세요.</p>
     </section>
 
     <section>
       <h2>3. 수집하는 개인정보</h2>
-      <p>앱은 이름·연락처·계정 등 이용자를 식별할 수 있는 개인정보를 수집하지 않습니다. 회원가입 절차가 없으며 로그인도 요구하지 않습니다.</p>
+      <p>앱은 회원가입이나 로그인을 요구하지 않습니다. H1Soft는 앱 계정용 이름·연락처를 요구하지 않지만, Android의 ML Kit SDK가 처리하는 설치 식별자와 진단정보는 제6항에 안내합니다.</p>
     </section>
 
     <section>
       <h2>4. 기기 내 저장 정보</h2>
-      <p>아래 정보는 기기 내부 저장소에만 저장되며 외부로 전송되지 않습니다.</p>
+      <p>아래 정보는 기기 내부에 저장됩니다. 사용자가 직접 공유·내보내기한 사본은 선택한 서비스나 저장 위치에서 관리됩니다.</p>
       <ul class="policy-list">
         <li>스캔 기록 — 인식한 QR의 내용과 인식 일시. 앱 내 히스토리에서 개별·전체 삭제 가능</li>
         <li>생성 기록 — 생성한 QR의 유형과 입력값, 생성 일시. 동일하게 삭제 가능</li>
@@ -70,8 +70,8 @@
 
     <section>
       <h2>6. 제3자 제공·처리위탁·국외 이전</h2>
-      <p>앱은 개인정보를 수집하지 않으므로 제3자 제공, 처리위탁, 국외 이전이 발생하지 않습니다. 앱에는 분석 SDK가 포함되어 있지 않습니다.</p>
-    </section>
+      <p>H1Soft는 QR 내용과 히스토리를 서버로 수집하거나 판매하지 않습니다. Android에서는 Google ML Kit가 다음과 같이 별도의 SDK 지표를 처리하므로 모든 데이터의 외부 전송이 없다고 안내하지 않습니다.</p>
+    <section id="android-mlkit" lang="ko"><h2>Android: Google ML Kit 데이터 처리</h2><p>Android 앱은 Google ML Kit를 사용합니다. 이미지·텍스트 등 인식 입력과 결과는 기기에서 처리되며 ML Kit가 이 내용을 Google 서버로 보내지 않습니다. 다만 SDK는 설치 식별자, 기기·앱 정보와 기능 사용·성능·오류 관련 지표를 Google에 전송합니다. 이는 인식 내용과 별개인 진단정보이며, API 유지·개선과 오용 방지 등에 사용됩니다. 전송은 HTTPS로 암호화됩니다.</p><p>이 앱은 번들형 바코드 인식 SDK를 사용합니다. 자동 줌을 사용하지 않으므로 자동 줌에 따른 별도의 세션·확대율·좌표 데이터는 해당하지 않습니다.</p><p>Google은 여러 국가의 서버에서 정보를 처리합니다. H1Soft가 이 SDK 지표의 처리 국가나 보유기간을 지정하지는 않습니다. 확인한 ML Kit 공개 문서는 이 지표에 적용되는 개별 국가 목록과 고정 보유기간을 명시하지 않습니다. Google의 처리 및 보유 방침은 아래 공식 문서를 참고해 주세요.</p><p>이 안내는 Android 버전에 해당하며 iOS의 인식 기능에 ML Kit 사용을 의미하지 않습니다. 앱의 기록 삭제나 앱 삭제가 이미 Google에 전송된 지표의 즉시 삭제를 의미하지는 않습니다. 관련 문의와 권리 행사는 H1Soft 지원 이메일 및 Google 개인정보처리방침의 연락 경로를 이용해 주세요.</p><p><a href="https://developers.google.com/ml-kit/terms">ML Kit Terms &amp; Privacy</a> · <a href="https://developers.google.com/ml-kit/android-data-disclosure">ML Kit Android data disclosure</a> · <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/retention">Google data retention</a></p></section></section>
 
     <section>
       <h2>7. 파기</h2>
@@ -80,12 +80,12 @@
 
     <section>
       <h2>8. 이용자의 권리</h2>
-      <p>앱이 개인정보를 수집하지 않으므로 열람·정정·삭제 요구의 대상이 되는 보관 정보가 없습니다. 기기 내 데이터는 이용자가 직접 전부 통제합니다.</p>
+      <p>기기 내 기록은 앱에서 삭제할 수 있습니다. 개인정보 관련 열람·정정·삭제 문의는 아래 지원 이메일로 보내주세요. Google이 처리하는 SDK 지표에 대한 문의 경로는 제6항의 공식 방침을 참고해 주세요.</p>
     </section>
 
     <section>
       <h2>9. 만 14세 미만 아동</h2>
-      <p>앱은 만 14세 미만 아동을 포함한 어떤 이용자의 개인정보도 수집하지 않습니다.</p>
+      <p>앱은 연령이나 아동의 계정정보를 요구하지 않습니다. Android SDK의 진단정보 처리에는 제6항이 적용됩니다. 보호자는 아래 이메일로 개인정보 관련 문의를 할 수 있습니다.</p>
     </section>
 
     <section>
