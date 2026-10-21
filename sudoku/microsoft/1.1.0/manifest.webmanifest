@@ -1,0 +1,20 @@
+{
+  "id": "/sudoku/microsoft/1.1.0/",
+  "name": "Sudoku Voyage",
+  "short_name": "Sudoku Voyage",
+  "description": "Classic Sudoku puzzles, a world map and collectible postcards.",
+  "start_url": "/sudoku/microsoft/1.1.0/",
+  "scope": "/sudoku/microsoft/1.1.0/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "ko",
+  "theme_color": "#FFFCF0",
+  "background_color": "#FFFCF0",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
