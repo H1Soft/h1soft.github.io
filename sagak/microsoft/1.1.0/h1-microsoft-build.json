@@ -1,0 +1,51 @@
+{
+  "app": "sagak",
+  "platform": "microsoft",
+  "source_commit": "3eab366ab14aa5c07c24e8f5ad82a8f0e83125fb",
+  "source_archive_sha256": "c317b770aea047cc67a5e1700fae5f8647401dca67ec934b364d301a53555791",
+  "generic_web_diff_sha256": "589b14606325bd5ca63cb779268a8887bfb7badb50b84a64f41afcc1f03de1e1",
+  "changes": {
+    "settings.gradle.kts": "f7e69619cb805259a55bdd78a7fb4d5938507e28bcb02e3a89f10e02349ddb1b",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/App.kt": "af65a4d3b112266f178aa8e238bb4f23f4eac7cd25d8e8b2a1a25298be54cd30",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/AppState.kt": "6d189ebcf4723df533e65a10154f7444b4d912f0667764e6489085f2378a9b6e",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/online/OnlineScreen.kt": "ea7d33a99c49b9480120546c2a5362f7f7c832dc61ff03f8f5f8519ed8cfbb57",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/screens/AdaptiveIntro.kt": "f42afb58655c19566653e4e26171a73928e063a8089d3757b77c51f9a3738d49",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/screens/WebNotes.kt": "f4170990db883f1dc89797292320ea1497e88100222a240cd1e003b469030919",
+    "shared/src/wasmJsMain/kotlin/com/h1soft/sagak/Main.kt": "fc6b7ce522676c608718899f41c9538bfd4c5d344cb5ba1daabb172bbb0c87cb",
+    "shared/src/wasmJsMain/kotlin/com/h1soft/sagak/platform/Drivers.web.kt": "59c460ec19e2200beb33f66d53198447d0c70152191085e0e6cdb41750cb531c"
+  },
+  "catalogs": {
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyZhTw.kt": "c74f97c9a832c3edc152bf9f5cff20585c77e3544d575446591677e770b0f52c",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyRu.kt": "95c11e13913138229dfd312859294eb1e5652f080264ec64a041afb31607db1c",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyKo.kt": "3bfe49b18db80a487549cfd2b0cfc18bfe5d48bd3b070e533a3605c286408580",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyPt.kt": "0d108bd9437bb3a55c4e2ecab404a88652acfb6ff8a67d3ae032702a53274124",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyZhCn.kt": "f4e88e7e4639e0f5ca2e42c6e1d5234245c2ded17b61f237ae02ac75d5e4c9dd",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyPl.kt": "ff3198447e14abdfbef0c4f8f0c261256f00a353b339734d386601741d581755",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyVi.kt": "6ebf880db4b85567f65fae29b05b6f401c78257684b6ab06a470e596b794d956",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyId.kt": "c79b1b20bdc0df7b077dc88e7e502a54e6581bbc9d47e3acfd10bc345baf0faf",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyJa.kt": "4591cdecffab6876eca860ed1a07a33e687ba4d30963575e8e4d51f785fa17b8",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyFa.kt": "2a80d8cc080cfe7ab5219de8b0ef2aeb7de94b53d649140b7ebc95d00ed28172",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyDe.kt": "3001039a77fdf1d54c8f9c6916baeca6a386aed50c6f2d1a0d212f671595d360",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/Copy.kt": "38a12689beb4246cf25323139782948caeecfb198fc95c7ec943960ad4a980cf",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyTr.kt": "190cc872ae11e874ba4ce21f1e2ea5df62ccd507434decc39d17f9e86ccad725",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyEs.kt": "d424ed3fd33f050121aba0f0d58c18e92131a734d732048c77818cb2e7df6534",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyIt.kt": "62d6733ba7b96cf9f629d333704ac008245308f6bb014d828c7bf6a63ff925a2",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyEn.kt": "9024b7616678c9e22c105acdd8a0b7d24ca5c06292d4e9d5de31915a3fd57ed4",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyFr.kt": "452b1c7d0971d3d85f53555a439a7927895b9a22153ae2b6231bfd292d671fa5",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/CopyNl.kt": "706c7af22db605af1a899155e7d044c4d921afcd624a4ad53858e3b73743bde1"
+  },
+  "runtime_language_variants": 17,
+  "runtime_distinct_languages": 16,
+  "sdk": "none",
+  "online_enabled": true,
+  "public_base": "https://h1soft.github.io/sagak/microsoft/1.1.0/",
+  "original_source_unchanged": true,
+  "windows_runtime_verified": false,
+  "compiled_payload": {
+    "c65dfd42eddd63d32114.wasm": "ea0e10da14550d82dba259f229f11ce17c20cb17fca9e7500658ba6e8749064c",
+    "sagak.js": "7c2e100341ded0ad1c2b49c6fedc9cad63112f0a0978fe23e92d3319e5fba2d1",
+    "service-worker.js": "ade107eed1d479a4222e784cb3ae3ce771125a70cde370a368ce19a01b94ec0a",
+    "bccfa839aa4b38489c76.wasm": "09ee5d3dcae24a6c90a811999dcc1287e8a669e2deed14e23c7ebd2068e8f73d",
+    "h1-runtime.js": "73ae7722f4e98dcca0b5d04695ada3e94f49cc32adfd5cc435935942c7bf24af"
+  }
+}
