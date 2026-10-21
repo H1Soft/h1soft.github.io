@@ -1,0 +1,38 @@
+{
+  "name": "Aechak: Attachment Style Test",
+  "short_name": "Aechak",
+  "start_url": "/attachment/microsoft/1.0.6/",
+  "display": "standalone",
+  "background_color": "#FFF9F1",
+  "theme_color": "#FFF9F1",
+  "description": "16문항으로 만나는 나의 애착인형, 친구와 빨간 실 궁합",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "id": "/attachment/microsoft/1.0.6/",
+  "scope": "/attachment/microsoft/1.0.6/",
+  "lang": "ko"
+}

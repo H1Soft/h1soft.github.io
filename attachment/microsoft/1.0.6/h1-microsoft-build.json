@@ -1,0 +1,46 @@
+{
+  "app": "attachment",
+  "platform": "microsoft",
+  "source_commit": "e25edddcbb915a055060acea8c08438cb9e27af9",
+  "source_snapshot_sha256": "d842656b5cbd0040db6c489dd0c759428e93137c6e5b693c91a91b774e9182ac",
+  "dart_defines": {
+    "H1_DISTRIBUTION": "microsoft",
+    "PUBLIC_BASE_URL": "https://h1soft.github.io/attachment/microsoft/1.0.6/"
+  },
+  "public_base": "https://h1soft.github.io/attachment/microsoft/1.0.6/",
+  "assets_byte_identical": 194,
+  "locale_assets": {
+    "assets/i18n/tr.json": "488e0d6a994703bba4d0546300e57d108db42edf8b1484eaf0cd46afab792108",
+    "assets/i18n/nl.json": "e2230ee88940c05a4574eb133b6fdfff7e85df6e06cec9c39f7c283eb4f10dd4",
+    "assets/i18n/ja.json": "5b2946067788038ec796fc30999fbc9149a5df3f85a62d84c9141b2c76bb43f0",
+    "assets/i18n/de.json": "9434b29a26f984d4def83b905040c2be3127476461ad0551ff46fc1c2ef37219",
+    "assets/i18n/ru.json": "2caeb65ca2ed243c4f6a3a719a28df774680d37b567f01e4f098a136b414c796",
+    "assets/i18n/pl.json": "da03a2a08a41272d8bbe7a6605358c367bc3e803826d92473ab91f0e39756d9e",
+    "assets/i18n/pt.json": "13a95786ef576f69f8b9fedc2bf65ecac27093c4d3285e62037ced8b24913924",
+    "assets/i18n/en.json": "d356cdc3ec96742e45d1135bfdd4d88420fe62df7b8f08483ebd5ce5da925025",
+    "assets/i18n/it.json": "88df67ddbc99bd55e9a1ce7fe18fe4bc1331b8e8f033133ddef7d00151d5d283",
+    "assets/i18n/zh_Hans_CN.json": "fe7597199a168264d3054314be9a9d5e4e132439e0f00549befdde6d1a0a71fd",
+    "assets/i18n/fr.json": "2379c3e5a4d1262d4e8f285b6039d131a29a306b9babf317f2eb8a8a0104ae7d",
+    "assets/i18n/ko.json": "d642a47bf9eb957f957eedd1c45aec1bb01818def05f89ca8e1c87a1c9fe4c18",
+    "assets/i18n/vi.json": "4c1f802ed03bb748112149c4efd9a1fec55812c1917edadfb1e9ce042af96b64",
+    "assets/i18n/fa.json": "850c02a6078e32a6e99bd58c18a0336eb82289ee25e5b27108ca428f9ffcce1f",
+    "assets/i18n/id.json": "9ffbc99be3bb71cd2132a994d8b39f40b76110e44959d0485183fde856e13dfe",
+    "assets/i18n/zh_Hant_TW.json": "2ca17140f1f783662de8879d88bac0a75b8111f4a03b54434a5128ccdd672714",
+    "assets/i18n/es.json": "39ad632ec7594d67b574608c2f177902ec0b5420a7d8be72471dd78b29ec0038"
+  },
+  "changes": {
+    "lib/l10n/localization.dart": "021e98ef3fb3e68486d637af70f99ed1ca1bd7de99f5f4508040b36d7df907f2",
+    "lib/main.dart": "9f7faab1e48579d43b336d4fe37abb64f06f97e064311585c0c84f1d3d52074e",
+    "lib/platform/session_storage_web.dart": "beffc9007e6d82905f8793fd667fb2750fcc886ddd9fea8880c5038e83442114",
+    "lib/storage.dart": "2c96d18f3a9e32e7efed5f08b2a7337e98c943d7c6a8ec46c245b2dac66f0230",
+    "lib/ui/collection_settings.dart": "7baeb6a9cc20901a0b27cab77ce74d9f7ae9b0036c6a0072e4d44f96cf22aef8",
+    "lib/ui/core_screens.dart": "278e007cc2d53d36c5eb944495d19613633f690ceec8c6014c67e00c45e874f2",
+    "lib/ui/functional_app.dart": "135b9ad3c54d1df8ca740636286df1e24079a214d44fb71744cab4c134b53b53",
+    "web/index.html": "c7a318bb95fa0a0cd19479aad37c9a60b464abb473f006b867642d809cafac73",
+    "web/manifest.json": "16df3deea0a16c4f23fa036b1c7652c16eeb8db423d859aa6d22ddc66585355d"
+  },
+  "sdk": "none",
+  "source_original_unchanged": true,
+  "windows_qa_passed": false,
+  "main_dart_js_sha256": "6257b39742d81e08557e0ec482940f635fadf2dfe131ad544c2edc36e1d1a357"
+}

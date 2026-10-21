@@ -36,6 +36,8 @@ def inventory(root):
     pages={};routes={p:{} for p in PRODUCTS};aliases={}
     for path in sorted(root.rglob('*.html')):
         rel=path.relative_to(root)
+        # Never rewrite the signed-off, destination-bound app payload.
+        if rel.parts[:2] == ('attachment', 'microsoft'):continue
         if any(x.startswith('.') or x in SKIP for x in rel.parts):continue
         text=path.read_text();s=BeautifulSoup(text,'html.parser')
         if not s.html or not s.body or s.select_one('meta[name="robots"][content*="noindex"]'):continue
