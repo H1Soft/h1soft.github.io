@@ -6,7 +6,7 @@ const services=['qr-scanner','seukscan','ongle','cleaner','attachment','mongle',
 const match=new RegExp(`^(?:[A-Za-z]{2}(?:-[A-Za-z]{2,4})?/)?(${services.join('|')})(?:/|$)`);
 // The destination-bound Microsoft app has its own privacy contract and immutable
 // payload hashes. Marketing-page tracking must never be injected into that app.
-const files=execFileSync('git',['ls-files','-z','*.html'],{encoding:'utf8'}).split('\0').filter(p=>match.test(p)&&!/^gyeol\/(?:admin|identity|delete|share)(?:\/|$)/.test(p)&&!/^(?:attachment|sagak|sudoku)\/microsoft\//.test(p));
+const files=execFileSync('git',['ls-files','-z','*.html'],{encoding:'utf8'}).split('\0').filter(p=>match.test(p)&&!/^gyeol\/(?:admin|identity|delete|share)(?:\/|$)/.test(p)&&!/^(?:attachment|sagak|sudoku|meowbro)\/microsoft\//.test(p));
 const tag='<script defer src="/js/analytics.js?v=services-20260930"></script>';
 const missing=[],counts={};let redirects=0;
 for(const file of files){
