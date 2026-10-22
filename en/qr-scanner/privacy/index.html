@@ -30,7 +30,7 @@
   <main class="policy">
     <div class="policy__head">
       <h1>QR Scanner Privacy Policy</h1>
-      <span class="policy__date">Effective date: 24 August 2026 · Disclosure corrected: 20 October 2026</span>
+      <span class="policy__date">Effective date: 24 August 2026 · Disclosure corrected: 20 October 2026 · Windows edition added: 22 October 2026</span>
     </div>
 
     <section>
@@ -75,7 +75,15 @@
 
     <section>
       <h2>7. Deletion</h2>
-      <p>On-device data is removed the moment you clear history or uninstall the app. The team holds no copy.</p>
+      <p>Clearing history removes the selected records from the app. H1Soft holds no server copy. On mobile, uninstalling removes app-local data. Files you exported or shared are separate copies and must be deleted at their destination. For Windows storage and removal, see the edition-specific section below.</p>
+    </section>
+
+    <section id="windows-edition">
+      <h2>Windows edition</h2>
+      <p>The Microsoft Store edition uses local ZXing recognition and does not include Android ML Kit, advertising SDKs or app analytics. Camera scanning is optional and starts only after you choose to enable it for that scanning session. Camera frames are processed in memory. You can use image-file recognition and QR creation without a camera.</p>
+      <p>History, language, saved styles and selected logo copies are stored locally under <code>%LOCALAPPDATA%\H1Soft\QRScanner</code> (Windows may redirect this folder for the Store package). The app does not upload these files. File pickers access the files you select; exported PNG, SVG and PDF files are saved to the location you choose.</p>
+      <p>Copy file places a locally generated file reference on the Windows clipboard and retains a local clipboard-cache copy. Pasting or opening a link can disclose content to the application or website you choose. Windows clipboard history or synchronization, if enabled by you, is controlled by Windows settings. Clearing scan history does not delete exported files, clipboard history, saved styles or selected logo copies.</p>
+      <p>To remove all Windows app data, close the app and remove its local data folder, or use Windows app reset where available. A portable test build keeps its local data after its program folder is deleted. Delete exported files and clipboard history separately if needed.</p>
     </section>
 
     <section>
