@@ -141,7 +141,7 @@ def public_pages(root):
     for path in sorted(root.rglob('*.html')):
         rel=path.relative_to(root)
         # Immutable store app export, not a marketing document.
-        if rel.parts[:2] in {('attachment', 'microsoft'), ('sagak', 'microsoft'), ('sudoku', 'microsoft'), ('meowbro', 'microsoft')}:continue
+        if rel.parts[:2] in {('attachment', 'microsoft'), ('sagak', 'microsoft'), ('sudoku', 'microsoft'), ('meowbro', 'microsoft'), ('sagak', 'crazygames'), ('sudoku', 'crazygames'), ('meowbro', 'crazygames')}:continue
         if any(part.startswith('.') or part in {'_source','node_modules','tools'} for part in rel.parts):continue
         if any(part in SKIP for part in rel.parts) or path.name in {'privacy.html','404.html'}:continue
         yield path

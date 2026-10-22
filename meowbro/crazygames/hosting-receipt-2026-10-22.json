@@ -1,0 +1,22 @@
+{
+  "app": "meowbro",
+  "platform": "crazygames",
+  "purpose": "Official externally hosted iframe preview and review",
+  "original_zip": "/Users/heewon.kim/Documents/ChatGPT/\uba40\ud2f0\ud50c\ub7ab\ud3fc/work/multistore-expansion/artifacts/crazygames/meowbro-crazygames-preparation.zip",
+  "original_zip_sha256": "05411b2ae8df915fb97a01742924c2c1f1f04454de99a0dd93ea3feaf580d010",
+  "public_url": "https://h1soft.github.io/meowbro/crazygames/05411b2ae8df/",
+  "files": {
+    "h1-distribution.json": "6e0de0831e997f6da3f910f6aac89e9d34af76c9b132cc603f768583fc4abb8a",
+    "h1-runtime.js": "f27c1233943debb22d72b206ae6c8bad2d0e1a8e589c26e02a42f12f684e9a09",
+    "h1-startup-message.js": "5ca830ff9014700c990b917118da3419fe2de0c57eb3c876741642d54a8448cb",
+    "index.apple-touch-icon.png": "c68c2a699ee93664bdc89fadd2293508e33a896225cb4c8d4b5d3f35ad06a23e",
+    "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+    "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+    "index.html": "1369991012bb149d31d539e587947bd6a8530dd639a72506b9f592901d15e9a4",
+    "index.icon.png": "937fea84189c725521b618842c37114ae577f3efd8a731dcb92a7bbf3f6956b0",
+    "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
+    "index.pck": "fee84203544ea40148160e63f650c81f0fb1a89e14e850b912d81e5dada363e9",
+    "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+    "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0"
+  }
+}
