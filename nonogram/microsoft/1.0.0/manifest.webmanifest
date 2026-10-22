@@ -1,0 +1,21 @@
+{
+  "id": "/nonogram/microsoft/1.0.0/",
+  "name": "Nonogram Trip: Logic Puzzles",
+  "short_name": "Nonogram Trip",
+  "description": "Travel through twelve cities with nonogram logic puzzles.",
+  "start_url": "/nonogram/microsoft/1.0.0/",
+  "scope": "/nonogram/microsoft/1.0.0/",
+  "display": "standalone",
+  "orientation": "any",
+  "lang": "en",
+  "theme_color": "#F1EDE3",
+  "background_color": "#F1EDE3",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

@@ -37,7 +37,7 @@ def inventory(root):
     for path in sorted(root.rglob('*.html')):
         rel=path.relative_to(root)
         # Never rewrite the signed-off, destination-bound app payload.
-        if rel.parts[:2] in {('attachment', 'microsoft'), ('sagak', 'microsoft'), ('sudoku', 'microsoft'), ('meowbro', 'microsoft'), ('sagak', 'crazygames'), ('sudoku', 'crazygames'), ('meowbro', 'crazygames')}:continue
+        if rel.parts[:2] in {('attachment', 'microsoft'), ('sagak', 'microsoft'), ('sudoku', 'microsoft'), ('meowbro', 'microsoft'), ('nonogram', 'microsoft'), ('sagak', 'crazygames'), ('sudoku', 'crazygames'), ('meowbro', 'crazygames')}:continue
         if any(x.startswith('.') or x in SKIP for x in rel.parts):continue
         text=path.read_text();s=BeautifulSoup(text,'html.parser')
         if not s.html or not s.body or s.select_one('meta[name="robots"][content*="noindex"]'):continue
