@@ -1,0 +1,23 @@
+{
+  "app": "meowbro",
+  "platform": "crazygames",
+  "url": "https://h1soft.github.io/meowbro/crazygames/3fc2d5d33197/",
+  "artifact_path": "/Users/heewon.kim/ProjectETC/MultiStore-2026-10-20/CrazyGames/meowbro/revision-2026-10-22-sdk-locale/meowbro-crazygames-2026-10-22-sdk-locale.zip",
+  "artifact_sha256": "3fc2d5d33197a657fe41f97352f5f22f06d35dd796185cfb105fef1333ad0d20",
+  "files": {
+    "index.apple-touch-icon.png": "c68c2a699ee93664bdc89fadd2293508e33a896225cb4c8d4b5d3f35ad06a23e",
+    "index.wasm": "fc74679e3b97f76878947fcd4fbe1268cbfa6188182a2e33bbc3f5dc9bfa57d0",
+    "index.icon.png": "937fea84189c725521b618842c37114ae577f3efd8a731dcb92a7bbf3f6956b0",
+    "index.html": "6c9525a76bec30b76fb1743e0cb12df153471ce64cdb311f8b275b160c0b35de",
+    "index.png": "3cb4495c0b98dfbe4b663cbf2b6836473572339beb66d902367893162a70be0e",
+    "h1-distribution.json": "b7cd38e07f585dbd5e209629fa5ce9e03c09a361a15c801b0e6cbcc10c91fcc5",
+    "index.audio.worklet.js": "5b476a9c9ce642c0ee4256436d1bc31d9c38f868aca0f9a8e2a57c18d2dec2a3",
+    "index.js": "33c94cb3175f3333b82e2a3be5e8e86f77986f0aa2042b1631f6367a4e5bb6ba",
+    "index.audio.position.worklet.js": "be33985bc7160d6bf9646f259cd86b259cd67b02ccb297ee5c44f8ac84327bc8",
+    "h1-crazygames-locale.js": "0b0a9c72ef1e32afe0c7e40bcebb8cb94d1ae35858b6041171bcc17a0aacad97",
+    "index.pck": "fee84203544ea40148160e63f650c81f0fb1a89e14e850b912d81e5dada363e9",
+    "h1-startup-message.js": "5ca830ff9014700c990b917118da3419fe2de0c57eb3c876741642d54a8448cb",
+    "h1-runtime.js": "297500a0a7584d457fe87e3e4b23dee74f7d9e55c8b939d4839e1f363bc73501"
+  },
+  "scope": "SDK locale selection only; parent engine and game catalogs byte-identical; old URLs retained"
+}
