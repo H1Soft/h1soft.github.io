@@ -1,0 +1,2 @@
+# Nonogram CrazyGames distributions
+Each hash directory is immutable. Do not overwrite old tested versions. CrazyGames-only official SDK/Data Module; never use these files for Toss, Microsoft, native or Poki. The 2026-10-22 privacy revision corrects device-only/no-SDK copy in all17 locale variants (16 distinct languages), preserving the prior storage/navigation adapter bytes. Portal submission and runtime QA require separate receipts.
