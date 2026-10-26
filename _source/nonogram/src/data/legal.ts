@@ -102,13 +102,13 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
       description:
         'Simple terms for using the Nonogram Trip website and app, including content, backups and support.',
       intro:
-        'These terms explain how you may use Nonogram Trip’s website and app. Last updated: September 20, 2026.',
+        'These terms explain how you may use Nonogram Trip’s website and app. Last updated: October 26, 2026.',
       sections: [
         {
           id: 'using',
           title: '1. Using Nonogram Trip',
           paragraphs: [
-            'H1Soft offers this website for you to explore Nonogram Trip. You may use it for personal, lawful purposes. The Android and iOS app is being prepared for release; a preview or product description does not mean an app is already available in either store.',
+            'H1Soft offers this website for you to explore Nonogram Trip. You may use it for personal, lawful purposes. The Android and iOS app is available on Google Play and the App Store.',
             'If you obtain the app through a platform store, that store’s applicable terms also govern your download and use of its services.',
           ],
         },
@@ -163,8 +163,8 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'release',
           title: 'Where can I get the app?',
           paragraphs: [
-            'The Android and iOS releases are being prepared. Verified store links will be added when they are available. The home page introduces the app’s twelve cities, puzzles and collections.',
-            'The app currently targets Android 8.0 or later and iOS 15 or later. Store availability and device compatibility should be checked on the official listing when published.',
+            'Nonogram Trip is available on Google Play and the App Store. Use the store buttons on the home page to open the official listing. The home page also introduces the app’s twelve cities, puzzles and collections.',
+            'The app currently targets Android 8.0 or later and iOS 15 or later. Check device compatibility on the official store listing.',
           ],
         },
         {
@@ -355,13 +355,13 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
       description:
         '노노그램 트립 웹사이트·앱의 이용, 콘텐츠, 백업과 문의에 관한 기본 안내입니다.',
       intro:
-        '노노그램 트립의 웹사이트와 앱을 이용하는 방법을 설명합니다. 최종 수정일: 2026년 9월 20일.',
+        '노노그램 트립의 웹사이트와 앱을 이용하는 방법을 설명합니다. 최종 수정일: 2026년 10월 26일.',
       sections: [
         {
           id: 'using',
           title: '1. 서비스 이용',
           paragraphs: [
-            'H1Soft는 노노그램 트립을 알아볼 수 있도록 웹사이트를 제공합니다. 개인적이고 적법한 목적으로 이용할 수 있습니다. Android·iOS 앱은 출시 준비 중이며, 미리보기나 제품 설명이 스토어 출시 완료를 뜻하지는 않습니다.',
+            'H1Soft는 노노그램 트립을 알아볼 수 있도록 웹사이트를 제공합니다. 개인적이고 적법한 목적으로 이용할 수 있습니다. Android·iOS 앱은 Google Play와 App Store에서 받을 수 있습니다.',
             '플랫폼 스토어에서 앱을 받는 경우, 다운로드와 해당 스토어 서비스 이용에는 그 스토어의 적용 가능한 약관도 적용됩니다.',
           ],
         },
@@ -415,8 +415,8 @@ export const legal: Record<'en' | 'ko', Record<'privacy' | 'terms' | 'support', 
           id: 'release',
           title: '앱은 어디서 받을 수 있나요?',
           paragraphs: [
-            'Android·iOS 출시를 준비하고 있습니다. 이용 가능한 공식 스토어 링크가 확인되면 안내하겠습니다. 홈 화면에서 앱의 열두 도시, 퍼즐과 수집물을 살펴볼 수 있습니다.',
-            '현재 앱의 지원 기준은 Android 8.0 이상, iOS 15 이상입니다. 실제 출시 여부와 기기 호환성은 공개된 공식 스토어 페이지에서 확인해 주세요.',
+            '노노그램 트립은 Google Play와 App Store에서 받을 수 있습니다. 홈 화면의 스토어 버튼으로 공식 페이지를 열 수 있습니다. 홈 화면에서는 앱의 열두 도시, 퍼즐과 수집물을 살펴볼 수 있습니다.',
+            '현재 앱의 지원 기준은 Android 8.0 이상, iOS 15 이상입니다. 기기 호환성은 공식 스토어 페이지에서 확인해 주세요.',
           ],
         },
         {

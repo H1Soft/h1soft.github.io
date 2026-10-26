@@ -45,7 +45,9 @@
       "apple_id": 6814582503,
       "url": "https://apps.apple.com/app/id6814582503",
       "source": "https://itunes.apple.com/lookup?id=6814582503&country=kr",
-      "rating_count": 0
+      "rating_count": 0,
+      "play_url": "https://play.google.com/store/apps/details?id=com.h1soft.nonogram",
+      "play_checked_on": "2026-10-26"
     },
     "cleaner": {
       "price": 0,

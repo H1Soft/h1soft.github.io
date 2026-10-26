@@ -3,7 +3,7 @@ export const origin = 'https://h1soft.github.io';
 export const base = '/nonogram/';
 export const email = 'h1.soft.x001@gmail.com';
 export const stores: { google: string | null; apple: string | null } = {
-  google: null,
+  google: 'https://play.google.com/store/apps/details?id=com.h1soft.nonogram',
   apple: 'https://apps.apple.com/us/app/nonogram-trip-logic-puzzles/id6814582503',
 };
 export const home = (lang: Lang) => `${base}${lang === 'ko' ? 'ko/' : ''}`;
@@ -123,7 +123,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: 'Which phones and tablets are supported?',
-      a: 'Nonogram Trip is built for Android 8.0 or later and iOS 15 or later, including tablets. It is available on the App Store; the Google Play release is being prepared.',
+      a: 'Nonogram Trip is built for Android 8.0 or later and iOS 15 or later, including tablets. It is available on Google Play and the App Store.',
     },
     {
       q: 'Can I move my progress to another device?',
@@ -157,7 +157,7 @@ export const faqs: Record<Lang, { q: string; a: string }[]> = {
     },
     {
       q: '어떤 휴대전화와 태블릿을 지원하나요?',
-      a: 'Android 8.0 이상, iOS 15 이상의 휴대전화와 태블릿을 지원하도록 제작했습니다. App Store에서 다운로드할 수 있으며, Google Play 출시를 준비 중입니다.',
+      a: 'Android 8.0 이상, iOS 15 이상의 휴대전화와 태블릿을 지원하도록 제작했습니다. Google Play와 App Store에서 다운로드할 수 있습니다.',
     },
     {
       q: '기기를 바꾸면 기록을 옮길 수 있나요?',
