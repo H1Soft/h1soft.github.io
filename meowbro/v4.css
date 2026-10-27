@@ -274,3 +274,7 @@ html[data-public-i18n=meowbro] .site-header.topbar>.brand{order:0}
 html[dir=rtl][data-public-i18n=meowbro] body{font-family:var(--body)}
 html[dir=rtl][data-public-i18n=meowbro] h2,html[dir=rtl][data-public-i18n=meowbro] h3{font-family:var(--disp)}
 html[dir=rtl][data-public-i18n=meowbro] h1.logo{font-family:var(--logo)}
+
+/* Both released store links share the existing download layout. */
+.final .cta-row{justify-content:center;margin-top:28px}
+.final .cta-row .store{margin-top:0}
