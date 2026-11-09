@@ -1,0 +1,30 @@
+{
+  "app": "sagak",
+  "platform": "crazygames",
+  "revision": "2026-11-08-friends",
+  "source_commit": "3eab366ab14aa5c07c24e8f5ad82a8f0e83125fb",
+  "parent_artifact": "/Users/heewon.kim/ProjectETC/MultiStore-2026-10-20/CrazyGames/sagak/revision-2026-10-22-sdk-locale/sagak-crazygames-2026-10-22-sdk-locale.zip",
+  "parent_sha256": "4210ab9bbabdc7f50fa59eb08f1b6f4cad61f5b27e9d747e9b1135cf16313e1f",
+  "online_enabled": true,
+  "runtime_locale_variants": 17,
+  "runtime_distinct_languages": 16,
+  "original_catalogs_preserved": true,
+  "friends_features": [
+    "inviteParams",
+    "isInstantMultiplayer",
+    "addJoinRoomListener",
+    "updateRoom",
+    "leftRoom",
+    "inviteLink"
+  ],
+  "full_launch_approved": false,
+  "source_directory": "/Users/heewon.kim/Documents/ChatGPT/\uba40\ud2f0\ud50c\ub7ab\ud3fc/work/multistore-expansion/staging/sagak-crazygames-2026-11-08-friends-source",
+  "changed_source_files": {
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/App.kt": "8172ff431b1f70e97d20297c0fc6a68f0ddcb8bbed343033f82eb7f5c13351d7",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/online/OnlineCopy.kt": "63fbe06542585735eb07703a4d5f04c95d24619b132425b1331d87fec865aea6",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/ui/online/OnlineRooms.kt": "871eb5b341559c783b94862ff93cd305dcdfff5a374725e7410aebf6bc6a2ca5",
+    "shared/src/commonMain/kotlin/com/h1soft/sagak/net/OnlineController.kt": "f17cb31c7cf53d86d1e1c0109f3d04ef624b1353b58e8dab3f210d1fa2610541",
+    "shared/src/wasmJsMain/kotlin/com/h1soft/sagak/CrazyGamesFriends.kt": "f89e6b7bc6c675a6e3d1fea5b4020f155836f761d97d5e566a7791fdea39e13e",
+    "shared/src/wasmJsMain/kotlin/com/h1soft/sagak/Main.kt": "e6bce4746a7d50421fcf6690619345272fe9a5ae7a0618590d94460c71ddc3ef"
+  }
+}
