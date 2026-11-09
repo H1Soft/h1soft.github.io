@@ -1,0 +1,11 @@
+{
+  "app": "meowbro",
+  "platform": "crazygames",
+  "revision": "2026-11-09-telemetry",
+  "parent_artifact": "/Users/heewon.kim/ProjectETC/MultiStore-2026-10-20/CrazyGames/meowbro/revision-2026-10-22-sdk-locale/meowbro-crazygames-2026-10-22-sdk-locale.zip",
+  "parent_sha256": "3fc2d5d33197a657fe41f97352f5f22f06d35dd796185cfb105fef1333ad0d20",
+  "telemetry": "first-party play sessions and active seconds; no persistent identity; excludes QA",
+  "runtime_locale_variants": 17,
+  "runtime_distinct_languages": 16,
+  "game_payload_byte_identical": true
+}
