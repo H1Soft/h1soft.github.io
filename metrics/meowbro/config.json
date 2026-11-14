@@ -1,0 +1,10 @@
+{
+  "v": 1,
+  "on": true,
+  "rate": {"*": 1.0, "toss": 0, "crazygames": 0, "huawei": 0},
+  "min_gap": 300,
+  "max_day": 6,
+  "ttl": 259200,
+  "endpoint": null,
+  "exp": []
+}
