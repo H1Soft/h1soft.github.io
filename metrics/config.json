@@ -1,4 +1,5 @@
 {
   "backend": "https://h1soft-metrics-api.h1soft-metrics.workers.dev",
-  "publicRead": true
+  "publicRead": true,
+  "meowbroBackend": "https://meowbro-telemetry.h1soft-metrics.workers.dev"
 }
